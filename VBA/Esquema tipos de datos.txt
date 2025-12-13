@@ -1,0 +1,42 @@
+                         +--------------------------+
+                         ¦      clsCalculoBase      ¦
+                         ¦--------------------------¦
+                         ¦  Public:                 ¦
+                         ¦   - FechaNacimiento      ¦
+                         ¦   - NombreCompleto       ¦
+                         ¦   - Resultado (Get)      ¦
+                         ¦   - Interpretacion (Get) ¦
+                         ¦   - EsKarmico            ¦
+                         ¦   - EsMaestro            ¦
+                         ¦   - Calcular() (abstract)¦
+                         ¦   - ObtenerInterpretación¦
+                         ¦   - ObtenerInfoCompleta  ¦
+                         ¦                          ¦
+                         ¦  Friend (solo derivadas):¦
+                         ¦   - Resultado (Let)      ¦
+                         ¦   - Interpretacion (Let) ¦
+                         ¦   - SumarDigitosFecha    ¦
+                         ¦   - SumarValoresNombre   ¦
+                         ¦   - ReducirADigito       ¦
+                         ¦   - CargarInterpretación ¦
+                         ¦   - ObtenerNombreArchivo ¦
+                         +--------------------------+
+                                       ¦
+                                       ¦
+        +------------------------------+------------------------------+
+        ¦                              ¦                              ¦
++---------------+             +----------------+             +------------------+
+¦ clsCaminoVida ¦             ¦ clsDestino     ¦             ¦ clsAlma          ¦
+¦---------------¦             ¦----------------¦             ¦------------------¦
+¦ Calcular()    ¦             ¦ Calcular()     ¦             ¦ Calcular()       ¦
+¦ Interpretación¦             ¦ Interpretación ¦             ¦ Interpretación   ¦
++---------------+             +----------------+             +------------------+
+
+        +------------------------------+------------------------------+
+        ¦                              ¦                              ¦
++------------------+         +------------------+         +------------------+
+¦ clsPersonalidad  ¦         ¦ clsMadurez       ¦         ¦ clsCiclos        ¦
+¦------------------¦         ¦------------------¦         ¦------------------¦
+¦ Calcular()       ¦         ¦ Calcular()       ¦         ¦ Calcular()       ¦
+¦ Interpretación   ¦         ¦ Interpretación   ¦         ¦ Interpretación   ¦
++------------------+         +------------------+         +------------------+

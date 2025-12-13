@@ -1,0 +1,2 @@
+' En la ventana Inmediato (Ctrl+G):
+   PruebaDiaNacimiento

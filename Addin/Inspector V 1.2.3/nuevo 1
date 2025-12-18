@@ -1,0 +1,23 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon startFromScratch="false">
+       <tabs>
+         <tab id="MyTab1" label="Meine Tab1">
+            <group id="MyGroup1" label="Meine Gruppe1">
+               <labelControl id="myLabel1" label="Beispiel:" />
+               <labelControl id="myLabel2" label="Demo" />
+            </group>
+         </tab>
+      </tabs>
+
+    <contextualTabs>
+      <tabSet idMso="TabSetFormReportExtensibility">
+        <tab id="tabContextual" label="My Contextual Tab">
+          <group id="MyContextualGroup" label="My Group in Contextual Tab">
+            <labelControl id="myLabel1a" label="Sample:"/>
+            <button id="btnDemo" size="large" label="Demo"/>
+          </group>
+        </tab>
+      </tabSet>
+    </contextualTabs>
+   </ribbon>
+</customUI>

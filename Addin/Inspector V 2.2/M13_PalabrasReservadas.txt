@@ -1,0 +1,833 @@
+Attribute VB_Name = "M13_PalabrasReservadas"
+Option Explicit
+
+'-------------------------------------------------------
+'  M13_PalabrasReservadas
+'  - Catálogo central de palabras reservadas, funciones,
+'    operadores y elementos especiales de:
+'      * VBA
+'      * SQL_JET
+'      * SQL_ACE
+'      * ACCESS
+'      * DAO
+'      * ADO
+'      * VB6
+'      * OPERADORES
+'      * FUNCIONES_VBA
+'      * CONTROL_FLUJO_SISTEMA
+'  - Soporta:
+'      * múltiples categorías por palabra
+'      * múltiples tipos por palabra
+'      * búsqueda por categoría
+'      * búsqueda por nombre (devuelve todas las coincidencias)
+'-------------------------------------------------------
+
+Public Enum ReservedCategory
+    rcVBA = 1
+    rcSQL_JET
+    rcSQL_ACE
+    rcACCESS
+    rcDAO
+    rcADO
+    rcVB6
+    rcOPERADORES
+    rcFUNCIONES_VBA
+    rcCONTROL_FLUJO_SISTEMA
+End Enum
+
+Public Type ReservedWordInfo
+    Nombre As String
+    Tipo As String
+    Categoria As ReservedCategory
+End Type
+
+Private m_AllWords As Collection
+Private m_Initialized As Boolean
+
+'-------------------------------------------------------
+'  API pública
+'-------------------------------------------------------
+
+Public Function GetAllReservedWords() As Collection
+    EnsureInitialized
+    Set GetAllReservedWords = m_AllWords
+End Function
+
+Public Function GetReservedWordsByCategory(ByVal cat As ReservedCategory) As Collection
+    Dim col As New Collection
+    Dim item As Variant
+    Dim info As ReservedWordInfo
+
+    EnsureInitialized
+
+    For Each item In m_AllWords
+        info = item
+        If info.Categoria = cat Then
+            col.Add info
+        End If
+    Next item
+
+    Set GetReservedWordsByCategory = col
+End Function
+
+Public Function FindReservedWord(ByVal nombre As String) As Collection
+    Dim col As New Collection
+    Dim item As Variant
+    Dim info As ReservedWordInfo
+    Dim sName As String
+
+    EnsureInitialized
+    sName = LCase$(Trim$(nombre))
+
+    For Each item In m_AllWords
+        info = item
+        If LCase$(info.Nombre) = sName Then
+            col.Add info
+        End If
+    Next item
+
+    Set FindReservedWord = col
+End Function
+
+'-------------------------------------------------------
+'  Inicialización
+'-------------------------------------------------------
+
+Private Sub EnsureInitialized()
+    If m_Initialized Then Exit Sub
+
+    Set m_AllWords = New Collection
+
+    Load_VBA
+    Load_SQL_JET
+    Load_SQL_ACE
+    Load_ACCESS
+    Load_DAO
+    Load_ADO
+    Load_VB6
+    Load_OPERADORES
+    Load_FUNCIONES_VBA
+    Load_CONTROL_FLUJO_SISTEMA
+
+    m_Initialized = True
+End Sub
+
+Private Sub AddWord( _
+    ByVal nombre As String, _
+    ByVal tipo As String, _
+    ByVal cat As ReservedCategory _
+)
+    Dim info As ReservedWordInfo
+    info.Nombre = nombre
+    info.Tipo = tipo
+    info.Categoria = cat
+    m_AllWords.Add info
+End Sub
+
+'-------------------------------------------------------
+'  Carga por categorías
+'-------------------------------------------------------
+
+Private Sub Load_VBA()
+    ' Categoría: VBA
+    AddWord "And", "Operador", rcVBA
+    AddWord "As", "PalabraClave", rcVBA
+    AddWord "Boolean", "TipoDato", rcVBA
+    AddWord "ByRef", "PalabraClave", rcVBA
+    AddWord "ByVal", "PalabraClave", rcVBA
+    AddWord "Byte", "TipoDato", rcVBA
+    AddWord "Call", "PalabraClave", rcVBA
+    AddWord "Case", "PalabraClave", rcVBA
+    AddWord "CBool", "Funcion", rcVBA
+    AddWord "CByte", "Funcion", rcVBA
+    AddWord "CCur", "Funcion", rcVBA
+    AddWord "CDate", "Funcion", rcVBA
+    AddWord "CDbl", "Funcion", rcVBA
+    AddWord "CDec", "Funcion", rcVBA
+    AddWord "Choose", "Funcion", rcVBA
+    AddWord "Chr", "Funcion", rcVBA
+    AddWord "CInt", "Funcion", rcVBA
+    AddWord "CLng", "Funcion", rcVBA
+    AddWord "Const", "PalabraClave", rcVBA
+    AddWord "CStr", "Funcion", rcVBA
+    AddWord "Date", "Funcion", rcVBA
+    AddWord "Debug", "Objeto", rcVBA
+    AddWord "Do", "PalabraClave", rcVBA
+    AddWord "Double", "TipoDato", rcVBA
+    AddWord "Each", "PalabraClave", rcVBA
+    AddWord "Else", "PalabraClave", rcVBA
+    AddWord "ElseIf", "PalabraClave", rcVBA
+    AddWord "End", "PalabraClave", rcVBA
+    AddWord "Enum", "PalabraClave", rcVBA
+    AddWord "Erase", "Procedimiento", rcVBA
+    AddWord "Error", "PalabraClave", rcVBA
+    AddWord "Exit", "PalabraClave", rcVBA
+    AddWord "False", "Constante", rcVBA
+    AddWord "For", "PalabraClave", rcVBA
+    AddWord "Function", "PalabraClave", rcVBA
+    AddWord "Get", "PalabraClave", rcVBA
+    AddWord "GoSub", "PalabraClave", rcVBA
+    AddWord "GoTo", "PalabraClave", rcVBA
+    AddWord "If", "PalabraClave", rcVBA
+    AddWord "Implements", "PalabraClave", rcVBA
+    AddWord "In", "PalabraClave", rcVBA
+    AddWord "InputBox", "Funcion", rcVBA
+    AddWord "Integer", "TipoDato", rcVBA
+    AddWord "Is", "Operador", rcVBA
+    AddWord "IsEmpty", "Funcion", rcVBA
+    AddWord "IsNull", "Funcion", rcVBA
+    AddWord "IsNumeric", "Funcion", rcVBA
+    AddWord "Let", "PalabraClave", rcVBA
+    AddWord "Lib", "PalabraClave", rcVBA
+    AddWord "Like", "Operador", rcVBA
+    AddWord "Long", "TipoDato", rcVBA
+    AddWord "Loop", "PalabraClave", rcVBA
+    AddWord "LSet", "Procedimiento", rcVBA
+    AddWord "Me", "Objeto", rcVBA
+    AddWord "Mid", "Funcion", rcVBA
+    AddWord "Mod", "Operador", rcVBA
+    AddWord "New", "PalabraClave", rcVBA
+    AddWord "Next", "PalabraClave", rcVBA
+    AddWord "Not", "Operador", rcVBA
+    AddWord "Nothing", "Constante", rcVBA
+    AddWord "Null", "Constante", rcVBA
+    AddWord "On", "PalabraClave", rcVBA
+    AddWord "Option", "PalabraClave", rcVBA
+    AddWord "Optional", "PalabraClave", rcVBA
+    AddWord "Or", "Operador", rcVBA
+    AddWord "Private", "PalabraClave", rcVBA
+    AddWord "Property", "PalabraClave", rcVBA
+    AddWord "Public", "PalabraClave", rcVBA
+    AddWord "ReDim", "PalabraClave", rcVBA
+    AddWord "Resume", "PalabraClave", rcVBA
+    AddWord "Return", "PalabraClave", rcVBA
+    AddWord "Select", "PalabraClave", rcVBA
+    AddWord "Set", "PalabraClave", rcVBA
+    AddWord "Single", "TipoDato", rcVBA
+    AddWord "Static", "PalabraClave", rcVBA
+    AddWord "Stop", "Procedimiento", rcVBA
+    AddWord "String", "TipoDato", rcVBA
+    AddWord "Sub", "PalabraClave", rcVBA
+    AddWord "Then", "PalabraClave", rcVBA
+    AddWord "To", "PalabraClave", rcVBA
+    AddWord "True", "Constante", rcVBA
+    AddWord "Type", "PalabraClave", rcVBA
+    AddWord "Variant", "TipoDato", rcVBA
+    AddWord "Wend", "PalabraClave", rcVBA
+    AddWord "While", "PalabraClave", rcVBA
+    AddWord "With", "PalabraClave", rcVBA
+    AddWord "Xor", "Operador", rcVBA
+End Sub
+
+Private Sub Load_SQL_JET()
+    ' Categoría: SQL_JET
+    AddWord "ADD", "PalabraClave", rcSQL_JET
+    AddWord "ALL", "PalabraClave", rcSQL_JET
+    AddWord "ALTER", "PalabraClave", rcSQL_JET
+    AddWord "AND", "Operador", rcSQL_JET
+    AddWord "ANY", "PalabraClave", rcSQL_JET
+    AddWord "AS", "PalabraClave", rcSQL_JET
+    AddWord "ASC", "PalabraClave", rcSQL_JET
+    AddWord "AUTOINCREMENT", "TipoDato", rcSQL_JET
+    AddWord "AVG", "Funcion", rcSQL_JET
+    AddWord "BETWEEN", "Operador", rcSQL_JET
+    AddWord "BINARY", "PalabraClave", rcSQL_JET
+    AddWord "BIT", "TipoDato", rcSQL_JET
+    AddWord "BOOLEAN", "TipoDato", rcSQL_JET
+    AddWord "BY", "PalabraClave", rcSQL_JET
+    AddWord "BYTE", "TipoDato", rcSQL_JET
+    AddWord "CHAR", "TipoDato", rcSQL_JET
+    AddWord "CHARACTER", "TipoDato", rcSQL_JET
+    AddWord "COLUMN", "PalabraClave", rcSQL_JET
+    AddWord "CONSTRAINT", "PalabraClave", rcSQL_JET
+    AddWord "COUNT", "Funcion", rcSQL_JET
+    AddWord "COUNTER", "TipoDato", rcSQL_JET
+    AddWord "CREATE", "PalabraClave", rcSQL_JET
+    AddWord "CURRENCY", "TipoDato", rcSQL_JET
+    AddWord "DATABASE", "PalabraClave", rcSQL_JET
+    AddWord "DATE", "TipoDato", rcSQL_JET
+    AddWord "DATETIME", "TipoDato", rcSQL_JET
+    AddWord "DECIMAL", "TipoDato", rcSQL_JET
+    AddWord "DELETE", "PalabraClave", rcSQL_JET
+    AddWord "DESC", "PalabraClave", rcSQL_JET
+    AddWord "DISTINCT", "PalabraClave", rcSQL_JET
+    AddWord "DISTINCTROW", "PalabraClave", rcSQL_JET
+    AddWord "DOUBLE", "TipoDato", rcSQL_JET
+    AddWord "DROP", "PalabraClave", rcSQL_JET
+    AddWord "EXISTS", "PalabraClave", rcSQL_JET
+    AddWord "FLOAT", "TipoDato", rcSQL_JET
+    AddWord "FROM", "PalabraClave", rcSQL_JET
+    AddWord "GROUP", "PalabraClave", rcSQL_JET
+    AddWord "HAVING", "PalabraClave", rcSQL_JET
+    AddWord "IN", "Operador", rcSQL_JET
+    AddWord "INDEX", "PalabraClave", rcSQL_JET
+    AddWord "INNER", "PalabraClave", rcSQL_JET
+    AddWord "INSERT", "PalabraClave", rcSQL_JET
+    AddWord "INT", "TipoDato", rcSQL_JET
+    AddWord "INTEGER", "TipoDato", rcSQL_JET
+    AddWord "INTO", "PalabraClave", rcSQL_JET
+    AddWord "IS", "Operador", rcSQL_JET
+    AddWord "JOIN", "PalabraClave", rcSQL_JET
+    AddWord "KEY", "PalabraClave", rcSQL_JET
+    AddWord "LEFT", "PalabraClave", rcSQL_JET
+    AddWord "LIKE", "Operador", rcSQL_JET
+    AddWord "LONG", "TipoDato", rcSQL_JET
+    AddWord "LONGTEXT", "TipoDato", rcSQL_JET
+    AddWord "MAX", "Funcion", rcSQL_JET
+    AddWord "MEMO", "TipoDato", rcSQL_JET
+    AddWord "MIN", "Funcion", rcSQL_JET
+    AddWord "MOD", "Operador", rcSQL_JET
+    AddWord "MONEY", "TipoDato", rcSQL_JET
+    AddWord "NOT", "Operador", rcSQL_JET
+    AddWord "NULL", "Constante", rcSQL_JET
+    AddWord "NUMBER", "TipoDato", rcSQL_JET
+    AddWord "ON", "PalabraClave", rcSQL_JET
+    AddWord "OR", "Operador", rcSQL_JET
+    AddWord "ORDER", "PalabraClave", rcSQL_JET
+    AddWord "OUTER", "PalabraClave", rcSQL_JET
+    AddWord "PARAMETERS", "PalabraClave", rcSQL_JET
+    AddWord "PERCENT", "Operador", rcSQL_JET
+    AddWord "PRIMARY", "PalabraClave", rcSQL_JET
+    AddWord "REAL", "TipoDato", rcSQL_JET
+    AddWord "REFERENCES", "PalabraClave", rcSQL_JET
+    AddWord "RIGHT", "PalabraClave", rcSQL_JET
+    AddWord "SELECT", "PalabraClave", rcSQL_JET
+    AddWord "SET", "PalabraClave", rcSQL_JET
+    AddWord "SHORT", "TipoDato", rcSQL_JET
+    AddWord "SINGLE", "TipoDato", rcSQL_JET
+    AddWord "SMALLINT", "TipoDato", rcSQL_JET
+    AddWord "SUM", "Funcion", rcSQL_JET
+    AddWord "TABLE", "PalabraClave", rcSQL_JET
+    AddWord "TEXT", "TipoDato", rcSQL_JET
+    AddWord "TIME", "TipoDato", rcSQL_JET
+    AddWord "TIMESTAMP", "TipoDato", rcSQL_JET
+    AddWord "TOP", "PalabraClave", rcSQL_JET
+    AddWord "UNION", "PalabraClave", rcSQL_JET
+    AddWord "UNIQUE", "PalabraClave", rcSQL_JET
+    AddWord "UPDATE", "PalabraClave", rcSQL_JET
+    AddWord "VALUES", "PalabraClave", rcSQL_JET
+    AddWord "VAR", "TipoDato", rcSQL_JET
+    AddWord "VARBINARY", "TipoDato", rcSQL_JET
+    AddWord "VARCHAR", "TipoDato", rcSQL_JET
+    AddWord "WHERE", "PalabraClave", rcSQL_JET
+    AddWord "WITH", "PalabraClave", rcSQL_JET
+    AddWord "YESNO", "TipoDato", rcSQL_JET
+End Sub
+
+Private Sub Load_SQL_ACE()
+    ' Categoría: SQL_ACE
+    AddWord "ADD", "PalabraClave", rcSQL_ACE
+    AddWord "ALL", "PalabraClave", rcSQL_ACE
+    AddWord "ALTER", "PalabraClave", rcSQL_ACE
+    AddWord "AND", "Operador", rcSQL_ACE
+    AddWord "ANY", "PalabraClave", rcSQL_ACE
+    AddWord "AS", "PalabraClave", rcSQL_ACE
+    AddWord "ASC", "PalabraClave", rcSQL_ACE
+    AddWord "ATTACH", "PalabraClave", rcSQL_ACE
+    AddWord "AUTOINCREMENT", "TipoDato", rcSQL_ACE
+    AddWord "AVG", "Funcion", rcSQL_ACE
+    AddWord "BETWEEN", "Operador", rcSQL_ACE
+    AddWord "BINARY", "TipoDato", rcSQL_ACE
+    AddWord "BIT", "TipoDato", rcSQL_ACE
+    AddWord "BOOLEAN", "TipoDato", rcSQL_ACE
+    AddWord "BY", "PalabraClave", rcSQL_ACE
+    AddWord "BYTE", "TipoDato", rcSQL_ACE
+    AddWord "CHAR", "TipoDato", rcSQL_ACE
+    AddWord "CHARACTER", "TipoDato", rcSQL_ACE
+    AddWord "COLUMN", "PalabraClave", rcSQL_ACE
+    AddWord "CONSTRAINT", "PalabraClave", rcSQL_ACE
+    AddWord "COUNT", "Funcion", rcSQL_ACE
+    AddWord "COUNTER", "TipoDato", rcSQL_ACE
+    AddWord "CREATE", "PalabraClave", rcSQL_ACE
+    AddWord "CURRENCY", "TipoDato", rcSQL_ACE
+    AddWord "DATABASE", "PalabraClave", rcSQL_ACE
+    AddWord "DATE", "TipoDato", rcSQL_ACE
+    AddWord "DATETIME", "TipoDato", rcSQL_ACE
+    AddWord "DECIMAL", "TipoDato", rcSQL_ACE
+    AddWord "DELETE", "PalabraClave", rcSQL_ACE
+    AddWord "DESC", "PalabraClave", rcSQL_ACE
+    AddWord "DISCONNECT", "PalabraClave", rcSQL_ACE
+    AddWord "DISTINCT", "PalabraClave", rcSQL_ACE
+    AddWord "DISTINCTROW", "PalabraClave", rcSQL_ACE
+    AddWord "DOUBLE", "TipoDato", rcSQL_ACE
+    AddWord "DROP", "PalabraClave", rcSQL_ACE
+    AddWord "EXISTS", "PalabraClave", rcSQL_ACE
+    AddWord "FLOAT", "TipoDato", rcSQL_ACE
+    AddWord "FOREIGN", "PalabraClave", rcSQL_ACE
+    AddWord "FROM", "PalabraClave", rcSQL_ACE
+    AddWord "GROUP", "PalabraClave", rcSQL_ACE
+    AddWord "HAVING", "PalabraClave", rcSQL_ACE
+    AddWord "IN", "Operador", rcSQL_ACE
+    AddWord "INDEX", "PalabraClave", rcSQL_ACE
+    AddWord "INNER", "PalabraClave", rcSQL_ACE
+    AddWord "INSERT", "PalabraClave", rcSQL_ACE
+    AddWord "INT", "TipoDato", rcSQL_ACE
+    AddWord "INTEGER", "TipoDato", rcSQL_ACE
+    AddWord "INTO", "PalabraClave", rcSQL_ACE
+    AddWord "IS", "Operador", rcSQL_ACE
+    AddWord "JOIN", "PalabraClave", rcSQL_ACE
+    AddWord "KEY", "PalabraClave", rcSQL_ACE
+    AddWord "LEFT", "PalabraClave", rcSQL_ACE
+    AddWord "LIKE", "Operador", rcSQL_ACE
+    AddWord "LONG", "TipoDato", rcSQL_ACE
+    AddWord "LONGTEXT", "TipoDato", rcSQL_ACE
+    AddWord "MAX", "Funcion", rcSQL_ACE
+    AddWord "MEMO", "TipoDato", rcSQL_ACE
+    AddWord "MIN", "Funcion", rcSQL_ACE
+    AddWord "MOD", "Operador", rcSQL_ACE
+    AddWord "MONEY", "TipoDato", rcSQL_ACE
+    AddWord "NOT", "Operador", rcSQL_ACE
+    AddWord "NULL", "Constante", rcSQL_ACE
+    AddWord "NUMBER", "TipoDato", rcSQL_ACE
+    AddWord "ON", "PalabraClave", rcSQL_ACE
+    AddWord "OR", "Operador", rcSQL_ACE
+    AddWord "ORDER", "PalabraClave", rcSQL_ACE
+    AddWord "OUTER", "PalabraClave", rcSQL_ACE
+    AddWord "PARAMETERS", "PalabraClave", rcSQL_ACE
+    AddWord "PERCENT", "Operador", rcSQL_ACE
+    AddWord "PRIMARY", "PalabraClave", rcSQL_ACE
+    AddWord "REAL", "TipoDato", rcSQL_ACE
+    AddWord "REFERENCES", "PalabraClave", rcSQL_ACE
+    AddWord "RIGHT", "PalabraClave", rcSQL_ACE
+    AddWord "SELECT", "PalabraClave", rcSQL_ACE
+    AddWord "SET", "PalabraClave", rcSQL_ACE
+    AddWord "SHORT", "TipoDato", rcSQL_ACE
+    AddWord "SINGLE", "TipoDato", rcSQL_ACE
+    AddWord "SMALLINT", "TipoDato", rcSQL_ACE
+    AddWord "SUM", "Funcion", rcSQL_ACE
+    AddWord "TABLE", "PalabraClave", rcSQL_ACE
+    AddWord "TEXT", "TipoDato", rcSQL_ACE
+    AddWord "TIME", "TipoDato", rcSQL_ACE
+    AddWord "TIMESTAMP", "TipoDato", rcSQL_ACE
+    AddWord "TOP", "PalabraClave", rcSQL_ACE
+    AddWord "UNION", "PalabraClave", rcSQL_ACE
+    AddWord "UNIQUE", "PalabraClave", rcSQL_ACE
+    AddWord "UPDATE", "PalabraClave", rcSQL_ACE
+    AddWord "VALUES", "PalabraClave", rcSQL_ACE
+    AddWord "VAR", "TipoDato", rcSQL_ACE
+    AddWord "VARBINARY", "TipoDato", rcSQL_ACE
+    AddWord "VARCHAR", "TipoDato", rcSQL_ACE
+    AddWord "WHERE", "PalabraClave", rcSQL_ACE
+    AddWord "WITH", "PalabraClave", rcSQL_ACE
+    AddWord "YESNO", "TipoDato", rcSQL_ACE
+End Sub
+
+Private Sub Load_ACCESS()
+    ' Categoría: ACCESS
+    AddWord "Application", "Objeto", rcACCESS
+    AddWord "CurrentDb", "Funcion", rcACCESS
+    AddWord "CurrentProject", "Objeto", rcACCESS
+    AddWord "CurrentUser", "Funcion", rcACCESS
+    AddWord "DoCmd", "Objeto", rcACCESS
+    AddWord "Eval", "Funcion", rcACCESS
+    AddWord "Forms", "Objeto", rcACCESS
+    AddWord "Reports", "Objeto", rcACCESS
+    AddWord "Screen", "Objeto", rcACCESS
+    AddWord "SysCmd", "Funcion", rcACCESS
+    AddWord "TempVars", "Objeto", rcACCESS
+    AddWord "TempVar", "Clase", rcACCESS
+    AddWord "AccessObject", "Clase", rcACCESS
+    AddWord "AccessObjectProperty", "Clase", rcACCESS
+    AddWord "AccessError", "Funcion", rcACCESS
+    AddWord "CommandBars", "Objeto", rcACCESS
+    AddWord "CommandBar", "Clase", rcACCESS
+    AddWord "CommandBarControl", "Clase", rcACCESS
+    AddWord "CommandBarButton", "Clase", rcACCESS
+    AddWord "CommandBarPopup", "Clase", rcACCESS
+    AddWord "CreateForm", "Procedimiento", rcACCESS
+    AddWord "CreateReport", "Procedimiento", rcACCESS
+    AddWord "CreateControl", "Procedimiento", rcACCESS
+    AddWord "CreateGroupLevel", "Procedimiento", rcACCESS
+    AddWord "CreateWorkspace", "Procedimiento", rcACCESS
+    AddWord "CreateDatabase", "Procedimiento", rcACCESS
+    AddWord "CreateQueryDef", "Procedimiento", rcACCESS
+    AddWord "CreateTableDef", "Procedimiento", rcACCESS
+    AddWord "CreateRelation", "Procedimiento", rcACCESS
+    AddWord "CreateProperty", "Procedimiento", rcACCESS
+    AddWord "DoMenuItem", "Procedimiento", rcACCESS
+    AddWord "Echo", "Procedimiento", rcACCESS
+    AddWord "GetObject", "Funcion", rcACCESS
+    AddWord "LoadCustomUI", "Procedimiento", rcACCESS
+    AddWord "Quit", "Procedimiento", rcACCESS
+    AddWord "RunCommand", "Procedimiento", rcACCESS
+    AddWord "SysCmd", "Procedimiento", rcACCESS
+    AddWord "UserControl", "Propiedad", rcACCESS
+    AddWord "Visible", "Propiedad", rcACCESS
+End Sub
+
+Private Sub Load_DAO()
+    ' Categoría: DAO
+    AddWord "DBEngine", "ObjetoDAO", rcDAO
+    AddWord "Workspace", "Clase", rcDAO
+    AddWord "Workspaces", "ObjetoDAO", rcDAO
+    AddWord "Database", "Clase", rcDAO
+    AddWord "Databases", "ObjetoDAO", rcDAO
+    AddWord "Recordset", "Clase", rcDAO
+    AddWord "Recordsets", "ObjetoDAO", rcDAO
+    AddWord "TableDef", "Clase", rcDAO
+    AddWord "TableDefs", "ObjetoDAO", rcDAO
+    AddWord "QueryDef", "Clase", rcDAO
+    AddWord "QueryDefs", "ObjetoDAO", rcDAO
+    AddWord "Relation", "Clase", rcDAO
+    AddWord "Relations", "ObjetoDAO", rcDAO
+    AddWord "Property", "Clase", rcDAO
+    AddWord "Properties", "ObjetoDAO", rcDAO
+    AddWord "Field", "Clase", rcDAO
+    AddWord "Fields", "ObjetoDAO", rcDAO
+    AddWord "Index", "Clase", rcDAO
+    AddWord "Indexes", "ObjetoDAO", rcDAO
+    AddWord "Parameter", "Clase", rcDAO
+    AddWord "Parameters", "ObjetoDAO", rcDAO
+    AddWord "User", "Clase", rcDAO
+    AddWord "Users", "ObjetoDAO", rcDAO
+    AddWord "Group", "Clase", rcDAO
+    AddWord "Groups", "ObjetoDAO", rcDAO
+    AddWord "Container", "Clase", rcDAO
+    AddWord "Containers", "ObjetoDAO", rcDAO
+    AddWord "Document", "Clase", rcDAO
+    AddWord "Documents", "ObjetoDAO", rcDAO
+    AddWord "Error", "Clase", rcDAO
+    AddWord "Errors", "ObjetoDAO", rcDAO
+    AddWord "CreateDatabase", "Procedimiento", rcDAO
+    AddWord "CreateWorkspace", "Procedimiento", rcDAO
+    AddWord "CreateQueryDef", "Procedimiento", rcDAO
+    AddWord "CreateTableDef", "Procedimiento", rcDAO
+    AddWord "CreateRelation", "Procedimiento", rcDAO
+    AddWord "CreateProperty", "Procedimiento", rcDAO
+    AddWord "OpenDatabase", "Funcion", rcDAO
+    AddWord "OpenRecordset", "Funcion", rcDAO
+    AddWord "BeginTrans", "Metodo", rcDAO
+    AddWord "CommitTrans", "Metodo", rcDAO
+    AddWord "Rollback", "Metodo", rcDAO
+    AddWord "Refresh", "Metodo", rcDAO
+    AddWord "Close", "Metodo", rcDAO
+    AddWord "Seek", "Metodo", rcDAO
+    AddWord "AddNew", "Metodo", rcDAO
+    AddWord "Edit", "Metodo", rcDAO
+    AddWord "Update", "Metodo", rcDAO
+    AddWord "Delete", "Metodo", rcDAO
+    AddWord "MoveFirst", "Metodo", rcDAO
+    AddWord "MoveLast", "Metodo", rcDAO
+    AddWord "MoveNext", "Metodo", rcDAO
+    AddWord "MovePrevious", "Metodo", rcDAO
+    AddWord "EOF", "Propiedad", rcDAO
+    AddWord "BOF", "Propiedad", rcDAO
+    AddWord "Name", "Propiedad", rcDAO
+    AddWord "Value", "Propiedad", rcDAO
+    AddWord "Type", "Propiedad", rcDAO
+    AddWord "Attributes", "Propiedad", rcDAO
+End Sub
+
+Private Sub Load_ADO()
+    ' Categoría: ADO
+    AddWord "Connection", "Clase", rcADO
+    AddWord "Connections", "ObjetoADO", rcADO
+    AddWord "Command", "Clase", rcADO
+    AddWord "Commands", "ObjetoADO", rcADO
+    AddWord "Recordset", "Clase", rcADO
+    AddWord "Recordsets", "ObjetoADO", rcADO
+    AddWord "Parameter", "Clase", rcADO
+    AddWord "Parameters", "ObjetoADO", rcADO
+    AddWord "Field", "Clase", rcADO
+    AddWord "Fields", "ObjetoADO", rcADO
+    AddWord "Property", "Clase", rcADO
+    AddWord "Properties", "ObjetoADO", rcADO
+    AddWord "Error", "Clase", rcADO
+    AddWord "Errors", "ObjetoADO", rcADO
+    AddWord "Stream", "Clase", rcADO
+    AddWord "Streams", "ObjetoADO", rcADO
+    AddWord "Record", "Clase", rcADO
+    AddWord "Records", "ObjetoADO", rcADO
+    AddWord "ConnectionString", "Propiedad", rcADO
+    AddWord "State", "Propiedad", rcADO
+    AddWord "CursorLocation", "Propiedad", rcADO
+    AddWord "CursorType", "Propiedad", rcADO
+    AddWord "LockType", "Propiedad", rcADO
+    AddWord "ActiveConnection", "Propiedad", rcADO
+    AddWord "CommandText", "Propiedad", rcADO
+    AddWord "CommandType", "Propiedad", rcADO
+    AddWord "Source", "Propiedad", rcADO
+    AddWord "EOF", "Propiedad", rcADO
+    AddWord "BOF", "Propiedad", rcADO
+    AddWord "Value", "Propiedad", rcADO
+    AddWord "Name", "Propiedad", rcADO
+    AddWord "Type", "Propiedad", rcADO
+    AddWord "Open", "Metodo", rcADO
+    AddWord "Close", "Metodo", rcADO
+    AddWord "Execute", "Metodo", rcADO
+    AddWord "BeginTrans", "Metodo", rcADO
+    AddWord "CommitTrans", "Metodo", rcADO
+    AddWord "RollbackTrans", "Metodo", rcADO
+    AddWord "AddNew", "Metodo", rcADO
+    AddWord "Update", "Metodo", rcADO
+    AddWord "Delete", "Metodo", rcADO
+    AddWord "MoveFirst", "Metodo", rcADO
+    AddWord "MoveLast", "Metodo", rcADO
+    AddWord "MoveNext", "Metodo", rcADO
+    AddWord "MovePrevious", "Metodo", rcADO
+    AddWord "GetRows", "Metodo", rcADO
+    AddWord "GetString", "Metodo", rcADO
+    AddWord "CreateParameter", "Metodo", rcADO
+    AddWord "Append", "Metodo", rcADO
+    AddWord "Refresh", "Metodo", rcADO
+End Sub
+
+Private Sub Load_VB6()
+    ' Categoría: VB6
+    AddWord "App", "Objeto", rcVB6
+    AddWord "AppActivate", "Procedimiento", rcVB6
+    AddWord "Beep", "Procedimiento", rcVB6
+    AddWord "Call", "PalabraClave", rcVB6
+    AddWord "CBool", "Funcion", rcVB6
+    AddWord "CByte", "Funcion", rcVB6
+    AddWord "CCur", "Funcion", rcVB6
+    AddWord "CDate", "Funcion", rcVB6
+    AddWord "CDbl", "Funcion", rcVB6
+    AddWord "CDec", "Funcion", rcVB6
+    AddWord "Choose", "Funcion", rcVB6
+    AddWord "Chr", "Funcion", rcVB6
+    AddWord "CInt", "Funcion", rcVB6
+    AddWord "CLng", "Funcion", rcVB6
+    AddWord "Command", "Funcion", rcVB6
+    AddWord "Cos", "Funcion", rcVB6
+    AddWord "CreateObject", "Funcion", rcVB6
+    AddWord "CSng", "Funcion", rcVB6
+    AddWord "CStr", "Funcion", rcVB6
+    AddWord "CurDir", "Funcion", rcVB6
+    AddWord "Date", "Funcion", rcVB6
+    AddWord "DateAdd", "Funcion", rcVB6
+    AddWord "DateDiff", "Funcion", rcVB6
+    AddWord "DatePart", "Funcion", rcVB6
+    AddWord "DateSerial", "Funcion", rcVB6
+    AddWord "DateValue", "Funcion", rcVB6
+    AddWord "Day", "Funcion", rcVB6
+    AddWord "Dir", "Funcion", rcVB6
+    AddWord "DoEvents", "Procedimiento", rcVB6
+    AddWord "Environ", "Funcion", rcVB6
+    AddWord "EOF", "Propiedad", rcVB6
+    AddWord "Err", "Objeto", rcVB6
+    AddWord "Error", "Funcion", rcVB6
+    AddWord "Exp", "Funcion", rcVB6
+    AddWord "FileAttr", "Funcion", rcVB6
+    AddWord "FileCopy", "Procedimiento", rcVB6
+    AddWord "FileDateTime", "Funcion", rcVB6
+    AddWord "FileLen", "Funcion", rcVB6
+    AddWord "Fix", "Funcion", rcVB6
+    AddWord "Format", "Funcion", rcVB6
+    AddWord "FreeFile", "Funcion", rcVB6
+    AddWord "Get", "Procedimiento", rcVB6
+    AddWord "Hex", "Funcion", rcVB6
+    AddWord "Hour", "Funcion", rcVB6
+    AddWord "Input", "Funcion", rcVB6
+    AddWord "InputBox", "Funcion", rcVB6
+    AddWord "InStr", "Funcion", rcVB6
+    AddWord "InStrRev", "Funcion", rcVB6
+    AddWord "Int", "Funcion", rcVB6
+    AddWord "IsArray", "Funcion", rcVB6
+    AddWord "IsDate", "Funcion", rcVB6
+    AddWord "IsEmpty", "Funcion", rcVB6
+    AddWord "IsError", "Funcion", rcVB6
+    AddWord "IsMissing", "Funcion", rcVB6
+    AddWord "IsNull", "Funcion", rcVB6
+    AddWord "IsNumeric", "Funcion", rcVB6
+    AddWord "IsObject", "Funcion", rcVB6
+    AddWord "Kill", "Procedimiento", rcVB6
+    AddWord "LBound", "Funcion", rcVB6
+    AddWord "LCase", "Funcion", rcVB6
+    AddWord "Left", "Funcion", rcVB6
+    AddWord "Len", "Funcion", rcVB6
+    AddWord "Load", "Procedimiento", rcVB6
+    AddWord "Loc", "Funcion", rcVB6
+    AddWord "LOF", "Funcion", rcVB6
+    AddWord "Log", "Funcion", rcVB6
+    AddWord "LTrim", "Funcion", rcVB6
+    AddWord "Mid", "Funcion", rcVB6
+    AddWord "Minute", "Funcion", rcVB6
+    AddWord "MkDir", "Procedimiento", rcVB6
+    AddWord "Month", "Funcion", rcVB6
+    AddWord "MsgBox", "Funcion", rcVB6
+    AddWord "Now", "Funcion", rcVB6
+    AddWord "Oct", "Funcion", rcVB6
+    AddWord "Replace", "Funcion", rcVB6
+    AddWord "Right", "Funcion", rcVB6
+    AddWord "Rnd", "Funcion", rcVB6
+    AddWord "RmDir", "Procedimiento", rcVB6
+    AddWord "RTrim", "Funcion", rcVB6
+    AddWord "SaveSetting", "Procedimiento", rcVB6
+    AddWord "Second", "Funcion", rcVB6
+    AddWord "Seek", "Procedimiento", rcVB6
+    AddWord "SetAttr", "Procedimiento", rcVB6
+    AddWord "Sgn", "Funcion", rcVB6
+    AddWord "Shell", "Procedimiento", rcVB6
+    AddWord "Sin", "Funcion", rcVB6
+    AddWord "Space", "Funcion", rcVB6
+    AddWord "Split", "Funcion", rcVB6
+    AddWord "Sqr", "Funcion", rcVB6
+    AddWord "StrComp", "Funcion", rcVB6
+    AddWord "String", "Funcion", rcVB6
+    AddWord "Tan", "Funcion", rcVB6
+    AddWord "Time", "Funcion", rcVB6
+    AddWord "TimeSerial", "Funcion", rcVB6
+    AddWord "TimeValue", "Funcion", rcVB6
+    AddWord "Trim", "Funcion", rcVB6
+    AddWord "UBound", "Funcion", rcVB6
+    AddWord "UCase", "Funcion", rcVB6
+    AddWord "Unload", "Procedimiento", rcVB6
+    AddWord "Val", "Funcion", rcVB6
+    AddWord "Weekday", "Funcion", rcVB6
+    AddWord "Year", "Funcion", rcVB6
+End Sub
+
+Private Sub Load_OPERADORES()
+    ' Categoría: OPERADORES
+    AddWord "+", "Operador", rcOPERADORES
+    AddWord "-", "Operador", rcOPERADORES
+    AddWord "*", "Operador", rcOPERADORES
+    AddWord "/", "Operador", rcOPERADORES
+    AddWord "\", "Operador", rcOPERADORES
+    AddWord "^", "Operador", rcOPERADORES
+    AddWord "Mod", "Operador", rcOPERADORES
+    AddWord "And", "Operador", rcOPERADORES
+    AddWord "Or", "Operador", rcOPERADORES
+    AddWord "Xor", "Operador", rcOPERADORES
+    AddWord "Eqv", "Operador", rcOPERADORES
+    AddWord "Imp", "Operador", rcOPERADORES
+    AddWord "Not", "Operador", rcOPERADORES
+    AddWord "Like", "Operador", rcOPERADORES
+    AddWord "&", "Operador", rcOPERADORES
+    AddWord "=", "Operador", rcOPERADORES
+    AddWord "<>", "Operador", rcOPERADORES
+    AddWord "<", "Operador", rcOPERADORES
+    AddWord ">", "Operador", rcOPERADORES
+    AddWord "<=", "Operador", rcOPERADORES
+    AddWord ">=", "Operador", rcOPERADORES
+    AddWord "Is", "Operador", rcOPERADORES
+    AddWord "In", "Operador", rcOPERADORES
+End Sub
+
+Private Sub Load_FUNCIONES_VBA()
+    ' Categoría: FUNCIONES_VBA
+    AddWord "Abs", "Funcion", rcFUNCIONES_VBA
+    AddWord "Array", "Funcion", rcFUNCIONES_VBA
+    AddWord "Asc", "Funcion", rcFUNCIONES_VBA
+    AddWord "AscW", "Funcion", rcFUNCIONES_VBA
+    AddWord "Atn", "Funcion", rcFUNCIONES_VBA
+    AddWord "CBool", "Funcion", rcFUNCIONES_VBA
+    AddWord "CByte", "Funcion", rcFUNCIONES_VBA
+    AddWord "CCur", "Funcion", rcFUNCIONES_VBA
+    AddWord "CDate", "Funcion", rcFUNCIONES_VBA
+    AddWord "CDbl", "Funcion", rcFUNCIONES_VBA
+    AddWord "CDec", "Funcion", rcFUNCIONES_VBA
+    AddWord "Choose", "Funcion", rcFUNCIONES_VBA
+    AddWord "Chr", "Funcion", rcFUNCIONES_VBA
+    AddWord "ChrW", "Funcion", rcFUNCIONES_VBA
+    AddWord "CInt", "Funcion", rcFUNCIONES_VBA
+    AddWord "CLng", "Funcion", rcFUNCIONES_VBA
+    AddWord "Cos", "Funcion", rcFUNCIONES_VBA
+    AddWord "CreateObject", "Funcion", rcFUNCIONES_VBA
+    AddWord "CSng", "Funcion", rcFUNCIONES_VBA
+    AddWord "CStr", "Funcion", rcFUNCIONES_VBA
+    AddWord "CurDir", "Funcion", rcFUNCIONES_VBA
+    AddWord "Date", "Funcion", rcFUNCIONES_VBA
+    AddWord "DateAdd", "Funcion", rcFUNCIONES_VBA
+    AddWord "DateDiff", "Funcion", rcFUNCIONES_VBA
+    AddWord "DatePart", "Funcion", rcFUNCIONES_VBA
+    AddWord "DateSerial", "Funcion", rcFUNCIONES_VBA
+    AddWord "DateValue", "Funcion", rcFUNCIONES_VBA
+    AddWord "Day", "Funcion", rcFUNCIONES_VBA
+    AddWord "DDB", "Funcion", rcFUNCIONES_VBA
+    AddWord "Dir", "Funcion", rcFUNCIONES_VBA
+    AddWord "Environ", "Funcion", rcFUNCIONES_VBA
+    AddWord "EOF", "Funcion", rcFUNCIONES_VBA
+    AddWord "Error", "Funcion", rcFUNCIONES_VBA
+    AddWord "Exp", "Funcion", rcFUNCIONES_VBA
+    AddWord "FileAttr", "Funcion", rcFUNCIONES_VBA
+    AddWord "FileDateTime", "Funcion", rcFUNCIONES_VBA
+    AddWord "FileLen", "Funcion", rcFUNCIONES_VBA
+    AddWord "Fix", "Funcion", rcFUNCIONES_VBA
+    AddWord "Format", "Funcion", rcFUNCIONES_VBA
+    AddWord "FreeFile", "Funcion", rcFUNCIONES_VBA
+    AddWord "Get", "Funcion", rcFUNCIONES_VBA
+    AddWord "Hex", "Funcion", rcFUNCIONES_VBA
+    AddWord "Hour", "Funcion", rcFUNCIONES_VBA
+    AddWord "IIf", "Funcion", rcFUNCIONES_VBA
+    AddWord "Input", "Funcion", rcFUNCIONES_VBA
+    AddWord "InputBox", "Funcion", rcFUNCIONES_VBA
+    AddWord "InStr", "Funcion", rcFUNCIONES_VBA
+    AddWord "InStrRev", "Funcion", rcFUNCIONES_VBA
+    AddWord "Int", "Funcion", rcFUNCIONES_VBA
+    AddWord "IPmt", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsArray", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsDate", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsEmpty", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsError", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsMissing", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsNull", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsNumeric", "Funcion", rcFUNCIONES_VBA
+    AddWord "IsObject", "Funcion", rcFUNCIONES_VBA
+    AddWord "LBound", "Funcion", rcFUNCIONES_VBA
+    AddWord "LCase", "Funcion", rcFUNCIONES_VBA
+    AddWord "Left", "Funcion", rcFUNCIONES_VBA
+    AddWord "Len", "Funcion", rcFUNCIONES_VBA
+    AddWord "Loc", "Funcion", rcFUNCIONES_VBA
+    AddWord "LOF", "Funcion", rcFUNCIONES_VBA
+    AddWord "Log", "Funcion", rcFUNCIONES_VBA
+    AddWord "LTrim", "Funcion", rcFUNCIONES_VBA
+    AddWord "Mid", "Funcion", rcFUNCIONES_VBA
+    AddWord "Minute", "Funcion", rcFUNCIONES_VBA
+    AddWord "MkDir", "Funcion", rcFUNCIONES_VBA
+    AddWord "Month", "Funcion", rcFUNCIONES_VBA
+    AddWord "MsgBox", "Funcion", rcFUNCIONES_VBA
+    AddWord "Now", "Funcion", rcFUNCIONES_VBA
+    AddWord "Oct", "Funcion", rcFUNCIONES_VBA
+    AddWord "Partition", "Funcion", rcFUNCIONES_VBA
+    AddWord "Pmt", "Funcion", rcFUNCIONES_VBA
+    AddWord "PPmt", "Funcion", rcFUNCIONES_VBA
+    AddWord "PV", "Funcion", rcFUNCIONES_VBA
+    AddWord "QBColor", "Funcion", rcFUNCIONES_VBA
+    AddWord "Replace", "Funcion", rcFUNCIONES_VBA
+    AddWord "Right", "Funcion", rcFUNCIONES_VBA
+    AddWord "Rnd", "Funcion", rcFUNCIONES_VBA
+    AddWord "RGB", "Funcion", rcFUNCIONES_VBA
+    AddWord "RTrim", "Funcion", rcFUNCIONES_VBA
+    AddWord "Second", "Funcion", rcFUNCIONES_VBA
+    AddWord "Seek", "Funcion", rcFUNCIONES_VBA
+    AddWord "Sgn", "Funcion", rcFUNCIONES_VBA
+    AddWord "Shell", "Funcion", rcFUNCIONES_VBA
+    AddWord "Sin", "Funcion", rcFUNCIONES_VBA
+    AddWord "SLN", "Funcion", rcFUNCIONES_VBA
+    AddWord "Space", "Funcion", rcFUNCIONES_VBA
+    AddWord "Split", "Funcion", rcFUNCIONES_VBA
+    AddWord "Sqr", "Funcion", rcFUNCIONES_VBA
+    AddWord "StrComp", "Funcion", rcFUNCIONES_VBA
+    AddWord "String", "Funcion", rcFUNCIONES_VBA
+    AddWord "Tan", "Funcion", rcFUNCIONES_VBA
+    AddWord "Time", "Funcion", rcFUNCIONES_VBA
+    AddWord "TimeSerial", "Funcion", rcFUNCIONES_VBA
+    AddWord "TimeValue", "Funcion", rcFUNCIONES_VBA
+    AddWord "Trim", "Funcion", rcFUNCIONES_VBA
+    AddWord "TypeName", "Funcion", rcFUNCIONES_VBA
+    AddWord "UBound", "Funcion", rcFUNCIONES_VBA
+    AddWord "UCase", "Funcion", rcFUNCIONES_VBA
+    AddWord "Val", "Funcion", rcFUNCIONES_VBA
+    AddWord "VarType", "Funcion", rcFUNCIONES_VBA
+    AddWord "Weekday", "Funcion", rcFUNCIONES_VBA
+    AddWord "Year", "Funcion", rcFUNCIONES_VBA
+End Sub
+
+Private Sub Load_CONTROL_FLUJO_SISTEMA()
+    ' Categoría: CONTROL_FLUJO_SISTEMA
+    AddWord "DoEvents", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Stop", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "End", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Resume", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Resume Next", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "On Error", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "On Error GoTo", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "On Error Resume Next", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Err.Clear", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Err.Raise", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Exit Sub", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Exit Function", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+    AddWord "Exit Property", "ProcedimientoDelSistema", rcCONTROL_FLUJO_SISTEMA
+End Sub

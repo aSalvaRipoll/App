@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="USysRibbons.xsd" generated="2025-12-15T09:19:26">
+<USysRibbons>
+<ID>1</ID>
+<RibbonName>Inspector</RibbonName>
+<RibbonXML>&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;&gt;
+  &lt;ribbon&gt;
+    &lt;tabs&gt;
+      &lt;tab id=&quot;tabInspector&quot; label=&quot;Inspector VBA&quot;&gt;
+        &lt;group id=&quot;grpInspector&quot; label=&quot;Herramientas&quot;&gt;
+          &lt;button id=&quot;btnEjecutarInspector&quot;
+                  label=&quot;Ejecutar Inspector&quot;
+                  imageMso=&quot;TraceError&quot;
+                  size=&quot;large&quot;
+                  onAction=&quot;OnEjecutarInspector&quot;/&gt;
+          &lt;button id=&quot;btnRepararProyecto&quot;
+                  label=&quot;Reparar Proyecto&quot;
+                  imageMso=&quot;DatabaseEncodeDecode&quot;
+                  size=&quot;large&quot;
+                  onAction=&quot;OnRepararProyecto&quot;/&gt;
+        &lt;/group&gt;
+      &lt;/tab&gt;
+    &lt;/tabs&gt;
+  &lt;/ribbon&gt;
+&lt;/customUI&gt;</RibbonXML>
+</USysRibbons>
+<USysRibbons>
+<ID>2</ID>
+<RibbonName>InspectorVBAOld</RibbonName>
+<RibbonXML>&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;&gt;
+  &lt;ribbon&gt;
+    &lt;tabs&gt;
+      &lt;tab id=&quot;tabInspector&quot; label=&quot;Inspector VBA&quot;&gt;
+        &lt;group id=&quot;grpInspector&quot; label=&quot;Herramientas&quot;&gt;
+          &lt;button id=&quot;btnEjecutarInspector&quot;
+                  label=&quot;Ejecutar Inspector&quot;
+                   imageMso=&quot;TraceError&quot;
+                  size=&quot;large&quot;
+                  onAction=&quot;OnEjecutarInspector&quot;/&gt;
+          &lt;button id=&quot;btnRepararProyecto&quot;
+                  label=&quot;Reparar Proyecto&quot;
+                  imageMso=&quot;DatabaseEncodeDecode&quot;
+                  size=&quot;large&quot;
+                  onAction=&quot;OnRepararProyecto&quot;/&gt;
+        &lt;/group&gt;
+      &lt;/tab&gt;
+    &lt;/tabs&gt;
+  &lt;/ribbon&gt;
+&lt;/customUI&gt;</RibbonXML>
+</USysRibbons>
+<USysRibbons>
+<ID>3</ID>
+<RibbonName>contextualTabSet1</RibbonName>
+<RibbonXML>&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;&gt;
+
+  &lt;ribbon&gt;
+    &lt;contextualTabs&gt;
+
+      &lt;!-- ===================================================== --&gt;
+      &lt;!-- CINTA PARA FORMULARIO DE RESULTADOS --&gt;
+      &lt;!-- ===================================================== --&gt;
+      &lt;tabSet idMso=&quot;TabSetForm&quot;&gt;
+        &lt;tab id=&quot;tabInspectorResultados&quot; label=&quot;Inspector – Resultados&quot;&gt;
+          &lt;group id=&quot;grpAcciones&quot; label=&quot;Acciones&quot;&gt;
+            &lt;button id=&quot;btnAnalizar&quot; 
+                    label=&quot;Analizar&quot; 
+                    imageMso=&quot;Zoom&quot; 
+                    onAction=&quot;Ribbon_Analizar&quot;
+                    screentip=&quot;Analizar proyecto&quot;
+                    supertip=&quot;Ejecuta el análisis completo del proyecto VBA para detectar problemas y generar resultados.&quot; /&gt;
+            &lt;button id=&quot;btnReparar&quot; 
+                    label=&quot;Reparar&quot; 
+                    imageMso=&quot;Repair&quot; 
+                    onAction=&quot;Ribbon_Reparar&quot;
+                    screentip=&quot;Reparar proyecto&quot;
+                    supertip=&quot;Aplica las rutinas de reparación sobre el proyecto VBA, corrigiendo referencias y módulos dañados.&quot; /&gt;
+          &lt;/group&gt;
+          &lt;group id=&quot;grpLogsSalir&quot; label=&quot;Ver Log y Salir&quot;&gt;
+            &lt;button id=&quot;btnAbrirLogs&quot; 
+                    label=&quot;Abrir carpeta de logs&quot; 
+                    imageMso=&quot;FolderOpen&quot; 
+                    onAction=&quot;Ribbon_AbrirCarpetaLogs&quot;
+                    screentip=&quot;Abrir carpeta de logs&quot; 
+                    supertip=&quot;Abre la carpeta donde el Inspector guarda los archivos de log diarios y de reparaciones.&quot; /&gt;
+            &lt;button id=&quot;btnCerrar&quot; 
+                    label=&quot;Cerrar&quot; 
+                    imageMso=&quot;FileClose&quot; 
+                    onAction=&quot;Ribbon_Cerrar&quot;
+                    screentip=&quot;Cerrar Inspector&quot;
+                    supertip=&quot;Cierra el formulario principal del Inspector VBA.&quot; /&gt;
+          &lt;/group&gt;
+        &lt;/tab&gt;
+      &lt;/tabSet&gt;
+
+      &lt;!-- ===================================================== --&gt;
+      &lt;!-- CINTA PARA SUBFORMULARIO DE EXPORTACIONES --&gt;
+      &lt;!-- ===================================================== --&gt;
+      &lt;tabSet idMso=&quot;TabSetSubform&quot;&gt;
+        &lt;tab id=&quot;tabInspectorExportar&quot; label=&quot;Inspector – Exportar&quot;&gt;
+          &lt;group id=&quot;grpExportar&quot; label=&quot;Exportación&quot;&gt;
+            &lt;dropDown id=&quot;cboFormato&quot; 
+                      label=&quot;Formato&quot; 
+                      onChange=&quot;Ribbon_CambioFormato&quot;
+                      screentip=&quot;Seleccionar formato&quot;
+                      supertip=&quot;Elige el formato de exportación (texto, Excel, HTML, etc.) para los resultados del Inspector.&quot; /&gt;
+            &lt;dropDown id=&quot;cboEstilo&quot; 
+                      label=&quot;Estilo HTML&quot; 
+                      getVisible=&quot;Ribbon_MostrarEstilo&quot; 
+                      onChange=&quot;Ribbon_CambioEstilo&quot;
+                      screentip=&quot;Seleccionar estilo HTML&quot;
+                      supertip=&quot;Elige el estilo visual para la exportación en formato HTML.&quot; /&gt;
+            &lt;button id=&quot;btnExaminar&quot; 
+                    label=&quot;Examinar...&quot; 
+                    imageMso=&quot;FileSaveAs&quot; 
+                    onAction=&quot;Ribbon_Examinar&quot;
+                    screentip=&quot;Examinar ruta&quot;
+                    supertip=&quot;Permite seleccionar la carpeta o archivo de destino para la exportación.&quot; /&gt;
+            &lt;button id=&quot;btnExportar&quot; 
+                    label=&quot;Exportar&quot; 
+                    imageMso=&quot;ExportTextFile&quot; 
+                    onAction=&quot;Ribbon_Exportar&quot;
+                    screentip=&quot;Exportar resultados&quot;
+                    supertip=&quot;Genera la exportación de los resultados del Inspector en el formato y estilo seleccionados.&quot; /&gt;
+          &lt;/group&gt;
+        &lt;/tab&gt;
+      &lt;/tabSet&gt;
+
+    &lt;/contextualTabs&gt;
+  &lt;/ribbon&gt;
+
+&lt;/customUI&gt;</RibbonXML>
+</USysRibbons>
+<USysRibbons>
+<ID>4</ID>
+<RibbonName>InspectorVBA</RibbonName>
+<RibbonXML>&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;&gt;
+  &lt;ribbon&gt;
+    &lt;tabs&gt;
+      &lt;tab id=&quot;tabInspectorVBA&quot;
+           label=&quot;Inspector VBA&quot;
+           getVisible=&quot;Ribbon_InspectorVBA_Visible&quot;&gt;
+
+        &lt;group id=&quot;grpLanzador&quot; label=&quot;Inspector&quot;&gt;
+          &lt;button id=&quot;btnAbrirInspector&quot;
+                  label=&quot;Abrir Inspector&quot;
+                  imageMso=&quot;DatabaseFileOpen&quot;
+                  onAction=&quot;Ribbon_AbrirInspector&quot;
+                  screentip=&quot;Abrir Inspector&quot;
+                  supertip=&quot;Abre el formulario del Inspector VBA.&quot; /&gt;
+        &lt;/group&gt;
+
+      &lt;/tab&gt;
+    &lt;/tabs&gt;
+  &lt;/ribbon&gt;
+&lt;/customUI&gt;</RibbonXML>
+</USysRibbons>
+<USysRibbons>
+<ID>5</ID>
+<RibbonName>contextualTabSet</RibbonName>
+<RibbonXML>&lt;customUI xmlns=&quot;http://schemas.microsoft.com/office/2009/07/customui&quot;&gt;
+
+  &lt;ribbon&gt;
+    &lt;contextualTabs&gt;
+
+      &lt;!-- ===================================================== --&gt;
+      &lt;!-- CINTA PARA FORMULARIO DE RESULTADOS --&gt;
+      &lt;!-- ===================================================== --&gt;
+      &lt;tabSet idMso=&quot;TabSetForm&quot;&gt;
+        &lt;tab id=&quot;tabInspectorResultados&quot; label=&quot;Inspector – Resultados&quot;&gt;
+          &lt;group id=&quot;grpAcciones&quot; label=&quot;Acciones&quot;&gt;
+            &lt;button id=&quot;btnAnalizar&quot; 
+                    label=&quot;Analizar&quot; 
+                    imageMso=&quot;Zoom&quot; 
+                    onAction=&quot;Ribbon_Analizar&quot; /&gt;
+            &lt;button id=&quot;btnReparar&quot; 
+                    label=&quot;Reparar&quot; 
+                    imageMso=&quot;Repair&quot; 
+                    onAction=&quot;Ribbon_Reparar&quot; /&gt;
+          &lt;/group&gt;
+
+          &lt;group id=&quot;grpLogsSalir&quot; label=&quot;Ver Log y Salir&quot;&gt;
+            &lt;button id=&quot;btnAbrirLogs&quot; 
+                    label=&quot;Abrir carpeta de logs&quot; 
+                    imageMso=&quot;FolderOpen&quot; 
+                    onAction=&quot;Ribbon_AbrirCarpetaLogs&quot; /&gt;
+            &lt;button id=&quot;btnCerrar&quot; 
+                    label=&quot;Cerrar&quot; 
+                    imageMso=&quot;FileClose&quot; 
+                    onAction=&quot;Ribbon_Cerrar&quot; /&gt;
+          &lt;/group&gt;
+        &lt;/tab&gt;
+      &lt;/tabSet&gt;
+
+      &lt;!-- ===================================================== --&gt;
+      &lt;!-- CINTA PARA SUBFORMULARIO DE EXPORTACIONES --&gt;
+      &lt;!-- ===================================================== --&gt;
+      &lt;tabSet idMso=&quot;TabSetSubform&quot;&gt;
+        &lt;tab id=&quot;tabInspectorExportar&quot; label=&quot;Inspector – Exportar&quot;&gt;
+          &lt;group id=&quot;grpExportar&quot; label=&quot;Exportación&quot;&gt;
+
+            &lt;dropDown id=&quot;cboFormato&quot;
+                      label=&quot;Formato&quot;
+                      getItemCount=&quot;Ribbon_Formato_Count&quot;
+                      getItemID=&quot;Ribbon_Formato_ID&quot;
+                      getItemLabel=&quot;Ribbon_Formato_Label&quot;
+                      getSelectedItemID=&quot;Ribbon_Formato_Selected&quot; /&gt;
+
+            &lt;dropDown id=&quot;cboEstilo&quot;
+                      label=&quot;Estilo HTML&quot;
+                      getVisible=&quot;Ribbon_MostrarEstilo&quot;
+                      getItemCount=&quot;Ribbon_Estilo_Count&quot;
+                      getItemID=&quot;Ribbon_Estilo_ID&quot;
+                      getItemLabel=&quot;Ribbon_Estilo_Label&quot;
+                      getSelectedItemID=&quot;Ribbon_Estilo_Selected&quot; /&gt;
+
+            &lt;button id=&quot;btnExaminar&quot; 
+                    label=&quot;Examinar...&quot; 
+                    imageMso=&quot;FileSaveAs&quot; 
+                    onAction=&quot;Ribbon_Examinar&quot; /&gt;
+
+            &lt;button id=&quot;btnExportar&quot; 
+                    label=&quot;Exportar&quot; 
+                    imageMso=&quot;ExportTextFile&quot; 
+                    onAction=&quot;Ribbon_Exportar&quot; /&gt;
+
+          &lt;/group&gt;
+        &lt;/tab&gt;
+      &lt;/tabSet&gt;
+
+    &lt;/contextualTabs&gt;
+  &lt;/ribbon&gt;
+
+&lt;/customUI&gt;</RibbonXML>
+</USysRibbons>
+</dataroot>

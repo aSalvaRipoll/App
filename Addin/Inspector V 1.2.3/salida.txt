@@ -1,0 +1,85 @@
+
+15/12/2025  13:51             2.912 clsAddin.cls
+15/12/2025  13:51             4.030 clsCatalogoInspector.cls
+15/12/2025  13:51             4.148 clsCatalogoSimbolos.cls
+15/12/2025  13:51             5.135 clsClase.cls
+15/12/2025  13:51             4.894 clsInformeSimbolos.cls
+15/12/2025  13:51             6.461 clsMiembro.cls
+15/12/2025  13:51             5.783 clsModulo.cls
+15/12/2025  13:51             6.552 clsResultadoAn lisis.cls
+15/12/2025  13:51             2.215 clsResultados.cls
+15/12/2025  13:51             3.407 clsSimbolo.cls
+15/12/2025  13:51               978 Form_frmInicio.cls
+15/12/2025  13:51             2.383 Form_frmResultados.cls
+15/12/2025  13:51             7.054 Form_subExportarInspector.cls
+15/12/2025  13:51            10.338 modAuxAnalisis.bas
+15/12/2025  13:51             2.705 modAuxExporta.bas
+15/12/2025  13:51             6.890 modBuscarObjetos.bas
+15/12/2025  13:51             5.549 modBuscarReferencias.bas
+15/12/2025  13:51             5.438 modEntornoInspector.bas
+15/12/2025  13:51             9.308 modExportaExcel.bas
+15/12/2025  13:51             8.793 modExportaHTML.bas
+15/12/2025  13:51             5.657 modExportaTXT.bas
+15/12/2025  13:51             4.433 modInicioEntornoUsuario.bas
+15/12/2025  13:51             2.604 modInicioFin.bas
+15/12/2025  13:51             1.968 modInspectorAutoRepair.bas
+15/12/2025  13:51             1.639 modInspectorDebug.bas
+15/12/2025  13:51             4.417 modInspectorEntorno.bas
+15/12/2025  13:51             4.532 modInspectorLogs.bas
+15/12/2025  13:51            13.106 modInspectorMain.bas
+15/12/2025  13:51             4.807 modInspectorRepair.bas
+15/12/2025  13:51             4.072 modMensajes.bas
+15/12/2025  13:51             3.412 modMenus.bas
+15/12/2025  13:51             2.141 modNavegacion.bas
+15/12/2025  13:51             2.198 modPreferenciasInspector.bas
+15/12/2025  13:51             9.108 modReglasInspector.bas
+15/12/2025  13:51             5.572 modRibbonInspector.bas
+15/12/2025  13:51             1.276 modSimbolosInspector.bas
+15/12/2025  13:51             5.040 modVBIDE.bas
+15/12/2025  13:51             6.883 mod_ConstantesVariables.bas
+15/12/2025  13:51             1.039 References.txt
+
+ 
+ 
+clsAddin.cls
+clsCatalogoInspector.cls
+clsCatalogoSimbolos.cls
+clsClase.cls
+clsInformeSimbolos.cls
+clsMiembro.cls
+clsModulo.cls
+clsResultadoAn lisis.cls
+clsResultados.cls
+clsSimbolo.cls
+
+Form_frmInicio.cls
+Form_frmResultados.cls
+Form_subExportarInspector.cls
+
+modAuxAnalisis.bas
+modAuxExporta.bas
+modBuscarObjetos.bas
+modBuscarReferencias.bas
+modEntornoInspector.bas
+modExportaExcel.bas
+modExportaHTML.bas
+modExportaTXT.bas
+modInicioEntornoUsuario.bas
+modInicioFin.bas
+modInspectorAutoRepair.bas
+modInspectorDebug.bas
+modInspectorEntorno.bas
+modInspectorLogs.bas
+modInspectorMain.bas
+modInspectorRepair.bas
+modMensajes.bas
+modMenus.bas
+modNavegacion.bas
+modPreferenciasInspector.bas
+modReglasInspector.bas
+modRibbonInspector.bas
+modSimbolosInspector.bas
+modVBIDE.bas
+mod_ConstantesVariables.bas
+
+References.txt

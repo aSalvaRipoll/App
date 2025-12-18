@@ -1,0 +1,201 @@
+-------------------- Ejemplo 1 --------------------
+Crear un resultado de análisis.
+
+' Crear un nuevo resultado asociado a un símbolo o miembro
+Dim r As New dsResultadoAnalisis
+
+' Inicializar el resultado con:
+' - el símbolo afectado
+' - una descripción del problema
+' - el nivel de advertencia
+r.Inicializar simbolo, "Descripción del problema", NivelAdvertencia
+
+' Añadir el resultado a la colección global del Inspector
+gResultadosInspector.Agregar r
+
+
+-------------------- Ejemplo 2 --------------------
+Regla que detecta funciones públicas sin comentario.
+
+' Recorrer todos los miembros del catálogo
+Dim m As dsMiembro
+For Each m In catalogo.Miembros
+
+    ' Comprobar si es una función pública
+    If m.EsFuncionPublica Then
+
+        ' Comprobar si no tiene comentario inicial
+        If Not m.TieneComentarioInicial Then
+
+            ' Crear un resultado de análisis
+            Dim r As New dsResultadoAnalisis
+            r.Inicializar m, "La función pública no tiene comentario inicial.", NivelAdvertencia
+
+            ' Añadirlo a la colección global
+            gResultadosInspector.Agregar r
+        End If
+    End If
+Next m
+
+
+-------------------- Ejemplo 3 --------------------
+Reparación automática asociada a un resultado.
+
+' Obtener el miembro afectado por el resultado
+Dim m As dsMiembro
+Set m = resultado.Simbolo
+
+' Si no tiene comentario, insertarlo automáticamente
+If Not m.TieneComentarioInicial Then
+
+    ' Insertar un comentario estándar
+    m.InsertarComentario "Comentario generado automáticamente por InspectorVBA"
+
+    ' Marcar el resultado como reparado
+    resultado.MarcarComoReparado
+End If
+
+
+-------------------- Ejemplo 4 --------------------
+Exportación a TXT.
+
+' Abrir un archivo de texto para escribir los resultados
+Dim f As Integer
+f = FreeFile
+Open rutaSalida For Output As #f
+
+' Recorrer todos los resultados y escribirlos en el archivo
+Dim r As dsResultadoAnalisis
+For Each r In gResultadosInspector.Items
+    Print #f, r.ToLineaTXT
+Next r
+
+' Cerrar el archivo
+Close #f
+
+
+-------------------- Ejemplo 5 --------------------
+Nueva clase ds*.
+
+' Clase dsNuevaEntidad
+' Representa una entidad simple con nombre y valor
+
+Private pNombre As String
+Private pValor As Long
+
+Public Property Get Nombre() As String
+    Nombre = pNombre
+End Property
+
+Public Property Let Nombre(ByVal v As String)
+    pNombre = v
+End Property
+
+Public Property Get Valor() As Long
+    Valor = pValor
+End Property
+
+Public Property Let Valor(ByVal v As Long)
+    pValor = v
+End Property
+
+' Método de inicialización
+Public Sub Inicializar(ByVal n As String, ByVal v As Long)
+    pNombre = n
+    pValor = v
+End Sub
+
+
+-------------------- Ejemplo 6 --------------------
+Callback de Ribbon.
+
+' Callback llamado desde el Ribbon cuando el usuario pulsa un botón
+Sub Ribbon_Analizar(control As IRibbonControl)
+
+    ' Delegar la acción en la fachada pública del Inspector
+    Call Inspector_IniciarAnalisis
+End Sub
+
+
+-------------------- Ejemplo 7 --------------------
+Navegar a un miembro del proyecto.
+
+' Navegar a un módulo y posicionar el cursor en la línea del miembro
+Call Navegar_A_Miembro(modulo.Nombre, miembro.LineaInicio)
+
+
+-------------------- Ejemplo 8 --------------------
+Nueva preferencia del usuario.
+
+' Guardar una preferencia
+Call GuardarPreferencia("MostrarDetalles", CStr(True))
+
+' Cargar una preferencia con valor por defecto
+Dim valor As Boolean
+valor = CBool(CargarPreferencia("MostrarDetalles", "False"))
+
+
+-------------------- Ejemplo 9 --------------------
+Registrar en logs.
+
+' Registrar una acción realizada por el Inspector
+Call Log_Agregar("Reparación aplicada al miembro: " & miembro.Nombre)
+
+
+-------------------- Ejemplo 10 --------------------
+Regla completa del ejemplo final.
+
+' Recorrer todos los miembros del catálogo
+Dim m As dsMiembro
+For Each m In catalogo.Miembros
+
+    ' Detectar funciones públicas sin comentario
+    If m.EsFuncionPublica And Not m.TieneComentarioInicial Then
+
+        ' Crear un resultado
+        Dim r As New dsResultadoAnalisis
+        r.Inicializar m, "Función pública sin comentario inicial.", NivelAdvertencia
+
+        ' Añadirlo a la colección
+        gResultadosInspector.Agregar r
+    End If
+Next m
+
+
+-------------------- Ejemplo 11 --------------------
+Reparación automática del ejemplo final.
+
+' Obtener el miembro afectado
+Dim m As dsMiembro
+Set m = resultado.Simbolo
+
+' Insertar comentario estándar si falta
+If Not m.TieneComentarioInicial Then
+
+    m.InsertarComentario "' Comentario estándar generado por InspectorVBA"
+
+    ' Marcar como reparado
+    resultado.MarcarComoReparado
+End If
+
+
+-------------------- Ejemplo 12 --------------------
+Exportación del resultado del ejemplo final.
+
+' Convertir un resultado a una fila HTML
+Function ResultadoAHTML(r As dsResultadoAnalisis) As String
+
+    ResultadoAHTML = "<tr><td>" & r.Simbolo.Nombre & _
+                     "</td><td>" & r.Descripcion & "</td></tr>"
+End Function
+
+
+-------------------- Ejemplo 13 --------------------
+Botón en Ribbon para la reparación del ejemplo final.
+
+' Callback del botón de reparación
+Sub Ribbon_Reparar(control As IRibbonControl)
+
+    ' Aplicar todas las reparaciones disponibles
+    Call Inspector_AplicarReparaciones
+End Sub

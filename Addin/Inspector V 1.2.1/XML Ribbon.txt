@@ -1,0 +1,157 @@
+
+08448868158275
+
+<button id="btnAbrirLogs"
+        label="Abrir carpeta de logs"
+        imageMso="FolderOpen"
+        onAction="Inspector_AbrirCarpetaLogs"
+        screentip="Abrir carpeta de logs"
+        supertip="Abre la carpeta donde el Inspector guarda los archivos de log diarios y de reparaciones." />
+		
+		
+InspectorVBA
+		
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon>
+    <tabs>
+      <tab id="tabInspector" label="Inspector VBA">
+        <group id="grpInspector" label="Herramientas">
+          <button id="btnEjecutarInspector"
+                  label="Ejecutar Inspector"
+                   imageMso="TraceError"
+                  size="large"
+                  onAction="OnEjecutarInspector"/>
+          <button id="btnRepararProyecto"
+                  label="Reparar Proyecto"
+                  imageMso="DatabaseEncodeDecode"
+                  size="large"
+                  onAction="OnRepararProyecto"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
+
+contextualTabSet
+
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+
+  <!-- ===================================================== -->
+  <!-- CINTA PARA FORMULARIO DE RESULTADOS -->
+  <!-- ===================================================== -->
+  <contextualTabs>
+    <tabSet idMso="TabSetForm">
+      <tab id="tabInspectorResultados" label="Inspector – Resultados">
+        <group id="grpAcciones" label="Acciones">
+          <button id="btnAnalizar" label="Analizar" imageMso="Zoom" onAction="Ribbon_Analizar"/>
+          <button id="btnReparar" label="Reparar" imageMso="Repair" onAction="Ribbon_Reparar"/>
+		</group>
+		<group id="grpLogsSalir" label="Ver Log y Salir">
+		<button id="btnAbrirLogs" label="Abrir carpeta de logs" imageMso="FolderOpen" onAction="Inspector_AbrirCarpetaLogs" screentip="Abrir carpeta de logs" supertip="Abre la carpeta donde el Inspector guarda los archivos de log diarios y de reparaciones." />
+
+          <button id="btnCerrar" label="Cerrar" imageMso="FileClose" onAction="Ribbon_Cerrar"/>
+        </group>
+      </tab>
+    </tabSet>
+  </contextualTabs>
+
+
+  <!-- ===================================================== -->
+  <!-- CINTA PARA SUBFORMULARIO DE EXPORTACIONES -->
+  <!-- ===================================================== -->
+  <contextualTabs>
+    <tabSet idMso="TabSetSubform">
+      <tab id="tabInspectorExportar" label="Inspector – Exportar">
+        <group id="grpExportar" label="Exportación">
+          <dropDown id="cboFormato" label="Formato" onChange="Ribbon_CambioFormato"/>
+          <dropDown id="cboEstilo" label="Estilo HTML" getVisible="Ribbon_MostrarEstilo" onChange="Ribbon_CambioEstilo"/>
+          <button id="btnExaminar" label="Examinar..." imageMso="FileSaveAs" onAction="Ribbon_Examinar"/>
+          <button id="btnExportar" label="Exportar" imageMso="ExportTextFile" onAction="Ribbon_Exportar"/>
+        </group>
+      </tab>
+    </tabSet>
+  </contextualTabs>
+
+</customUI>
+
+
+contextualTabSet V2
+
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+
+  <!-- ===================================================== -->
+  <!-- CINTA PARA FORMULARIO DE RESULTADOS -->
+  <!-- ===================================================== -->
+  <contextualTabs>
+    <tabSet idMso="TabSetForm">
+      <tab id="tabInspectorResultados" label="Inspector – Resultados">
+        <group id="grpAcciones" label="Acciones">
+          <button id="btnAnalizar" 
+                  label="Analizar" 
+                  imageMso="Zoom" 
+                  onAction="Ribbon_Analizar"
+                  screentip="Analizar proyecto"
+                  supertip="Ejecuta el análisis completo del proyecto VBA para detectar problemas y generar resultados." />
+          <button id="btnReparar" 
+                  label="Reparar" 
+                  imageMso="Repair" 
+                  onAction="Ribbon_Reparar"
+                  screentip="Reparar proyecto"
+                  supertip="Aplica las rutinas de reparación sobre el proyecto VBA, corrigiendo referencias y módulos dañados." />
+        </group>
+        <group id="grpLogsSalir" label="Ver Log y Salir">
+          <button id="btnAbrirLogs" 
+                  label="Abrir carpeta de logs" 
+				  imageMso="FolderOpen" 
+				  onAction="Ribbon_AbrirCarpetaLogs"
+				  screentip="Abrir carpeta de logs" 
+				  supertip="Abre la carpeta donde el Inspector guarda los archivos de log diarios y de reparaciones." />
+          <button id="btnCerrar" 
+                  label="Cerrar" 
+                  imageMso="FileClose" 
+                  onAction="Ribbon_Cerrar"
+                  screentip="Cerrar Inspector"
+                  supertip="Cierra el formulario principal del Inspector VBA." />
+        </group>
+      </tab>
+    </tabSet>
+  </contextualTabs>
+
+
+  <!-- ===================================================== -->
+  <!-- CINTA PARA SUBFORMULARIO DE EXPORTACIONES -->
+  <!-- ===================================================== -->
+  <contextualTabs>
+    <tabSet idMso="TabSetSubform">
+      <tab id="tabInspectorExportar" label="Inspector – Exportar">
+        <group id="grpExportar" label="Exportación">
+          <dropDown id="cboFormato" 
+                    label="Formato" 
+                    onChange="Ribbon_CambioFormato"
+                    screentip="Seleccionar formato"
+                    supertip="Elige el formato de exportación (texto, Excel, HTML, etc.) para los resultados del Inspector." />
+          <dropDown id="cboEstilo" 
+                    label="Estilo HTML" 
+                    getVisible="Ribbon_MostrarEstilo" 
+                    onChange="Ribbon_CambioEstilo"
+                    screentip="Seleccionar estilo HTML"
+                    supertip="Elige el estilo visual para la exportación en formato HTML." />
+          <button id="btnExaminar" 
+                  label="Examinar..." 
+                  imageMso="FileSaveAs" 
+                  onAction="Ribbon_Examinar"
+                  screentip="Examinar ruta"
+                  supertip="Permite seleccionar la carpeta o archivo de destino para la exportación." />
+          <button id="btnExportar" 
+                  label="Exportar" 
+                  imageMso="ExportTextFile" 
+                  onAction="Ribbon_Exportar"
+                  screentip="Exportar resultados"
+                  supertip="Genera la exportación de los resultados del Inspector en el formato y estilo seleccionados." />
+        </group>
+      </tab>
+    </tabSet>
+  </contextualTabs>
+
+</customUI>

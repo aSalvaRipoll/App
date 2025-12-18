@@ -1,0 +1,14 @@
+Código
+DoEvents;ProcedimientoDelSistema
+Stop;ProcedimientoDelSistema
+End;ProcedimientoDelSistema
+Resume;ProcedimientoDelSistema
+Resume Next;ProcedimientoDelSistema
+On Error;ProcedimientoDelSistema
+On Error GoTo;ProcedimientoDelSistema
+On Error Resume Next;ProcedimientoDelSistema
+Err.Clear;ProcedimientoDelSistema
+Err.Raise;ProcedimientoDelSistema
+Exit Sub;ProcedimientoDelSistema
+Exit Function;ProcedimientoDelSistema
+Exit Property;ProcedimientoDelSistema

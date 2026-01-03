@@ -1,0 +1,273 @@
+🧱 Estructura profesional de tbmIconos
+Aquí tienes una estructura pensada para crecer:
+
+Campo	Tipo	Descripción
+ID_Icono	Autonumérico	Clave primaria
+Codigo	Texto corto	Identificador interno (ej: “FON_ACTIVA”)
+Icono	Texto corto	Emoji o símbolo
+Descripcion	Texto corto	Explicación
+Categoria	Texto corto	Agrupación (UI, Fonética, Alertas…)
+Activo	Sí/No	Para activar/desactivar iconos
+Orden	Número	Para ordenar iconos en formularios
+Esto te permite:
+
+filtrar iconos por categoría
+
+mostrar listas de iconos en combos
+
+cambiar iconos sin tocar SQL
+
+tener iconos desactivados sin borrarlos
+
+🌈 ¿Qué iconos incluir?
+Te propongo una tabla inicial con más de 60 iconos, organizada por categorías:
+
+✔ Fonética
+✔ Fonética activa
+
+✖ Sin fonética
+
+🗑️ Fonética borrada
+
+🔁 Recalcular
+
+📄 Historial
+
+✔ UI general
+✓ Aceptar
+
+✗ Cancelar
+
+➕ Añadir
+
+➖ Quitar
+
+✎ Editar
+
+💾 Guardar
+
+🔍 Buscar
+
+🏠 Inicio
+
+📁 Abrir
+
+📌 Fijar
+
+📎 Adjuntar
+
+✔ Estados
+🟢 Activo
+
+🔴 Inactivo
+
+🟡 Pendiente
+
+🔵 Información
+
+⚪ Neutro
+
+⚫ Bloqueado
+
+✔ Alertas
+⚠️ Advertencia
+
+❗ Error
+
+❓ Ayuda
+
+🔔 Notificación
+
+🚫 Prohibido
+
+✔ Decorativos
+★ Estrella
+
+☆ Estrella vacía
+
+● Punto
+
+○ Punto vacío
+
+◆ Diamante
+
+◇ Diamante vacío
+
+✔ Navegación
+▶ Siguiente
+
+◀ Anterior
+
+▲ Arriba
+
+▼ Abajo
+
+⏵ Reproducir
+
+⏸ Pausa
+
+⏹ Parar
+
+✔ Personas
+👤 Persona
+
+👥 Grupo
+
+🧑‍💼 Profesional
+
+🧑‍🎓 Estudiante
+
+Puedo prepararte la tabla completa en HTML para importar a Excel, igual que antes, con todos estos iconos listos para usar.
+
+🧬 Cómo integrarlo en tu UI
+✔ En un listbox
+sql
+SELECT I.Icono, P.NombreCompleto
+FROM Personas AS P
+LEFT JOIN tbmIconos AS I ON I.Codigo = 'FON_ACTIVA'
+✔ En un botón
+vb
+Me.btnAceptar.Caption = DLookup("Icono", "tbmIconos", "Codigo='OK'") & " Aceptar"
+✔ En una etiqueta
+vb
+Me.lblEstado.Caption = DLookup("Icono", "tbmIconos", "Codigo='ALERTA'") & " Revisa los datos"
+✔ En un subformulario
+Puedes mostrar iconos como si fueran imágenes, pero sin usar imágenes reales.
+
+============================================================================================================
+
+
+🌟 La tabla completa de todos los emojis no existe en un único archivo oficial,
+pero sí hay tres fuentes fiables donde puedes obtener TODOS los emojis, con sus códigos, categorías, nombres y versiones.
+
+Y lo mejor: puedes exportarlos a Excel y luego a Access sin perder color.
+
+🥇 1. Unicode.org — La fuente oficial (completa y técnica)
+Esta es la referencia absoluta.
+Unicode publica todas las listas oficiales de emojis, con:
+
+nombre oficial
+
+categoría
+
+subcategoría
+
+código Unicode
+
+versión en la que se añadió
+
+estado (activo, obsoleto, etc.)
+
+👉 Emoji List (Unicode Full List)  
+https://unicode.org/emoji/charts/full-emoji-list.html
+
+Ventajas
+Es la lista más completa del mundo
+
+Incluye todos los emojis aprobados por Unicode
+
+Se actualiza con cada versión
+
+Cómo usarla
+Seleccionas toda la tabla
+
+Copias
+
+Pegas en Excel
+
+Excel convierte la tabla automáticamente
+
+Importas a Access
+
+Funciona perfecto.
+
+🥈 2. Emojipedia — La más cómoda y visual
+https://emojipedia.org/
+
+Emojipedia es la “Wikipedia de los emojis”.
+
+Ventajas
+Vista previa en color
+
+Explicaciones
+
+Variantes de plataforma (Apple, Microsoft, Google…)
+
+Puedes copiar emojis directamente
+
+Puedes copiar listas completas por categoría
+
+Truco para Excel
+Copia desde Emojipedia
+
+Pega en Excel
+
+Cambia la fuente a Segoe UI Emoji
+
+¡Color restaurado!
+
+🥉 3. GitHub — Listas en CSV, JSON y XML
+Hay repositorios que mantienen listas completas de emojis en formatos listos para importar.
+
+Ejemplo muy usado:
+https://github.com/iamcal/emoji-data
+
+Incluye:
+
+JSON
+
+CSV
+
+PNG
+
+SVG
+
+Categorías
+
+Palabras clave
+
+Ventajas
+Perfecto si quieres automatizar
+
+Ideal para Access + VBA
+
+Puedes importar directamente el CSV a Access
+
+🌈 ¿Cuál te recomiendo para tu caso?
+Para tu tabla tbmIconos:
+Unicode.org  + Emojipedia  
+→ Copias las categorías que te interesan
+→ Las pegas en Excel
+→ Las importas a Access
+→ Y ya tienes tu tabla completa
+
+Para iconos PNG (banderas autonómicas, etc.):
+GitHub  
+→ Repositorios con PNG y SVG listos para usar
+
+🎁 Si quieres, puedo prepararte yo misma:
+✔ Una tabla Excel con TODOS los emojis (más de 3.600)
+✔ Organizados por categoría
+✔ Con columnas:
+Código Unicode
+
+Emoji
+
+Nombre oficial
+
+Categoría
+
+Subcategoría
+
+Palabras clave
+
+✔ Y lista para importar a Access como tbmIconos
+Solo dime si quieres:
+
+Tabla completa (3.600 emojis)
+
+Tabla reducida (solo los útiles para UI)
+
+Tabla personalizada (solo los que tú uses)
+
+Tú decides el nivel de detalle.

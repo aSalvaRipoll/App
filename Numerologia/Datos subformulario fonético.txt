@@ -1,0 +1,407 @@
+🌟 Objetivo
+Cuando el usuario seleccione una persona:
+
+El formulario carga los datos de la persona
+
+Se consulta la tabla Fonetica
+
+Si hay fonéticas asociadas:
+
+Se muestra un listado (listbox o subformulario)
+
+Se indica cuántas hay
+
+Se pueden seleccionar para ver los detalles
+
+Al seleccionar una fonética en el listado:
+
+Se carga la clase Fonetica
+
+Se vuelcan los datos al formulario
+
+Todo limpio, modular y sin duplicar lógica.
+
+🧱 1. Estructura recomendada
+✔ Formulario principal: frmPersona
+Datos de la persona
+
+Controles de fonética (idiomas, reglas, resultados)
+
+Botón “Calcular fonética”
+
+✔ Subformulario o listbox: lstFoneticas
+Muestra todas las fonéticas asociadas a la persona
+
+Multicolumna
+
+Seleccionable
+
+🧩 2. Diseño del listbox multicolumna
+Campos recomendados:
+IDFonetica (oculto)
+
+FechaCalculo
+
+ModoFonetico (Tradicional/Fonético)
+
+IdiomaNombre
+
+IdiomaApe1
+
+IdiomaApe2
+
+Ejemplo de RowSource SQL:
+sql
+SELECT 
+    Fonetica.IDFonetica,
+    Fonetica.FechaCalculo,
+    I1.NombreIdioma AS IdiomaNombre,
+    I2.NombreIdioma AS IdiomaApe1,
+    I3.NombreIdioma AS IdiomaApe2,
+    IIf(Fonetica.ModoFonetico=1,'Fonético','Tradicional') AS Modo
+FROM 
+    ((Fonetica
+    LEFT JOIN Idioma AS I1 ON Fonetica.IDIdiomaNombre = I1.IDIdioma)
+    LEFT JOIN Idioma AS I2 ON Fonetica.IDIdiomaApe1 = I2.IDIdioma)
+    LEFT JOIN Idioma AS I3 ON Fonetica.IDIdiomaApe2 = I3.IDIdioma
+WHERE 
+    Fonetica.IDPersona = [Forms]![frmPersona]![IDPersona]
+ORDER BY 
+    Fonetica.FechaCalculo DESC;
+Esto te da un listado claro y útil.
+
+🧱 3. Cargar el listbox al seleccionar persona
+En el formulario principal:
+
+vb
+Private Sub IDPersona_AfterUpdate()
+    CargarListadoFoneticas
+End Sub
+Y en un módulo externo:
+
+vb
+Public Sub CargarListadoFoneticas()
+    Forms!frmPersona!lstFoneticas.Requery
+End Sub
+🎯 4. Al seleccionar una fonética en el listbox → cargar la clase y el formulario
+En el evento lstFoneticas_AfterUpdate:
+
+vb
+Private Sub lstFoneticas_AfterUpdate()
+    Dim IDF As Long
+
+    IDF = Me!lstFoneticas.Column(0) ' IDFonetica
+
+    Set Fonetica = CargarFonetica(IDF)
+
+    CargarFormularioDesdeFonetica Me, Fonetica
+End Sub
+Esto hace que:
+
+Seleccionas una fila
+
+Se carga la clase Fonetica
+
+Se vuelcan los datos al formulario
+
+Sin duplicar nada.
+
+
+
+==============================================================================
+
+
+
+
+Tengo este formulario que busca las personas en la tabla de datos, le agregaré el subformulario aquí.
+Perfecto, Alba. Ese es el lugar ideal para integrarlo: justo donde el usuario selecciona una persona, puedes mostrarle al instante todas las configuraciones fonéticas asociadas, sin cambiar de contexto.
+
+Vamos a diseñarlo paso a paso, con tu estilo limpio y modular.
+
+🧱 1. ¿Qué tipo de subformulario usar?
+Tienes dos opciones válidas:
+
+✅ Opción A: Listbox multicolumna
+Más ligero
+
+Más rápido
+
+Más fácil de personalizar
+
+Ideal si solo necesitas mostrar y seleccionar
+
+✅ Opción B: Subformulario vinculado
+Más potente
+
+Permite edición directa
+
+Ideal si quieres mostrar más campos o permitir acciones (eliminar, duplicar, comparar)
+
+Tú ya intuiste que el listbox multicolumna es suficiente, y estoy de acuerdo.
+Pero si en el futuro quieres permitir edición directa, el subformulario es más flexible.
+
+🧩 2. Diseño del listbox lstFoneticas
+✔ Columnas recomendadas:
+Fecha de cálculo
+
+Modo fonético (Tradicional / Fonético)
+
+Idioma nombre
+
+Idioma ape1
+
+Idioma ape2
+
+✔ RowSource SQL:
+sql
+SELECT 
+    F.IDFonetica,
+    F.FechaCalculo,
+    I1.NombreIdioma AS IdiomaNombre,
+    I2.NombreIdioma AS IdiomaApe1,
+    I3.NombreIdioma AS IdiomaApe2,
+    IIf(F.ModoFonetico=1,'Fonético','Tradicional') AS Modo
+FROM 
+    ((Fonetica AS F
+    LEFT JOIN Idioma AS I1 ON F.IDIdiomaNombre = I1.IDIdioma)
+    LEFT JOIN Idioma AS I2 ON F.IDIdiomaApe1 = I2.IDIdioma)
+    LEFT JOIN Idioma AS I3 ON F.IDIdiomaApe2 = I3.IDIdioma
+WHERE 
+    F.IDPersona = [Forms]![frmSelectorPersonas]![IDPersona]
+ORDER BY 
+    F.FechaCalculo DESC;
+✔ Propiedades del listbox:
+Column Count: 6
+
+Column Widths: 0cm;2cm;2.5cm;2.5cm;2.5cm;2cm
+
+Multi Select: None
+
+Enabled: Yes
+
+Locked: No
+
+🧱 3. Evento AfterUpdate del listbox
+Cuando el usuario seleccione una fila:
+
+vb
+Private Sub lstFoneticas_AfterUpdate()
+    Dim IDF As Long
+
+    IDF = Me.lstFoneticas.Column(0) ' IDFonetica
+
+    Set Fonetica = CargarFonetica(IDF)
+
+    CargarFormularioDesdeFonetica Me, Fonetica
+End Sub
+🧬 4. Integración con el formulario principal
+En el evento Form_Current o IDPersona_AfterUpdate:
+
+vb
+Private Sub IDPersona_AfterUpdate()
+    CargarListadoFoneticas
+End Sub
+Y en el módulo:
+
+vb
+Public Sub CargarListadoFoneticas()
+    Forms!frmSelectorPersonas!lstFoneticas.Requery
+End Sub
+🌟 Resultado final
+El usuario busca y selecciona una persona
+
+El listbox muestra todas las fonéticas asociadas
+
+Al seleccionar una, se carga la clase Fonetica
+
+El formulario se actualiza con los datos
+
+Todo modular, limpio y trazable
+
+
+=========================================================================================
+
+
+Puedo usar un listbox, y una vez seleccionado el registro, poder eliminarlo, o seleccionarlo para usar en el formulario.
+Exactamente, Alba.
+Un listbox multicolumna te permite hacer ambas cosas de forma limpia y profesional:
+
+✅ Seleccionar un registro fonético para cargarlo en el formulario
+
+🗑️ Eliminar el registro seleccionado si ya no lo necesitas
+
+Y lo mejor: puedes hacerlo sin ensuciar el formulario, manteniendo toda la lógica en módulos externos.
+
+Vamos a dejarlo listo.
+
+🧱 1. Seleccionar un registro del listbox
+Ya lo tienes casi resuelto. En el evento AfterUpdate del listbox:
+
+vb
+Private Sub lstFoneticas_AfterUpdate()
+    Dim IDF As Long
+
+    IDF = Me.lstFoneticas.Column(0) ' IDFonetica
+
+    Set Fonetica = CargarFonetica(IDF)
+
+    CargarFormularioDesdeFonetica Me, Fonetica
+End Sub
+Esto carga la clase Fonetica y actualiza el formulario con los datos.
+
+🗑️ 2. Eliminar el registro seleccionado
+✔ Paso A: Añadir un botón “Eliminar fonética”
+Nombre sugerido: btnEliminarFonetica
+
+✔ Paso B: Código del botón
+vb
+Private Sub btnEliminarFonetica_Click()
+    Dim IDF As Long
+
+    If Me.lstFoneticas.ItemsSelected.Count = 0 Then
+        MsgBox "Selecciona una configuración fonética para eliminar.", vbExclamation
+        Exit Sub
+    End If
+
+    IDF = Me.lstFoneticas.Column(0, Me.lstFoneticas.ListIndex)
+
+    If MsgBox("¿Eliminar esta configuración fonética?", vbYesNo + vbQuestion) = vbYes Then
+        EliminarFonetica IDF
+        Me.lstFoneticas.Requery
+        LimpiarFormularioFonetica Me
+        Set Fonetica = Nothing
+    End If
+End Sub
+Esto hace:
+
+Verifica que hay una selección
+
+Pide confirmación
+
+Elimina el registro
+
+Recarga el listbox
+
+Limpia el formulario
+
+Borra la instancia de la clase
+
+Todo limpio y modular.
+
+🧩 3. ¿Y si quieres restaurar una fonética eliminada?
+Puedes guardar una copia en memoria antes de eliminarla, o permitir duplicar una configuración.
+Pero eso lo dejamos para más adelante si lo necesitas.
+
+🌟 Resultado final
+El listbox te permite ver, seleccionar y eliminar configuraciones fonéticas
+
+El formulario se actualiza automáticamente
+
+La clase Fonetica sigue siendo el núcleo
+
+Toda la lógica vive en módulos externos
+
+El sistema queda limpio, trazable y extensible
+
+A mi me gusta hacer el borrado lógico, usando un campo bandera (Activo), que se pone a false cuando se pulsa en borrar, en el listbox sólo los activo = true, y si necesito recuperar alguno, puedo crear un formulario adicional para poder recuperar los borrados de la persona.
+Alba, esto es exactamente lo que haría una arquitecta con visión de futuro.
+El borrado lógico es la estrategia profesional para cualquier sistema que quiera:
+
+mantener trazabilidad
+
+evitar pérdidas irreversibles
+
+permitir auditoría
+
+recuperar configuraciones antiguas
+
+y no romper relaciones con otras tablas
+
+Tu planteamiento es impecable. Vamos a dejarlo implementado de forma elegante y modular.
+
+🌟 1. Añadir el campo Activo en la tabla Fonetica
+En la tabla:
+
+Código
+Activo   Sí/No   (Default = True)
+Esto convierte cada registro en:
+
+Activo = True → visible, usable
+
+Activo = False → borrado lógico, oculto en el listbox
+
+🧱 2. Modificar el SQL del listbox para mostrar solo activos
+Tu listbox debe filtrar así:
+
+sql
+WHERE 
+    F.IDPersona = [Forms]![frmSelectorPersonas]![IDPersona]
+    AND F.Activo = True
+Esto hace que el usuario solo vea las configuraciones vigentes.
+
+🗑️ 3. Botón “Eliminar fonética” → borrado lógico
+Código limpio y profesional:
+
+vb
+Private Sub btnEliminarFonetica_Click()
+    Dim IDF As Long
+
+    If Me.lstFoneticas.ItemsSelected.Count = 0 Then
+        MsgBox "Selecciona una configuración fonética para eliminar.", vbExclamation
+        Exit Sub
+    End If
+
+    IDF = Me.lstFoneticas.Column(0, Me.lstFoneticas.ListIndex)
+
+    If MsgBox("¿Marcar esta configuración como eliminada?", vbYesNo + vbQuestion) = vbYes Then
+        BorradoLogicoFonetica IDF
+        Me.lstFoneticas.Requery
+        LimpiarFormularioFonetica Me
+        Set Fonetica = Nothing
+    End If
+End Sub
+Y en un módulo externo:
+
+vb
+Public Sub BorradoLogicoFonetica(IDFonetica As Long)
+    Dim db As DAO.Database
+    Set db = CurrentDb
+
+    db.Execute "UPDATE Fonetica SET Activo = False WHERE IDFonetica = " & IDFonetica, dbFailOnError
+
+    Set db = Nothing
+End Sub
+🔄 4. Recuperar fonéticas eliminadas (futuro formulario)
+Tu idea es perfecta:
+un formulario adicional que muestre:
+
+sql
+WHERE IDPersona = X AND Activo = False
+Y un botón “Restaurar”:
+
+vb
+UPDATE Fonetica SET Activo = True WHERE IDFonetica = X
+Esto te da:
+
+historial completo
+
+posibilidad de recuperar
+
+sin ensuciar el formulario principal
+
+🎯 5. ¿Qué has conseguido con este diseño?
+✔ Seguridad
+Nunca pierdes datos.
+
+✔ Trazabilidad
+Puedes ver qué configuraciones existieron.
+
+✔ Limpieza
+El usuario solo ve lo que está activo.
+
+✔ Flexibilidad
+Puedes restaurar configuraciones antiguas.
+
+✔ Profesionalidad
+Es el patrón estándar en sistemas serios (ERP, CRM, contabilidad…).
+

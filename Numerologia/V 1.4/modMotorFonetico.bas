@@ -1,0 +1,530 @@
+Attribute VB_Name = "modMotorFonetico"
+
+'Option Compare Database
+'Option Explicit
+'
+'' ============================================================================
+''  MÓDULO: modMotorFonetico
+''  Descripción:
+''     - Carga colecciones de nombres y apellidos UNA sola vez.
+''     - Carga diccionarios SOLO cuando cambia el idioma.
+''     - Convierte palabras usando:
+''           1) Diccionario por prioridad
+''           2) Tokenizador por idioma (fallback)
+''     - Expone funciones públicas para el formulario.
+'' ============================================================================
+
+Option Compare Database
+Option Explicit
+
+' ============================================================================
+'  MÓDULO: modMotorFonetico
+'  Descripción:
+'     - Preprocesa partículas (de, del, la, los, y, i, etc.)
+'     - Fonetiza partículas por tokenizador según idioma
+'     - Fonetiza nombres por diccionario + tokenizador
+'     - Mantiene trazabilidad completa
+' ============================================================================
+
+' ============================================================================
+'  COLECCIONES RICAS (cargadas una sola vez)
+' ============================================================================
+
+'Private ColNombres As Collection
+'Private ColApellidos As Collection
+
+'Public ColNombres As Collection
+'Public ColApellidos As Collection
+
+' ============================================================================
+'  DICCIONARIOS (índice rápido Palabra ? ID)
+' ============================================================================
+
+'Private DicNom As Scripting.Dictionary
+'Private DicApe As Scripting.Dictionary
+
+Public DicNom As Scripting.Dictionary
+Public DicApe As Scripting.Dictionary
+
+Private UltimoIdiomaNom As String
+Private UltimoIdiomaApe As String
+
+' ============================================================================
+'  FUNCIÓN PRINCIPAL
+' ============================================================================
+
+'Public Function MF_Convertir( _
+'    ByVal Texto As String, _
+'    ByVal Idioma As clsIdioma, _
+'    Optional ByVal EsApellido As Boolean = False, _
+'    Optional ByRef Trazabilidad As String _
+'    ) As String
+'
+'    Dim palabras() As String
+'    Dim parte As String
+'    Dim fonema As String
+'    Dim linea As String
+'    Dim resultado As String
+'    Dim i As Long
+'
+'    If Len(Trim$(Texto)) = 0 Then Exit Function
+'
+'    ' ============================================================
+'    ' 1. Separar en palabras
+'    ' ============================================================
+'    palabras = Split(UCase$(Trim$(Texto)), " ")
+
+
+
+Public Function MF_Convertir( _
+    ByVal texto As String, _
+    ByVal idioma As clsIdioma, _
+    Optional ByVal EsApellido As Boolean = False, _
+    Optional ByRef Trazabilidad As String _
+    ) As String
+
+    Dim palabras() As String
+    Dim parte As String
+    Dim fonema As String
+    Dim linea As String
+    Dim resultado As String
+    Dim i As Long
+
+    If Len(Trim$(texto)) = 0 Then Exit Function
+
+    ' ============================================================
+    ' 0. Cargar estructuras internas del motor
+    ' ============================================================
+    Call MF_CargarColeccionesSiEsNecesario
+    Call MF_CargarDiccionarioSiCambia(idioma.Abreviado, EsApellido)
+
+    ' ============================================================
+    ' 1. Separar en palabras
+    ' ============================================================
+    palabras = Split(UCase$(Trim$(texto)), " ")
+
+
+    ' ============================================================
+    ' 2. Procesar cada parte
+    ' ============================================================
+    For i = LBound(palabras) To UBound(palabras)
+
+        parte = palabras(i)
+
+        Select Case parte
+
+            ' ====================================================
+            ' PARTICULAS ESPAÑOLAS Y CATALANAS
+            ' ====================================================
+            Case "DE", "LA", "LOS", "LAS", "DEL", "DA", "DO", "Y", "I"
+                Select Case idioma.Abreviado
+                    Case "CA-IB", "CA-VA", "CA"
+                        fonema = MF_TokenizarParticula(parte, "CA")
+                    Case Else
+                        fonema = MF_TokenizarParticula(parte, idioma.Abreviado)
+                End Select
+                
+                linea = parte & " ? " & fonema & _
+                        "   [Partícula / Tokenizador " & idioma.Abreviado & "]"
+
+            ' ====================================================
+            ' NOMBRE NORMAL ? DICCIONARIO + TOKENIZADOR
+            ' ====================================================
+            Case Else
+                fonema = MF_ProcesarNombre(parte, idioma, EsApellido)
+
+                linea = parte & " --> " & fonema & _
+                        "   [Nombre / Diccionario + Tokenizador]"
+                
+                Debug.Print linea
+        
+        End Select
+        
+        fonema = fonema & " "
+        ' ====================================================
+        ' Añadir trazabilidad
+        ' ====================================================
+        If Len(Trazabilidad) > 0 Then
+            Trazabilidad = Trazabilidad & vbCrLf & linea
+        Else
+            Trazabilidad = linea
+        End If
+
+        ' ====================================================
+        ' Añadir al resultado final
+        ' ====================================================
+        resultado = resultado & fonema
+
+    Next i
+
+
+    resultado = Trim$(resultado)
+
+    Do While InStr(resultado, "  ") > 0
+        resultado = Replace(resultado, "  ", " ")
+    Loop
+
+    MF_Convertir = resultado
+
+End Function
+
+
+
+' ============================================================================
+'  TOKENIZADOR DE PARTICULAS SEGÚN IDIOMA
+' ============================================================================
+
+Private Function MF_TokenizarParticula(parte As String, Abreviado As String) As String
+
+    Select Case Abreviado
+        Case "es": MF_TokenizarParticula = ObtenerFonemasCastellano(parte)
+        Case "ca": MF_TokenizarParticula = ObtenerFonemasCatalan(parte)
+        Case "eu": MF_TokenizarParticula = ObtenerFonemasEuskera(parte)
+        Case "gl": MF_TokenizarParticula = ObtenerFonemasGalego(parte)
+        Case Else: MF_TokenizarParticula = ObtenerFonemasCastellano(parte)
+    End Select
+
+End Function
+
+
+
+
+' ============================================================================
+'  PROCESAMIENTO DE NOMBRES (diccionario + tokenizador)
+' ============================================================================
+
+Private Function MF_ProcesarNombre(parte As String, idioma As clsIdioma, EsApellido As Boolean) As String
+    Dim entrada As clsEntradaFonema
+
+    ' 1) Buscar en diccionario
+    Set entrada = MF_BuscarEntrada(parte, EsApellido)
+
+    If Not entrada Is Nothing Then
+        MF_ProcesarNombre = entrada.fonema
+        Exit Function
+    End If
+
+    ' 2) Fallback: tokenizar por idioma
+    MF_ProcesarNombre = MF_TokenizarParticula(parte, idioma.Abreviado)
+
+End Function
+
+
+
+' ============================================================================
+'  BÚSQUEDA EN DICCIONARIO (ya existente en tu motor)
+' ============================================================================
+
+Private Function MF_BuscarEntrada( _
+    ByVal palabra As String, _
+    ByVal EsApellido As Boolean _
+    ) As clsEntradaFonema
+
+    Dim clave As String
+    Dim idx As Long
+
+    clave = UCase$(palabra)
+
+    If EsApellido Then
+        If DicApe.Exists(clave) Then
+            idx = DicApe(clave)
+            Set MF_BuscarEntrada = ColApellidos(idx)
+        End If
+    Else
+        If DicNom.Exists(clave) Then
+            idx = DicNom(clave)
+            Set MF_BuscarEntrada = ColNombres(idx)
+        End If
+    End If
+End Function
+
+
+
+'
+'' ============================================================================
+''  COLECCIONES RICAS (cargadas una sola vez)
+'' ============================================================================
+'
+'Private ColNombres As Collection
+'Private ColApellidos As Collection
+'
+'' ============================================================================
+''  DICCIONARIOS (índice rápido Palabra ? ID)
+'' ============================================================================
+'
+'Private DicNom As Scripting.Dictionary
+'Private DicApe As Scripting.Dictionary
+'
+'' ============================================================================
+''  ESTADO DEL ÚLTIMO IDIOMA CARGADO
+'' ============================================================================
+'
+'Private UltimoIdiomaNom As String
+'Private UltimoIdiomaApe As String
+'
+'' ============================================================================
+''  FUNCIÓN PÚBLICA PRINCIPAL
+''     Convierte un nombre completo (una palabra o varias)
+'' ============================================================================
+'
+'Public Function MF_Convertir(ByVal Texto As String, ByVal Idioma As clsIdioma, _
+'                            Optional ByVal EsApellido As Boolean = False) As String
+'
+'    Dim palabras() As String
+'    Dim i As Long
+'    Dim resultado As String
+'    Dim fonema As String
+'
+'    If Len(Trim$(Texto)) = 0 Then Exit Function
+'
+'    ' Asegurar que las colecciones están cargadas
+'    Call MF_CargarColeccionesSiEsNecesario
+'
+'    ' Asegurar que el diccionario correcto está cargado
+'    Call MF_CargarDiccionarioSiCambia(Idioma.Abreviado, EsApellido)
+'
+'    ' Separar por espacios
+'    palabras = Split(Trim$(Texto), " ")
+'
+'    For i = LBound(palabras) To UBound(palabras)
+'        fonema = MF_ConvertirPalabra(palabras(i), Idioma, EsApellido)
+'
+'        If resultado = "" Then
+'            resultado = fonema
+'        Else
+'            resultado = resultado & " " & fonema
+'        End If
+'    Next i
+'
+'    MF_Convertir = resultado
+'End Function
+'
+'' ============================================================================
+''  CONVERSIÓN DE UNA SOLA PALABRA
+'' ============================================================================
+'
+'Private Function MF_ConvertirPalabra( _
+'    ByVal Palabra As String, _
+'    ByVal Idioma As clsIdioma, _
+'    ByVal EsApellido As Boolean _
+'    ) As String
+'
+'    Dim entrada As clsEntradaFonema
+'    Dim col As Collection
+'    Dim fonema As String
+'
+'    ' 1) Buscar en diccionario
+'    Set entrada = MF_BuscarEntrada(Palabra, EsApellido)
+'
+'    If Not entrada Is Nothing Then
+'        MF_ConvertirPalabra = entrada.fonema
+'        Exit Function
+'    End If
+'
+'    ' 2) Fallback: tokenizar por idioma
+'    Select Case Idioma.Abreviado
+'        Case "es": Set col = ObtenerFonemasCastellano(Palabra)
+'        Case "ca": Set col = ObtenerFonemasCatalan(Palabra)
+'        Case "eu": Set col = ObtenerFonemasEuskera(Palabra)
+'        Case "ga": Set col = ObtenerFonemasGalego(Palabra)
+'        Case Else: Set col = ObtenerFonemasCastellano(Palabra)
+'    End Select
+'
+'    ' Convertir colección de fonemas en cadena
+'    fonema = MF_ConcatenarColeccion(col)
+'    MF_ConvertirPalabra = fonema
+'End Function
+'
+'' ============================================================================
+''  BUSCAR EN DICCIONARIO
+'' ============================================================================
+'
+'Private Function MF_BuscarEntrada( _
+'    ByVal Palabra As String, _
+'    ByVal EsApellido As Boolean _
+'    ) As clsEntradaFonema
+'
+'    Dim clave As String
+'    Dim idx As Long
+'
+'    clave = UCase$(Palabra)
+'
+'    If EsApellido Then
+'        If DicApe.Exists(clave) Then
+'            idx = DicApe(clave)
+'            Set MF_BuscarEntrada = ColApellidos(idx)
+'        End If
+'    Else
+'        If DicNom.Exists(clave) Then
+'            idx = DicNom(clave)
+'            Set MF_BuscarEntrada = ColNombres(idx)
+'        End If
+'    End If
+'End Function
+
+' ============================================================================
+'  CARGA DE COLECCIONES (UNA SOLA VEZ)
+' ============================================================================
+
+Private Sub MF_CargarColeccionesSiEsNecesario()
+    If ColNombres Is Nothing Then
+        Set ColNombres = MF_CargarColeccionDesdeTabla("tbmDicFonemasNom")
+    End If
+
+    If ColApellidos Is Nothing Then
+        Set ColApellidos = MF_CargarColeccionDesdeTabla("tbmDicFonemasApe")
+    End If
+End Sub
+
+Private Function MF_CargarColeccionDesdeTabla(ByVal tabla As String) As Collection
+    Dim col As New Collection
+    Dim rs As DAO.Recordset
+    Dim entrada As clsEntradaFonema
+
+    Set rs = CurrentDb.OpenRecordset("SELECT * FROM " & tabla & " WHERE Activo = True")
+
+    Do While Not rs.EOF
+        Set entrada = New clsEntradaFonema
+        entrada.palabra = UCase$(rs!palabra)
+        entrada.fonema = rs!FonemaCompleto
+        entrada.idioma = rs!idioma
+        entrada.tipo = rs!TipoEntrada
+        entrada.notas = Nz(rs!notas, "")
+        'entrada.FonemaIPA = Nz(rs!FonemaIPA, "")
+        entrada.Fuente = "Diccionario " & rs!idioma
+
+        col.Add entrada
+        rs.MoveNext
+    Loop
+
+    rs.Close
+    Set MF_CargarColeccionDesdeTabla = col
+End Function
+
+' ============================================================================
+'  CARGA DE DICCIONARIOS (SOLO SI CAMBIA EL IDIOMA)
+' ============================================================================
+
+Private Sub MF_CargarDiccionarioSiCambia( _
+    ByVal idioma As String, _
+    ByVal EsApellido As Boolean _
+    )
+
+    Dim dic As Scripting.Dictionary
+    Dim col As Collection
+    Dim ultimo As String
+
+    Dim i As Long, idx As Long
+    Dim entrada As clsEntradaFonema
+    Dim clave As String
+    
+    If EsApellido Then
+        Set dic = DicApe
+        Set col = ColApellidos
+        ultimo = UltimoIdiomaApe
+    Else
+        Set dic = DicNom
+        Set col = ColNombres
+        ultimo = UltimoIdiomaNom
+    End If
+
+    ' Si el idioma no ha cambiado ? no recargar
+    If idioma = ultimo And Not dic Is Nothing Then Exit Sub
+
+    ' Crear diccionario nuevo
+    Set dic = New Scripting.Dictionary
+
+    ' Orden de prioridad
+    Dim idiomas As Variant
+    
+    Select Case idioma
+        Case "CA-IB"
+            idiomas = Array(idioma, "CA-VA", "CA", "ES", "GA", "EU")
+        Case "CA-VA"
+            idiomas = Array(idioma, "CA-IB", "CA", "ES", "GA", "EU")
+        Case "CA"
+            idiomas = Array(idioma, "CA-IB", "CA-VA", "ES", "GA", "EU")
+        Case Else
+            idiomas = Array(idioma, "ES", "GA", "CA-IB", "CA-VA", "CA", "EU")
+    End Select
+    
+    
+
+    ' Cargar según prioridad
+    For i = LBound(idiomas) To UBound(idiomas)
+        For idx = 1 To col.Count
+            Set entrada = col(idx)
+
+            If entrada.idioma = idiomas(i) Then
+                clave = entrada.palabra
+'                If Left(clave, 4) = "SALV" Then
+'                    Stop
+'                End If
+                If Not dic.Exists(clave) Then
+                    dic.Add clave, idx
+                End If
+            End If
+        Next idx
+    Next i
+
+    ' Guardar estado
+    If EsApellido Then
+        Set DicApe = dic
+        UltimoIdiomaApe = idioma
+    Else
+        Set DicNom = dic
+        UltimoIdiomaNom = idioma
+    End If
+End Sub
+
+' ============================================================
+'   NuevaConversionFonetica — Inicializa el objeto público Fonetica
+' ============================================================
+Public Sub NuevaConversionFonetica(ByVal IDPersona As Long)
+
+    ' Crear nuevo objeto
+    Set Fonetica = New clsFonetica
+
+    ' --- Identificación ---
+    Fonetica.IDFonetica = 0          ' Nuevo registro
+    Fonetica.IDPersona = IDPersona   ' Persona a la que pertenece
+
+    ' --- Sistema por defecto ---
+    ' 1 = Tradicional clásico
+    ' 2 = Fonético
+    ' 3 = Tradicional moderno
+    Fonetica.Sistema = 2             ' Por defecto: fonético (puedes cambiarlo)
+
+    ' --- Idiomas (vacíos hasta que el conversor los determine) ---
+    Fonetica.IdiomaNombre = ""
+    Fonetica.IdiomaApe1 = ""
+    Fonetica.IdiomaApe2 = ""
+
+    ' --- Resultados fonéticos (vacíos hasta conversión) ---
+    Fonetica.FonNombre = ""
+    Fonetica.FonApe1 = ""
+    Fonetica.FonApe2 = ""
+
+    ' --- Gestión ---
+    Fonetica.FechaCalculo = Now
+    Fonetica.Activo = True
+
+End Sub
+
+
+'' ============================================================================
+''  UTILIDAD: concatenar fonemas de una colección
+'' ============================================================================
+'
+'Private Function MF_ConcatenarColeccion(col As Collection) As String
+'    Dim i As Long
+'    Dim sb As String
+'
+'    For i = 1 To col.Count
+'        sb = sb & col(i)
+'    Next i
+'
+'    MF_ConcatenarColeccion = sb
+'End Function
+'
+'

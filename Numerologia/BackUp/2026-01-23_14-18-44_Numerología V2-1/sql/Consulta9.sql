@@ -1,0 +1,4 @@
+SELECT DISTINCTROW EquivalenciasNombres_01.NombreOriginal, EquivalenciasNombres_01.IdiomaOriginal, EquivalenciasNombres_01.NombreEquivalente, EquivalenciasNombres_01.IdiomaEquivalente, EquivalenciasNombres_01.Tipo, EquivalenciasNombres_01.Notas INTO tbmEqNombres
+FROM EquivalenciasNombres_01
+ORDER BY EquivalenciasNombres_01.NombreOriginal, EquivalenciasNombres_01.IdiomaEquivalente;
+

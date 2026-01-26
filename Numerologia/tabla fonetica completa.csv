@@ -1,0 +1,71 @@
+idFonema;Fonema;ASCII;EsVocal;Valor;DatosFonéticos
+1;/a/;A;TRUE;;vocal abierta central
+2;/ã/;A~;TRUE;;vocal nasal francesa (AN/AM/EN/EM)
+3;/ɛ̃/;N;TRUE;;vocal nasal anterior francesa (IN/IM/UN/UM)
+4;/õ/;O~;TRUE;;vocal nasal posterior francesa (ON/OM)
+5;/e/;E;TRUE;;vocal cerrada anterior
+6;/ɛ/;E~;TRUE;;vocal abierta anterior
+7;/o/;O;TRUE;;vocal cerrada posterior
+8;/ɔ/;O~2;TRUE;;vocal abierta posterior
+9;/i/;I;TRUE;;vocal cerrada anterior alta
+10;/u/;U;TRUE;;vocal cerrada posterior alta
+11;/ə/;Ə;TRUE;;schwa balear (vocal neutra)
+12;/ai/;AI;TRUE;;diptongo inglés (IGH)
+13;/ei/;EI;TRUE;;diptongo francés/inglés (EIGH)
+14;/wa/;WA;TRUE;;diptongo francés (OI)
+15;/ou/;OU;TRUE;;diptongo inglés (OU)
+16;/o/;AU;TRUE;;diptongo francés (AU → /o/)
+17;/ø/;EU;TRUE;;vocal francesa media anterior redondeada
+18;/œ/;OE;TRUE;;vocal francesa media anterior (œ)
+19;/ui/;UI;TRUE;;diptongo portugués
+20;/ia/;IA;TRUE;;diptongo creciente
+21;/ie/;IE;TRUE;;diptongo creciente
+22;/io/;IO;TRUE;;diptongo creciente
+23;/ua/;UA;TRUE;;diptongo creciente
+24;/ue/;UE;TRUE;;diptongo creciente
+25;/uo/;UO;TRUE;;diptongo creciente
+
+26;/p/;P;FALSE;;oclusiva bilabial sorda
+27;/b/;B;FALSE;;oclusiva bilabial sonora
+28;/t/;T;FALSE;;oclusiva dental/alveolar sorda
+29;/d/;D;FALSE;;oclusiva dental/alveolar sonora
+30;/k/;K;FALSE;;oclusiva velar sorda
+31;/g/;G;FALSE;;oclusiva velar sonora
+
+32;/f/;F;FALSE;;fricativa labiodental sorda
+33;/v/;V;FALSE;;fricativa labiodental sonora (inglés, francés)
+34;/s/;S;FALSE;;fricativa alveolar sorda
+35;/z/;Z;FALSE;;fricativa alveolar sonora (inglés, francés)
+36;/ʃ/;SH;FALSE;;fricativa palatal/postalveolar sorda (francés, gallego, inglés)
+37;/ʒ/;J;FALSE;;fricativa palatal/postalveolar sonora (francés, portugués)
+38;/h/;H;FALSE;;fricativa glotal sorda (inglés)
+
+39;/m/;M;FALSE;;nasal bilabial
+40;/n/;N;FALSE;;nasal alveolar
+41;/ɲ/;NY;FALSE;;nasal palatal (catalán, gallego, francés)
+42;/ŋ/;NG;FALSE;;nasal velar (inglés)
+
+43;/l/;L;FALSE;;lateral alveolar
+44;/ʎ/;LY;FALSE;;lateral palatal (catalán, gallego, portugués)
+45;/r/;R;FALSE;;vibrante simple
+46;/rr/;RR;FALSE;;vibrante múltiple (castellano)
+47;/ʁ/;RH;FALSE;;uvular francesa (opcional)
+
+48;/j/;Y;FALSE;;semivocal palatal (inglés, francés)
+49;/w/;W;FALSE;;semivocal labiovelar (inglés, francés)
+
+50;/tʃ/;CH;FALSE;;africada postalveolar sorda (castellano, inglés)
+51;/dʒ/;DJ;FALSE;;africada postalveolar sonora (inglés)
+52;/ts/;TS;FALSE;;africada alveolar sorda (euskera)
+53;/dz/;DZ;FALSE;;africada alveolar sonora (italiano, opcional)
+
+54;/θ/;TH;FALSE;;fricativa interdental sorda (inglés)
+55;/ð/;DH;FALSE;;fricativa interdental sonora (inglés)
+
+56;/kw/;KW;FALSE;;grupo consonántico labiovelar (inglés)
+57;/gw/;GW;FALSE;;grupo consonántico labiovelar (portugués, francés)
+
+58;/x/;KH;FALSE;;fricativa velar sorda (catalán oriental, alemán)
+59;/ɣ/;GH;FALSE;;fricativa velar sonora (gallego, portugués)
+60;/tɕ/;TCH;FALSE;;africada palatal sorda (mallorquín)
+61;/lː/;L·L;FALSE;;lateral alveolar geminada (ela geminada)

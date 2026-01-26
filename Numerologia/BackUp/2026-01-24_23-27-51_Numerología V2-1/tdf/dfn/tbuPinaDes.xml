@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-01-24T23:28:12">
+<tbuPinaDes>
+<IDPersona>18</IDPersona>
+<IDResultado>1</IDResultado>
+<IDPinaDes>1</IDPinaDes>
+<idFonetica>1</idFonetica>
+<Pina1>4</Pina1>
+<Pina2>10/1</Pina2>
+<Pina3>14/5</Pina3>
+<Pina4>10/1</Pina4>
+<Desa1>0</Desa1>
+<Desa2>6</Desa2>
+<Desa3>6</Desa3>
+<Desa4>6</Desa4>
+<fIni1>1899-12-30T00:00:00</fIni1>
+<fFin1>1900-02-01T00:00:00</fFin1>
+<fIni2>1900-02-01T00:00:00</fIni2>
+<fFin2>1900-02-10T00:00:00</fFin2>
+<fIni3>1900-02-10T00:00:00</fIni3>
+<fFin3>1900-02-19T00:00:00</fFin3>
+<fIni4>1900-02-19T00:00:00</fIni4>
+<fFin4>1900-04-29T00:00:00</fFin4>
+</tbuPinaDes>
+</dataroot>

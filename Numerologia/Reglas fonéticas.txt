@@ -1,0 +1,47 @@
+## REGLAS CONTEXTUALES ESPAÑOLAS
+
+### **Regla 1: Y Contextual**
+
+| Contexto | Fonema | Valor | Ejemplo |
+|----------|--------|-------|---------|
+| Y sola (conjunción) | /i/ vocal | 9 | Pedro **y** Ana |
+| Y al final de palabra | /i/ vocal | 9 | re**y**, ho**y**, Le**y** |
+| Y entre vocales | /ʝ/ consonante | 7 | ma**y**or, pla**y**a |
+| Y al inicio + vocal | /ʝ/ consonante | 7 | **Y**olanda, **y**erno |
+| Y al inicio + consonante | /i/ vocal | 9 | **Y**vonne (raro) |
+| Y entre consonantes | /i/ vocal | 9 | Ir**y**na (raro) |
+
+### **Regla 2: R vs RR**
+
+| Contexto | Fonema | Grafía | Valor | Ejemplo |
+|----------|--------|--------|-------|---------|
+| R entre vocales | /ɾ/ simple | R | 9 | ca**r**a, pe**r**o |
+| RR entre vocales | /r̄/ múltiple | RR | 9 | pe**rr**o, gu**rr**a |
+| R inicio de palabra | /r̄/ múltiple | R | 9 | **R**osa, **R**ama |
+| R después de N, L, S | /r̄/ múltiple | R | 9 | hon**r**a, al**r**edor |
+| R final de palabra | /ɾ/ simple | R | 9 | amo**r**, colo**r** |
+
+### **Regla 3: C Contextual**
+
+| Contexto | Fonema | Valor | Ejemplo |
+|----------|--------|-------|---------|
+| C + A, O, U | /k/ | 3 | **c**asa, **c**ola, **c**una |
+| C + E, I | /θ/ o /s/ | 3 | **c**ero, **c**ine |
+| C + consonante | /k/ | 3 | **c**laro, **c**rema |
+
+### **Regla 4: G Contextual**
+
+| Contexto | Fonema | Valor | Ejemplo |
+|----------|--------|-------|---------|
+| G + A, O, U | /g/ | 7 | **g**ato, **g**oma, **g**usano |
+| G + E, I | /x/ | 7 | **g**ente, **g**igante |
+| GU + E, I | /g/ | 7 | **gu**erra, **gu**itarra |
+| G + consonante | /g/ | 7 | **g**lobo, **g**rande |
+
+### **Regla 5: QU (siempre antes de E, I)**
+
+| Contexto | Fonema | Valor | Ejemplo |
+|----------|--------|-------|---------|
+| QU + E, I | /k/ | 8 (Q) + 3 (U) | **qu**eso, **qu**ien |
+
+**NOTA:** La U en QUE, QUI es muda (no se pronuncia).

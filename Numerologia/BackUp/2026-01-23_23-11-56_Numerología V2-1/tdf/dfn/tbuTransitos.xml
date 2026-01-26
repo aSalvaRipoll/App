@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-01-23T23:12:15">
+<tbuTransitos>
+<IdPersona>18</IdPersona>
+<IdResultado>1</IdResultado>
+<IDTransito>1</IDTransito>
+<idFonetica>1</idFonetica>
+<Orden>1</Orden>
+<Anio>2025</Anio>
+<Edad>64</Edad>
+<Fisico>3</Fisico>
+<LetraFisico>L</LetraFisico>
+<Mental>5</Mental>
+<LetraMental>e</LetraMental>
+<Emocional>9</Emocional>
+<LetraEmocional>rr</LetraEmocional>
+<Espiritual>6</Espiritual>
+<LetraEspiritual>o</LetraEspiritual>
+<Esencia>10</Esencia>
+<AnioPersonal>22</AnioPersonal>
+</tbuTransitos>
+</dataroot>

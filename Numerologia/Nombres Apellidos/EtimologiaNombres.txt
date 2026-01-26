@@ -1,0 +1,1580 @@
+Nombre;Genero;Origen;Etimologia
+Aaliyah;F;Árabe;Deriva de 'Aliyya', significa "sublime", "exaltada" o "ascendida".
+Aaron;M;Hebreo;De 'Aharon', probable origen egipcio que significa "iluminado" o "montañés".
+Aarón;M;Hebreo;Variante de Aaron, significa "iluminado" o "montañés".
+Abar;M;Hebreo/Árabe;Relacionado con "pasar" o "cruzar". En árabe significa "pozos".
+Abarne;F;Vasco;Equivalente a Ramos, del término 'abar' que significa "rama" o "follaje".
+Abel;M;Hebreo;De 'Hebel', significa "aliento", "vapor" o "hijo".
+Abelko;M;Vasco;Diminutivo o variante cariñosa de Abel.
+Abigail;F;Hebreo;De 'Abigayil', significa "mi padre es alegría".
+Abraham;M;Hebreo;Significa "padre de una multitud" o "padre de muchas naciones".
+Achille;M;Griego;De 'Achilleus', posiblemente "el que tiene el dolor de un pueblo".
+Ada;F;Hebreo;De 'Adah', significa "belleza" o "adorno".
+Adalbert;M;Germánico;De 'adal' (noble) y 'berht' (brillo), significa "nobleza brillante".
+Adam;M;Hebreo;De 'Adahmah', significa "hombre" o "hecho de la tierra roja".
+Addison;F;Inglés;Apellido patronímico que significa "hijo de Adam".
+Adei;F;Vasco;Nombre moderno que significa "respeto" o "deferencia".
+Adela;F;Germánico;De la raíz 'adal', significa "noble" o "de linaje noble".
+Adèle;F;Francés;Variante francesa de Adela, significa "noble".
+Adeline;F;Francés;Diminutivo de Adela, significa "pequeña noble".
+Adin;M;Hebreo/Vasco;En hebreo "delicado"; en vasco significa "edad" o "juicio".
+Adolphe;M;Germánico;De 'adal' (noble) y 'wulf' (lobo), significa "lobo noble".
+Adrià;M;Catalán;Forma catalana de Adrián, "procedente del mar Adriático".
+Adrian;M;Latín;De 'Hadrianus', significa "el que viene del mar" o de la ciudad de Adria.
+Adrián;M;Latín;Variante de Adrian, "aquel que viene del mar Adriático".
+Adriana;F;Latín;Forma femenina de Adrián, significa "mujer del mar".
+Adriano;M;Latín;Variante directa del nombre romano Hadrianus.
+Adrien;M;Francés;Variante francesa de Adrián.
+Adrienne;F;Francés;Variante francesa de Adriana.
+Adur;M;Vasco;Significa "suerte", "fortuna" o "corriente de aire".
+Afonso;M;Germánico;De 'adal' (noble) y 'funs' (listo), significa "noble dispuesto".
+Ager;M;Vasco;Significa "manifiesto", "patente" o "a la vista".
+Agin;M;Vasco;Relacionado con el tejo (árbol sagrado) o "aparición".
+Agneline;F;Francés;Diminutivo de Agnés, derivado del griego 'hagnos' (casta/pura).
+Agnes;F;Griego;De 'hagnos', significa "casta", "pura" o "sagrada".
+Agnès;F;Francés;Variante francesa de Agnes (casta/pura).
+Agustín;M;Latín;De 'Augustinus', derivado de 'Augustus', significa "consagrado por los augures" o "venerable".
+Aguxtin;M;Vasco;Forma vasca de Agustín.
+Aidan;M;Gaélico;De 'Aodhan', significa "fuego pequeño" o "ardiente".
+Aiden;M;Gaélico;Variante moderna de Aidan, "pequeño fuego".
+Aileen;F;Irlandés;Variante de Eibhlin, probablemente deriva de 'Aveline' o 'Elena' (antorcha).
+Aimar;M;Germánico;De 'hadu' (combate) y 'mar' (famoso), significa "famoso en la batalla".
+Aimé;M;Francés;Del latín 'Amatus', significa "amado".
+Aimée;F;Francés;Forma femenina de Aimé, significa "amada".
+Aina;F;Catalán/Hebreo;Variante de Anna, que significa "gracia" o "benéfica".
+Ainara;F;Vasco;Significa "golondrina".
+Ainara;U;Vasco;Significa "golondrina" (uso como nombre neutro).
+Ainhoa;F;Vasco;Nombre de advocación mariana local, referente al pueblo de Ainhoa.
+Aintzane;F;Vasco;Derivado de 'aintza', equivalente a Gloria. Significa "gloriosa".
+Aintzane;U;Vasco;Equivalente a Gloria (uso como nombre neutro).
+Aisha;F;Árabe;Significa "viva" o "la que está viva".
+Aitor;M;Vasco;Del término suletino 'aitoren' (hijo de buenos padres/nobles).
+Aketza;M;Vasco;Significa "valle de piedras" o "pedregal".
+Alaia;F;Vasco;Significa "alegre" o "gozosa".
+Alain;M;Bretón;Posiblemente significa "apuesto" o "pequeña roca".
+Alaine;F;Vasco;Forma femenina de Alain o derivada de 'alaia' (alegre).
+Alan;M;Celta/Bretón;Significa "apuesto" o "armonía".
+Alar;M;Germánico/Estonio;Variante de Adalhard (noble y fuerte) o nombre de origen estonio.
+Alatz;M;Vasco;Significa "milagro" o "prodigio".
+Alazne;F;Vasco;Equivalente a Milagros, de 'alatz' (prodigio).
+Alban;M;Latín;De 'Albanus', significa "blanco" o "natural de Alba Longa".
+Albert;M;Germánico;De 'adal' (noble) y 'berht' (brillo), "nobleza brillante".
+Alberte;F;Gallego/Francés;Forma femenina de Alberto, "nobleza brillante".
+Alberto;M;Germánico;Variante de Adalberto, significa "nobleza ilustre".
+Albin;M;Latín;De 'Albinus', derivado de 'albus' (blanco).
+Alcina;F;Griego;Significa "de mente fuerte" o "mujer con fuerza".
+Alda;F;Germánico;Significa "vieja", "sabia" o "de noble estirpe".
+Aldara;F;Germánico;De 'ald' (viejo) y 'war' (protector), "protectora sabia".
+Aldats;M;Vasco;Significa "cuesta", "pendiente" o "ladera".
+Aldo;M;Germánico;De 'ald', significa "experimentado" o "noble de edad".
+Aleix;M;Catalán;Forma catalana de Alexis, del griego 'alexo' (defender/proteger).
+Alex;U;Griego;Abreviatura de Alexander o Alexandra, significa "protector(a)".
+Alexander;M;Griego;De 'Alexandros', significa "defensor de los hombres".
+Alexandra;F;Griego;Forma femenina de Alexander, "defensora de la humanidad".
+Alexandre;M;Francés/Catalán;Variante de Alexander.
+Alexandrine;F;Francés;Diminutivo de Alexandra.
+Alfonso;M;Germánico;De 'adal' (noble) y 'funs' (listo/preparado).
+Alfred;M;Germánico;De 'alf' (elfo) y 'rad' (consejo), "consejo de elfos".
+Alice;F;Francés/Germánico;Del nombre 'Adalheidis' (Adelaida), "de linaje noble".
+Alicia;F;Griego/Germánico;Derivado de Alice o del griego 'aletheia' (verdad).
+Aliénor;F;Occitano;Forma antigua de Leonor, de significado incierto (posiblemente "otra Aenor").
+Aline;F;Germánico;Variante de Adeline, del término 'adal' (noble). Significa "de noble linaje".
+Alison;F;Francés antiguo;Diminutivo de Alis (Alice). Significa "pequeña noble".
+Alizée;F;Francés;Nombre inspirado en los vientos alisios ('alizé').
+Aloïs;M;Germánico;Variante occitana/francesa de Ludovico. De 'hlud' (fama) y 'wig' (combate).
+Álvaro;M;Germánico;De 'all' (todo) y 'war' (protección). Significa "protector de todos" o "muy atento".
+Alyssa;F;Griego;Deriva de la flor 'Alyssum', del griego 'a-' (no) y 'lyssa' (rabia), usada antiguamente contra la locura.
+Alzira;F;Árabe;Significa "la isla" o "la belleza".
+Amaia;F;Vasco;Significa "el fin", "final" o "límite".
+Amalia;F;Germánico;De la raíz 'amal' (trabajo/actividad). Significa "mujer trabajadora y enérgica".
+Amancio;M;Latín;De 'Amantius', derivado de 'amare'. Significa "el que ama" o "amante de Dios".
+Amanda;F;Latín;Significa "la que debe ser amada" o "digna de amor".
+Amandine;F;Francés;Diminutivo de Amanda. Significa "pequeña digna de amor".
+Amani;U;Árabe/Suajili;Significa "paz" o "deseos".
+Amari;U;Yoruba/Hebreo;En yoruba "fuerza"; en hebreo relacionado con "dicho por Dios".
+Amaro;M;Latín/Germánico;Del latín 'amarus' (amargo) o del germánico 'hadu-mar' (famoso en la lucha).
+Amaury;M;Germánico;De 'amal' (trabajo) y 'ric' (poder). Significa "gobernante trabajador".
+Amber;F;Árabe/Inglés;Referente a la resina fósil 'ámbar'. Significa "dorada" o "valiosa".
+Ambre;F;Francés;Variante francesa de Amber (ámbar).
+Ambroise;M;Griego;De 'ambrosios', significa "inmortal" o "divino".
+Amelia;F;Germánico;Variante de Amalia, de la raíz 'amal' (trabajo).
+Amélia;F;Portugués/Francés;Variante de Amelia.
+Amélie;F;Francés;Forma francesa de Amelia.
+Américo;M;Germánico;De 'amal' (trabajo) y 'ric' (poder). Significa "el que es príncipe por su trabajo".
+Amets;M;Vasco;Significa "sueño" o "ilusión".
+Ametza;F;Vasco;Significa "quejigo" (tipo de roble) o relacionado con "sueño".
+Amparo;F;Latín;De 'anteparium', significa "protección", "refugio" o "auxilio".
+Amuru;M;Vasco;Variante de Amurrio, nombre de localidad.
+Amy;F;Francés antiguo;Del francés 'aimée' (del latín 'amatus'). Significa "amada".
+Ana;F;Hebreo;De 'Hannah', significa "benéfica", "compasiva" o "llena de gracia".
+Anaëlle;F;Bretón;Combinación de Ana y el sufijo bretón 'el' (ángel). Significa "ángel de gracia".
+Anai;M;Vasco;Significa "hermano".
+Anaís;F;Hebreo/Francés;Variante de Ana, significa "llena de gracia" o "benéfica".
+Anaïs;F;Hebreo/Francés;Variante de Ana, significa "llena de gracia" o "benéfica".
+Anaïse;F;Francés;Variante de Anaïs, derivada de Ana (gracia).
+Anaïssa;F;Francés;Variante elaborada de Ana.
+Anartz;M;Vasco;Significa "robusto", "fuerte" o "vigoroso".
+Anatole;M;Griego;De 'Anatole', significa "amanecer" o "procedente del Este".
+Ander;M;Vasco;Forma vasca de Andrés, del griego 'aner' (hombre/varonil).
+André;M;Francés/Portugués;Variante de Andrés, significa "varonil" o "valiente".
+Andrea;F;Griego;Forma femenina de Andrés, significa "valerosa" o "fuerte".
+Andrée;F;Francés;Forma femenina francesa de André.
+Andreia;F;Portugués;Variante de Andrea, "valerosa".
+Andrés;M;Griego;De 'Andreas', derivado de 'aner' (hombre). Significa "varonil" o "guerrero".
+Andrew;M;Inglés;Forma inglesa de Andrés.
+Andy;U;Inglés;Hipocorístico de Andrew o Andrea.
+Ane;F;Vasco;Forma vasca de Ana, significa "gracia".
+Angel;U;Griego;Del griego 'angelos', significa "mensajero".
+Ángel;M;Griego;De 'angelos', significa "el mensajero de Dios".
+Angela;F;Griego;Forma femenina de Ángel, "mensajera".
+Ângela;F;Portugués;Variante de Angela.
+Angèle;F;Francés;Variante francesa de Angela.
+Angélica;F;Latín/Griego;Significa "relativo a los ángeles" o "angelical".
+Angélique;F;Francés;Variante francesa de Angélica.
+Ania;F;Ruso/Polaco;Diminutivo de Anna, significa "gracia".
+Anitz;M;Vasco;Significa "mucho", "abundante" o "variado".
+Ann;F;Inglés;Forma inglesa de Ana.
+Anna;F;Hebreo/Latín;Variante de Hannah, significa "gracia" o "compasión".
+Annabelle;F;Francés/Inglés;Combinación de Anna (gracia) y Belle (bella).
+Anne;F;Francés/Alemán;Variante de Ana.
+Annette;F;Francés;Diminutivo de Anne, "pequeña Ana".
+Annie;F;Inglés;Diminutivo de Ann o Anne.
+Anselme;M;Francés;Forma francesa de Anselmo.
+Anselmo;M;Germánico;De 'ans' (dios) y 'helm' (yelmo/protección). "Protección divina".
+Anthony;M;Latín;Del nombre de la familia romana 'Antonius'. Significa "digno de alabanza".
+Antoine;M;Francés;Variante francesa de Antonio.
+Antoinette;F;Francés;Diminutivo femenino de Antoine.
+Antón;M;Gallego/Español;Variante de Antonio.
+Antoni;M;Catalán;Forma catalana de Antonio.
+Antònia;F;Catalán;Forma femenina catalana de Antonio.
+Antonio;M;Latín;De 'Antonius', probablemente de origen etrusco, significa "el que se enfrenta a sus adversarios".
+António;M;Latín;Variante portuguesa de Antonio. Del nombre de la familia 'Antonius'.
+Antônio;M;Latín;Variante brasileña de Antonio. Significa "valioso" o "el que se enfrenta a sus adversarios".
+Anuntz;M;Vasco;Derivado de Anuntziación (Anunciación). Significa "anuncio" o "mensaje".
+Ánxela;F;Gallego;Forma gallega de Ángela. Del griego 'angelos' (mensajera).
+Anxo;M;Gallego;Forma gallega de Ángel. Significa "mensajero".
+Apar;M;Vasco;Significa "espuma".
+Apolline;F;Griego/Francés;Derivado de Apolo (dios del sol). Significa "la que pertenece a Apolo".
+April;F;Latín;Del latín 'Aprilis', derivado de 'aperire' (abrir), en referencia a la primavera.
+Arago;M;Vasco;Nombre de origen toponímico local.
+Arantxa;F;Vasco;Hipocorístico de Arantzazu. Significa "lugar de espinos".
+Arantza;F;Vasco;Significa "espina". Variante de Arantzazu.
+Aratz;M;Vasco;Significa "limpio", "puro" o "claro".
+Ardan;M;Vasco;Relacionado con 'ardantza' (viñedo).
+Argi;M;Vasco;Significa "luz" o "claridad".
+Argider;M;Vasco;De 'argi' (luz) y 'eder' (hermoso). Significa "luz hermosa".
+Argimiro;M;Germánico;De 'erkan' (auténtico) y 'mir' (famoso). Significa "ejército famoso".
+Argiñe;F;Vasco;Forma femenina de Argi. Significa "luminosa".
+Argiñeta;M;Vasco;Topónimo vasco que significa "lugar de luz" o "pedregal luminoso".
+Argoitz;M;Vasco;Significa "luz de la mañana" o "aurora".
+Ariadna;F;Griego;De 'ari' (muy) y 'adnos' (pura). Significa "muy pura" o "muy santa".
+Ariana;F;Griego;Variante de Ariadna. Significa "la que es muy pura".
+Ariane;F;Francés/Griego;Variante francesa de Ariadna.
+Ariel;U;Hebreo;Significa "león de Dios" o "altar de Dios".
+Arima;F;Vasco;Significa "alma".
+Arin;M;Vasco;Significa "ligero", "ágil" o "veloz".
+Aritz;M;Vasco;Significa "roble". Símbolo de fortaleza.
+Ariz;M;Vasco;Variante de Aritz, significa "roble".
+Ariznabar;M;Vasco;De 'aritz' (roble) y 'nabar' (pardo/multicolor). "Roble de tonos pardos".
+Arkaia;M;Vasco;Topónimo alavés que refiere a una "zona de piedras".
+Arkan;M;Turco;Significa "sangre de linaje noble".
+Arketz;M;Vasco;Variante de Arketza, significa "pequeño roble" o "lugar de robles".
+Arman;M;Germánico/Persa;En germánico "hombre de armas"; en persa "deseo" o "esperanza".
+Armand;M;Germánico;De 'hari' (ejército) y 'man' (hombre). "Hombre de ejército".
+Armelle;F;Bretón;De 'arth' (oso) y 'mael' (príncipe). Significa "princesa de los osos".
+Arnau;M;Catalán;Forma catalana de Arnoldo. De 'arn' (águila) y 'wald' (gobierno).
+Arnaut;M;Occitano/Vasco;Variante de Arnau. "El que gobierna con el poder del águila".
+Arri;M;Vasco;Significa "piedra".
+Arritz;M;Vasco;De 'arri' (piedra) y el sufijo abundante '-itz'. "Pedregal".
+Arrosa;F;Vasco;Significa "rosa" (la flor).
+Arsène;M;Griego;De 'arsenios'. Significa "viril" o "fuerte".
+Arsenio;M;Griego;Variante de Arsène. Significa "varonil".
+Artai;M;Vasco;Nombre mitológico o variante de Artaios.
+Arthur;M;Celta;De 'artos' (oso). Significa "oso fuerte" o "noble".
+Artur;M;Catalán/Portugués;Variante de Arthur.
+Arturo;M;Celta/Latín;Forma española de Arthur.
+Artzai;M;Vasco;Significa "pastor".
+Ase;F;Escandinavo;De 'as' (dios). Significa "diosa".
+Asentzio;M;Vasco;Equivalente a Ascensión. Del latín 'ascensio'.
+Ashley;F;Inglés;De 'ash' (fresno) y 'leah' (prado). "Prado de fresnos".
+Ashley;U;Inglés;Uso unisex de Ashley (prado de fresnos).
+Ashton;U;Inglés;De 'ash' (fresno) y 'tun' (asentamiento). Significa "lugar de fresnos".
+Asier;M;Vasco;Significa "el principio" o "el comienzo".
+Assumpció;F;Catalán;Referente a la Asunción de la Virgen María (del latín 'assumptio').
+Aste;F;Vasco;Significa "semana" o relacionado con 'aste' (inicio).
+Asto;M;Vasco;Significa "burro" (uso histórico o mitológico poco común hoy).
+Asunción;F;Latín;De 'assumptio', significa "atracción", "acción de tomar para sí" o "elevación".
+Atarrabi;M;Vasco;Personaje de la mitología vasca, hijo de Mari (personifica el bien).
+Ator;M;Vasco;Nombre mitológico o derivado de 'ator' (túnica/camisa).
+Atxarte;F;Vasco;De 'atx' (roca) y 'arte' (entre). "Entre rocas" o "desfiladero".
+Aubin;M;Latín/Francés;De 'Albinus', derivado de 'albus' (blanco/brillante).
+Aubrey;F;Germánico;De 'alf' (elfo) y 'ric' (poder). "Gobernante de los elfos".
+Aude;F;Germánico;Variante femenina de Aldo, significa "vieja", "sabia" o "noble".
+Audrey;F;Anglosajón;De 'aethel' (noble) y 'thryth' (fuerza). "Noble fortaleza".
+Audric;M;Germánico;De 'ald' (viejo) y 'ric' (poder). "Gobernante sabio o antiguo".
+Augustin;M;Latín;Variante francesa/inglesa de Agustín. Significa "venerable".
+Augusto;M;Latín;Significa "majestuoso", "sagrado" o "consagrado por los augures".
+Aurea;F;Latín;Significa "dorada" o "hecha de oro".
+Aurèle;M;Latín/Francés;Forma francesa de Aurelio. Significa "dorado".
+Aurelia;F;Latín;Forma femenina de Aurelio. Significa "dorada" o "resplandeciente".
+Aurélie;F;Francés;Variante francesa de Aurelia.
+Aurélien;M;Latín/Francés;Derivado de Aurelio. Significa "perteneciente a la familia de los Aurelios".
+Aurora;F;Latín;Significa "amanecer" o "diosa del alba".
+Aurore;F;Francés;Forma francesa de Aurora.
+Aurre;M;Vasco;Significa "delante" o "frente".
+Aurtz;M;Vasco;Relacionado con 'aur' (niño) o formas de la naturaleza.
+Austin;M;Latín/Inglés;Contracción de Augustin. Significa "digno de veneración".
+Autumn;F;Latín;Significa "otoño", la estación de la cosecha.
+Auzolan;M;Vasco;Significa "trabajo vecinal" o "trabajo en comunidad".
+Avery;U;Germánico/Inglés;Derivado de Alfred. Significa "consejo de los elfos".
+Axelle;F;Hebreo/Francés;Forma femenina de Axel (Absalón). Significa "mi padre es paz".
+Axular;M;Vasco;Nombre del famoso escritor vasco Pedro de Aguerre 'Axular', apodo de su casa.
+Ayana;F;Etíope/Sánscrito;En amhárico "flor hermosa"; en sánscrito "camino" o "refugio".
+Baialde;F;Vasco;Topónimo vasco.
+Bailey;F;Inglés;Significa "alguacil" o "administrador del patio de un castillo".
+Bailey;U;Inglés;Uso unisex del nombre Bailey.
+Bakarne;F;Vasco;Equivalente a Soledad. De 'bakar' (solo). Significa "solitaria".
+Baldomero;M;Germánico;De 'bald' (audaz) y 'meri' (famoso). "Famoso por su audacia".
+Balkar;M;Vasco;Referente a una cordillera o zona de montaña.
+Baltasar;M;Acadio/Hebreo;De 'Bel-shat-zar'. Significa "Bel protege al rey".
+Baltz;M;Vasco;Significa "negro".
+Baptiste;M;Griego;De 'baptistes'. Significa "el que bautiza".
+Barbara;F;Griego;Significa "extranjera" o "la que no habla griego".
+Bárbara;F;Español;Variante de Barbara.
+Bàrbara;F;Catalán;Variante de Barbara.
+Bartolomeu;M;Arameo;Significa "hijo de Tolmai" o "hijo de los surcos".
+Bartomeu;M;Catalán;Forma catalana de Bartolomé.
+Basile;M;Griego;De 'basileios'. Significa "rey" o "regio".
+Basilisa;F;Griego;Forma femenina de Basilio. Significa "reina" o "emperatriz".
+Bastien;M;Griego;Abreviatura de Sébastien (Sebastián). Significa "venerable".
+Beatrice;F;Latín/Italiano;De 'Beatrix'. Significa "la que hace feliz" o "viajera".
+Béatrice;F;Latín/Francés;Variante de Beatrix. Significa "la que trae felicidad" o "viajera".
+Beatriu;F;Catalán;Forma catalana de Beatriz. Significa "bienaventurada" o "que hace feliz".
+Beatriz;F;Latín;De 'Beatrix'. Significa "la que hace feliz" o "portadora de alegría".
+Begoña;F;Vasco;De 'Bego-oina', lugar de advocación mariana. Significa "lugar sobre el cerro".
+Belinda;F;Germánico;De 'bet' (brillante) y 'linda' (serpiente/escudo) o "la que es bella".
+Beltz;M;Vasco;Significa "negro". Usado históricamente como nombre propio.
+Benedita;F;Latín;Variante de Benedicta. Significa "bendecida" o "aquella de quien se habla bien".
+Benedito;M;Latín;Variante de Benedicto. Significa "bendito".
+Benito;M;Latín;Forma abreviada de Benedicto. Significa "el bendecido".
+Benjamin;M;Hebreo;De 'Binyamin'. Significa "hijo de la mano derecha" o "hijo de la virtud".
+Benjamín;M;Hebreo;Variante en español de Benjamin.
+Benoît;M;Francés;Forma francesa de Benedicto. Significa "bendito".
+Bento;M;Portugués;Forma abreviada portuguesa de Benedito.
+Beñat;M;Vasco;Forma vasca de Bernardo. Significa "guerrero audaz como un oso".
+Beor;M;Vasco;Significa "yegua" (nombre de uso antiguo o mitológico).
+Bernadette;F;Francés;Diminutivo de Bernard. Significa "osa fuerte y valiente".
+Bernard;M;Germánico;De 'beran' (oso) y 'hard' (fuerte). "Fuerte como un oso".
+Bernardo;M;Germánico;Variante española de Bernard.
+Bernat;M;Catalán;Forma catalana de Bernardo.
+Bernice;F;Griego;De 'Pherenike'. Significa "la que trae la victoria".
+Berta;F;Germánico;De 'berht'. Significa "brillante", "ilustre" o "resplandeciente".
+Bertrand;M;Germánico;De 'berht' (brillo) y 'rand' (escudo/borde). "Escudo reluciente".
+Bethany;F;Hebreo;De 'Betania', lugar bíblico. Significa "casa de higos" o "casa de aflicción".
+Beverly;F;Inglés;De 'beaver' (castor) y 'leah' (prado). "Prado de castores".
+Bianca;F;Italiano;Variante de Blanca. Significa "brillante" o "de piel clara".
+Bieita;F;Gallego;Forma gallega de Benedicta. Significa "bendita".
+Biel;M;Catalán/Hebreo;Abreviatura de Gabriel. Significa "fuerza de Dios".
+Bihotz;F;Vasco;Significa "corazón".
+Bittor;M;Vasco;Forma vasca de Víctor. Significa "vencedor" o "conquistador".
+Bizen;M;Vasco;Forma vasca de Vicente. Significa "el que vence".
+Blair;U;Gaélico;De 'blár'. Significa "campo de batalla" o "llanura".
+Blaise;M;Latín;De 'Blasius'. Significa "tartamudo" o "balbuciente".
+Blake;M;Inglés;De 'blac' (negro) o 'blaac' (pálido). Significa "oscuro" o "brillante".
+Blake;U;Inglés;Uso unisex de Blake.
+Blanca;F;Germánico;De 'blank'. Significa "blanca", "brillante" o "pura".
+Blandine;F;Latín/Francés;De 'blandus'. Significa "afable", "cariñosa" o "halagadora".
+Boniface;M;Latín;De 'Bonifatius'. Significa "el que hace el bien" o "buen destino".
+Bradley;M;Inglés;De 'brad' (ancho) y 'leah' (prado). "Prado ancho".
+Brais;M;Gallego;Forma gallega de Blas. Significa "aquel que tiene dificultad al hablar".
+Branca;F;Gallego/Portugués;Forma gallega de Blanca.
+Brandon;M;Inglés/Celta;De 'breen' (colina). Significa "cuervo" o "príncipe de la colina".
+Brenda;F;Nórdico/Celta;De 'brand'. Significa "espada" o "antorcha".
+Breogán;M;Celta;Nombre del mítico rey celta de Galicia. Significa "el de la fuerza resplandeciente".
+Brett;U;Bretón/Francés;Significa "bretón" o "nativo de Bretaña".
+Brian;M;Celta/Irlandés;De 'brígh'. Significa "fuerte", "noble" o "de gran valor".
+Brianna;F;Celta;Forma femenina de Brian. Significa "noble" o "fuerte".
+Brielle;F;Hebreo/Francés;Abreviatura de Gabrielle. Significa "Dios es mi fuerza".
+Brigitte;F;Celta/Francés;De 'Brighid'. Significa "fuerza", "poder" o "exaltada".
+Brook;U;Inglés;Significa "arroyo" o "corriente de agua pequeña".
+Brooke;U;Inglés;Variante de Brook. Significa "del arroyo".
+Brooklyn;F;Holandés/Inglés;De "Breukelen" (pantano). Popularizado por el distrito de NY.
+Bruce;M;Escocés/Francés;Nombre de clan normando "de Brus". Significa "del bosque".
+Bruna;F;Germánico;Femenino de Bruno. Significa "de piel oscura" o "marrón".
+Bruno;M;Germánico;De 'brun'. Significa "el que es moreno" o "el que brilla (armadura)".
+Bryan;M;Celta;Variante de Brian. Significa "fuerte", "noble" o "virtuoso".
+Caio;M;Latín;Variante de Cayo. Significa "alegre" o "el que se regocija".
+Caitlin;F;Irlandés/Griego;Forma irlandesa de Catalina. Significa "pura".
+Caleb;M;Hebreo;De 'keleb'. Significa "perro" (simbolizando fidelidad) o "todo corazón".
+Calixte;M;Griego;De 'kallistos'. Significa "el más bello".
+Cameron;M;Gaélico;De 'cam-shron'. Significa "nariz torcida" (originalmente un apodo).
+Cameron;U;Gaélico;Uso unisex de Cameron.
+Camila;F;Latín;De 'camillus'. Significa "la que mantiene el fuego" o "mensajera de los dioses".
+Camilla;F;Latín;Variante de Camila.
+Camille;F;Francés;Variante francesa de Camila (usado principalmente en femenino).
+Camille;M;Francés;Uso masculino francés de Camille.
+Camilo;M;Latín;Forma masculina de Camila. Significa "noble servidor del templo".
+Candelaria;F;Latín;De 'candela'. Referente a la fiesta de la Purificación (luz).
+Candice;F;Etíope/Latín;Título de las reinas de Etiopía (Kandake). Significa "blanca" o "pura".
+Capucine;F;Francés;Significa "capuchina" (la flor). Deriva del latín por la forma de capucha.
+Caridade;F;Gallego/Portugués;Significa "caridad", una de las virtudes teologales.
+Carine;F;Francés/Latín;Del latín 'carus' (querido). Significa "amada" o "querida".
+Carl;M;Germánico;Variante alemana de Carlos. Significa "hombre libre".
+Carla;F;Germánico;Femenino de Carlo/Carlos. Significa "mujer fuerte y libre".
+Carles;M;Catalán;Forma catalana de Carlos.
+Carlos;M;Germánico;De 'karal'. Significa "hombre", "varón" o "hombre libre".
+Carlota;F;Germánico/Francés;Diminutivo de Carla. Significa "la que es fuerte".
+Carme;F;Catalán/Gallego;Variante de Carmen. Significa "jardín de Dios".
+Carmelle;F;Hebreo/Francés;Variante de Carmelo/Carmen. Significa "viñedo".
+Carmen;F;Hebreo/Latín;Del hebreo 'karmel' (jardín) o del latín 'carmen' (canto/poema).
+Carmiña;F;Gallego;Diminutivo gallego de Carmen.
+Carolina;F;Germánico;Variante de Carla. Significa "mujer libre e inteligente".
+Caroline;F;Francés/Inglés;Variante de Carolina.
+Carter;M;Inglés;Nombre ocupacional. Significa "el que conduce un carro".
+Casey;U;Gaélico;De 'cathasaigh'. Significa "vigilante" o "valiente".
+Casiano;M;Latín;De 'Cassianus'. Significa "perteneciente a la familia de los Cassii".
+Cassandre;F;Griego;Forma francesa de Casandra. Significa "la que brilla entre los hombres".
+Cassidy;F;Irlandés;De 'Caiside'. Significa "la de pelo rizado".
+Cássio;M;Latín/Portugués;Significa "el que está vacío" o "el que usa casco".
+Catalina;F;Griego;De 'katharos'. Significa "pura" o "inmaculada".
+Catarina;F;Portugués/Gallego;Forma de Catalina.
+Caterina;F;Catalán/Italiano;Forma de Catalina.
+Catherine;F;Francés/Inglés;Forma de Catalina.
+Cécile;F;Francés;Forma francesa de Cecilia.
+Cecilia;F;Latín;De 'caecus'. Significa "ciega" o "pequeña ciega".
+Cédric;M;Bretón/Celta;De 'kad' (batalla) y 'ric' (señor). Significa "jefe de guerra".
+Célestin;M;Latín/Francés;Significa "perteneciente al cielo" o "celestial".
+Celia;F;Latín;De 'caelum'. Significa "perteneciente al cielo".
+Célia;F;Portugués/Francés;Variante de Celia.
+Céline;F;Francés;Variante de Celia o Selena (luna).
+Celsa;F;Latín;Femenino de Celso. Significa "elevada" o "sublime".
+Celso;M;Latín;De 'celsus'. Significa "alto", "elevado" o "noble".
+Cerise;F;Francés;Significa "cereza" (la fruta).
+Césaire;M;Latín/Francés;Variante de César.
+César;M;Latín;De 'caesaries'. Significa "cabellera" o "el que nace por cesárea".
+Céu;F;Portugués;Significa "cielo".
+Chantal;F;Francés;De 'cantal' (piedra/roca). Nombre de familia convertido en nombre propio.
+Charles;M;Francés/Inglés;Forma de Carlos. Significa "hombre libre".
+Charlie;U;Germánico/Inglés;Hipocorístico de Charles o Charlotte.
+Charlotte;F;Francés;Diminutivo femenino de Charles. Significa "pequeña y fuerte".
+Chase;M;Francés antiguo;Significa "el cazador" o "perseguir".
+Chelsea;F;Inglés;Significa "puerto de tiza" o "lugar de desembarco".
+Cheryl;F;Francés/Inglés;Combinación de Cherry (cereza) y Beryl (piedra preciosa).
+Chloe;F;Griego;Significa "hierba verde" o "brote joven de planta".
+Chloé;F;Francés;Variante de Chloe.
+Chris;U;Griego;Abreviatura de Christian o Christopher. Significa "el ungido".
+Christelle;F;Francés;Variante de Cristina. Significa "seguidora de Cristo".
+Christian;M;Latín;De 'christus'. Significa "seguidor de Cristo".
+Christina;F;Latín/Griego;Variante de Cristina.
+Christine;F;Francés/Inglés;Variante de Cristina.
+Christophe;M;Francés;Forma francesa de Cristóbal.
+Christopher;M;Griego;De 'Christophoros'. Significa "el que lleva a Cristo".
+Cibrán;M;Gallego;Forma gallega de Cipriano. Significa "procedente de Chipre".
+Cira;F;Persa/Griego;Femenino de Ciro. Significa "pastora" o "sol".
+Claire;F;Francés;Forma francesa de Clara. Significa "brillante" o "clara".
+Clara;F;Latín;De 'clarus'. Significa "brillante", "ilustre" o "famosa".
+Claude;M;Latín/Francés;Del nombre romano 'Claudius'. Significa "cojo".
+Cláudia;F;Portugués;Forma de Claudia.
+Clàudia;F;Catalán;Forma de Claudia.
+Claudine;F;Francés;Diminutivo de Claudia.
+Clayton;M;Inglés;De 'clay' (arcilla) y 'tun' (pueblo). "Pueblo sobre arcilla".
+Cléandre;M;Griego;De 'kleos' (gloria) y 'aner' (hombre). "Hombre glorioso".
+Clémence;F;Latín/Francés;Significa "clemencia", "piedad" o "bondad".
+Clément;M;Latín/Francés;Significa "compasivo", "clemente" o "moderado".
+Clotilde;F;Germánico;De 'hlut' (fama) y 'hild' (batalla). "Famosa guerrera".
+Clovis;M;Germánico/Francés;Forma antigua de Luis. Significa "guerrero ilustre".
+Cody;M;Gaélico/Inglés;De 'O Cuidighthigh'. Significa "persona servicial" o "ayudante".
+Colette;F;Francés;Diminutivo de Nicolette (Nicolás). Significa "victoria del pueblo".
+Colin;M;Francés/Griego;Diminutivo de Nicolás. Significa "pueblo victorioso".
+Coline;F;Francés;Femenino de Colin.
+Colleen;F;Irlandés;De 'cailín'. Significa "chica" o "muchacha".
+Coloma;F;Catalán/Latín;Significa "paloma".
+Colton;M;Inglés;De 'cola' (carbón) y 'tun' (asentamiento). "Pueblo de carbón".
+Comba;F;Gallego/Latín;Forma gallega de Columba. Significa "paloma".
+Connor;M;Gaélico;De 'Conchobhar'. Significa "amante de los perros" o "amante de los lobos".
+Constança;F;Catalán/Portugués;Forma de Constanza. Significa "constante".
+Constance;F;Latín/Francés;Significa "firmeza" o "perseverancia".
+Constant;M;Latín/Francés;Significa "firme" o "perseverante".
+Consuelo;F;Latín;Significa "consuelo", "alivio" o "confort".
+Cooper;M;Inglés;Nombre ocupacional. Significa "fabricante de barriles".
+Coralie;F;Griego/Francés;Derivado de coral. Significa "doncella del coral".
+orentin;M;Bretón;Del bretón 'korentin', relacionado con "amigo" o "tempestad".
+Corey;U;Gaélico/Inglés;De 'corra' (lugar hueco) o 'coire' (caldero/torrente).
+Corinne;F;Griego/Francés;De 'kore'. Significa "doncella" o "virgen".
+Cosme;M;Griego;De 'kosmos'. Significa "orden", "belleza" o "universo".
+Courtney;F;Francés/Inglés;De 'courtenay', nombre de familia normando. Significa "del dominio de Curtenus".
+Craig;M;Gaélico;De 'creag'. Significa "roca" o "acantilado".
+Cristina;F;Latín/Griego;Femenino de Cristiano. Significa "seguidora de Cristo" o "ungida".
+Cristóbal;M;Griego;De 'Christophoros'. Significa "el que lleva a Cristo".
+Cristóvão;M;Portugués;Forma portuguesa de Cristóbal.
+Cynthia;F;Griego;De 'Kynthia', epíteto de Artemisa (diosa nacida en el monte Cinto).
+Cyprien;M;Francés;Forma francesa de Cipriano. Significa "originario de Chipre".
+Cyril;M;Griego;De 'kyrillos', derivado de 'kyrios' (señor). Significa "señorial".
+Cyrille;M;Francés;Variante francesa de Cyril.
+Daisy;F;Inglés;Significa "margarita". Del anglosajón 'daegeseage' (ojo del día).
+Dakota;M;Nativo Americano;Tribu sioux. Significa "amigo" o "aliado".
+Dakota;U;Nativo Americano;Uso unisex de Dakota.
+Dale;U;Inglés;De 'dæl'. Significa "valle".
+Dalila;F;Hebreo;De 'dalal'. Significa "débil", "lánguida" o "coqueta".
+Damià;M;Catalán;Forma catalana de Damián.
+Damián;M;Griego;De 'Damianos'. Significa "domador" o "consagrado al pueblo".
+Damien;M;Francés;Variante francesa de Damián.
+Damiens;M;Francés;Apellido usado como nombre, significa "de la familia de Damián".
+Dana;F;Hebreo;Variante de Daniel (Dios es mi juez) o de origen celta (madre diosa).
+Dana;U;Hebreo/Celta;Uso unisex de Dana.
+Danel;M;Vasco;Forma vasca de Daniel.
+Danele;F;Vasco;Forma femenina de Daniel.
+Daniel;M;Hebreo;De 'Daniyyel'. Significa "Dios es mi juez".
+Daniela;F;Hebreo;Forma femenina de Daniel.
+Danielle;F;Francés/Hebreo;Forma femenina francesa de Daniel.
+Danilo;M;Eslavo/Hebreo;Variante de Daniel.
+Darius;M;Persa/Griego;De 'Dareios'. Significa "el que mantiene el bien" o "poseedor de bienes".
+Darnell;M;Francés antiguo;De 'darnelle' (nombre de una planta).
+Daryl;U;Inglés/Francés;De 'Airelle', nombre de lugar.
+Davi;M;Portugués/Hebreo;Forma portuguesa de David.
+David;M;Hebreo;De 'Dawid'. Significa "amado" o "querido por Dios".
+Dean;M;Inglés;De 'denu' (valle) o del latín 'decanus' (decano/líder).
+DeAndre;M;Inglés/Francés;Combinación moderna de 'De-' y Andre/Andrés.
+Débora;F;Hebreo;De 'Devorah'. Significa "abeja".
+Deborah;F;Hebreo;Variante de Débora.
+Deion;U;Inglés;Variante moderna de Dion (Dionisio).
+Deja;F;Francés/Inglés;Del francés 'déjà vu'. Significa "ya visto" o "recordado".
+Delphine;F;Griego/Francés;De 'Delphina'. Significa "natural de Delfos" o "delfín".
+DeMarcus;M;Inglés/Latín;Combinación moderna de 'De-' y Marcus (Marcos).
+Demonte;M;Inglés/Latín;Combinación moderna de 'De-' y Monte.
+Denis;M;Francés;Forma francesa de Dionisio. Significa "consagrado a Dionisio (dios del vino)".
+Denise;F;Francés;Forma femenina de Denis.
+Dennis;M;Inglés;Variante inglesa de Denis.
+Derek;M;Germánico;Forma abreviada de Theodoric (Teodorico). Significa "gobernante del pueblo".
+Derrick;M;Inglés;Variante de Derek.
+DeShawn;M;Inglés;Combinación moderna de 'De-' y Shawn/Shaun (Juan).
+Destinee;F;Francés/Latín;Variante de Destiny.
+Destiny;F;Latín/Inglés;Significa "destino" o "hado".
+Devin;M;Celta/Inglés;De 'damh' (buey/poeta). Significa "poeta" o "servidor divino".
+Devin;U;Celta/Inglés;Uso unisex de Devin.
+DeVonte;M;Inglés/Latín;Combinación moderna de 'De-' y Vonte/Fuente.
+Diana;F;Latín;De 'dius' (día/luz). Significa "divina" o "diosa de la luna".
+Diane;F;Francés;Forma francesa de Diana.
+Dídac;M;Catalán;Forma catalana de Diego/Didacus.
+Didier;M;Francés;Del latín 'Desiderius'. Significa "deseado" o "anhelado".
+Diego;M;Hebreo/Griego;Posiblemente de Santiago (Sant Iago) o del griego 'didache' (enseñanza).
+Dimitri;M;Griego/Ruso;De Deméter (diosa de la cosecha). Significa "consagrado a la tierra".
+Dinis;M;Portugués;Forma portuguesa de Dionisio.
+Diogo;M;Portugués;Forma portuguesa antigua de Diego/Didacus.
+Dolores;F;Latín;De 'dolor'. Advocación mariana: "Nuestra Señora de los Dolores".
+Dolors;F;Catalán;Forma catalana de Dolores.
+Domingo;M;Latín;De 'dominicus'. Significa "consagrado al Señor" o "nacido en domingo".
+Domingos;M;Portugués;Forma portuguesa de Domingo.
+Dominic;M;Latín;Variante de Domingo.
+Dominique;F;Francés;Forma francesa de Dominica/Dominga.
+Dominique;M;Francés;Uso masculino de Dominique.
+Donald;M;Gaélico;De 'Domhnall'. Significa "gobernante del mundo" o "valiente oscuro".
+Donatien;M;Francés;De 'Donatus'. Significa "donado" o "regalo (de Dios)".
+Dores;F;Portugués;Variante de Dolores.
+Dorothy;F;Griego;De 'doron' (regalo) y 'theos' (Dios). Significa "regalo de Dios".
+Douglas;M;Gaélico;De 'dubh' (oscuro) y 'glais' (arroyo). "Arroyo oscuro".
+Drew;U;Galés/Inglés;Abreviatura de Andrew o del galés 'drw' (fiel).
+Duarte;M;Portugués;Variante de Eduardo (guardián rico).
+Dulce;F;Latín;De 'dulcis'. Significa "dulce" o "amable".
+Dunixi;M;Vasco;Forma vasca de Dionisio.
+Dustin;M;Germánico/Inglés;De 'Thorsten' (piedra de Thor) o "valle polvoriento".
+Dwayne;M;Gaélico/Inglés;Variante de Duane/Dwaine. Significa "oscuro" o "negro".
+Dylan;M;Galés;De 'dy' (genial) y 'llanw' (flujo/mar). Significa "hijo del mar" o "gran marea".
+Dylan;U;Galés;Uso unisex de Dylan.
+Eban;M;Hebreo;Variante de Eben. Significa "piedra" (de ayuda).
+Eden;U;Hebreo;Del 'Edén'. Significa "delicia" o "paraíso".
+Eder;M;Vasco;Significa "hermoso" o "bello".
+Ederne;F;Vasco;Forma femenina de Eder, significa "hermosa".
+Edgar;M;Anglosajón;De 'ead' (riqueza) y 'gar' (lanza). Significa "lanza afortunada/rica".
+Edith;F;Anglosajón;De 'ead' (riqueza) y 'gyth' (guerra). Significa "guerrera rica/afortunada".
+Édith;F;Francés;Variante francesa de Edith.
+Édouard;M;Francés;Forma francesa de Eduardo.
+Eduardo;M;Anglosajón;De 'ead' (riqueza) y 'weard' (guardián). Significa "guardián rico".
+Edur;M;Vasco;Significa "nieve".
+Edurne;F;Vasco;Femenino de Edur, significa "nieve" o "blanca como la nieve".
+Edward;M;Inglés;Forma inglesa de Eduardo.
+Églantine;F;Francés;Referente a la flor del escaramujo silvestre.
+Eider;F;Vasco;Nombre de advocación mariana local (Isla Eider).
+Eileen;F;Irlandés;Anglicanización de Eibhlin, relacionado con Elena (luz/antorcha).
+Ekain;M;Vasco;Nombre del mes de Junio (solsticio de verano).
+Ekhi;M;Vasco;Significa "sol".
+Eki;M;Vasco;Variante de Ekhi, significa "sol".
+Ekiñe;F;Vasco;Femenino de Ekhi, significa "soleada" o "reluciente".
+Elaine;F;Francés/Griego;Forma medieval francesa de Elena/Helen. Significa "luz" o "antorcha".
+Elbira;F;Vasco;Forma vasca de Elvira. Origen incierto, posiblemente "lanza noble".
+Eleanor;F;Francés antiguo;Forma de Leonor/Elena. Significado incierto, posiblemente "luz".
+Elena;F;Griego;De 'Helene' o 'Helios'. Significa "antorcha", "luz brillante" o "rayo de sol".
+Éléonore;F;Francés;Forma francesa de Leonor.
+Eli;U;Hebreo;Abreviatura de Elías (mi Dios es Yahvé) o Elizabeth (mi Dios es un juramento).
+Elias;M;Hebreo;De 'Eliyyahu'. Significa "Mi Dios es Yahvé".
+Élie;M;Francés;Forma francesa de Elías.
+Elijah;M;Hebreo;Forma inglesa de Elías.
+Élina;F;Francés/Griego;Diminutivo de Elena.
+Elisabet;F;Hebreo;De 'Elisheva'. Significa "Mi Dios es un juramento" o "consagrada a Dios".
+Élisabeth;F;Francés;Forma francesa de Elisabet.
+Élise;F;Francés;Forma abreviada de Élisabeth.
+Eliseu;M;Portugués;Forma portuguesa de Eliseo. Significa "Dios es mi salvación".
+Elixabete;F;Vasco;Forma vasca de Elizabeth/Isabel.
+Elixane;F;Vasco;Variante de Elixabete.
+Elizabeth;F;Hebreo;Forma inglesa de Elisabet.
+Ella;F;Germánico/Inglés;Forma abreviada de nombres germánicos (ej. Eleanor, Ellen). Significa "hada" o "luz".
+Ellen;F;Griego/Inglés;Forma inglesa medieval de Elena. Significa "luz" o "antorcha".
+Elliot;M;Hebreo/Inglés;Diminutivo medieval de Elias.
+Elliot;U;Hebreo/Inglés;Uso unisex de Elliot.
+Élodie;F;Griego/Francés;De 'helodias' (pantano) o 'eleutheria' (libertad).
+Eloi;M;Catalán;Forma catalana de Eloy.
+Éloi;M;Francés;Forma francesa de Eloy/Eligius. Significa "el elegido".
+Éloïse;F;Francés/Germánico;Posiblemente de 'Helewidis' (sana y ancha) o 'Eloisa' (guerrera famosa).
+Elor;M;Vasco;Significa "espina" o "espino".
+Elorri;M;Vasco;Variante de Elor (espina/espino).
+Eloy;M;Latín;De 'Eligius'. Significa "el elegido" o "el escogido".
+Elur;F;Vasco;Significa "nieve".
+Ema;F;Germánico;Variante de Emma.
+Émeric;M;Germánico/Francés;De 'heim' (casa) y 'ric' (poder). Significa "gobernante de su hogar".
+Emerson;U;Germánico/Inglés;Apellido patronímico. Significa "hijo de Emery".
+Emery;U;Germánico/Inglés;Variante de Émeric. Significa "gobernante del hogar".
+Émile;M;Francés;Forma francesa de Emilio.
+Emília;F;Portugués/Catalán;Forma de Emilia.
+Émilie;F;Francés;Forma francesa de Emilia.
+Emilio;M;Latín;De la familia romana 'Aemilius'. Significa "rival" o "trabajador".
+Emily;F;Latín/Inglés;Forma inglesa de Emilia.
+Emma;F;Germánico;De la raíz 'ermen'. Significa "completa", "universal" o "fuerza".
+Emmanuelle;F;Hebreo/Francés;Forma femenina de Emmanuel. Significa "Dios está con nosotros".
+Enara;F;Vasco;Variante de Ainara. Significa "golondrina".
+Encarnación;F;Latín;De 'incarnatio'. Significa "encarnación", referencia religiosa.
+Endika;M;Vasco;Forma vasca de Enrique.
+Eneko;M;Vasco;Forma original vasca de Íñigo/Ignacio. Significa "mío" o "propio".
+Enetz;M;Vasco;Topónimo vasco.
+Enguerrand;M;Germánico/Francés;De 'Angil' (tribu germana) y 'hramn' (cuervo). "Cuervo de Angil".
+Enric;M;Catalán;Forma catalana de Enrique.
+Enrique;M;Germánico;De 'heim' (casa) y 'ric' (poder). Significa "jefe/rey de la casa" o "gobernante del hogar".
+Enzo;M;Germánico/Italiano;Forma italiana de Heinrich (Enrique).
+Eragin;M;Vasco;Significa "influencia" o "efecto".
+Erea;F;Gallego;Forma gallega de Irene. Significa "paz".
+Éric;M;Escandinavo/Francés;De 'ei' (siempre) y 'ríkr' (gobernante). Significa "gobernante eterno".
+Erica;F;Escandinavo/Latín;Femenino de Eric o referente a la planta (brezo).
+Erik;M;Escandinavo;Variante de Eric.
+Erin;F;Gaélico/Irlandés;Nombre poético de Irlanda (Éire).
+Erin;U;Gaélico/Irlandés;Uso unisex de Erin.
+Erle;F;Vasco;Significa "abeja".
+Ermelinda;F;Germánico;De 'ermen' (universal/todo) y 'lind' (suave/tilo). "Universalmente suave".
+Ermitas;F;Gallego/Portugués;Referente a la advocación mariana "Nuestra Señora de las Ermitas".
+Ermitas;M;Gallego/Portugués;Uso masculino de Ermitas (raro).
+Ernai;F;Vasco;Significa "despierta" o "activa".
+Ernai;M;Vasco;Uso masculino de Ernai.
+Ernesto;M;Germánico;De 'eornost'. Significa "sincero", "serio" o "decidido".
+Ero;M;Gallego;Del latín 'erus' (dueño/señor) o del germánico 'er' (honor/ejército).
+Erwan;M;Bretón;Forma bretona de Ivo/Iván. Significa "tejo" o "arquero".
+Esmée;F;Francés;Del verbo 'esmer' (amar). Significa "amada" o "estimada".
+Esperança;F;Catalán/Portugués;Significa "esperanza". Virtud teologal.
+Esteban;M;Griego;De 'stephanos'. Significa "corona" o "guirnalda".
+Estelle;F;Latín/Francés;De 'stella'. Significa "estrella".
+Ester;F;Persa/Hebreo;De 'stara' (estrella). Nombre de la reina bíblica.
+Estevão;M;Portugués;Forma portuguesa de Esteban.
+Esteve;M;Catalán;Forma catalana de Esteban.
+Estevo;M;Gallego;Forma gallega de Esteban.
+Esther;F;Hebreo;Variante de Ester.
+Esti;F;Vasco;Diminutivo de Esther o relacionado con 'edesti' (historia/narración).
+Ethan;M;Hebreo;De 'Eitan'. Significa "firme", "fuerte" o "duradero".
+Étienne;M;Francés;Forma francesa de Esteban.
+Etxahun;M;Vasco;Topónimo. Significa "la casa grande" o "la casa de familia".
+Eudald;M;Germánico/Catalán;De 'eud' (riqueza) y 'wald' (gobierno). Significa "gobernante rico".
+Eugenia;F;Griego;De 'eugenes'. Significa "bien nacida", "noble" o "de buena estirpe".
+Eugénia;F;Portugués;Variante de Eugenia.
+Eugénie;F;Francés;Forma francesa de Eugenia.
+Eulàlia;F;Catalán/Griego;De 'eu' (bien) y 'lalein' (hablar). Significa "la bien hablada".
+Eulalie;F;Francés/Griego;Variante francesa de Eulalia.
+Eusèbe;M;Griego/Francés;De 'eusebes'. Significa "piadoso" o "reverente".
+Euxenia;F;Gallego;Forma gallega de Eugenia.
+Eva;F;Hebreo;De 'Hawwa'. Significa "la que da vida" o "madre de la vida".
+Evan;M;Galés/Hebreo;Forma galesa de Juan (regalo de Dios) o variante de Eva.
+Evaristo;M;Griego;De 'euaristos'. Significa "agradable" o "satisfactorio".
+Evelyn;F;Inglés/Francés;Del nombre normando 'Aveline' (avellana/deseada) o Eva.
+Fabián;M;Latín;De 'Fabianus', relacionado con 'faba' (haba). Significa "cultivador de habas" o "perteneciente a Fabio".
+Fabiana;F;Latín;Forma femenina de Fabián.
+Fabien;M;Francés;Forma francesa de Fabián.
+Fabienne;F;Francés;Forma femenina de Fabien.
+Fábio;M;Portugués;Forma portuguesa de Fabio.
+Fabiola;F;Latín;Diminutivo de Fabia. Significa "pequeña haba" o "pequeña cultivadora de habas".
+Fabrice;M;Francés;Forma francesa de Fabricio.
+Fabrício;M;Portugués;De 'fabricius'. Significa "artesano" o "trabajador".
+Faith;F;Inglés;Del latín 'fides'. Significa "fe" o "confianza".
+Fanny;F;Inglés/Francés;Hipocorístico de Frances. Significa "francesa" o "libre".
+Fátima;F;Árabe;Significa "doncella" o "la que desteta a sus hijos". Ciudad sagrada en Portugal.
+Fàtima;F;Catalán;Variante de Fátima.
+Felicidade;F;Portugués;Del latín 'felicitas'. Significa "felicidad" o "buena suerte".
+Felipe;M;Griego;De 'philippos'. Significa "amigo de los caballos".
+Félix;M;Latín;Significa "feliz", "dichoso" o "afortunado".
+Fermín;M;Latín;De 'firminus'. Significa "firme", "sólido" o "constante".
+Fernanda;F;Germánico;Femenino de Fernando. Significa "atrevida en la paz" o "viajera valiente".
+Fernando;M;Germánico;De 'firthu' (paz/libertad) y 'nanth' (atrevido). "Atrevido en la paz".
+Ferran;M;Catalán;Forma catalana de Fernando.
+Filipa;F;Portugués/Griego;Femenino de Felipe.
+Filipe;M;Portugués;Forma portuguesa de Felipe.
+Finley;U;Gaélico;De 'fionn' (blanco) y 'laogh' (guerrero). "Guerrero rubio".
+Fiona;F;Gaélico;De 'fionn'. Significa "blanca", "pura" o "justa".
+Firmin;M;Francés;Forma francesa de Fermín.
+Flavie;F;Latín/Francés;Femenino de Flavio. Significa "dorada" o "de cabellos rubios".
+Fleur;F;Francés;Significa "flor".
+Florbela;F;Portugués;Compuesto de 'flor' y 'bela'. "Flor bella".
+Florence;F;Latín;De 'florens'. Significa "floreciente" o "en flor".
+Florent;M;Latín/Francés;Significa "floreciente".
+Florentin;M;Latín/Francés;Derivado de Florent.
+Florian;M;Latín;De 'florianus'. Significa "relativo a las flores".
+Frances;F;Latín/Inglés;Femenino de Francis. Significa "francesa" o "libre".
+Francesc;M;Catalán;Forma catalana de Francisco.
+Francis;M;Latín/Inglés;De 'Franciscus'. Significa "frances" o "libre".
+Francisca;F;Latín;Femenino de Francisco.
+Francisco;M;Latín;Del nombre italiano 'Francesco'. Significa "perteneciente a los francos".
+François;M;Francés;Forma francesa de Francisco.
+Françoise;F;Francés;Forma femenina de François.
+Frank;M;Germánico;Nombre de la tribu de los francos. Significa "libre".
+Frankie;U;Inglés;Diminutivo de Frank, Francis o Frances.
+Frédéric;M;Francés;De 'frid' (paz) y 'ric' (poder). "Príncipe de la paz".
+Frederick;M;Germánico/Inglés;Forma inglesa de Federico.
+Froilán;M;Germánico;De 'frauji' (señor) y 'land' (tierra). "Señor de la tierra".
+Gabin;M;Latín;De 'Gabinus'. Significa "natural de Gabii" (ciudad de Italia).
+Gabriel;M;Hebreo;De 'geber' (fuerza) y 'El' (Dios). "La fuerza de Dios".
+Gabriela;F;Hebreo;Femenino de Gabriel.
+Gabrielle;F;Francés;Femenino francés de Gabriel.
+Gaël;M;Bretón;Referente a los pueblos gaélicos o celtas.
+Gaëlle;F;Bretón;Femenino de Gaël.
+Gaétan;M;Latín/Francés;Significa "natural de Gaeta" (ciudad italiana).
+Gage;M;Francés antiguo;Significa "promesa", "fianza" o "medida".
+Gaizka;M;Vasco;Significa "salvador".
+Garaitz;F;Vasco;Significa "victoria".
+Garance;F;Francés;Nombre de la planta 'rubia tintórea' (color rojo intenso).
+Garazi;F;Vasco;Significa "gracia" o "agradable". Nombre de la Baja Navarra.
+Gari;M;Vasco;Significa "trigo".
+Garikoitz;M;Vasco;Significa "de la colina del trigo".
+Garoa;M;Vasco;Significa "helecho".
+Garrett;M;Germánico/Inglés;De 'ger' (lanza) y 'wald' (gobierno). "El que gobierna con lanza".
+Gartxot;M;Vasco;Nombre medieval vasco, popularizado por leyendas de Navarra.
+Gartze;F;Vasco;Significa "gracia".
+Gartzen;M;Vasco;Variante de Gartze o referente a la ciudad de Gartzain.
+Gaspar;M;Persa;Significa "administrador del tesoro" o "el que guarda el tesoro".
+Gaspard;M;Francés;Forma francesa de Gaspar.
+Gaston;M;Germánico/Francés;De 'gast'. Significa "huésped" o "extranjero".
+Gatari;M;Vasco;Referente a la "atadura" o "lugar de paso".
+Gau;M;Vasco;Significa "noche".
+Gauargi;M;Vasco;De 'gau' (noche) y 'argi' (luz). "Luz de la noche" o "fuego fatuo".
+Gauthier;M;Germánico/Francés;De 'wald' (mando) y 'hari' (ejército). "Gobernante del ejército".
+Gavin;M;Celta;De 'Gwalchmei'. Significa "halcón blanco" o "halcón de la batalla".
+Gédéon;M;Hebreo;De 'Gidon'. Significa "el que destruye" o "guerrero poderoso".
+Gemma;F;Latín;Significa "piedra preciosa" o "yema (de planta)".
+Geneviève;F;Germánico/Francés;De 'ken' (linaje) y 'wefa' (mujer). "Mujer de buen linaje".
+Genís;M;Catalán;Forma catalana de Ginés. Significa "generador de vida" o "protector".
+George;M;Griego;De 'georgos'. Significa "trabajador de la tierra" o "agricultor".
+Georges;M;Francés;Forma francesa de Jorge.
+Georgia;F;Griego;Femenino de Jorge.
+Geraldine;F;Germánico;Femenino de Gerardo. "La que gobierna con la lanza".
+Geraldo;M;Germánico;De 'ger' (lanza) y 'wald' (poder). "Gobernante de la lanza".
+Gérard;M;Francés;Forma francesa de Gerardo.
+Géraud;M;Germánico/Francés;Variante de Geraldo.
+Germán;M;Germánico/Latín;Significa "hermano" (latín) o "hombre de lanza" (germánico).
+Ghislain;M;Germánico/Francés;De 'gisil'. Significa "rehén" o "flecha".
+Gil;M;Latín;De 'Aegidius'. Significa "el protegido" o "el que usa piel de cabra".
+Gilles;M;Francés;Forma francesa de Gil.
+Gisèle;F;Germánico;De 'gisil'. Significa "flecha" o "promesa".
+Gloria;F;Latín;Significa "fama", "honor" o "gloria divina".
+Glória;F;Portugués;Forma portuguesa de Gloria.
+Gonçalo;M;Germánico/Portugués;De 'gund' (lucha) y 'salv' (seguro). "A salvo en la lucha".
+Gontzal;M;Vasco;Forma vasca de Gonzalo.
+Gonzalo;M;Germánico;De 'gund' (batalla). Significa "dispuesto para la lucha".
+Gorane;F;Vasco;Significa "exaltación" o "gloria".
+Gordon;M;Escocés;Nombre de clan. Significa "colina espaciosa" o "fuerte".
+Gori;M;Vasco;Significa "rojo" o "incandescente".
+Gorka;M;Vasco;Forma vasca de Jorge (agricultor).
+Gorosti;M;Vasco;Significa "acebo".
+Gotzon;M;Vasco;Forma vasca de Ángel. Significa "mensajero".
+Graça;F;Portugués;Significa "gracia" o "benevolencia".
+Grace;F;Latín/Inglés;Significa "gracia" o "encanto".
+Graham;M;Inglés/Escocés;De 'graegham'. Significa "hogar gris" o "casa de grava".
+Grant;M;Francés antiguo;Significa "grande" o "grandioso".
+Gratien;M;Latín/Francés;De 'Gratianus'. Significa "agradecido" o "agradable".
+Grayson;M;Inglés;Significa "hijo del administrador" (son of the gray/bailiff).
+Grégoire;M;Francés;Forma francesa de Gregorio.
+Gregoria;F;Griego;Femenino de Gregorio. "La que vigila".
+Gregório;M;Portugués;Forma portuguesa de Gregorio.
+Gregory;M;Griego;De 'gregorios'. Significa "vigilante" o "despierto".
+Guénolé;M;Bretón;De 'uuen' (blanco/puro) y 'wal' (valor). "Valiente y puro".
+Guiem;M;Catalán;Variante mallorquina de Guillem (Guillermo).
+Guillaume;M;Francés;Forma francesa de Guillermo. Significa "protector decidido".
+Guillem;M;Catalán;Forma catalana de Guillermo.
+Guillermo;M;Germánico;De 'wil' (voluntad) y 'helm' (casco/protección). "Protector por voluntad".
+Gumersindo;M;Germánico;De 'gum' (hombre) y 'sinths' (camino). "Hombre del camino".
+Gustave;M;Sueco/Francés;De 'Götstaf'. Significa "el báculo de los gautas" (tribu sueca).
+Gustavo;M;Sueco/Español;Variante de Gustave. Significa "apoyo de los gautas".
+Gwenaëlle;F;Bretón;De 'gwenn' (blanco/santo) y 'hael' (generoso). "Santa y generosa".
+Hailey;F;Inglés;De 'heg' (heno) y 'leah' (prado). "Prado de heno".
+Haizea;F;Vasco;Significa "viento".
+Hannah;F;Hebreo;De 'Channah'. Significa "favor" o "gracia".
+Haran;M;Hebreo/Vasco;En hebreo: "montañés"; en vasco: "valle".
+Haranburu;M;Vasco;De 'haran' (valle) y 'buru' (cabeza/cima). "Extremo del valle".
+Haritz;M;Vasco;Significa "roble".
+Harkaitz;M;Vasco;Significa "roca" o "peñasco".
+Harley;U;Inglés;De 'hara' (liebre) y 'leah' (prado). "Prado de las liebres".
+Harold;M;Germánico;De 'here' (ejército) y 'weald' (gobernante). "Gobernante del ejército".
+Harper;F;Inglés;Nombre ocupacional. Significa "la que toca el arpa".
+Harper;U;Inglés;Uso unisex de Harper.
+Harrison;M;Inglés;Significa "hijo de Harry".
+Harry;M;Germánico/Inglés;Diminutivo de Henry. Significa "dueño de la casa".
+Hayden;U;Inglés;De 'heg' (heno) y 'denu' (valle). "Valle del heno".
+Hazel;F;Inglés;Referente al árbol del avellano o al color de ojos color avellana.
+Heather;F;Inglés;Referente al brezo (planta silvestre).
+Hector;M;Griego;De 'Hektor'. Significa "poseedor" o "el que mantiene firme".
+Héctor;M;Griego;Variante en español de Hector.
+Hegoi;M;Vasco;Nombre del viento del sur en la mitología vasca.
+Helen;F;Griego;De 'Helene'. Significa "antorcha" o "luz brillante".
+Helena;F;Griego;Variante clásica de Helen.
+Hélène;F;Francés;Forma francesa de Helena.
+Henri;M;Francés;Forma francesa de Enrique (dueño de la casa).
+Henriette;F;Francés;Diminutivo femenino de Henri.
+Henrique;M;Portugués;Forma portuguesa de Enrique.
+Henry;M;Germánico/Inglés;De 'Heimerich'. Significa "gobernante del hogar".
+Hernán;M;Germánico;Variante de Fernando. Significa "guerrero audaz".
+Hervé;M;Bretón;De 'hui' (hierro) y 'viu' (brillante). "Hierro ardiente".
+Hilario;M;Latín;De 'hilaris'. Significa "alegre" o "propicio".
+Hirune;M;Vasco;Equivalente masculino de Irune (Trinidad), de 'hiru' (tres).
+Hodei;M;Vasco;Significa "nube".
+Holly;F;Inglés;Referente al acebo (árbol sagrado de invierno).
+Honoré;M;Latín/Francés;De 'honoratus'. Significa "honrado" o "digno de honra".
+Hope;F;Inglés;Significa "esperanza".
+Horácio;M;Latín/Portugués;De la familia romana 'Horatius' (tiempo/hora).
+Hortense;F;Latín/Francés;De 'hortus' (jardín). "La jardinera".
+Hortênsia;F;Portugués;Variante de Hortensia.
+Howard;M;Germánico;De 'hug' (corazón/mente) y 'ward' (guardián). "Guardián valiente".
+Hugh;M;Germánico;De 'hug'. Significa "corazón", "mente" o "espíritu".
+Hugo;M;Germánico;Variante latinizada de Hugh.
+Hunter;M;Inglés;Nombre ocupacional. Significa "cazador".
+Hunter;U;Inglés;Uso unisex de Hunter.
+Iago;M;Gallego/Hebreo;Variante de Jacobo. Significa "sostenido por el talón".
+Ian;M;Escocés/Hebreo;Forma escocesa de Juan. Significa "Dios es misericordioso".
+Ibai;M;Vasco;Significa "río".
+Ibar;M;Vasco;Significa "vega" o "valle fértil".
+Igor;M;Ruso/Nórdico;De 'Ingvar'. Significa "guerrero de Ing" (deidad nórdica).
+Iker;M;Vasco;Significa "visitación" o "el que trae buenas noticias".
+Ilargi;F;Vasco;Significa "luna" (literalmente 'luz de los muertos').
+Ilazki;F;Vasco;Significa "luz de luna".
+Ilazki;M;Vasco;Uso masculino de Ilazki.
+Ilun;M;Vasco;Significa "oscuro" o "sombrío".
+Imani;F;Árabe/Suajili;Significa "fe".
+Imanol;M;Vasco;Forma vasca de Manuel. Significa "Dios está con nosotros".
+Inés;F;Griego;De 'hagne'. Significa "casta" o "pura".
+Inès;F;Francés;Variante francesa de Inés.
+Inês;F;Portugués;Variante portuguesa de Inés.
+Iñaki;M;Vasco;Forma vasca de Ignacio. Significa "portador de fuego".
+Iñigo;M;Vasco;De 'Eneko'. Significa "lugar situado en pendiente" o "mío".
+Irai;M;Vasco;Relacionado con 'ira' (helecho).
+Irati;F;Vasco;Significa "helecho" o "lugar de helechos".
+Iratzeder;M;Vasco;De 'iratz' (helecho) y 'eder' (hermoso). "Helecho hermoso".
+Irene;F;Griego;De 'eirene'. Significa "paz".
+Irène;F;Francés;Forma francesa de Irene.
+Iria;F;Gallego/Celta;Significa "piedra" o "ciudad" (de Iria Flavia).
+Irma;F;Germánico;De 'ermen'. Significa "universal" o "grande".
+Irrintzi;M;Vasco;Significa "grito de júbilo" o "relincho".
+Iruñe;F;Vasco;Nombre vasco para la ciudad de Pamplona. Significa "la ciudad".
+Isaac;M;Hebreo;De 'Yishaq'. Significa "el que ríe" o "Dios reirá".
+Isabeau;F;Francés;Variante medieval francesa de Isabel.
+Isabel;F;Hebreo;Variante de Elisheva. Significa "Dios es mi juramento".
+Isabela;F;Hebreo/Latín;Variante de Isabel. Significa "consagrada a Dios".
+Isabella;F;Italiano;Variante italiana de Isabel.
+Isabelle;F;Francés;Variante francesa de Isabel.
+Isaline;F;Francés;Derivado de Isabelle, influenciado por nombres como Aline.
+Isaque;M;Portugués;Forma portuguesa de Isaac (el que ríe).
+Isats;M;Vasco;Significa "retama" (planta).
+Isidore;M;Griego/Francés;De 'Isidoros'. Significa "regalo de Isis".
+Isidre;M;Catalán;Forma catalana de Isidoro.
+Isidro;M;Español;Contracción de Isidoro.
+Ismael;M;Hebreo;De 'Yishmael'. Significa "Dios escuchará".
+Isolina;F;Germánico;De 'ishild'. Significa "guerrera de hierro".
+Itsasne;F;Vasco;Equivalente a Mar o Milagros del Mar. Significa "marina".
+Itsaso;U;Vasco;Significa "mar".
+Itur;M;Vasco;Raíz de 'iturri' (fuente).
+Iturri;M;Vasco;Significa "fuente".
+Itxaro;F;Vasco;Significa "esperanza" o "esperar".
+Itziar;F;Vasco;Significa "altura que mira al mar" o "campo de matorrales".
+Ivone;F;Germánico;Femenino de Ivo. Significa "tejo" (árbol sagrado).
+Ivy;F;Inglés;Significa "hiedra".
+Izadi;F;Vasco;Significa "naturaleza".
+Izan;M;Hebreo/Vasco;En hebreo: "perpetuo"; en vasco: adaptación fonética de Ethan.
+Izar;F;Vasco;Significa "estrella".
+Izaro;F;Vasco;Nombre de una isla. Significa "limonero" o relacionado con 'izar' (estrella).
+Izaskun;F;Vasco;Advocación mariana. Significa "retama" o "lugar elevado".
+Izotz;M;Vasco;Significa "hielo".
+Jacinta;F;Griego;De 'hyakinthos'. Significa "flor de jacinto".
+Jack;M;Inglés;Diminutivo medieval de Jenkin (Juan). Significa "Dios es misericordioso".
+Jackson;M;Inglés;Significa "hijo de Jack".
+Jacob;M;Hebreo;De 'Ya'aqov'. Significa "el que sostiene el talón" o "el que suplanta".
+Jacqueline;F;Francés;Femenino de Jacques (Jacobo/Santiago).
+Jacques;M;Francés;Forma francesa de Jacobo.
+Jada;F;Hebreo;Significa "sabia".
+Jade;F;Español/Francés;Referente a la piedra semipreciosa 'jade' (piedra del costado).
+Jaden;M;Hebreo/Inglés;Derivado de Jadon (agradecido) o rima con Hayden.
+Jaime;M;Hebreo/Español;Derivado de Jacob a través del latín 'Iacomus'.
+Jamal;M;Árabe;Significa "belleza" o "elegancia".
+Jamar;M;Americano;Combinación moderna de Jamal y Lamar.
+James;M;Hebreo/Inglés;Forma inglesa de Jacobo.
+Jamie;U;Inglés;Hipocorístico de James.
+Jane;F;Hebreo/Inglés;Forma femenina de Juan. Significa "Dios es misericordioso".
+Janelle;F;Americano;Diminutivo moderno de Jane.
+Janet;F;Inglés;Diminutivo de Jane.
+Janice;F;Inglés;Variante elaborada de Jane.
+Jasmine;F;Persa;Significa "jazmín" (flor fragante).
+Jason;M;Griego;De 'Iason'. Significa "curandero" o "el que sana".
+Jaume;M;Catalán;Forma catalana de Jaime/Jacobo.
+Javier;M;Vasco;De 'Etxeberri'. Significa "casa nueva".
+Javon;M;Hebreo;Variante de Javan. Significa "Grecia" o "el que viene de lejos".
+Javonte;M;Americano;Variante moderna de Javon.
+Jaxon;M;Inglés;Variante moderna de Jackson.
+Jay;U;Latín/Inglés;Abreviatura de nombres que empiezan por J o referente al ave (arrendajo).
+Jayden;M;Hebreo/Inglés;Significa "Dios ha escuchado" o "agradecido".
+Jayden;U;Americano;Uso unisex de Jayden.
+Jayla;F;Americano;Variante femenina de Jay.
+Jaylen;U;Americano;Combinación de Jay y el sufijo -len.
+Jaylin;U;Americano;Variante de Jaylen.
+Jean;F;Hebreo/Inglés;Variante de Jane.
+Jean;M;Francés;Forma francesa de Juan.
+Jeanne;F;Francés;Forma francesa de Juana.
+Jeffrey;M;Germánico;De 'god' (Dios) y 'frid' (paz). "Paz de Dios".
+Jennifer;F;Galés;De 'Gwenhwyfar'. Significa "blanca como la espuma de las olas".
+Jeremiah;M;Hebreo;De 'Yirmiyahu'. Significa "Dios exalta".
+Jeremy;M;Hebreo/Inglés;Forma inglesa de Jeremías.
+Jerome;M;Griego;De 'Hieronymos'. Significa "nombre sagrado".
+Jérôme;M;Francés;Forma francesa de Jerónimo.
+Jerónimo;M;Griego;Significa "el del nombre sagrado".
+Jerry;M;Inglés;Hipocorístico de Gerald, Gerard o Jeremy.
+Jesse;M;Hebreo;De 'Yishai'. Significa "Dios existe" o "regalo de Dios".
+Jesse;U;Americano;Uso unisex de Jesse.
+Jessica;F;Hebreo;De 'Iskah'. Significa "la que mira" o "previsora".
+Jéssica;F;Español;Variante de Jessica.
+Jessie;U;Hebreo/Inglés;Hipocorístico de Jessica (la que mira) o de Jesse (regalo de Dios).
+Jesús;M;Hebreo;De 'Yehoshua'. Significa "Yahvé es salvación".
+Joan;F;Hebreo/Catalán;Forma catalana de Juana. Significa "Dios es misericordioso".
+Joan;M;Hebreo/Catalán;Forma catalana de Juan.
+Joana;F;Catalán/Portugués;Variante de Juana. Significa "Dios es piadoso".
+Joanna;F;Hebreo/Polaco;Variante de Juana.
+João;M;Portugués;Forma portuguesa de Juan.
+Joaquim;M;Catalán/Portugués;Forma de Joaquín. Significa "Yahvé establecerá".
+Joaquín;M;Hebreo;De 'Yoyaquim'. Significa "Yahvé construirá" o "Dios erigirá".
+Jocelyn;F;Germánico;De 'Gautselin', referente a la tribu de los Gautas.
+Joël;M;Hebreo/Francés;Significa "Yahvé es Dios".
+John;M;Hebreo/Inglés;Forma inglesa de Juan. Significa "Dios es gracioso".
+Jon;M;Vasco/Hebreo;Forma vasca de Juan.
+Jonathan;M;Hebreo;De 'Yonatan'. Significa "don de Yahvé".
+Jordan;F;Hebreo;Forma femenina de Jordán. Significa "la que desciende".
+Jordan;M;Hebreo;De 'Yarden'. Referente al río Jordán.
+Jordan;U;Hebreo;Uso unisex de Jordan.
+Jordi;M;Catalán;Forma catalana de Jorge. Significa "trabajador de la tierra".
+Jorge;M;Griego;De 'georgos'. Significa "agricultor" o "el que trabaja la tierra".
+José;M;Hebreo;De 'Yosef'. Significa "Dios añadirá".
+Josefa;F;Hebreo;Forma femenina de José.
+Josefina;F;Hebreo/Español;Diminutivo de Josefa.
+Josep;M;Catalán;Forma catalana de José.
+Josepa;F;Catalán;Forma femenina catalana de José.
+Joseph;M;Hebreo/Francés;Forma francesa e inglesa de José.
+Joséphine;F;Francés;Forma femenina francesa de José.
+Josette;F;Francés;Diminutivo francés de Josefa.
+Joshua;M;Hebreo;De 'Yehoshua'. Significa "Dios es mi salvación" (forma original de Jesús).
+Josselin;M;Francés;Variante masculina de Jocelyn.
+Joy;F;Latín/Inglés;Significa "alegría" o "regocijo".
+Juan;M;Hebreo;De 'Yohanan'. Significa "Dios es misericordioso".
+Judith;F;Hebreo;De 'Yehudit'. Significa "la judía" o "alabada".
+Julen;M;Vasco;Forma vasca de Julián. Significa "de raíces fuertes" o "perteneciente a Julio".
+Jules;M;Latín/Francés;Forma francesa de Julio. Significa "descendiente de Julo".
+Jules;U;Latín/Francés;Uso unisex moderno.
+Julia;F;Latín;Femenino de Julio. Significa "consagrada a Júpiter" o "de cabello suave".
+Júlia;F;Catalán;Forma catalana de Julia.
+Julian;M;Latín/Inglés;Variante de Julián.
+Julián;M;Latín;De 'Iulianus'. Significa "de la familia de Julio".
+Juliana;F;Latín;Femenino de Julián.
+Julie;F;Francés;Forma francesa de Julia.
+Julien;M;Francés;Forma francesa de Julián.
+Juliette;F;Francés;Diminutivo francés de Julia.
+Julio;M;Latín;De 'Iulius'. Nombre de la familia romana de Julio César.
+June;F;Latín/Inglés;Referente al mes de junio (dedicado a la diosa Juno).
+Justice;U;Latín/Inglés;Significa "justicia".
+Justin;M;Latín;De 'Iustinus'. Significa "justo" o "recto".
+Justina;F;Latín;Femenino de Justin.
+Kai;U;Hawaiano/Estonio;En hawaiano "mar"; en estonio "muelle".
+Kareem;M;Árabe;Significa "generoso" o "noble".
+Karen;F;Griego/Danés;Forma danesa de Catalina. Significa "pura".
+Katherine;F;Griego/Inglés;Variante de Catalina. Significa "inmaculada".
+Kathleen;F;Irlandés;Forma irlandesa de Catalina.
+Kattalin;F;Vasco;Forma vasca de Catalina.
+Kayla;F;Hebreo/Inglés;De 'Kelila'. Significa "corona" o "laurel".
+Keisha;F;Americano;Origen incierto, posiblemente del hebreo 'Cassia' (especia).
+Keith;M;Celta/Escocés;De 'cet'. Significa "bosque" o "lugar boscoso".
+Kelly;F;Gaélico/Irlandés;De 'ceallach'. Significa "guerrera" o "asidua a la iglesia".
+Kelly;U;Gaélico;Uso unisex de Kelly.
+Kelsey;F;Inglés;De 'Ceolsige'. Significa "isla de barcos" o "victoria naval".
+Kemen;M;Vasco;Significa "valor", "vigor" o "fortaleza".
+Kendall;U;Inglés;De la ciudad de Kendal. Significa "valle del río Kent".
+Kennedy;U;Gaélico;De 'Cennétig'. Significa "cabeza con casco" o "cabeza deformada".
+Kenneth;M;Gaélico;De 'Cinaed'. Significa "nacido del fuego" o "bien parecido".
+Kepa;M;Vasco;Forma vasca de Pedro. Significa "piedra" o "roca".
+Kerman;M;Vasco;Forma vasca de Germán. Significa "hermano".
+Keshawn;M;Americano;Combinación moderna de 'Ke-' y Shawn (Juan).
+Kevin;M;Gaélico;De 'Caoimhín'. Significa "de noble nacimiento" o "atractivo al nacer".
+Keyshawn;M;Americano;Variante de Keshawn.
+Kiana;F;Hawaiano;Forma hawaiana de Diana. Significa "divina".
+Kiara;F;Irlandés/Italiano;Variante de Ciara (oscura) o Clara (brillante).
+Kiesha;F;Americano;Variante de Keisha.
+Kim;U;Inglés;Hipocorístico de Kimberly o del vietnamita "oro".
+Kimberly;F;Inglés;De 'Cyneburge-leah'. Significa "prado de la fortaleza real".
+Kizkitza;M;Vasco;Nombre de advocación mariana local.
+Koldo;M;Vasco;Forma abreviada de Koldobika (Luis). Significa "guerrero ilustre".
+Kristen;F;Latín/Escandinavo;Variante de Cristina. Significa "seguidora de Cristo".
+Kyle;M;Gaélico;De 'caol'. Significa "estrecho" (geográfico) o "canal".
+Kyle;U;Gaélico;Uso unisex de Kyle.
+Kyrie;U;Griego;De 'Kyrios'. Significa "Señor".
+Laetitia;F;Latín;Significa "alegría" o "felicidad".
+Laia;F;Catalán/Griego;Diminutivo catalán de Eulalia. Significa "la que habla bien".
+Laida;F;Vasco;Nombre de una playa en Vizcaya.
+Lain;M;Vasco;Significa "niebla".
+Lamont;M;Nórdico/Escocés;De 'Logmaðr'. Significa "hombre de leyes".
+Lander;M;Vasco;Significa "pobre", "peregrino" o "león de hombres" (del griego).
+Landon;M;Inglés;De 'lang' (largo) y 'dun' (colina). "Colina larga".
+LaQuisha;F;Americano;Nombre moderno con prefijo africano-americano.
+Lara;F;Latín/Griego;En latín "nombre de una ninfa"; en griego "alegre" o "citara".
+Larissa;F;Griego;Significa "ciudad" o "la que es alegre".
+Larrun;M;Vasco;Nombre de un monte sagrado en el Pirineo vasco.
+LaShonda;F;Americano;Combinación moderna con prefijo africano-americano.
+LaTanya;F;Americano;Variante moderna de Tania.
+Latoya;F;Americano;Significa "la victoriosa" (mezcla de español e inglés).
+Latrell;M;Americano;Nombre moderno de creación reciente.
+Laura;F;Latín;De 'laurus'. Significa "laurel" o "victoriosa".
+Lauren;F;Latín/Inglés;Variante de Laura o Lorenzo.
+Laurence;F;Francés/Latín;Femenino de Laurent (Lorenzo).
+Laurent;M;Latín/Francés;Forma francesa de Lorenzo.
+Lawrence;M;Latín;Variante inglesa de Lorenzo. Significa "coronado de laurel".
+Lazare;M;Hebreo/Francés;Forma francesa de Lázaro.
+Lázaro;M;Hebreo;De 'Eleazar'. Significa "Dios ha ayudado".
+Léa;F;Hebreo;Forma francesa de Leah. Significa "cansada" o "melancólica".
+Leah;F;Hebreo;De 'Le'ah'. Significa "vaca salvaje" o "la que está cansada".
+Léandre;M;Griego/Francés;De 'Leandros'. Significa "hombre-león".
+Leandro;M;Griego;De 'Leon' (león) y 'andros' (hombre). "Hombre valiente como un león".
+LeBron;M;Americano;Nombre moderno de origen incierto, popularizado en EE. UU.
+Lee;U;Inglés;De 'leah'. Significa "prado" o "claro en el bosque".
+Leire;F;Vasco;Nombre de un monasterio navarro. Proviene del latín 'Leger'.
+Léo;M;Latín/Francés;Forma corta de Léon o Léonard. Significa "león".
+León;M;Latín;De 'leo'. Significa "león", símbolo de fiereza y valor.
+Léon;M;Francés;Variante francesa de León.
+Leonard;M;Germánico;De 'levon' (león) y 'hard' (fuerte). "Fuerte como un león".
+Leonardo;M;Germánico;Variante italiana y española de Leonard.
+Léonie;F;Latín/Francés;Femenino de León. Significa "leona".
+Leonor;F;Griego/Francés;Variante de Elena. Significa "que brilla" o "luz".
+Léopold;M;Germánico;De 'liut' (pueblo) y 'pold' (audaz). "Pueblo audaz".
+Leopoldo;M;Germánico;Variante española de Léopold.
+Leticia;F;Latín;De 'laetitia'. Significa "alegría" o "felicidad".
+Letícia;F;Catalán/Portugués;Variante de Leticia.
+Liam;M;Irlandés;Forma corta de Uilliam (Guillermo). Significa "protector firme".
+Libe;F;Vasco;Variante de Libia o del vasco 'libe' (libertad).
+Lide;F;Vasco;Forma vasca de Lidia.
+Lidia;F;Griego;Significa "la que viene de Lidia" (región de Asia Menor).
+Lídia;F;Catalán/Portugués;Variante de Lidia.
+Liliane;F;Latín/Francés;Derivado de 'lilium' (lirio). Significa "pureza".
+Lillian;F;Latín/Inglés;Variante de Lilia o Elizabeth.
+Lily;F;Latín/Inglés;Significa "lirio", símbolo de pureza.
+Linda;F;Germánico/Español;Significa "suave" (germánico) o "bella" (español).
+Lionel;M;Latín/Francés;Diminutivo de León. Significa "pequeño león".
+Lisa;F;Hebreo;Diminutivo de Elizabeth (Dios es mi juramento).
+Lisardo;M;Germánico;De 'lis' (brillante) y 'hard' (fuerte). "Fuerte y brillante".
+Lison;F;Francés;Diminutivo francés de Louise o Elizabeth.
+Lito;M;Español;Sufijo hipocorístico común (de Manuelito, Angelito, etc.).
+Lizar;M;Vasco;Significa "fresno" (árbol).
+Llorenç;M;Catalán;Forma catalana de Lorenzo.
+Lluc;M;Catalán;Forma catalana de Lucas. Significa "luminoso".
+Lluís;M;Catalán;Forma catalana de Luis. Significa "guerrero ilustre".
+Logan;M;Gaélico;De 'lagan'. Significa "pequeño hueco" o "hondonada".
+Logan;U;Gaélico;Uso unisex de Logan.
+Loïc;M;Bretón;Forma bretona de Luis.
+Lois;F;Griego/Inglés;Significa "la mejor" o "deseable".
+Lois;M;Gallego;Forma gallega de Luis.
+London;U;Inglés;Nombre de la capital británica, de origen celta incierto.
+Lorea;F;Vasco;Significa "la flor".
+Loredi;F;Vasco;De 'lore' (flor) y 'edi' (hermosa). "Lugar de flores".
+Lorena;F;Francés;Significa "la que viene de Lorena" (región de Francia).
+Lorenzo;M;Latín;De 'Laurentius'. Significa "natural de Laurentum" (ciudad del laurel).
+Lorette;F;Francés;Diminutivo de Laura o referente a Loreto.
+Loretxe;F;Vasco;De 'lore' (flor) y 'etxe' (casa). "Casa de flores".
+Loretxo;M;Vasco;Significa "florecilla".
+Louis;M;Germánico/Francés;De 'Hlodowig'. Significa "guerrero famoso".
+Louise;F;Germánico/Francés;Femenino de Louis.
+Louison;F;Francés;Hipocorístico francés de Louise.
+Lourenço;M;Portugués;Forma portuguesa de Lorenzo.
+Lúa;F;Gallego;Significa "luna".
+Luana;F;Germánico/Polinesio;En germánico "guerrera agraciada"; en hawaiano "feliz".
+Luc;M;Francés;Forma francesa de Lucas.
+Lucas;M;Latín/Griego;Significa "el que destaca por su brillo" o "luminoso".
+Lucía;F;Latín;De 'lux'. Significa "la que nació a la luz del día".
+Lucie;F;Francés;Forma francesa de Lucía.
+Lucien;M;Francés;Derivado de Lucio/Lucas. Significa "perteneciente a la luz".
+Lucienne;F;Francés;Femenino de Lucien.
+Lucy;F;Latín/Inglés;Forma inglesa de Lucía.
+Luis;M;Germánico;De 'Hlodowig'. Significa "guerrero victorioso".
+Luís;M;Portugués;Variante de Luis.
+Luísa;F;Portugués;Femenino de Luis.
+Lur;F;Vasco;Significa "tierra".
+Lydia;F;Griego/Inglés;Significa "mujer de Lidia".
+Lynn;U;Galés;De 'llyn'. Significa "lago" o "cascada".
+Macià;M;Catalán;Forma catalana de Matías. Significa "don de Dios".
+Maddi;F;Vasco;Forma vasca de Mari o María.
+Madeleine;F;Hebreo/Francés;Significa "la que viene de Magdala".
+Madeline;F;Inglés;Variante de Madeleine.
+Madison;F;Inglés;Significa "hijo de Maud" o "hijo de Mateo".
+Madison;U;Inglés;Uso unisex de Madison.
+Maëlle;F;Bretón;De 'mael'. Significa "princesa" o "jefa".
+Mafalda;F;Germánico;Variante de Matilde. Significa "guerrera fuerte".
+Magali;F;Provenzal;Variante de Margarita o Magdalena.
+Magda;F;Hebreo;Forma corta de Magdalena.
+Mahaut;F;Germánico;Forma medieval francesa de Matilde. Significa "guerrera fuerte y poderosa".
+Maialen;F;Vasco;Forma vasca de Magdalena. Significa "la que viene de Magdala".
+Maider;F;Vasco;Contracción vasca de Maria Eder. Significa "María hermosa".
+Maïlys;F;Francés/Provenzal;Diminutivo provenzal de Marie o Magali.
+Maiola;F;Vasco;Nombre referente a la primavera o mes de mayo.
+Maite;F;Vasco;Significa "amada" o "querida".
+Makayla;F;Hebreo;Variante de Micaela. Significa "¿quién como Dios?".
+Malcolm;M;Gaélico;De 'Máel Coluim'. Significa "discípulo de San Columba".
+Malen;F;Vasco;Variante de Maialen (Magdalena).
+Malik;M;Árabe;Significa "rey" o "soberano".
+Manel;M;Catalán;Forma catalana de Manuel. Significa "Dios está con nosotros".
+Manon;F;Francés;Diminutivo francés de Marie/María.
+Manuel;M;Hebreo;Forma abreviada de Emmanuel. Significa "Dios está con nosotros".
+Manuela;F;Hebreo;Forma femenina de Manuel.
+Manuelle;F;Francés;Forma femenina francesa de Manuel.
+Mara;F;Hebreo;De 'Marah'. Significa "amarga" o "triste".
+Marc;M;Catalán/Francés;Forma de Marcos. Significa "consagrado a Marte" (dios de la guerra).
+Marceau;M;Francés;Forma francesa de Marcelo.
+Marcel;M;Francés;Forma francesa de Marcelo. Diminutivo de Marcus.
+Marcelline;F;Francés;Femenino de Marcelino. Significa "pequeña guerrera".
+Marcelo;M;Latín;De 'Marcellus', diminutivo de Marcus.
+Márcio;M;Portugués;Forma portuguesa de Marcio. Significa "perteneciente a Marte".
+Marcos;M;Latín;De 'Marcus'. Significa "consagrado a Marte" o "hombre fuerte".
+Marcus;M;Latín;Variante latina/inglesa de Marcos.
+Margalida;F;Catalán;Forma catalana de Margarita. Significa "perla".
+Margaret;F;Griego/Inglés;De 'margarites'. Significa "perla".
+Margarida;F;Portugués/Gallego;Forma de Margarita (perla).
+Margaux;F;Francés;Variante de Margot/Margarita. También un viñedo francés.
+Margot;F;Francés;Diminutivo de Marguerite (Margarita).
+Marguerite;F;Francés;Forma francesa de Margarita.
+Maria;F;Hebreo/Latín;De 'Miryam'. Significa "amada por Dios", "rebelde" o "mar de amargura".
+María;F;Hebreo/Español;Variante de Maria.
+María Antonia;F;Compuesto;Combinación de María y Antonia ("digna de alabanza").
+María Xosé;F;Gallego;Forma gallega de María José.
+Marian;F;Hebreo/Latín;Combinación de María y Ana o diminutivo medieval de María.
+Mariana;F;Latín/Hebreo;Femenino de Mariano (perteneciente a Mario) o compuesto de María y Ana.
+Marie;F;Francés;Forma francesa de María.
+Marielle;F;Francés;Diminutivo francés de Marie.
+Marilou;F;Francés/Inglés;Compuesto de Marie y Louise o Lou.
+Marilyn;F;Inglés;Compuesto de Mary (María) y Lynn (lago/cascada).
+Marin;M;Francés/Latín;De 'marinus'. Significa "del mar" o "marino".
+Marina;F;Latín;Femenino de Marino. Significa "perteneciente al mar".
+Mário;M;Portugués;Forma portuguesa de Mario.
+Marion;F;Francés;Diminutivo medieval francés de Marie.
+Marion;U;Francés/Inglés;Uso unisex moderno en países angloparlantes.
+Marisa;F;Español/Italiano;Contracción de María Luisa o María Isabel.
+Marisol;F;Español;Contracción de María de la Soledad o María y Sol.
+Mark;M;Latín/Inglés;Forma inglesa de Marcos (consagrado a Marte).
+Markel;M;Vasco;Forma vasca de Marcelo o Marcos.
+Marlène;F;Francés/Alemán;Contracción de Maria y Magdalene (Magdalena).
+Marley;U;Inglés;De 'mere' (lago/frontera) y 'leah' (prado). "Prado junto al lago".
+Marquis;M;Francés;Título de nobleza. Significa "marqués" o "señor de la frontera".
+Marquise;M;Francés;Forma francesa de Marquis.
+Marta;F;Arameo;De 'marta'. Significa "señora" o "dama".
+Martha;F;Arameo/Inglés;Variante de Marta.
+Martim;M;Portugués;Forma portuguesa de Martín.
+Martin;M;Latín/Inglés;De 'Martinus', derivado de 'Mars' (Marte). Significa "guerrero" o "consagrado a Marte".
+Martín;M;Latín/Español;Variante de Martin.
+Martine;F;Francés;Forma femenina francesa de Martín.
+Martiño;M;Gallego;Forma gallega de Martín.
+Maruxa;F;Gallego;Diminutivo cariñoso gallego de María.
+Mary;F;Hebreo/Inglés;Forma inglesa de María.
+Mason;M;Francés;Nombre ocupacional. Significa "cantero" o "albañil".
+Mason;U;Inglés;Uso unisex de Mason.
+Mateo;M;Hebreo;De 'Mattityahu'. Significa "don de Dios".
+Mateu;M;Catalán;Forma catalana de Mateo.
+Matheus;M;Portugués;Forma latina de Mateo.
+Mathieu;M;Francés;Forma francesa de Mateo.
+Mathilde;F;Germánico;De 'maht' (fuerza) y 'hild' (batalla). Significa "guerrera poderosa".
+Matías;M;Hebreo;Variante de Mateo. Significa "regalo de Dios".
+Matilda;F;Germánico/Inglés;Variante de Matilde.
+Matilde;F;Germánico;Significa "guerrera fuerte".
+Matthew;M;Hebreo/Inglés;Forma inglesa de Mateo.
+Matthieu;M;Francés;Variante de Mateo.
+Maurice;M;Latín/Francés;De 'Mauritius'. Significa "moro" (de Mauritania) u "oscuro".
+Maurício;M;Portugués;Forma portuguesa de Mauricio.
+Max;U;Latín;Forma corta de Maximilian (el más grande) o Maxwell (arroyo grande).
+Maxence;M;Latín/Francés;De 'Maxentius'. Significa "el más grande".
+Maxime;M;Latín/Francés;De 'Maximus'. Significa "el más grande" o "el mayor".
+Médéric;M;Germánico/Francés;De 'maht' (poder) y 'ric' (gobernante). "Gobernante poderoso".
+Megan;F;Galés/Inglés;Diminutivo galés de Margaret (Margarita).
+Melanie;F;Griego;De 'melaina'. Significa "oscura" o "negra".
+Mélanie;F;Francés;Variante francesa de Melanie.
+Melisa;F;Griego;De 'melissa'. Significa "abeja" o "miel".
+Melissa;F;Griego;Variante de Melisa.
+Mencía;F;Español/Latín;Nombre medieval, posiblemente de 'dominica' (del Señor) o 'clementia' (clemencia).
+Mercè;F;Catalán;De 'merces'. Significa "merced", "gracia" o "misericordia".
+Mercedes;F;Español/Latín;De 'mercedes'. Significa "misericordias" o "gracias".
+Mia;F;Escandinavo/Hebreo;Diminutivo de María. Significa "amada" o "mía".
+Micaela;F;Hebreo;Femenino de Miguel. Significa "¿quién como Dios?".
+Michael;M;Hebreo;De 'Mikha'el'. Significa "¿quién como Dios?".
+Michel;M;Francés;Forma francesa de Miguel.
+Michele;F;Italiano;Forma femenina italiana de Miguel.
+Michelle;F;Francés/Inglés;Forma femenina francesa/inglesa de Miguel.
+Miguel;M;Hebreo;De 'Mikha'el'. Significa "¿quién (es comparable) a Dios?".
+Mikel;M;Vasco;Forma vasca de Miguel.
+Mikelats;M;Vasco;Personaje de la mitología vasca, hermano de Atarrabi (personifica el mal).
+Milagros;F;Español/Latín;Del latín 'miraculum'. Significa "milagros", advocación mariana.
+Milan;U;Eslavo/Húngaro;Del eslavo 'mil' (gracioso/amado) o de la ciudad italiana.
+Miquel;M;Catalán;Forma catalana de Miguel.
+Miquela;F;Catalán;Forma femenina catalana de Miguel.
+Miqueló;M;Catalán;Diminutivo o hipocorístico de Miquel.
+Mireia;F;Catalán/Provenzal;Del provenzal 'mirar' (admirarse). Significa "admirable".
+Mireille;F;Francés/Provenzal;Variante francesa de Mireia.
+Mitchell;M;Inglés;Forma medieval de Michael (Miguel).
+Modeste;M;Latín/Francés;De 'modestus'. Significa "moderado" o "modesto".
+Molly;F;Inglés;Hipocorístico medieval de Mary (María).
+Monica;F;Latín/Fenicio;De origen incierto, posiblemente "consejera" (latín) o "única" (fenicio).
+Mónica;F;Latín/Español;Variante de Monica.
+Mònica;F;Catalán;Variante de Monica.
+Monique;F;Francés;Forma francesa de Monica.
+Montserrat;F;Catalán;Topónimo catalán. Significa "monte aserrado" (referencia al santuario).
+Morgan;U;Galés/Celta;De 'mor' (mar) y 'cant' (círculo) o 'gen' (nacido). Significa "nacido del mar".
+Mylène;F;Francés;Combinación de Marie y Hélène.
+Nadine;F;Ruso/Francés;Forma francesa del ruso Nadezhda. Significa "esperanza".
+Nagore;U;Vasco;Topónimo y nombre de advocación mariana.
+Nahia;F;Vasco;Significa "deseo" o "aspiración".
+Nahia;U;Vasco;Uso unisex de Nahia.
+Naiara;F;Vasco;Topónimo de Nájera (La Rioja). Significa "sobre la roca".
+Nancy;F;Hebreo/Inglés;Diminutivo medieval de Agnes (pura) o Ana (gracia).
+Naomi;F;Hebreo;De 'Na'omi'. Significa "mi deleite" o "agradable".
+Narcís;M;Catalán;Forma catalana de Narciso.
+Natalia;F;Latín;De 'natalis'. Significa "nacimiento" o "nacida en Navidad".
+Natália;F;Portugués;Variante de Natalia.
+Natalie;F;Francés/Inglés;Variante de Natalia.
+Nathalie;F;Francés;Variante francesa de Natalia.
+Nathan;M;Hebreo;De 'Natan'. Significa "donante" o "regalo de Dios".
+Nathaniel;M;Hebreo;De 'Netan'el'. Significa "Dios ha dado".
+Nekane;F;Vasco;Forma vasca de Dolores. Significa "dolores".
+Nerea;F;Vasco/Griego;En vasco: "mía"; en griego: "ninfa marina".
+Neus;F;Catalán;Abreviatura de 'Mare de Déu de les Neus' (Nuestra Señora de las Nieves).
+Nia;F;Gaélico/Suajili;En gaélico: "brillo"; en suajili: "propósito".
+Nicanor;M;Griego;De 'nike' (victoria) y 'aner' (hombre). Significa "hombre victorioso".
+Nicholas;M;Griego/Inglés;De 'Nikolaos'. Significa "victoria del pueblo".
+Nicolas;M;Francés;Forma francesa de Nicolás.
+Nicolás;M;Griego;Variante de Nicholas.
+Nicolau;M;Gallego/Portugués;Forma de Nicolás.
+Nicole;F;Griego/Francés;Forma femenina de Nicolás.
+Nil;M;Catalán/Latín;Del río Nilo o forma catalana de Cornelio.
+Nina;F;Eslavo/Hebreo;Diminutivo de nombres con -nina o del hebreo "favor".
+Ninette;F;Francés;Diminutivo de Nina o Anne.
+Nimué;F;Celta/Artúrico;Nombre de la "Dama del Lago". Significa "la que vive en el agua" o "ninfa".
+Noa;F;Hebreo;De 'No'ah'. Significa "moción", "movimiento" o "consuelo".
+Noah;M;Hebreo;De 'Noach'. Significa "descanso", "paz" o "consuelo".
+Noé;M;Hebreo/Francés;Forma española y francesa de Noah (descanso).
+Noel;U;Latín/Francés;De 'natalis'. Significa "nacimiento" o "relativo a la Navidad".
+Noël;M;Francés;Variante francesa de Noel.
+Noela;F;Gallego;Femenino de Noel. Significa "nacida en Navidad".
+Noelia;F;Español/Francés;Derivado de Noel. Significa "la que celebra la Navidad".
+Noëlle;F;Francés;Femenino de Noël.
+Noemí;F;Hebreo;De 'No'omi'. Significa "mi dulzura" o "mi delicia".
+Noémia;F;Portugués;Forma portuguesa de Noemí.
+Noémie;F;Francés;Forma francesa de Noemí.
+Nofre;M;Catalán;Forma corta de Onofre.
+Norman;M;Germánico;De 'north-man'. Significa "hombre del norte" o "normando".
+Nuno;M;Latín;De 'nunnus' (abuelo) o 'nonus' (noveno). Común en la Edad Media ibérica.
+Nuria;F;Catalán/Árabe;Del árabe 'nuur' (luz). Refiere a la Virgen de Nuria (Pirineos).
+Núria;F;Catalán;Forma ortográfica catalana de Nuria.
+Obdulia;F;Árabe/Latín;Del árabe 'Abd-Allah' (sierva de Dios) o del latín 'ob-dulcis' (muy dulce).
+Océane;F;Griego/Francés;De 'okeanos'. Significa "océano" o "relativa al mar".
+Octave;M;Latín/Francés;De 'Octavius'. Significa "el octavo (hijo)".
+Odei;M;Vasco;Variante de Hodei. Significa "nube".
+Odete;F;Francés/Germánico;De 'odo'. Significa "riqueza", "tesoro" o "propiedad".
+Odilon;M;Germánico/Francés;Variante de Odón. Significa "pequeño poseedor de riquezas".
+Odon;M;Germánico/Francés;De 'odo'. Significa "dueño de riquezas" o "patrimonio".
+Ofélia;F;Griego;De 'ophelia'. Significa "la que ayuda" o "socorro".
+Oier;M;Vasco;Nombre medieval vasco de significado incierto, posiblemente "torcido" o "el que acecha".
+Oihana;F;Vasco;Significa "bosque" o "selva".
+Oihane;F;Vasco;Variante de Oihana.
+Oinatz;M;Vasco;Significa "huella", "pisada" o "relámpago".
+Olaia;F;Vasco;Forma vasca de Eulalia. Significa "la que habla bien".
+Olaine;F;Vasco;Nombre de lugar en Vizcaya.
+Olaiz;M;Vasco;Topónimo vasco referente a una "ferrería" o "cabaña".
+Olalla;F;Gallego/Español;Variante de Eulalia (bien hablada).
+Olatz;F;Vasco;Nombre de advocación mariana local. Significa "porche" o "granero".
+Olatz;U;Vasco;Uso unisex de Olatz.
+Olga;F;Escandinavo/Ruso;De 'Helga'. Significa "sagrada", "santa" o "invulnerable".
+Oliver;M;Latín/Francés;De 'olivarius'. Significa "el que cultiva olivos" o "paz".
+Olivia;F;Latín;Femenino de Oliver. Significa "la que trae la paz" (por la rama de olivo).
+Olivier;M;Francés;Forma francesa de Oliver.
+Olympe;F;Griego/Francés;De 'Olympia'. Significa "la que pertenece al Olimpo".
+Onofre;M;Egipcio/Griego;De 'Wnn-nfr'. Significa "el que es continuamente bueno".
+Ophélie;F;Francés;Forma francesa de Ofelia.
+Oriane;F;Latín/Francés;De 'aurum'. Significa "dorada" o "amanecer".
+Oriol;M;Catalán/Latín;De 'aureolus'. Significa "dorado" o "ave oropéndola".
+Orkatz;M;Vasco;Significa "corzo" (animal).
+Ortzi;M;Vasco;Antiguo nombre vasco para el "cielo" o el trueno/divinidad.
+Oscar;M;Celta/Germánico;De 'os' (dios) y 'car' (lanza). Significa "lanza de los dioses".
+Óscar;M;Español;Variante de Oscar.
+Otsanda;F;Vasco;Significa "loba".
+Otxar;M;Vasco;Nombre derivado de 'otso' (lobo).
+Ovidio;M;Latín;De 'Ovidius', nombre de familia romana. Significa "pastor de ovejas".
+Owen;M;Galés/Griego;De 'Eugene' (bien nacido) o 'Owain' (joven guerrero).
+Pablo;M;Latín;De 'Paulus'. Significa "pequeño" o "humilde".
+Paige;F;Griego/Inglés;De 'paidion'. Significa "página" o "joven sirviente".
+Pamela;F;Griego;De 'pan' (todo) y 'meli' (miel). "Toda dulzura".
+Parker;M;Inglés;Nombre ocupacional. Significa "guardián del parque".
+Parker;U;Inglés;Uso unisex de Parker.
+Pascal;M;Latín/Francés;De 'paschalis'. Significa "relativo a la Pascua".
+Pascale;F;Francés;Femenino de Pascal.
+Pascual;M;Latín;Variante española de Pascal.
+Pat;U;Latín/Inglés;Hipocorístico de Patricia o Patrick (noble).
+Patrice;M;Francés;Forma francesa de Patricio.
+Patricia;F;Latín;Significa "noble" o "de linaje patricia".
+Patrícia;F;Catalán/Portugués;Variante de Patricia.
+Patrick;M;Latín/Irlandés;De 'Patricius'. Significa "hombre noble".
+Pau;M;Catalán;Forma catalana de Pablo (pequeño) y también "paz".
+Paul;M;Latín;Forma inglesa/francesa de Pablo. Del latín 'Paulus' (pequeño/humilde).
+Paula;F;Latín;Femenino de Pablo. Significa "pequeña" o "débil".
+Paulette;F;Francés;Diminutivo francés de Paula. Significa "pequeña Paula".
+Paulo;M;Portugués;Forma portuguesa de Pablo.
+Pedro;M;Griego;Del griego 'Petros'. Significa "piedra" o "firme como una roca".
+Penelope;F;Griego;De 'pene' (hilo/trama) y 'ops' (ojo/rostro). "La que teje" o "rostro de tejedora".
+Pep;M;Catalán;Hipocorístico catalán de Josep (José). "Dios añadirá".
+Pere;M;Catalán;Forma catalana de Pedro (piedra).
+Perrine;F;Francés;Femenino de Pierre (Pedro). Significa "piedra".
+Peru;M;Vasco;Forma vasca de Pedro.
+Peter;M;Inglés;Forma inglesa de Pedro.
+Peyton;F;Inglés;De un apellido derivado de 'Paega's town'. Significa "asentamiento de Paega".
+Peyton;U;Inglés;Uso unisex de Peyton.
+Philémon;M;Griego;De 'philema'. Significa "el que ama" o "el que es cariñoso".
+Philip;M;Griego;De 'philippos'. Significa "amigo de los caballos".
+Philippe;M;Francés;Forma francesa de Felipe.
+Philippine;F;Francés;Femenino francés de Felipe.
+Phoebe;F;Griego;De 'phoibos'. Significa "brillante", "pura" o "resplandeciente".
+Phoenix;U;Griego;Referente al ave fénix. Significa "rojo oscuro" o "el que renace de sus cenizas".
+Pierre;M;Francés;Forma francesa de Pedro.
+Pilar;F;Latín;De 'pila'. Significa "columna" o "soporte de los suyos". Advocación mariana.
+Pol;M;Catalán;Forma catalana de Pablo (pequeño).
+Pomba;F;Gallego;Significa "paloma". Símbolo de paz.
+Preston;M;Inglés;De 'preost' (sacerdote) y 'tun' (asentamiento). "Pueblo del sacerdote".
+Prosper;M;Latín;De 'prosperus'. Significa "afortunado", "próspero" o "exitoso".
+Prudence;F;Latín;Significa "prudencia", "cautela" o "previsión".
+Prudencio;M;Latín;Variante masculina de Prudence. "El que tiene juicio".
+Purificación;F;Latín;De 'purificatio'. Referente a la purificación de la Virgen María.
+Quentin;M;Latín;De 'Quintus'. Significa "el quinto (hijo)".
+Quinn;U;Gaélico;De 'O'Cuinn'. Significa "descendiente de Conn" (sabio/líder).
+Quitterie;F;Francés/Visigodo;De 'Quiteria'. Significa "la que lidera" o "la roja".
+Rachel;F;Hebreo;De 'Rahel'. Significa "oveja" o "cordero" (símbolo de pureza).
+Rafael;M;Hebreo;De 'Refa'el'. Significa "Dios ha sanado" o "medicina de Dios".
+Rafaela;F;Hebreo;Femenino de Rafael.
+Rafel;M;Catalán;Forma corta catalana de Rafael.
+Rafela;F;Catalán;Forma femenina de Rafel.
+Raimundo;M;Germánico;De 'ragin' (consejo) y 'mund' (protección). "Protector por el consejo".
+Ramiro;M;Germánico;De 'ragin' (consejo) y 'mari' (famoso). "Consejero famoso".
+Ramon;M;Catalán;Forma catalana de Ramón.
+Ramón;M;Germánico;Variante de Raimundo. "Protector aconsejado".
+Raoul;M;Germánico;Forma francesa de Raúl/Rodolfo. "Lobo consejero".
+Raphaël;M;Francés;Forma francesa de Rafael.
+Raquel;F;Hebreo;Variante española de Rachel (oveja).
+Rashad;M;Árabe;Significa "buen juicio", "guía" o "rectitud".
+Rashawn;M;Americano;Combinación moderna de 'Ra-' y Shawn (Juan).
+Rasheed;M;Árabe;Significa "recto", "bien guiado" o "prudente".
+Raúl;M;Germánico;De 'rad' (consejo) y 'wulf' (lobo). "Lobo consejero".
+Raymond;M;Germánico;Forma inglesa de Raimundo.
+Reagan;U;Gaélico;De 'riagan'. Significa "pequeño rey".
+Rebeca;F;Hebreo;De 'Ribqah'. Significa "lazo" o "la que cautiva".
+Rebecca;F;Hebreo;Forma inglesa/italiana de Rebeca.
+Reese;U;Galés;De 'Rhys'. Significa "entusiasmo" o "ardor".
+Regina;F;Latín;Significa "reina".
+Régis;M;Latín/Francés;Del latín 'regere' (gobernar). Significa "el que rige" o "real".
+Remedios;F;Latín;De 'remedium'. Advocación mariana: "Nuestra Señora de los Remedios".
+Rémi;M;Latín/Francés;De 'remex'. Significa "remero".
+Remy;U;Francés;Variante de Rémi.
+Rémy;M;Francés;Variante ortográfica de Rémi.
+Renata;F;Latín;Femenino de Renato. "Nacida de nuevo".
+Renato;M;Latín;De 'renatus'. Significa "renacido" (por el bautismo).
+Renaud;M;Germánico;Forma francesa de Reinaldo. "Consejero del rey".
+René;M;Latín/Francés;Forma francesa de Renato (renacido).
+Renée;F;Francés;Femenino de René.
+Rexina;F;Gallego;Forma gallega de Regina (reina).
+Ricard;M;Catalán;Forma catalana de Ricardo.
+Ricardo;M;Germánico;De 'ric' (poder) y 'hard' (fuerte). "Rey fuerte".
+Richard;M;Germánico;Forma inglesa/francesa de Ricardo.
+Riley;F;Inglés/Gaélico;De 'rye' (centeno) y 'leah' (prado). "Prado de centeno".
+Riley;M;Inglés;Uso masculino de Riley.
+Riley;U;Inglés;Uso unisex de Riley.
+Rita;F;Latín;Abreviatura de Margarita (perla).
+River;U;Inglés;Significa "río".
+Robert;M;Germánico;De 'hrod' (fama) y 'berht' (brillo). "Fama brillante".
+Robin;U;Germánico;Diminutivo medieval de Robert. También significa "petirrojo".
+Rocío;F;Latín;De 'roscidus'. Significa "rocío". Advocación mariana.
+Rodrigo;M;Germánico;De 'hrod' (fama) y 'ric' (poder). "Guerrero famoso".
+Roger;M;Germánico;De 'hrod' (fama) y 'ger' (lanza). "Famoso por su lanza".
+Rogério;M;Portugués;Forma portuguesa de Roger.
+Roi;M;Gallego;Forma corta gallega de Rodrigo.
+Roland;M;Germánico;De 'hrod' (fama) y 'land' (tierra). "Famoso en su tierra".
+Romain;M;Latín/Francés;De 'Romanus'. Significa "romano".
+Ronald;M;Nórdico/Escocés;De 'Ragnvaldr'. "Gobernante aconsejado".
+Roque;M;Germánico/Latín;De 'hroc' (grito de guerra) o del latín 'rocca' (roca).
+Rory;U;Gaélico;De 'ruadh' (rojo) y 'ri' (rey). "Rey rojo".
+Rosa;F;Latín;Referente a la flor de la rosa.
+Rosalie;F;Francés;Variante de Rosa.
+Rosana;F;Latín;Combinación de Rosa y Ana.
+Rosario;F;Latín;De 'rosarium'. Referente a la guirnalda de rosas a la Virgen.
+Rosário;F;Portugués;Forma portuguesa de Rosario.
+Rose;F;Francés/Inglés;Forma de Rosa.
+Rowan;U;Gaélico;De 'ruadhan'. Significa "pequeño pelirrojo" o referente al árbol serbal.
+Roxana;F;Persa;De 'Roshanak'. Significa "brillante" o "amanecer".
+Roxane;F;Francés/Persa;Variante francesa de Roxana.
+Royal;U;Latín/Francés;Significa "real" o "perteneciente a la realeza".
+Ruan;M;Francés;Forma francesa de Ruán (topónimo de una ciudad).
+Rubén;M;Hebreo;De 'Re'uven'. Significa "mirad, un hijo" o "Dios vio mi aflicción".
+Ruby;F;Latín/Inglés;Referente a la piedra preciosa 'rubí'. Significa "roja".
+Rui;M;Germánico;Forma corta portuguesa/gallega de Rodrigo (guerrero famoso).
+Russell;M;Francés;Del francés antiguo 'roussel'. Significa "de pelo rojo".
+Ruth;F;Hebreo;De 'Rut'. Significa "amiga", "compañera" o "belleza".
+Ryan;M;Gaélico;De 'Ó Riain'. Significa "pequeño rey" o "descendiente de Rian".
+Ryan;U;Gaélico;Uso unisex de Ryan.
+Sabela;F;Gallego;Forma gallega de Isabel (Dios es mi juramento).
+Sabine;F;Latín/Francés;De 'Sabina'. Significa "mujer sabina", pueblo itálico antiguo.
+Sabrina;F;Celta/Latín;Nombre del río Severn. Significa "del río Severn" o "diosa del río".
+Sacha;M;Ruso/Griego;Diminutivo ruso de Alexander (protector de los hombres).
+Sagardo;M;Vasco;Significa "sidra de manzana" o "manzana fuerte".
+Sage;U;Latín/Inglés;De 'sapius'. Significa "sabio" o "prudente".
+Saindur;M;Vasco;De 'saindu' (santo) y 'ur' (agua). "Agua bendita".
+Saioa;F;Vasco;Topónimo vasco.
+Salomé;F;Hebreo/Griego;Del hebreo 'shalom' (paz). Significa "pacífica" o "completa".
+Salvador;M;Latín;De 'salvator'. Significa "salvador" o "el que salva".
+Sam;U;Hebreo/Inglés;Abreviatura de Samuel (escuchado por Dios) o Samantha (escuchada).
+Samantha;F;Hebreo/Inglés;Posiblemente combinación de Sam y el sufijo -antha. Significa "escuchada por Dios".
+Samuel;M;Hebreo;De 'Shemu'el'. Significa "nombre de Dios" o "Dios ha escuchado".
+Sandra;F;Griego;Forma abreviada de Alexandra. Significa "defensora de los hombres".
+Sandrine;F;Francés;Diminutivo francés de Sandra/Alexandra.
+Santiago;M;Hebreo/Español;De 'Sant Iago' (San Jacobo/Jaime).
+Sara;F;Hebreo;De 'Sarah'. Significa "princesa" o "señora".
+Sarah;F;Hebreo;Variante de Sara.
+Saroi;M;Vasco;Significa "majada", "pastizal" o "cabaña de pastor".
+Savannah;F;Español/Inglés;Del español 'sabana'. Significa "llanura grande y abierta".
+Scarlett;F;Inglés;Referente al color escarlata (rojo intenso).
+Scott;M;Inglés/Celta;Significa "escocés" o "nativo de Escocia".
+Sean;M;Irlandés;Forma irlandesa de Juan. Significa "Dios es misericordioso".
+Shawn;M;Irlandés/Inglés;Variante de Sean.
+Shawn;U;Irlandés/Inglés;Uso unisex de Shawn.
+Sheila;F;Irlandés;Anglicanización de Síle (Cecilia). Significa "ciega".
+Sidney;U;Inglés/Francés;De 'saint denis' (San Dionisio) o 'sid' (río) y 'ney' (isla).
+Silvia;F;Latín;De 'silva'. Significa "del bosque", "silvestre" o "habitante del bosque".
+Sílvia;F;Catalán/Portugués;Variante de Silvia.
+Sílvio;M;Portugués;Forma portuguesa de Silvio.
+Simon;M;Hebreo/Griego;De 'Shim'on'. Significa "el que escucha" o "el que obedece".
+Simón;M;Hebreo/Griego;Variante de Simon.
+Simone;F;Francés/Hebreo;Forma femenina francesa/italiana de Simón.
+Skylar;F;Holandés/Inglés;De 'schuyler' (erudito) o 'sky' (cielo) y 'lar' (guerra).
+Skyler;U;Holandés/Inglés;Uso unisex de Skylar.
+Sofia;F;Griego;De 'sophia'. Significa "sabiduría" o "conocimiento".
+Sofía;F;Griego;Variante de Sofia.
+Solange;F;Latín/Francés;De 'solemnis'. Significa "solemne" o "religiosa".
+Solène;F;Francés/Latín;Variante de Solange (solemne).
+Sophie;F;Francés;Forma francesa de Sofía (sabiduría).
+Spencer;M;Inglés;Nombre ocupacional. Significa "despensero" o "administrador".
+Spencer;U;Inglés;Uso unisex de Spencer.
+Stella;F;Latín;Significa "estrella".
+Stéphane;M;Francés;Forma francesa de Esteban (corona).
+Stephanie;F;Griego/Inglés;Femenino de Stephen. Significa "coronada".
+Stéphanie;F;Francés;Variante francesa de Stephanie.
+Stephen;M;Griego/Inglés;Forma inglesa de Esteban.
+Steven;M;Griego/Inglés;Variante ortográfica de Stephen.
+Stuart;M;Escocés/Inglés;De 'stigweard'. Significa "administrador del patrimonio".
+Sua;M;Vasco;Significa "fuego".
+Sueli;F;Portugués/Tupí;De origen incierto, posiblemente tupí-guaraní relacionado con el "cielo azul".
+Sugoi;M;Vasco;Significa "demoníaco" o "sobrenatural" (nombre mitológico).
+Suhaitz;M;Vasco;De 'su' (fuego) y 'haitz' (roca). "Roca de fuego".
+Susan;F;Hebreo;Variante de Susana.
+Susana;F;Hebreo;De 'Shoshannah'. Significa "lirio" o "rosa".
+Suzanne;F;Francés;Forma francesa de Susana.
+Suzette;F;Francés;Diminutivo francés de Suzanne.
+Sydney;F;Inglés/Francés;Forma femenina de Sidney.
+Sylvain;M;Latín;De 'silvanus', relacionado con 'silva' (bosque). Significa "del bosque" o "silvestre".
+Sylvia;F;Latín;Variante de Silvia. Significa "del bosque".
+Sylvie;F;Francés;Forma francesa de Silvia.
+Tadeo;M;Arameo;De 'thaddai'. Significa "corazón valiente" o "pecho".
+Tadeu;M;Portugués;Forma portuguesa de Tadeo.
+Tainá;F;Tupí-guaraní;Significa "estrella" o "divina" en lenguas nativas brasileñas.
+Tamara;F;Hebreo;De 'tamar'. Significa "palmera" (datilera).
+Tameka;F;Americano;Variante moderna de Tamika, de origen incierto.
+Tanguy;M;Bretón;De 'tan' (fuego) y 'ki' (perro). Significa "perro de fuego" o "guerrero feroz".
+Tanisha;F;Americano/Árabe;De origen incierto, posiblemente relacionado con el árabe "alegría".
+Tanner;M;Inglés;Nombre ocupacional. Significa "curtidor de pieles".
+Tareixa;F;Gallego;Forma gallega de Teresa.
+Tatiana;F;Latín/Ruso;Femenino del nombre romano Tatius. Significa "perteneciente a Tatius".
+Tatiane;F;Portugués;Variante de Tatiana.
+Taylor;F;Inglés;Nombre ocupacional (sastre). Significa "cortador de tela".
+Taylor;U;Inglés;Uso unisex de Taylor.
+Teodoro;M;Griego;De 'theos' (Dios) y 'doron' (regalo). Significa "regalo de Dios".
+Teresa;F;Griego;De 'theros' (verano) o 'therizein' (cosechar). Significa "cazadora" o "cosechadora".
+Terry;U;Inglés/Germánico;Hipocorístico de Terence o Thierry/Theodoric.
+Thaïs;F;Griego;De 'thais'. Significa "la que es contenida" o "vendaje".
+Théo;M;Francés;Forma abreviada de Théodore.
+Theodore;M;Griego;Forma inglesa de Teodoro.
+Théodore;M;Francés;Forma francesa de Teodoro.
+Theresa;F;Inglés;Variante de Teresa.
+Thérèse;F;Francés;Forma francesa de Teresa.
+Thiago;M;Portugués;Variante portuguesa/brasileña de Santiago (Jaime).
+Thibault;M;Francés;Forma francesa de Teobaldo. Significa "príncipe valiente".
+Thierry;M;Francés;Forma francesa de Teodorico. Significa "gobernante del pueblo".
+Thomas;M;Griego/Arameo;De 't'oma'. Significa "gemelo".
+Tiago;M;Portugués/Gallego;Forma abreviada de Santiago (Jaime).
+Tiana;F;Latín/Ruso;Abreviatura de Tatiana o Christiana.
+Tiffany;F;Griego;De 'Theophania'. Significa "aparición de Dios" o "Epifanía".
+Timothée;M;Francés;Forma francesa de Timoteo.
+Timothy;M;Griego/Inglés;De 'timotheos'. Significa "el que honra a Dios".
+Tiphaine;F;Griego/Francés;Variante de Tiffany/Epifanía.
+Toby;U;Hebreo;De 'Tobiah'. Significa "Dios es bueno".
+Tòfol;M;Catalán;Hipocorístico catalán de Cristóbal.
+Tomás;M;Griego/Arameo;Forma española de Thomas (gemelo).
+Tomàs;M;Catalán;Forma catalana de Tomás.
+Tomé;M;Gallego/Portugués;Forma de Tomás.
+Tomeu;M;Catalán;Forma catalana de Bartolomé.
+Toni;M;Catalán/Italiano;Hipocorístico de Antoni/Antonio.
+Tònia;F;Catalán;Forma corta catalana de Antònia.
+Tracy;U;Latín/Francés;De un apellido toponímico. Significa "del dominio de Thracius".
+Travis;M;Francés;De 'traverser'. Significa "cruzador" o "recaudador de peajes".
+Trayvon;M;Americano;Nombre moderno de creación reciente.
+Trevion;M;Americano;Nombre moderno de creación reciente.
+Trevon;M;Americano;Variante de Trevion.
+Trevor;M;Galés;De 'tre' (asentamiento) y 'mor' (mar). "Gran asentamiento" o "de la granja grande".
+Trinidad;F;Latín;De 'trinitas'. Referente a la Santísima Trinidad.
+Trinity;F;Latín/Inglés;Forma inglesa de Trinidad.
+Tristan;M;Celta/Francés;De 'drust' (ruido/alboroto) o del latín 'tristis' (triste).
+Ttala;M;Vasco;Variante de Tala, lugar en Francia.
+Tyesha;F;Americano;Nombre moderno de creación reciente.
+Tyler;M;Inglés;Nombre ocupacional. Significa "fabricante de tejas" o "techador".
+Tyler;U;Inglés;Uso unisex de Tyler.
+Tyrese;M;Americano;Nombre moderno de creación reciente (sonido similar a Tyrone).
+Tyriek;M;Americano;Nombre moderno de creación reciente.
+Tyrone;M;Irlandés;De 'Tir Eoghain'. Significa "tierra de Eoghan".
+Ubaldo;M;Germánico;De 'hug' (mente/espíritu) y 'bald' (audaz). "Espíritu audaz".
+Uda;M;Vasco;Variante de Udal (patrimonio). Significa "verano".
+Udane;F;Vasco;Femenino de Uda (verano).
+Udi;F;Vasco;Significa "verano".
+Uhaitz;M;Vasco;Significa "río grande" o "torrente".
+Uhin;M;Vasco;Significa "ola".
+Ukerdi;M;Vasco;Topónimo, nombre de pastores medievales.
+Ulysse;M;Francés;Forma francesa de Ulises/Odiseo. Significa "enojado" o "el que odia".
+Umandi;M;Vasco;Nombre relacionado con la naturaleza o topónimo.
+Unai;M;Vasco;Significa "pastor" o "vaquero".
+Unax;M;Vasco;Variante de Unai.
+Urbano;M;Latín;De 'urbanus'. Significa "de la ciudad" o "cortés".
+Urko;M;Vasco;Topónimo vasco.
+Urtu;M;Vasco;Relacionado con 'urtxintxa' (ardilla).
+Urtxintxa;M;Vasco;Significa "ardilla".
+Urtzi;M;Vasco;Antiguo nombre vasco para el "cielo" o la divinidad suprema precristiana.
+Usoa;F;Vasco;Significa "paloma".
+Usoa;U;Vasco;Uso unisex de Usoa.
+Uxía;F;Gallego;Forma gallega de Eugenia (bien nacida/noble).
+Uxue;F;Vasco;Topónimo de Navarra, relacionado con 'usoa' (paloma).
+Val;U;Latín;Forma corta de Valerie, Valentin, etc. Significa "fuerza" o "salud".
+Valentim;M;Portugués;Forma portuguesa de Valentín.
+Valentin;M;Francés/Inglés;Variante de Valentín.
+Valentín;M;Latín;De 'valens'. Significa "fuerte", "vigoroso" o "saludable".
+Valentine;F;Francés/Inglés;Forma femenina de Valentín.
+Valérian;M;Latín/Francés;Derivado de Valerio. Significa "fuerte" o "saludable".
+Valerie;F;Latín/Inglés;Forma inglesa de Valeria.
+Valérie;F;Francés;Forma francesa de Valerie.
+Vanesa;F;Inglés/Griego;Inventado por Swift, pero basado en la mariposa 'Vanessa'.
+Vanessa;F;Inglés/Griego;Variante de Vanesa.
+Vasco;M;Vasco/Español;Significa "vasco" o "natural del País Vasco".
+Ventura;M;Latín;Abreviatura de Buenaventura. Significa "dicha", "suerte" o "el que ha de venir".
+Verónica;F;Griego/Latín;De 'Berenice' (portadora de victoria) o 'Vera icon' (imagen verdadera).
+Véronique;F;Francés;Forma francesa de Verónica.
+Vicent;M;Catalán;Forma catalana de Vicente. Significa "el que vence".
+Vicenta;F;Latín;Femenino de Vicente.
+Vicente;M;Latín;De 'vincens'. Significa "vencedor" o "conquistador".
+Victoire;F;Francés;Forma francesa de Victoria.
+Victor;M;Latín;Significa "vencedor" o "conquistador".
+Víctor;M;Latín;Variante acentuada de Victor.
+Victoria;F;Latín;Significa "victoria" o "triunfadora".
+Victòria;F;Catalán;Forma catalana de Victoria.
+Vincent;M;Francés/Inglés;Forma francesa e inglesa de Vicente.
+Violet;F;Latín/Inglés;Significa "violeta" (referente a la flor y al color).
+Violette;F;Francés;Diminutivo francés de Violet. "Pequeña violeta".
+Virgile;M;Latín/Francés;De 'Virgilius'. Probable origen etrusco, significa "rama" o "vergel".
+Virginia;F;Latín;De 'virgo'. Significa "doncella", "virgen" o "pura".
+Virginie;F;Francés;Forma francesa de Virginia.
+Vitor;M;Portugués;Variante de Vítor.
+Vítor;M;Portugués;Forma portuguesa de Víctor.
+Vitória;F;Portugués;Forma portuguesa de Victoria.
+Wagner;M;Germánico;Nombre ocupacional. Significa "fabricante de carros" o "carretero".
+Walter;M;Germánico;De 'wald' (mando) y 'heri' (ejército). "El que gobierna el ejército".
+Wayne;M;Inglés;De 'wain'. Significa "fabricante de carros" o "carretero".
+Wendy;F;Inglés;Inventado por J.M. Barrie (Peter Pan), derivado de 'fwendy' (amiguita).
+Wesley;M;Inglés;De 'west' y 'leah'. Significa "prado del oeste".
+Whitney;F;Inglés;De 'hwitan' (blanco) e 'ey' (isla). Significa "isla blanca".
+Whitney;U;Inglés;Uso unisex de Whitney.
+Wilfried;M;Germánico;De 'wil' (voluntad) y 'frid' (paz). "El que desea la paz".
+William;M;Germánico/Inglés;De 'wil' (voluntad) y 'helm' (casco). "Protector decidido".
+Wren;U;Inglés;Significa "reyezuelo" (pequeño pájaro).
+Wyatt;M;Germánico/Inglés;De 'wig' (guerra) y 'hard' (fuerte). "Guerrero valiente".
+Xabi;M;Vasco;Hipocorístico de Xabier.
+Xabier;M;Vasco;De 'Etxeberri'. Significa "casa nueva".
+Xacinto;M;Gallego;Forma gallega de Jacinto (flor).
+Xacobe;M;Gallego;Forma gallega de Jacobo (el que suplanta).
+Xacobo;M;Gallego;Variante de Xacobe.
+Xalba;M;Vasco;Variante de Salbatore (Salvador).
+Xandra;F;Gallego;Forma corta gallega de Alexandra (defensora de hombres).
+Xanti;M;Vasco;Hipocorístico de Santiago (San Jacobo).
+Xare;M;Vasco;Significa "red".
+Xavi;M;Catalán;Hipocorístico de Xavier.
+Xavier;M;Catalán/Francés;Variante de Javier (casa nueva).
+Xenebra;F;Gallego;Forma gallega de Ginebra. Significa "blanca como la espuma".
+Xermán;M;Gallego;Forma gallega de Germán (hermano o guerrero).
+Xesc;M;Catalán;Hipocorístico de Francesc (Francisco).
+Xesca;F;Catalán;Hipocorístico de Francesca.
+Xiana;F;Gallego;Forma femenina gallega de Julián (de raíces fuertes).
+Xil;M;Gallego;Forma gallega de Gil (el protegido).
+Ximena;F;Hebreo/Castellano antiguo;Variante de Jimena/Simeona. Significa "la que escucha".
+Ximo;M;Catalán;Hipocorístico de Joaquim (Joaquín).
+Ximon;M;Vasco;Forma vasca de Simón (el que escucha).
+Xisca;F;Catalán;Hipocorístico de Francesca (femenino de Francisco).
+Xisco;M;Catalán;Hipocorístico de Francesc (Francisco).
+Xoán;M;Gallego;Forma gallega de Juan (Dios es misericordioso).
+Xoán Antón;M;Gallego;Compuesto de Juan y Antonio.
+Xoana;F;Gallego;Forma femenina gallega de Juan.
+Xoanciño;M;Gallego;Diminutivo cariñoso de Juan.
+Xoel;M;Gallego;Forma gallega de Joel (Yahvé es Dios).
+Xosé;M;Gallego;Forma gallega de José (Dios añadirá).
+Xoseba;U;Vasco;Forma vasca de Joseba/José.
+Xosefa;F;Gallego;Forma femenina gallega de José.
+Xuban;M;Vasco;Nombre de origen toponímico.
+Xulia;F;Gallego;Forma gallega de Julia (consagrada a Júpiter).
+Xulián;M;Gallego;Forma gallega de Julián.
+Xurxo;M;Gallego;Forma gallega de Jorge (agricultor).
+Xusto;M;Gallego;Forma gallega de Justo (recto/honrado).
+Yann;M;Bretón;Forma bretona de Juan.
+Yannick;M;Bretón;Diminutivo de Yann. "Pequeño Juan".
+Yasmin;F;Persa;Significa "jazmín" (flor fragante).
+Yuri;M;Ruso/Griego;Forma rusa de Jorge (trabajador de la tierra).
+Yvan;M;Francés/Eslavo;Variante de Iván/Juan.
+Yves;M;Germánico/Francés;De 'iv'. Significa "tejo" (árbol sagrado).
+Yvette;F;Francés;Femenino de Yves. "Pequeña tejo".
+Yvonne;F;Francés;Femenino de Yves.
+Zacharie;M;Francés;Forma francesa de Zacarías.
+Zachary;M;Hebreo/Inglés;De 'Zekharyah'. Significa "Dios se ha acordado".
+Zain;M;Árabe;Significa "belleza", "gracia" o "excelencia".
+Zainab;F;Árabe;Nombre de una planta aromática o "belleza del padre".
+Zaire;M;Africano;De 'nzere'. Significa "el río que se traga todos los ríos".
+Zalbat;M;Vasco;Variante de Salbatore (Salvador).
+Zaria;F;Eslavo/Árabe;En eslavo "amanecer"; en árabe "flor".
+Zélia;F;Latín/Francés;De 'caelius'. Significa "perteneciente al cielo".
+Zeltzin;F;Náhuatl;Significa "delicada" o "venerada".
+Zigor;M;Vasco;Significa "azote", "castigo" o "disciplina".
+Zihara;F;Vasco;Significa "vía" o "camino".
+Zion;U;Hebreo;Nombre bíblico del monte Sión. Significa "punto más alto" o "refugio".
+Zoe;F;Griego;Significa "vida".
+Zoé;F;Francés;Variante de Zoe.
+Zorion;M;Vasco;Significa "felicidad" o "dicha".
+Zorione;F;Vasco;Femenino de Zorion.
+Zuhaitz;U;Vasco;Significa "árbol".
+Zuri;F;Vasco/Suajili;En vasco "blanca"; en suajili "hermosa".
+Zuriñe;F;Vasco;De 'zuri'. Significa "la blanca" (equivalente a Blanca o Nieves).

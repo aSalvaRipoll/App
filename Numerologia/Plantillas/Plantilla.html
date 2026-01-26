@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Informe Numerológico</title>
+
+<style>
+    body {
+        font-family: Georgia, serif;
+        font-size: 12pt;
+        line-height: 1.5;
+        margin: 40px;
+        color: #222;
+    }
+
+    h1, h2, h3 {
+        font-family: Georgia, serif;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    h1 { font-size: 26pt; }
+    h2 { font-size: 20pt; }
+    h3 { font-size: 16pt; }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+
+    table th, table td {
+        border: 1px solid #444;
+        padding: 6px 10px;
+        text-align: center;
+    }
+
+    .section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- ========================= -->
+<!-- CABECERA DEL INFORME -->
+<!-- ========================= -->
+
+<h1>Informe Numerológico Personal</h1>
+
+<h2>Datos de la Persona</h2>
+<p><strong>Nombre:</strong> {{NOMBRE}}</p>
+<p><strong>Fecha de nacimiento:</strong> {{FECHA_NAC}}</p>
+<p><strong>Edad:</strong> {{EDAD}}</p>
+
+<h2>Datos del Cálculo</h2>
+<p><strong>Sistema fonético:</strong> {{SISTEMA_FONETICO}}</p>
+<p><strong>Sistema de cálculo:</strong> {{SISTEMA_CALCULO}}</p>
+<p><strong>Número de ciclos:</strong> {{NUM_CICLOS}}</p>
+<p><strong>Método de ciclos:</strong> {{METODO_CICLOS}}</p>
+<p><strong>Sistema de Tarot:</strong> {{SISTEMA_TAROT}}</p>
+<p><strong>Fecha del cálculo:</strong> {{FECHA_CALCULO}}</p>
+<p><strong>Versión del motor:</strong> {{VERSION_MOTOR}}</p>
+
+<hr>
+
+<!-- ======================================== -->
+<!-- AQUI SE INSERTARÁN LOS FRAGMENTOS HTML -->
+<!-- ======================================== -->
+
+{{CONTENIDO}}
+
+<!-- ======================================== -->
+
+</body>
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Emojis y Símbolos - Sistema Numerológico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        .emoji {
+            font-size: 24px;
+            text-align: center;
+        }
+        .placeholder {
+            font-family: 'Courier New', monospace;
+            background-color: #ecf0f1;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .vba-code {
+            font-family: 'Courier New', monospace;
+            background-color: #2c3e50;
+            color: #2ecc71;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+        }
+        .descripcion {
+            color: #555;
+        }
+        .categoria {
+            background-color: #e8f4f8;
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .nota {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>📋 Tabla de Emojis y Símbolos - Sistema Numerológico</h1>
+    
+    <div class="nota">
+        <strong>Uso:</strong> Esta tabla permite reemplazar emojis por placeholders en archivos Markdown y luego 
+        sustituirlos por los códigos VBA correspondientes al generar documentos Word.<br>
+        <strong>Sintaxis Placeholder:</strong> <code>[#NOMBRE#]</code><br>
+        <strong>Función VBA:</strong> <code>ReemplazarPlaceholdersPorEmojis(texto As String) As String</code>
+    </div>
+
+    <h2>🎯 Emojis para Numerología</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 60px;">Emoji</th>
+                <th style="width: 200px;">Placeholder</th>
+                <th>Código VBA</th>
+                <th>Descripción</th>
+                <th>Uso Numerológico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- CELEBRACIÓN Y LOGROS -->
+            <tr class="categoria">
+                <td colspan="5">CELEBRACIÓN Y LOGROS</td>
+            </tr>
+            <tr>
+                <td class="emoji">🎉</td>
+                <td><span class="placeholder">[#CELEBRACION#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDF89)</span></td>
+                <td class="descripcion">Celebración, fiesta</td>
+                <td>Logros, números maestros, años personales positivos</td>
+            </tr>
+            <tr>
+                <td class="emoji">✨</td>
+                <td><span class="placeholder">[#BRILLO#]</span></td>
+                <td><span class="vba-code">ChrW(&H2728)</span></td>
+                <td class="descripcion">Estrellas brillantes</td>
+                <td>Momentos mágicos, inspiración, número 11</td>
+            </tr>
+            <tr>
+                <td class="emoji">🌟</td>
+                <td><span class="placeholder">[#ESTRELLA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDF1F)</span></td>
+                <td class="descripcion">Estrella brillante</td>
+                <td>Destacar, éxito, número 1</td>
+            </tr>
+            <tr>
+                <td class="emoji">⭐</td>
+                <td><span class="placeholder">[#ESTRELLA_SIMPLE#]</span></td>
+                <td><span class="vba-code">ChrW(&H2B50)</span></td>
+                <td class="descripcion">Estrella blanca</td>
+                <td>Excelencia, calidad</td>
+            </tr>
+            <tr>
+                <td class="emoji">🏆</td>
+                <td><span class="placeholder">[#TROFEO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDFC6)</span></td>
+                <td class="descripcion">Trofeo</td>
+                <td>Victoria, número 8, logros materiales</td>
+            </tr>
+            <tr>
+                <td class="emoji">👑</td>
+                <td><span class="placeholder">[#CORONA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDC51)</span></td>
+                <td class="descripcion">Corona</td>
+                <td>Liderazgo, número 1, maestría</td>
+            </tr>
+
+            <!-- ADVERTENCIAS Y CUIDADOS -->
+            <tr class="categoria">
+                <td colspan="5">ADVERTENCIAS Y PRECAUCIONES</td>
+            </tr>
+            <tr>
+                <td class="emoji">⚠️</td>
+                <td><span class="placeholder">[#ADVERTENCIA#]</span></td>
+                <td><span class="vba-code">ChrW(&H26A0) & ChrW(&HFE0F)</span></td>
+                <td class="descripcion">Señal de advertencia</td>
+                <td>Desafíos, números kármicos, precauciones</td>
+            </tr>
+            <tr>
+                <td class="emoji">🚨</td>
+                <td><span class="placeholder">[#ALERTA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDEA8)</span></td>
+                <td class="descripcion">Sirena de emergencia</td>
+                <td>Atención urgente, crisis</td>
+            </tr>
+            <tr>
+                <td class="emoji">⛔</td>
+                <td><span class="placeholder">[#PROHIBIDO#]</span></td>
+                <td><span class="vba-code">ChrW(&H26D4)</span></td>
+                <td class="descripcion">Prohibición</td>
+                <td>Evitar, no hacer</td>
+            </tr>
+
+            <!-- APROBACIÓN Y NEGACIÓN -->
+            <tr class="categoria">
+                <td colspan="5">APROBACIÓN Y NEGACIÓN</td>
+            </tr>
+            <tr>
+                <td class="emoji">✅</td>
+                <td><span class="placeholder">[#CHECK#]</span></td>
+                <td><span class="vba-code">ChrW(&H2705)</span></td>
+                <td class="descripcion">Marca de verificación</td>
+                <td>Correcto, recomendado, hacer</td>
+            </tr>
+            <tr>
+                <td class="emoji">❌</td>
+                <td><span class="placeholder">[#CRUZ#]</span></td>
+                <td><span class="vba-code">ChrW(&H274C)</span></td>
+                <td class="descripcion">Marca X</td>
+                <td>Incorrecto, evitar, no hacer</td>
+            </tr>
+            <tr>
+                <td class="emoji">👍</td>
+                <td><span class="placeholder">[#PULGAR_ARRIBA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDC4D)</span></td>
+                <td class="descripcion">Pulgar hacia arriba</td>
+                <td>Aprobación, bien hecho</td>
+            </tr>
+            <tr>
+                <td class="emoji">👎</td>
+                <td><span class="placeholder">[#PULGAR_ABAJO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDC4E)</span></td>
+                <td class="descripcion">Pulgar hacia abajo</td>
+                <td>Desaprobación, mal camino</td>
+            </tr>
+
+            <!-- TRABAJO Y ACCIÓN -->
+            <tr class="categoria">
+                <td colspan="5">TRABAJO Y ACCIÓN</td>
+            </tr>
+            <tr>
+                <td class="emoji">💼</td>
+                <td><span class="placeholder">[#MALETIN#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCBC)</span></td>
+                <td class="descripcion">Maletín de negocios</td>
+                <td>Trabajo, profesión, número 8</td>
+            </tr>
+            <tr>
+                <td class="emoji">🔨</td>
+                <td><span class="placeholder">[#MARTILLO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDD28)</span></td>
+                <td class="descripcion">Martillo</td>
+                <td>Construcción, número 4 y 22</td>
+            </tr>
+            <tr>
+                <td class="emoji">🏗️</td>
+                <td><span class="placeholder">[#CONSTRUCCION#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDFD7) & ChrW(&HFE0F)</span></td>
+                <td class="descripcion">Edificio en construcción</td>
+                <td>Construir, número 22 maestro constructor</td>
+            </tr>
+            <tr>
+                <td class="emoji">🚀</td>
+                <td><span class="placeholder">[#COHETE#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDE80)</span></td>
+                <td class="descripcion">Cohete</td>
+                <td>Despegue, expansión rápida, número 5</td>
+            </tr>
+            <tr>
+                <td class="emoji">🎯</td>
+                <td><span class="placeholder">[#DIANA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDFAF)</span></td>
+                <td class="descripcion">Diana con flecha</td>
+                <td>Enfoque, objetivos, número 1</td>
+            </tr>
+
+            <!-- CONOCIMIENTO Y SABIDURÍA -->
+            <tr class="categoria">
+                <td colspan="5">CONOCIMIENTO Y SABIDURÍA</td>
+            </tr>
+            <tr>
+                <td class="emoji">📚</td>
+                <td><span class="placeholder">[#LIBROS#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCDA)</span></td>
+                <td class="descripcion">Libros</td>
+                <td>Estudio, conocimiento, número 7</td>
+            </tr>
+            <tr>
+                <td class="emoji">💡</td>
+                <td><span class="placeholder">[#BOMBILLA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCA1)</span></td>
+                <td class="descripcion">Bombilla</td>
+                <td>Ideas, inspiración, número 11</td>
+            </tr>
+            <tr>
+                <td class="emoji">🔮</td>
+                <td><span class="placeholder">[#BOLA_CRISTAL#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDD2E)</span></td>
+                <td class="descripcion">Bola de cristal</td>
+                <td>Intuición, visión, número 7 y 11</td>
+            </tr>
+            <tr>
+                <td class="emoji">🧠</td>
+                <td><span class="placeholder">[#CEREBRO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83E) & ChrW(&HDDE0)</span></td>
+                <td class="descripcion">Cerebro</td>
+                <td>Inteligencia, análisis, número 7</td>
+            </tr>
+
+            <!-- AMOR Y RELACIONES -->
+            <tr class="categoria">
+                <td colspan="5">AMOR Y RELACIONES</td>
+            </tr>
+            <tr>
+                <td class="emoji">❤️</td>
+                <td><span class="placeholder">[#CORAZON#]</span></td>
+                <td><span class="vba-code">ChrW(&H2764) & ChrW(&HFE0F)</span></td>
+                <td class="descripcion">Corazón rojo</td>
+                <td>Amor, número 6 y 2</td>
+            </tr>
+            <tr>
+                <td class="emoji">💕</td>
+                <td><span class="placeholder">[#DOS_CORAZONES#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDC95)</span></td>
+                <td class="descripcion">Dos corazones</td>
+                <td>Pareja, número 2</td>
+            </tr>
+            <tr>
+                <td class="emoji">🤝</td>
+                <td><span class="placeholder">[#APRETÓN_MANOS#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83E) & ChrW(&HDD1D)</span></td>
+                <td class="descripcion">Apretón de manos</td>
+                <td>Colaboración, número 2, sinastría</td>
+            </tr>
+            <tr>
+                <td class="emoji">👨‍👩‍👧‍👦</td>
+                <td><span class="placeholder">[#FAMILIA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDC68) & ChrW(&H200D) & ChrW(&HD83D) & ChrW(&HDC69) & ChrW(&H200D) & ChrW(&HD83D) & ChrW(&HDC67) & ChrW(&H200D) & ChrW(&HD83D) & ChrW(&HDC66)</span></td>
+                <td class="descripcion">Familia</td>
+                <td>Hogar, número 6</td>
+            </tr>
+
+            <!-- DINERO Y ABUNDANCIA -->
+            <tr class="categoria">
+                <td colspan="5">DINERO Y ABUNDANCIA</td>
+            </tr>
+            <tr>
+                <td class="emoji">💰</td>
+                <td><span class="placeholder">[#BOLSA_DINERO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCB0)</span></td>
+                <td class="descripcion">Bolsa de dinero</td>
+                <td>Riqueza, número 8</td>
+            </tr>
+            <tr>
+                <td class="emoji">💎</td>
+                <td><span class="placeholder">[#DIAMANTE#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDC8E)</span></td>
+                <td class="descripcion">Diamante</td>
+                <td>Valor, maestría, número 8</td>
+            </tr>
+            <tr>
+                <td class="emoji">💸</td>
+                <td><span class="placeholder">[#DINERO_VOLANDO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCB8)</span></td>
+                <td class="descripcion">Dinero con alas</td>
+                <td>Flujo financiero, pérdidas</td>
+            </tr>
+
+            <!-- NATURALEZA Y CRECIMIENTO -->
+            <tr class="categoria">
+                <td colspan="5">NATURALEZA Y CRECIMIENTO</td>
+            </tr>
+            <tr>
+                <td class="emoji">🌱</td>
+                <td><span class="placeholder">[#SEMILLA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDF31)</span></td>
+                <td class="descripcion">Brote</td>
+                <td>Comienzo, año 1, potencial</td>
+            </tr>
+            <tr>
+                <td class="emoji">🌳</td>
+                <td><span class="placeholder">[#ARBOL#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDF33)</span></td>
+                <td class="descripcion">Árbol</td>
+                <td>Madurez, número 9, sabiduría</td>
+            </tr>
+            <tr>
+                <td class="emoji">🌊</td>
+                <td><span class="placeholder">[#OLA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDF0A)</span></td>
+                <td class="descripcion">Ola</td>
+                <td>Emociones, número 2, fluir</td>
+            </tr>
+            <tr>
+                <td class="emoji">🔥</td>
+                <td><span class="placeholder">[#FUEGO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDD25)</span></td>
+                <td class="descripcion">Fuego</td>
+                <td>Pasión, número 1 y 5, transformación</td>
+            </tr>
+            <tr>
+                <td class="emoji">🌈</td>
+                <td><span class="placeholder">[#ARCOIRIS#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDF08)</span></td>
+                <td class="descripcion">Arcoíris</td>
+                <td>Esperanza, número 3, creatividad</td>
+            </tr>
+
+            <!-- FUERZA Y PODER -->
+            <tr class="categoria">
+                <td colspan="5">FUERZA Y PODER</td>
+            </tr>
+            <tr>
+                <td class="emoji">💪</td>
+                <td><span class="placeholder">[#MUSCULO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCAA)</span></td>
+                <td class="descripcion">Bíceps flexionado</td>
+                <td>Fuerza, número 1 y 8, poder</td>
+            </tr>
+            <tr>
+                <td class="emoji">⚡</td>
+                <td><span class="placeholder">[#RAYO#]</span></td>
+                <td><span class="vba-code">ChrW(&H26A1)</span></td>
+                <td class="descripcion">Rayo</td>
+                <td>Energía, número 5, cambio súbito</td>
+            </tr>
+            <tr>
+                <td class="emoji">🦅</td>
+                <td><span class="placeholder">[#AGUILA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83E) & ChrW(&HDD85)</span></td>
+                <td class="descripcion">Águila</td>
+                <td>Visión elevada, número 44</td>
+            </tr>
+
+            <!-- CREATIVIDAD Y ARTE -->
+            <tr class="categoria">
+                <td colspan="5">CREATIVIDAD Y ARTE</td>
+            </tr>
+            <tr>
+                <td class="emoji">🎨</td>
+                <td><span class="placeholder">[#PALETA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDFA8)</span></td>
+                <td class="descripcion">Paleta de artista</td>
+                <td>Creatividad, número 3</td>
+            </tr>
+            <tr>
+                <td class="emoji">🎭</td>
+                <td><span class="placeholder">[#MASCARAS#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDFAD)</span></td>
+                <td class="descripcion">Máscaras de teatro</td>
+                <td>Expresión, número 3, dualidad</td>
+            </tr>
+            <tr>
+                <td class="emoji">🎵</td>
+                <td><span class="placeholder">[#NOTA_MUSICAL#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDFB5)</span></td>
+                <td class="descripcion">Nota musical</td>
+                <td>Armonía, número 6</td>
+            </tr>
+
+            <!-- DATOS Y ANÁLISIS -->
+            <tr class="categoria">
+                <td colspan="5">DATOS Y ANÁLISIS</td>
+            </tr>
+            <tr>
+                <td class="emoji">📊</td>
+                <td><span class="placeholder">[#GRAFICO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCCA)</span></td>
+                <td class="descripcion">Gráfico de barras</td>
+                <td>Análisis, estadísticas, números</td>
+            </tr>
+            <tr>
+                <td class="emoji">📈</td>
+                <td><span class="placeholder">[#GRAFICO_SUBIDA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCC8)</span></td>
+                <td class="descripcion">Gráfico ascendente</td>
+                <td>Crecimiento, progreso, número 8</td>
+            </tr>
+            <tr>
+                <td class="emoji">📉</td>
+                <td><span class="placeholder">[#GRAFICO_BAJADA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDCC9)</span></td>
+                <td class="descripcion">Gráfico descendente</td>
+                <td>Declive, números ausentes</td>
+            </tr>
+
+            <!-- TIEMPO Y CICLOS -->
+            <tr class="categoria">
+                <td colspan="5">TIEMPO Y CICLOS</td>
+            </tr>
+            <tr>
+                <td class="emoji">⏰</td>
+                <td><span class="placeholder">[#RELOJ#]</span></td>
+                <td><span class="vba-code">ChrW(&H23F0)</span></td>
+                <td class="descripcion">Reloj despertador</td>
+                <td>Tiempo, ciclos, año personal</td>
+            </tr>
+            <tr>
+                <td class="emoji">🔄</td>
+                <td><span class="placeholder">[#CICLO#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83D) & ChrW(&HDD04)</span></td>
+                <td class="descripcion">Flechas en círculo</td>
+                <td>Ciclos de 9 años, repetición</td>
+            </tr>
+            <tr>
+                <td class="emoji">🌙</td>
+                <td><span class="placeholder">[#LUNA#]</span></td>
+                <td><span class="vba-code">ChrW(&HD83C) & ChrW(&HDF19)</span></td>
+                <td class="descripcion">Luna creciente</td>
+                <td>Intuición, número 2, ciclos lunares</td>
+            </tr>
+            <tr>
+                <td class="emoji">☀️</td>
+                <td><span class="placeholder">[#SOL#]</span></td>
+                <td><span class="vba-code">ChrW(&H2600) & ChrW(&HFE0F)</span></td>
+                <td class="descripcion">Sol</td>
+                <td>Vitalidad, número 1, claridad</td>
+            </tr>
+
+            <!-- DIRECCIÓN Y MOVIMIENTO -->
+            <tr class="categoria">
+                <td colspan="5">DIRECCIÓN Y MOVIMIENTO</td>
+            </tr>
+            <tr>
+                <td class="emoji">➡️</td>
+                <td><span class="placeholder">[#FLECHA_DERECHA#]</span></td>
+                <td><span class="vba-code">ChrW(&H27A1) & ChrW(&HFE0F)</span></td>
+                <td class="descripcion">Flecha derecha</td>
+                <td>Avanzar, progresión</td>
+            </tr>
+            <tr>
+                <td class="emoji">⬆️</td>
+                <td><span class="placeholder">[#FLECHA_ARRIBA#]</span></td>
+                <td><span class="vba-code">ChrW(&H2B06) & ChrW(&HFE0F)</span></td>
+                <td class="descripcion">Flecha arriba</td>
+                <td>Elevación, mejora</td>
+            </tr>
+            <tr>
+                <td class="emoji">⬇️</td>
+                <td><span class="placeholder">[#FLECHA_ABAJO#]</span></td>
+                <td><span class="vba-code">ChrW(&H2B07) & ChrW(&HFE0F)</span></td>
+                <td class="descripcion">Flecha abajo</td>
+                <td>Descenso, introspección</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <h2>📝 Símbolos Unicode Básicos (Seguros para VBA)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 60px;">Símbolo</th>
+                <th style="width: 200px;">Placeholder</th>
+                <th>Código VBA</th>
+                <th>Descripción</th>
+                <th>Uso Numerológico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="emoji">✓</td>
+                <td><span class="placeholder">[#TICK#]</span></td>
+                <td><span class="vba-code">ChrW(&H2713)</span></td>
+                <td class="descripcion">Marca de verificación</td>
+                <td>Correcto, completado</td>
+            </tr>
+            <tr>
+                <td class="emoji">✗</td>
+                <td><span class="placeholder">[#X#]</span></td>
+                <td><span class="vba-code">ChrW(&H2717)</span></td>
+                <td class="descripcion">X pesada</td>
+                <td>Incorrecto, evitar</td>
+            </tr>
+            <tr>
+                <td class="emoji">•</td>
+                <td><span class="placeholder">[#PUNTO#]</span></td>
+                <td><span class="vba-code">ChrW(&H2022)</span></td>
+                <td class="descripcion">Viñeta</td>
+                <td>Listas, enumeraciones</td>
+            </tr>
+            <tr>
+                <td class="emoji">○</td>
+                <td><span class="placeholder">[#CIRCULO_VACIO#]</span></td>
+                <td><span class="vba-code">ChrW(&H25CB)</span></td>
+                <td class="descripcion">Círculo blanco</td>
+                <td>Vacío, potencial</td>
+            </tr>
+            <tr>
+                <td class="emoji">●</td>
+                <td><span class="placeholder">[#CIRCULO_LLENO#]</span></td>
+                <td><span class="vba-code">ChrW(&H25CF)</span></td>
+                <td class="descripcion">Círculo negro</td>
+                <td>Completo, manifestado</td>
+            </tr>
+            <tr>
+                <td class="emoji">◆</td>
+                <td><span class="placeholder">[#DIAMANTE_LLENO#]</span></td>
+                <td><span class="vba-code">ChrW(&H25C6)</span></td>
+                <td class="descripcion">Diamante negro</td>
+                <td>Importante, destacado</td>
+            </tr>
+            <tr>
+                <td class="emoji">◇</td>
+                <td><span class="placeholder">[#DIAMANTE_VACIO#]</span></td>
+                <td><span class="vba-code">ChrW(&H25C7)</span></td>
+                <td class="descripcion">Diamante blanco</td>
+                <td>Secundario</td>
+            </tr>
+            <tr>
+                <td class="emoji">★</td>
+                <td><span class="placeholder">[#ESTRELLA_NEGRA#]</span></td>
+                <td><span class="vba-code">ChrW(&H2605)</span></td>
+                <td class="descripcion">Estrella negra</td>
+                <td>Destacado, importante</td>
+            </tr>
+            <tr>
+                <td class="emoji">☆</td>
+                <td><span class="placeholder">[#ESTRELLA_BLANCA#]</span></td>
+                <td><span class="vba-code">ChrW(&H2606)</span></td>
+                <td class="descripcion">Estrella blanca</td>
+                <td>Potencial, a desarrollar</td>
+            </tr>
+            <tr>
+                <td class="emoji">►</td>
+                <td><span class="placeholder">[#TRIANGULO_DERECHA#]</span></td>
+                <td><span class="vba-code">ChrW(&H25BA)</span></td>
+                <td class="descripcion">Triángulo derecha</td>
+                <td>Avanzar, listas</td>
+            </tr>
+            <tr>
+                <td class="emoji">▼</td>
+                <td><span class="placeholder">[#TRIANGULO_ABAJO#]</span></td>
+                <td><span class="vba-code">ChrW(&H25BC)</span></td>
+                <td class="descripcion">Triángulo abajo</td>
+                <td>Descender, profundizar</td>
+            </tr>
+            <tr>
+                <td class="emoji">▲</td>
+                <td><span class="placeholder">[#TRIANGULO_ARRIBA#]</span></td>
+                <td><span class="vba-code">ChrW(&H25B2)</span></td>
+                <td class="descripcion">Triángulo arriba</td>
+                <td>Ascender, elevar</td>
+            </tr>
+            <tr>
+                <td class="emoji">◄</td>
+                <td><span class="placeholder">[#TRIANGULO_IZQUIERDA#]</span></td>
+                <td><span class="vba-code">ChrW(&H25C4)</span></td>
+                <td class="descripcion">Triángulo izquierda</td>
+                <td>Retroceder, revisar</td>
+            </tr>
+            <tr>
+                <td class="emoji">→</td>
+                <td><span class="placeholder">[#FLECHA_DER#]</span></td>
+                <td><span class="vba-code">ChrW(&H2192)</span></td>
+                <td class="descripcion">Flecha derecha</td>
+                <td>Avanzar, siguiente</td>
+            </tr>
+            <tr>
+                <td class="emoji">←</td>
+                <td><span class="placeholder">[#FLECHA_IZQ#]</span></td>
+                <td><span class="vba-code">ChrW(&H2190)</span></td>
+                <td class="descripcion">Flecha izquierda</td>
+                <td>Retroceder, anterior</td>
+            </tr>
+            <tr>
+                <td class="emoji">↑</td>
+                <td><span class="placeholder">[#FLECHA_ARR#]</span></td>
+                <td><span class="vba-code">ChrW(&H2191)</span></td>
+                <td class="descripcion">Flecha arriba</td>
+                <td>Subir, mejorar</td>
+            </tr>
+            <tr>
+                <td class="emoji">↓</td>
+                <td><span class="placeholder">[#FLECHA_ABA#]</span></td>
+                <td><span class="vba-code">ChrW(&H2193)</span></td>
+                <td class="descripcion">Flecha abajo</td>
+                <td>Bajar, introspección</td>
+            </tr>
+            <tr>
+                <td class="emoji">═</td>
+                <td><span class="placeholder">[#LINEA_DOBLE#]</span></td>
+                <td><span class="vba-code">ChrW(&H2550)</span></td>
+                <td class="descripcion">Línea horizontal doble</td>
+                <td>Separador principal</td>
+            </tr>
+            <tr>
+                <td class="emoji">─</td>
+                <td><span class="placeholder">[#LINEA_SIMPLE#]</span></td>
+                <td><span class="vba-code">ChrW(&H2500)</span></td>
+                <td class="descripcion">Línea horizontal</td>
+                <td>Separador secundario</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>💻 Código VBA de Implementación</h2>
+    
+    <div style="background-color: #2c3e50; color: #2ecc71; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; font-size: 12px; overflow-x: auto; margin: 20px 0;">
+<pre style="margin: 0; color: #2ecc71;">
+Function ReemplazarPlaceholdersPorEmojis(texto As String) As String
+    ' Reemplaza placeholders por códigos de emoji VBA
+    Dim resultado As String
+    resultado = texto
+    
+    ' CELEBRACIÓN Y LOGROS
+    resultado = Replace(resultado, "[#CELEBRACION#]", ChrW(&HD83C) & ChrW(&HDF89))
+    resultado = Replace(resultado, "[#BRILLO#]", ChrW(&H2728))
+    resultado = Replace(resultado, "[#ESTRELLA#]", ChrW(&HD83C) & ChrW(&HDF1F))
+    resultado = Replace(resultado, "[#TROFEO#]", ChrW(&HD83C) & ChrW(&HDFC6))
+    
+    ' ADVERTENCIAS
+    resultado = Replace(resultado, "[#ADVERTENCIA#]", ChrW(&H26A0) & ChrW(&HFE0F))
+    resultado = Replace(resultado, "[#ALERTA#]", ChrW(&HD83D) & ChrW(&HDEA8))
+    
+    ' APROBACIÓN Y NEGACIÓN
+    resultado = Replace(resultado, "[#CHECK#]", ChrW(&H2705))
+    resultado = Replace(resultado, "[#CRUZ#]", ChrW(&H274C))
+    
+    ' TRABAJO Y ACCIÓN
+    resultado = Replace(resultado, "[#MALETIN#]", ChrW(&HD83D) & ChrW(&HDCBC))
+    resultado = Replace(resultado, "[#COHETE#]", ChrW(&HD83D) & ChrW(&HDE80))
+    resultado = Replace(resultado, "[#DIANA#]", ChrW(&HD83C) & ChrW(&HDFAF))
+    
+    ' CONOCIMIENTO
+    resultado = Replace(resultado, "[#LIBROS#]", ChrW(&HD83D) & ChrW(&HDCDA))
+    resultado = Replace(resultado, "[#BOMBILLA#]", ChrW(&HD83D) & ChrW(&HDCA1))
+    
+    ' AMOR Y RELACIONES
+    resultado = Replace(resultado, "[#CORAZON#]", ChrW(&H2764) & ChrW(&HFE0F))
+    resultado = Replace(resultado, "[#APRETÓN_MANOS#]", ChrW(&HD83E) & ChrW(&HDD1D))
+    
+    ' DINERO
+    resultado = Replace(resultado, "[#BOLSA_DINERO#]", ChrW(&HD83D) & ChrW(&HDCB0))
+    resultado = Replace(resultado, "[#DIAMANTE#]", ChrW(&HD83D) & ChrW(&HDC8E))
+    
+    ' NATURALEZA
+    resultado = Replace(resultado, "[#SEMILLA#]", ChrW(&HD83C) & ChrW(&HDF31))
+    resultado = Replace(resultado, "[#FUEGO#]", ChrW(&HD83D) & ChrW(&HDD25))
+    
+    ' SÍMBOLOS BÁSICOS (Siempre funcionan)
+    resultado = Replace(resultado, "[#TICK#]", ChrW(&H2713))
+    resultado = Replace(resultado, "[#X#]", ChrW(&H2717))
+    resultado = Replace(resultado, "[#PUNTO#]", ChrW(&H2022))
+    resultado = Replace(resultado, "[#ESTRELLA_NEGRA#]", ChrW(&H2605))
+    resultado = Replace(resultado, "[#TRIANGULO_DERECHA#]", ChrW(&H25BA))
+    resultado = Replace(resultado, "[#LINEA_DOBLE#]", ChrW(&H2550))
+    resultado = Replace(resultado, "[#LINEA_SIMPLE#]", ChrW(&H2500))
+    
+    ReemplazarPlaceholdersPorEmojis = resultado
+End Function
+
+' Uso en generación de Word:
+Sub AgregarTextoConEmojis(wordDoc As Object, textoMD As String)
+    Dim textoConEmojis As String
+    textoConEmojis = ReemplazarPlaceholdersPorEmojis(textoMD)
+    
+    Dim rango As Object
+    Set rango = wordDoc.Content
+    rango.Collapse Direction:=0
+    rango.InsertAfter textoConEmojis
+End Sub
+</pre>
+    </div>
+
+    <div class="nota">
+        <strong>Nota Importante:</strong> Los emojis complejos (4 bytes) pueden no mostrarse correctamente en todos los 
+        sistemas. Los <strong>símbolos Unicode básicos</strong> (sección final de la tabla) son 100% seguros y se 
+        visualizarán correctamente en cualquier versión de Windows y Office.
+    </div>
+
+</body>
+</html>

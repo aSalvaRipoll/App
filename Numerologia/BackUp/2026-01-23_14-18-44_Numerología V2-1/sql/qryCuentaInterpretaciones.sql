@@ -1,0 +1,4 @@
+SELECT tbmIndiceInterpretaciones.Categoria, tbmIndiceInterpretaciones.SubCategoria, Count(tbmIndiceInterpretaciones.Ruta) AS Ficheros
+FROM tbmIndiceInterpretaciones
+GROUP BY tbmIndiceInterpretaciones.Categoria, tbmIndiceInterpretaciones.SubCategoria;
+

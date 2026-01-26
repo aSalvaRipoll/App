@@ -102,6 +102,7 @@ Resultado: 9
 - Año actual (del calendario)
 
 **PROCESO:**
+
 1. Tomar día de nacimiento
 2. Tomar mes de nacimiento
 3. Tomar año actual (ej: 2025)

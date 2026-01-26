@@ -1,0 +1,29 @@
+<!-- CABECERA DEL INFORME NUMEROLÓGICO -->
+<div style="text-align:center; margin-top:60px;">
+
+  <!-- Título principal -->
+  <h1 style="font-size:32px; margin-bottom:10px;">
+    Estudio Numerológico de<br>
+	<strong>{{NOMBRE_COMPLETO}}</strong>
+  </h1>
+
+  <!-- Subtítulo con fecha -->
+  <h2 style="font-size:20px; font-weight:400; margin-top:0;">
+    Nacid{{Parte_Genero}} el {{FECHA_NAC_FORMAT}}
+  </h2>
+
+  <!-- Imagen principal -->
+  <img src="{{RUTA_IMAGEN}}" alt="Imagen del informe"
+       style="display:block; margin:30px auto; width:{{ANCHO_IMAGEN}}px; height:auto;">
+</div>
+
+<!-- METADATOS DEL INFORME -->
+<div style="text-align:left; margin-top:50px; font-size:14px; line-height:1.4;">
+
+  <p><strong>Fecha de generación:</strong> {{FECHA_GENERACION}}</p>
+  <p><strong>Tipo de análisis:</strong> {{TIPO_ANALISIS}}</p>
+  <p><strong>Versión del sistema:</strong> {{VERSION_SISTEMA}}</p>
+  <p><strong>ID del informe:</strong> {{ID_INFORME}}</p>
+  <p><strong>Analista:</strong> {{ANALISTA}}</p>
+
+</div>

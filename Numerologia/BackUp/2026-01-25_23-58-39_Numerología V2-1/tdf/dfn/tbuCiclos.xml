@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-01-25T23:59:00">
+<tbuCiclos>
+<IDPersona>18</IDPersona>
+<IDResultado>1</IDResultado>
+<IDCiclo>0</IDCiclo>
+<idFonetica>1</idFonetica>
+<numCiclos>2</numCiclos>
+<MetodoCiclos>2</MetodoCiclos>
+<Ciclo1>2</Ciclo1>
+<EdadIni1>0</EdadIni1>
+<EdadFin1>33</EdadFin1>
+<Ciclo2>2</Ciclo2>
+<EdadIni2>33</EdadIni2>
+<EdadFin2>42</EdadFin2>
+<Ciclo3>8</Ciclo3>
+<EdadIni3>42</EdadIni3>
+<EdadFin3>51</EdadFin3>
+<Ciclo4>1</Ciclo4>
+<EdadIni4>51</EdadIni4>
+<EdadFin4>120</EdadFin4>
+</tbuCiclos>
+</dataroot>

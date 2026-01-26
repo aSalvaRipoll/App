@@ -1,0 +1,231 @@
+-- =============================================================================
+-- SISTEMA DE CORRESPONDENCIAS ASTROLÓGICAS PARA TAROT
+-- Base de datos: Access
+-- Autor: Alba - Sistema de Numerología y Tarot
+-- =============================================================================
+
+-- =============================================================================
+-- TABLA 1: SIGNOS ZODIACALES (12 signos)
+-- =============================================================================
+
+CREATE TABLE tblSignosZodiacales (
+    ID_Signo AUTOINCREMENT PRIMARY KEY,
+    NombreSigno VARCHAR(20) NOT NULL,
+    SimboloUnicode VARCHAR(5),
+    Elemento VARCHAR(10) NOT NULL,
+    Cualidad VARCHAR(15) NOT NULL,
+    Polaridad VARCHAR(10) NOT NULL,
+    PlanetaRegente VARCHAR(20),
+    PlanetaExaltacion VARCHAR(20),
+    PlanetaDetrimento VARCHAR(20),
+    PlanetaCaida VARCHAR(20),
+    CasaNatural BYTE,
+    GradoInicial INTEGER,
+    GradoFinal INTEGER,
+    FechaInicioAprox VARCHAR(10),
+    FechaFinAprox VARCHAR(10),
+    ArcanosAsociados VARCHAR(100),
+    CaracteristicasClave MEMO,
+    PalabrasClave MEMO,
+    CONSTRAINT chk_elemento CHECK (Elemento IN ('Fuego', 'Tierra', 'Aire', 'Agua')),
+    CONSTRAINT chk_cualidad CHECK (Cualidad IN ('Cardinal', 'Fijo', 'Mutable')),
+    CONSTRAINT chk_polaridad CHECK (Polaridad IN ('Yang', 'Yin'))
+);
+
+-- =============================================================================
+-- TABLA 2: PLANETAS (10 planetas + Nodos)
+-- =============================================================================
+
+CREATE TABLE tblPlanetas (
+    ID_Planeta AUTOINCREMENT PRIMARY KEY,
+    NombrePlaneta VARCHAR(20) NOT NULL,
+    SimboloUnicode VARCHAR(5),
+    TipoCuerpo VARCHAR(20),
+    SignoDomicilio VARCHAR(50),
+    SignoExaltacion VARCHAR(20),
+    SignoDetrimento VARCHAR(50),
+    SignoCaida VARCHAR(20),
+    ArcanosAsociados VARCHAR(100),
+    NumeroNumerologico BYTE,
+    ElementoAfin VARCHAR(10),
+    CaracteristicasClave MEMO,
+    PalabrasClave MEMO,
+    CicloOrbital VARCHAR(50),
+    CONSTRAINT chk_tipo CHECK (TipoCuerpo IN ('Luminaria', 'Planeta Personal', 'Planeta Social', 'Planeta Transpersonal', 'Punto Calculado'))
+);
+
+-- =============================================================================
+-- TABLA 3: DECANATOS (36 decanatos - 3 por cada signo)
+-- =============================================================================
+
+CREATE TABLE tblDecanatos (
+    ID_Decanato AUTOINCREMENT PRIMARY KEY,
+    Signo_ID INTEGER NOT NULL,
+    NumeroDecanato BYTE NOT NULL,
+    GradoInicial INTEGER NOT NULL,
+    GradoFinal INTEGER NOT NULL,
+    PlanetaSubregente VARCHAR(20),
+    CartaTarotNumero BYTE,
+    CartaTarotPalo VARCHAR(20),
+    CartaTarotCompleta VARCHAR(50),
+    ElementoTriplicidad VARCHAR(10),
+    InterpretacionClave MEMO,
+    PalabrasClave MEMO,
+    CONSTRAINT fk_signo FOREIGN KEY (Signo_ID) REFERENCES tblSignosZodiacales(ID_Signo),
+    CONSTRAINT chk_decanato CHECK (NumeroDecanato BETWEEN 1 AND 3),
+    CONSTRAINT chk_grados CHECK (GradoInicial >= 0 AND GradoFinal <= 30),
+    CONSTRAINT chk_palo CHECK (CartaTarotPalo IN ('Bastos', 'Copas', 'Espadas', 'Oros', NULL))
+);
+
+-- =============================================================================
+-- TABLA 4: ARCANOS MAYORES - CORRESPONDENCIAS ASTROLÓGICAS (22 cartas)
+-- =============================================================================
+
+CREATE TABLE tblArcanosMayoresAstrologia (
+    ID_Arcano AUTOINCREMENT PRIMARY KEY,
+    NumeroArcano BYTE NOT NULL,
+    NombreArcano VARCHAR(50) NOT NULL,
+    LetraHebrea VARCHAR(20),
+    ValorLetraHebrea INTEGER,
+    CorrespondenciaAstrologica VARCHAR(50) NOT NULL,
+    TipoCorrespondencia VARCHAR(20) NOT NULL,
+    ElementoAsociado VARCHAR(10),
+    Polaridad VARCHAR(10),
+    Cualidad VARCHAR(15),
+    SenderoArbolVida VARCHAR(50),
+    SephirothInicio VARCHAR(20),
+    SephirothFin VARCHAR(20),
+    InterpretacionAstrologica MEMO,
+    PalabrasClave MEMO,
+    CONSTRAINT chk_numero CHECK (NumeroArcano BETWEEN 1 AND 22),
+    CONSTRAINT chk_tipo_corresp CHECK (TipoCorrespondencia IN ('Planeta', 'Signo', 'Elemento'))
+);
+
+-- =============================================================================
+-- TABLA 5: ARCANOS MENORES - CARTAS NUMERADAS (36 cartas: 2-10 de cada palo)
+-- =============================================================================
+
+CREATE TABLE tblArcanosMenoresNumeradosAstrologia (
+    ID_Carta AUTOINCREMENT PRIMARY KEY,
+    NumeroCarta BYTE NOT NULL,
+    Palo VARCHAR(20) NOT NULL,
+    NombreCompleto VARCHAR(50) NOT NULL,
+    Decanato_ID INTEGER,
+    SignoZodiacal VARCHAR(20),
+    GradosZodiacales VARCHAR(20),
+    PlanetaEnSigno VARCHAR(50),
+    ElementoPalo VARCHAR(10),
+    ElementoSigno VARCHAR(10),
+    Cualidad VARCHAR(15),
+    TituloGoldenDawn VARCHAR(100),
+    InterpretacionAstrologica MEMO,
+    PalabrasClave MEMO,
+    CONSTRAINT chk_numero_carta CHECK (NumeroCarta BETWEEN 2 AND 10),
+    CONSTRAINT chk_palo_num CHECK (Palo IN ('Bastos', 'Copas', 'Espadas', 'Oros')),
+    CONSTRAINT fk_decanato FOREIGN KEY (Decanato_ID) REFERENCES tblDecanatos(ID_Decanato)
+);
+
+-- =============================================================================
+-- TABLA 6: FIGURAS DE CORTE - CORRESPONDENCIAS ASTROLÓGICAS (16 cartas)
+-- =============================================================================
+
+CREATE TABLE tblFigurasCorteAstrologia (
+    ID_Figura AUTOINCREMENT PRIMARY KEY,
+    TipoFigura VARCHAR(20) NOT NULL,
+    Palo VARCHAR(20) NOT NULL,
+    NombreCompleto VARCHAR(50) NOT NULL,
+    ElementoPalo VARCHAR(10),
+    ElementoFigura VARCHAR(10),
+    CombinacionElemental VARCHAR(30),
+    CuadranteZodiacal VARCHAR(100),
+    SignosPrincipales VARCHAR(100),
+    GradosIniciales VARCHAR(20),
+    GradosFinales VARCHAR(20),
+    CaracteristicasAstrologicas MEMO,
+    PersonalidadTipo MEMO,
+    PalabrasClave MEMO,
+    CONSTRAINT chk_tipo_figura CHECK (TipoFigura IN ('Sota', 'Caballero', 'Reina', 'Rey')),
+    CONSTRAINT chk_palo_fig CHECK (Palo IN ('Bastos', 'Copas', 'Espadas', 'Oros'))
+);
+
+-- =============================================================================
+-- TABLA 7: CORRESPONDENCIAS NUMEROS-PLANETAS (Para integración Numerología)
+-- =============================================================================
+
+CREATE TABLE tblNumerosAstrologia (
+    ID_Numero AUTOINCREMENT PRIMARY KEY,
+    Numero BYTE NOT NULL,
+    EsNumeroMaestro BIT DEFAULT 0,
+    PlanetaPrimario VARCHAR(20) NOT NULL,
+    PlanetaSecundario VARCHAR(20),
+    SignosAfines VARCHAR(100),
+    ElementoAfin VARCHAR(10),
+    ArcanosMayoresRelacionados VARCHAR(100),
+    CaracteristicasNumerologicas MEMO,
+    CaracteristicasAstrologicas MEMO,
+    IntegracionInterpretativa MEMO,
+    CONSTRAINT chk_numero_val CHECK (Numero IN (1,2,3,4,5,6,7,8,9,11,22,33,44))
+);
+
+-- =============================================================================
+-- TABLA 8: ELEMENTOS (Los 4 elementos básicos)
+-- =============================================================================
+
+CREATE TABLE tblElementos (
+    ID_Elemento AUTOINCREMENT PRIMARY KEY,
+    NombreElemento VARCHAR(10) NOT NULL,
+    SimboloElemento VARCHAR(5),
+    Polaridad VARCHAR(10),
+    Cualidades VARCHAR(50),
+    PaloTarotAsociado VARCHAR(20),
+    SignosAsociados VARCHAR(50),
+    TriplicidadSignos VARCHAR(50),
+    CaracteristicasClave MEMO,
+    PalabrasClave MEMO,
+    CONSTRAINT chk_elemento_nom CHECK (NombreElemento IN ('Fuego', 'Tierra', 'Aire', 'Agua'))
+);
+
+-- =============================================================================
+-- TABLA 9: CUALIDADES ZODIACALES (Cardinal, Fijo, Mutable)
+-- =============================================================================
+
+CREATE TABLE tblCualidadesZodiacales (
+    ID_Cualidad AUTOINCREMENT PRIMARY KEY,
+    NombreCualidad VARCHAR(15) NOT NULL,
+    CruzCosmica VARCHAR(50),
+    SignosAsociados VARCHAR(50),
+    CaracteristicasPrincipales MEMO,
+    ModoExpresion MEMO,
+    PalabrasClave MEMO,
+    CONSTRAINT chk_cualidad_nom CHECK (NombreCualidad IN ('Cardinal', 'Fijo', 'Mutable'))
+);
+
+-- =============================================================================
+-- ÍNDICES PARA OPTIMIZACIÓN DE CONSULTAS
+-- =============================================================================
+
+CREATE INDEX idx_signos_nombre ON tblSignosZodiacales(NombreSigno);
+CREATE INDEX idx_planetas_nombre ON tblPlanetas(NombrePlaneta);
+CREATE INDEX idx_decanatos_signo ON tblDecanatos(Signo_ID);
+CREATE INDEX idx_decanatos_carta ON tblDecanatos(CartaTarotCompleta);
+CREATE INDEX idx_arcanos_numero ON tblArcanosMayoresAstrologia(NumeroArcano);
+CREATE INDEX idx_menores_palo ON tblArcanosMenoresNumeradosAstrologia(Palo);
+CREATE INDEX idx_menores_numero ON tblArcanosMenoresNumeradosAstrologia(NumeroCarta);
+CREATE INDEX idx_figuras_tipo ON tblFigurasCorteAstrologia(TipoFigura);
+CREATE INDEX idx_figuras_palo ON tblFigurasCorteAstrologia(Palo);
+CREATE INDEX idx_numeros_valor ON tblNumerosAstrologia(Numero);
+
+-- =============================================================================
+-- NOTAS DE IMPLEMENTACIÓN
+-- =============================================================================
+
+-- 1. Estas tablas deben crearse en el orden presentado debido a dependencias FK
+-- 2. Usar módulo VBA para poblar datos (ver modPoblarAstrologia.bas)
+-- 3. Los campos MEMO permiten textos largos para interpretaciones
+-- 4. AUTOINCREMENT en Access equivale a IDENTITY en SQL Server
+-- 5. Los CHECK constraints pueden necesitar validación adicional en VBA
+-- 6. Considerar crear vistas para consultas complejas frecuentes
+
+-- =============================================================================
+-- FIN DEL SCRIPT DE CREACIÓN DE TABLAS
+-- =============================================================================

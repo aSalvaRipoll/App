@@ -20,6 +20,7 @@ Universal Magic no es una calculadora numerológica más. Es un sistema de estud
 ### **Contexto Histórico**
 
 **Pitágoras de Samos** (c. 570-495 a.C.) no fue simplemente un matemático. Fue:
+
 - **Místico:** Fundador de una escuela filosófico-religiosa
 - **Músico:** Estudioso de la armonía y las proporciones sonoras
 - **Cosmólogo:** Creía que el universo entero era música y número

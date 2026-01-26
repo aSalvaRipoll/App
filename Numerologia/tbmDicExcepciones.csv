@@ -1,0 +1,99 @@
+Idioma;Palabra;Grafemas;idFonemas;EsVocal;Valor;Notas;Activo
+
+# ===========================
+# CATALÁN — NOMBRES
+# ===========================
+ca;XAVIER;XA|VI|ER;34|12|7;0|0|0;Patrimonial;True
+ca;XAVI;XA|VI;34|12;0|0;5|4;Hipocorístic;True
+ca;TXELL;TX|ELL;41|22;0|0;4|3;Hipocorístic;True
+ca;GUILLEM;GUI|LLEM;18|27;0|0;3|6;Frecuent;True
+ca;GUILLA;GUI|LLA;18|27;0|0;3|3;Patrimonial;True
+ca;GUILLOT;GUI|LLOT;18|27;0|0;3|6;Patrimonial;True
+ca;PUIG;PU|IG;15|9;0|0;7|3;Patrimonial;True
+ca;ROIG;RO|IG;14|9;0|0;6|3;Patrimonial;True
+ca;ROIGÉ;RO|I|GE;14|3|22;0|1|0;6|3|4;Patrimonial;True
+ca;ROIGER;RO|I|GER;14|3|22;0|1|0;6|3|4;Patrimonial;True
+ca;ROIGET;RO|I|GET;14|3|22;0|1|0;6|3|4;Patrimonial;True
+ca;ROIGÓ;RO|I|GO;14|3|22;0|1|0;6|3|4;Patrimonial;True
+ca;LLORACH;LLO|RACH;27|14;0|0;6|5;Patrimonial;True
+ca;ESTELRICH;ES|TEL|RRIK;5|14|28;1|0|0;5|4|6;Patrimonial;True
+ca;MASCARÓ;MAS|CA|RO;14|6|14;0|0|0;5|3|6;Patrimonial;True
+ca;MOIÀ;MO|IA;6|11;0|1;6|3;Patrimonial;True
+ca;ÒSCAR;OS|CAR;14|6;0|0;6|3;Patrimonial;True
+ca;MERCÈ;MER|CE;13|5;0|1;4|5;Patrimonial;True
+ca;TOMÀS;TO|MAS;6|14;0|0;6|5;Patrimonial;True
+ca;SIMÓ;SI|MO;9|6;1|0;3|6;Patrimonial;True
+ca;TÀNIA;TA|NIA;7|11;0|1;7|3;Patrimonial;True
+ca;NÚRIA;NU|RIA;13|14;0|0;4|6;Patrimonial;True
+ca;JÚLIA;JU|LIA;12|11;0|1;1|3;Patrimonial;True
+ca;ÀLEX;A|LEX;1|14;1|0;1|4;Patrimonial;True
+ca;DÍDAC;DI|DAC;9|14;1|0;3|5;Patrimonial;True
+ca;FABIÀ;FA|BIA;6|11;0|1;6|3;Patrimonial;True
+ca;MARIÀ;MA|RIA;7|14;0|0;7|6;Patrimonial;True
+ca;MARÇAL;MAR|CAL;14|6;0|0;5|3;Patrimonial;True
+ca;LLUÍS;LLU|IS;27|9;0|1;6|3;Patrimonial;True
+ca;LLÚCIA;LLU|CIA;27|11;0|1;6|3;Patrimonial;True
+ca;LLUCIÀ;LLU|CIA;27|11;0|1;6|3;Patrimonial;True
+ca;LLORÉNS;LLO|RENS;27|14;0|0;6|5;Patrimonial;True
+ca;LLORÓ;LLO|RO;27|14;0|0;6|6;Patrimonial;True
+
+# ===========================
+# CATALÁN — HIPOCORÍSTICOS
+# ===========================
+ca;CESC;CE|SC;5|14;1|0;5|5;Hipocorístic;True
+ca;CINTO;CIN|TO;9|6;1|0;3|6;Hipocorístic;True
+ca;TONI;TO|NI;6|9;0|1;6|3;Hipocorístic;True
+ca;QUIM;QUI|M;18|13;0|0;3|4;Hipocorístic;True
+
+# ===========================
+# BALEARES — NOMBRES Y APELLIDOS
+# ===========================
+ca-ib;APOL·LÒNIA;A|POL|LON|IA;1|23|27|11;1|0|0|1;1|7|6|3;Tradicional balear;True
+ca-ib;APOL.LONI;A|POL|LON|I;1|23|27|3;1|0|0|1;1|7|6|3;Tradicional balear;True
+ca-ib;BAUZÀ;BAU|ZA;7|21;0|0;7|3;Llinatge balear;True
+ca-ib;BORRÀS;BOR|RAS;14|14;0|0;5|5;Llinatge balear;True
+ca-ib;MOIÀ;MO|IA;6|11;0|1;6|3;Llinatge balear;True
+ca-ib;MASCARÓ;MAS|CA|RO;14|6|14;0|0|0;5|3|6;Llinatge balear;True
+ca-ib;CARRIÓ;CAR|RIO;6|14;0|0;3|6;Llinatge balear;True
+ca-ib;MARÍ;MA|RI;7|14;0|1;7|6;Llinatge pitiús;True
+ca-ib;MARTÍ;MAR|TI;14|6;0|1;5|3;Forma balear;True
+ca-ib;MUNARRO;MU|NAR|RO;13|14|14;0|0|0;4|5|6;Llinatge balear;True
+ca-ib;MAYANS;MA|YANS;7|14;0|0;7|5;Llinatge balear;True
+ca-ib;MAYOL;MA|YOL;7|14;0|0;7|6;Llinatge balear;True
+ca-ib;FERRERET;FER|RE|RET;14|14|14;0|0|0;5|5|5;Llinatge pitiús;True
+ca-ib;GOMILA;GO|MI|LA;6|9|3;0|1|1;6|3|3;Llinatge balear;True
+ca-ib;GUIRADO;GUI|RA|DO;18|14|6;0|0|0;3|6|6;Llinatge pitiús;True
+ca-ib;CANYELLA;CAN|YEL|LA;19|22|3;0|0|1;1|4|3;Llinatge balear;True
+ca-ib;CANYELLES;CAN|YEL|LES;19|22|27;0|0|0;1|4|6;Llinatge balear;True
+ca-ib;PUIG;PU|IG;15|9;0|0;7|3;Llinatge balear;True
+
+# ===========================
+# FIN DEL CSV
+# ===========================
+
+
+# ===========================
+# PORTUGUÉS (PT-EU)
+# ===========================
+pt-eu;JOÃO;JO|ÃO;12|31;0|0;1|7;Nasal;True
+pt-eu;MÃE;MA|E;7|5;0|1;7|5;Nasal;True
+pt-eu;CORAÇÃO;CO|RA|ÇÃO;6|14|31;0|0|0;6|6|7;Nasal;True
+
+# ===========================
+# PORTUGUÉS (PT-BR)
+# ===========================
+pt-br;JOÃO;JO|ÃO;12|31;0|0;1|7;Nasal;True
+pt-br;CORAÇÃO;CO|RA|ÇÃO;6|14|31;0|0|0;6|6|7;Nasal;True
+
+# ===========================
+# FRANCÉS (FR)
+# ===========================
+fr;ALAIN;A|LAIN;1|22;1|0;1|4;Nasal;True
+fr;CHENONCEAU;CHE|NON|CEAU;22|31|11;0|0|1;3|7|3;Nasal;True
+
+# ===========================
+# INGLÉS (EN)
+# ===========================
+en;KNIGHT;NI|AIT;14|17;0|0;6|8;Irregular;True
+en;THOMAS;TO|MAS;6|14;0|0;6|5;Irregular;True
+

@@ -1,0 +1,74 @@
+ca-ib;ca-va;ca;es;gl;eu;pt-eu;pt-br;en-gb;en-us;en-us-af;fr;Género
+Aina;Anna;Anna;Ana;Ana;Ane;Ana;Ana;Anne;Anna;Quiana;Anne;F
+Andreu;Andreu;Andreu;Andrés;Andrés;Ander;André;André;Andrew;Andrew;Andre;André;M
+Antoni;Antoni;Antoni;Antonio;Antón;Antoni;António;Antônio;Anthony;Anthony;Antwan;Antoine;M
+Antònia;Antònia;Antònia;Antonia;Antonia;Antone;Antónia;Antônia;Antonia;Antonia;Latonia;Antonie;F
+Arnau;Arnau;Arnau;Arnaldo;Arnaldo;Arnau;Arnaldo;Arnaldo;Arnold;Arnold;Arnie;Arnaud;M
+Bàrbara;Bàrbara;Bàrbara;Bárbara;Bárbara;Barbara;Bárbara;Bárbara;Barbara;Barbara;Barbarella;Barbe;F
+Bartomeu;Bartomeu;Bartomeu;Bartolomé;Bartolomeu;Bartolo;Bartolomeu;Bartolomeu;Bartholomew;Bartholomew;Bart;Barthélemy;M
+Bernat;Bernat;Bernat;Bernardo;Bernardo;Bernat;Bernardo;Bernardo;Bernard;Bernard;Bernie;Bernard;M
+Biel;Gabriel;Gabriel;Gabriel;Gabriel;Gabirel;Gabriel;Gabriel;Gabriel;Gabriel;Gabe;Gabriel;M
+Catalina;Caterina;Caterina;Catalina;Catalina;Katalin;Catarina;Catarina;Catherine;Catherine;Kayla;Catherine;F
+Caterina;Caterina;Caterina;Caterina;Caterina;Katarin;Catarina;Catarina;Catherine;Catherine;Catrina;Catherine;F
+Colau;Nicolau;Nicolau;Nicolás;Nicolao;Nikola;Nicolau;Nicolau;Nicholas;Nicholas;Nick;Nicolas;M
+Coloma;Coloma;Coloma;Paloma;Paloma;Uxue;Pomba;Pomba;Dove;Dove;Paloma;Colombe;F
+Cosme;Cosme;Cosme;Cosme;Cosme;Kosme;Cosme;Cosme;Cosmas;Cosmo;Cosmo;Cosme;M
+Damià;Damià;Damià;Damián;Damián;Damian;Damião;Damião;Damian;Damian;Damien;Damien;M
+Dolors;Dolors;Dolors;Dolores;Dores;Nekane;Dores;Dores;Dolores;Dolores;Lola;Dolores;F
+Esperança;Esperança;Esperança;Esperanza;Esperanza;Itxaro;Esperança;Esperança;Hope;Hope;Hope;Espérance;F
+Eudald;Eudald;Eudald;Eudaldo;Eudaldo;Eudaldo;Eudaldo;Eudaldo;Eudald;Eudald;Eudald;Eudes;M
+Ferran;Ferran;Ferran;Fernando;Fernando;Errando;Fernando;Fernando;Ferdinand;Ferdinand;Ferris;Ferdinand;M
+Francesc;Francesc;Francesc;Francisco;Francisco;Frantzisko;Francisco;Francisco;Francis;Francis;Frank;François;M
+Francisca;Francisca;Francisca;Francisca;Francisca;Frantzeska;Francisca;Francisca;Frances;Frances;Frani;Françoise;F
+Gabriel;Gabriel;Gabriel;Gabriel;Gabriel;Gabirel;Gabriel;Gabriel;Gabriel;Gabriel;Gabe;Gabriel;M
+Gori;Gregori;Gregori;Gregorio;Gregorio;Gregorio;Gregório;Gregório;Gregory;Gregory;Greg;Grégoire;M
+Guiem;Guillem;Guillem;Guillermo;Guillerme;Guilen;Guilherme;Guilherme;William;William;Willie;Guillaume;M
+Guillem;Guillem;Guillem;Guillermo;Guillerme;Guilen;Guilherme;Guilherme;William;William;Willie;Guillaume;M
+Isabel;Isabel;Isabel;Isabel;Isabel;Isabel;Isabel;Isabel;Elizabeth;Elizabeth;Latoya;Isabelle;F
+Jaume;Jaume;Jaume;Jaime;Santiago;Jakue;Tiago;Tiago;James;James;Jamal;Jacques;M
+Joan;Joan;Joan;Juan;Xoán;Jon;João;João;John;John;Deshawn;Jean;M
+Joan Lluís;Joan Lluís;Joan Lluís;Juan Luis;Xoán Luís;Jon Luis;João Luís;João Luís;John Louis;John Louis;John-Lou;Jean-Louis;M
+Joan Miquel;Joan Miquel;Joan Miquel;Juan Miguel;Xoán Miguel;Jon Mikel;João Miguel;João Miguel;John Michael;John Michael;Jon-Mikel;Jean-Michel;M
+Joan Pau;Joan Pau;Joan Pau;Juan Pablo;Xoán Pablo;Jon Paulo;João Paulo;João Paulo;John Paul;John Paul;John-Paul;Jean-Paul;M
+Joan Pere;Joan Pere;Joan Pere;Juan Pedro;Xoán Pedro;Jon Peru;João Pedro;João Pedro;John Peter;John Peter;John-Pete;Jean-Pierre;M
+Joan Toni;Joan Antoni;Joan Antoni;Juan Antonio;Xoán Antón;Jon Antoni;João António;João Antônio;John Anthony;John Anthony;John-Antwan;Jean-Antoine;M
+Joana;Joana;Joana;Juana;Xoana;Jone;Joana;Joana;Joan;Jane;Shanice;Jeanne;F
+Josefa;Josepa;Josepa;Josefa;Xosefa;Josebe;Josefa;Josefa;Josephine;Josephine;Jo-Sista;Josèphe;F
+Josep;Josep;Josep;José;Xosé;Joseba;José;José;Joseph;Joseph;Joe;Joseph;M
+Josep Lluís;Josep Lluís;Josep Lluís;José Luis;Xosé Luís;Joseba Luis;José Luís;José Luís;Joseph Louis;Joseph Louis;Joe-Lou;Jean-Louis;M
+Josep Miquel;Josep Miquel;Josep Miquel;José Miguel;Xosé Miguel;Joseba Mikel;José Miguel;José Miguel;Joseph Michael;Joseph Michael;Joe-Mike;Jean-Michel;M
+Llorenç;Llorenç;Llorenç;Lorenzo;Lourenzo;Lontzi;Lourenço;Lourenço;Lawrence;Lawrence;Larry;Laurent;M
+Llúcia;Llúcia;Llúcia;Lucía;Lucía;Luzia;Lúcia;Lúcia;Lucy;Lucy;Lucinda;Lucie;F
+Macià;Maties;Maties;Matías;Matías;Matia;Matias;Matias;Matthias;Matthias;Matt;Mathias;M
+Magdalena;Magdalena;Magdalena;Magdalena;Madalena;Maialen;Madalena;Madalena;Magdalene;Magdalene;Maddie;Madeleine;F
+Marçal;Marçal;Marçal;Marcial;Marcial;Martzial;Marcial;Marcial;Marcial;Marcial;Marcial;Martial;M
+Margalida;Margarida;Margarida;Margarita;Margarida;Margarita;Margarida;Margarida;Margaret;Margaret;Maggie;Marguerite;F
+Maria;Maria;Maria;María;María;Maria;Maria;Maria;Mary;Mary;Tamika;Marie;F
+Maria del Mar;Maria del Mar;Maria del Mar;María del Mar;María do Mar;Itsasne;Maria do Mar;Maria do Mar;Mary of the Sea;Mary of the Sea;Maria-Mar;Marie du Mar;F
+Martí;Martí;Martí;Martín;Martiño;Martin;Martim;Martim;Martin;Martin;Martell;Martin;M
+Mateu;Mateu;Mateu;Mateo;Mateu;Mateo;Mateus;Mateus;Matthew;Matthew;Matt;Matthieu;M
+Miquel;Miquel;Miquel;Miguel;Miguel;Mikel;Miguel;Miguel;Michael;Michael;Micheal;Michel;M
+Miquel Àngel;Miquel Àngel;Miquel Àngel;Miguel Ángel;Miguel Anxo;Mikel Aingeru;Miguel Ângelo;Miguel Ângelo;Michael Angel;Michael Angel;Mike-Angel;Michel-Ange;M
+Miquela;Miquela;Miquela;Miguela;Miguela;Mikele;Miguela;Miguela;Michaela;Michaela;Makayla;Michèle;F
+Miqueló;Miquel;Miquel;Miguelito;Migueliño;Mikeltxo;Miguelinho;Miguelinho;Mikey;Mikey;Lil-Mike;Michel;M
+Nicolau;Nicolau;Nicolau;Nicolás;Nicolao;Nikola;Nicolau;Nicolau;Nicholas;Nicholas;Nick;Nicolas;M
+Nofre;Onofre;Onofre;Onofre;Onofre;Onofre;Onofre;Onofre;Humphrey;Humphrey;Onofre;Onuphre;M
+Onofre;Onofre;Onofre;Onofre;Onofre;Onofre;Onofre;Onofre;Humphrey;Humphrey;Onofre;Onuphre;M
+Pau;Pau;Pau;Pablo;Paulo;Paul;Paulo;Paulo;Paul;Paul;Pauley;Paul;M
+Pep;Josep;Josep;Pepe;Pepe;Joseba;Zezé;Zezé;Joe;Joe;Joey;José;M
+Pere;Pere;Pere;Pedro;Pedro;Peru;Pedro;Pedro;Peter;Peter;Pete;Pierre;M
+Rafel;Rafel;Rafael;Rafael;Rafael;Rafael;Rafael;Rafael;Raphael;Raphael;Rafe;Raphaël;M
+Rafela;Rafela;Rafaela;Rafaela;Rafaela;Rafaela;Rafaela;Rafaela;Raphaela;Raphaela;Rafaela;Raphaëlle;F
+Rosa;Rosa;Rosa;Rosa;Rosa;Arrosa;Rosa;Rosa;Rose;Rose;Rosetta;Rose;F
+Sebastiá;Sebastià;Sebastià;Sebastián;Sebastián;Sebas;Sebastião;Sebastião;Sebastian;Sebastian;Seb;Sébastien;M
+Sebastià;Sebastià;Sebastià;Sebastián;Sebastián;Sebas;Sebastião;Sebastião;Sebastian;Sebastian;Seb;Sébastien;M
+Teresa;Teresa;Teresa;Teresa;Teresa;Terexa;Teresa;Tereza;Teresa;Theresa;Theresa;Thérèse;F
+Tòfol;Cristòfol;Cristòfol;Cristóbal;Cristovo;Kristobal;Cristóvão;Cristóvão;Christopher;Christopher;Chris;Christophe;M
+Tomeu;Bartomeu;Bartomeu;Bartolomé;Bartolomeu;Bartolo;Bartolomeu;Bartolomeu;Bartholomew;Bartholomew;Bart;Barthélemy;M
+Toni;Antoni;Antoni;Toni;Antón;Antoni;Tónio;Toninho;Tony;Tony;Tony;Antoine;M
+Tònia;Antònia;Antònia;Antonia;Antonia;Antone;Antónia;Antônia;Antonia;Antonia;Latonia;Antonie;F
+Vicenç;Vicent;Vicent;Vicente;Vicente;Bixente;Vicente;Vicente;Vincent;Vincent;Vince;Vincent;M
+Victòria;Victòria;Victòria;Victoria;Victoria;Biktori;Victória;Vitória;Victoria;Victoria;Vickie;Victoire;F
+Xesc;Francesc;Francesc;Paco;Fran;Frantzisko;Chico;Chico;Fran;Frankie;Frank;François;M
+Xisca;Francisca;Francisca;Paquita;Fris;Frantzeska;Chica;Chiquinha;Frances;Frannie;Frani;Françoise;F
+Xisco;Francesc;Francesc;Francisco;Fran;Frantzisko;Chico;Chiquinho;Francis;Frankie;Frank;François;M

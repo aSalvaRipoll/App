@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-01-23T23:12:15">
+<tbmModos>
+<ID>0</ID>
+<Ciclos>Fijo</Ciclos>
+</tbmModos>
+<tbmModos>
+<ID>1</ID>
+<Fonetico>Fonetico</Fonetico>
+<Calculo>Clásico</Calculo>
+<Ciclos>Clásico</Ciclos>
+<Tarot>Tradicional</Tarot>
+</tbmModos>
+<tbmModos>
+<ID>2</ID>
+<Fonetico>Tradicional</Fonetico>
+<Calculo>Moderno</Calculo>
+<Ciclos>Moderno</Ciclos>
+<Tarot>Javane</Tarot>
+</tbmModos>
+<tbmModos>
+<ID>3</ID>
+<NumCiclos>3 Ciclos</NumCiclos>
+</tbmModos>
+<tbmModos>
+<ID>4</ID>
+<NumCiclos>4 Ciclos</NumCiclos>
+</tbmModos>
+</dataroot>

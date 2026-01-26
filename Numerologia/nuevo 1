@@ -1,0 +1,11 @@
+Public Enum eIdiomaFonetico
+    idCastellano = 1
+    idCatala = 2
+    idEuskera = 3
+	idGalego = 4
+	idMallorquin = 5
+    idValenciano = 6
+    idPortugues = 7
+    idFrances = 8
+    idIngles = 9
+End Enum

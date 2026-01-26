@@ -1,0 +1,564 @@
+Option Compare Database
+Option Explicit
+
+' =============================================================================
+' Módulo: modPoblarAstrologia - PARTE 3
+' Descripción: Poblar Números, Decanatos (MUESTRA), Arcanos Menores y Figuras
+' =============================================================================
+
+' =============================================================================
+' POBLAR NÚMEROS CON ASTROLOGÍA (13 registros: 1-9, 11, 22, 33, 44)
+' =============================================================================
+
+Public Sub PoblarNumerosAstrologia()
+    On Error GoTo ErrorHandler
+    
+    Dim db As DAO.Database
+    Dim rs As DAO.Recordset
+    
+    Set db = CurrentDb
+    db.Execute "DELETE * FROM tblNumerosAstrologia", dbFailOnError
+    Set rs = db.OpenRecordset("tblNumerosAstrologia", dbOpenDynaset)
+    
+    Debug.Print "Poblando Números con Astrología..."
+    
+    ' NÚMERO 1
+    rs.AddNew
+    rs!Numero = 1
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Sol"
+    rs!SignosAfines = "Aries, Leo"
+    rs!ElementoAfin = "Fuego"
+    rs!ArcanosMayoresRelacionados = "El Mago (I), El Sol (XIX)"
+    rs!CaracteristicasNumerologicas = "Liderazgo, individualidad, iniciativa, independencia, ego, pionero"
+    rs!CaracteristicasAstrologicas = "Sol: vitalidad, centro, conciencia. Aries: iniciativa cardinal de fuego"
+    rs!IntegracionInterpretativa = "Camino de Vida 1 resonando con Sol/Aries: líder natural con vitalidad solar y coraje ariano"
+    rs.Update
+    
+    ' NÚMERO 2
+    rs.AddNew
+    rs!Numero = 2
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Luna"
+    rs!SignosAfines = "Cáncer, Libra"
+    rs!ElementoAfin = "Agua/Aire"
+    rs!ArcanosMayoresRelacionados = "La Sacerdotisa (II), El Juicio (XX)"
+    rs!CaracteristicasNumerologicas = "Dualidad, cooperación, receptividad, intuición, pareja, diplomacia"
+    rs!CaracteristicasAstrologicas = "Luna: emociones, intuición, receptividad. Cáncer: nutrición emocional"
+    rs!IntegracionInterpretativa = "Camino 2 con Luna fuerte: sensibilidad emocional aumentada, intuición natural"
+    rs.Update
+    
+    ' NÚMERO 3
+    rs.AddNew
+    rs!Numero = 3
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Júpiter"
+    rs!SignosAfines = "Sagitario, Géminis"
+    rs!ElementoAfin = "Fuego/Aire"
+    rs!ArcanosMayoresRelacionados = "La Emperatriz (III), La Rueda (X)"
+    rs!CaracteristicasNumerologicas = "Creatividad, expresión, comunicación, optimismo, expansión, alegría"
+    rs!CaracteristicasAstrologicas = "Júpiter: expansión, abundancia, optimismo, crecimiento"
+    rs!IntegracionInterpretativa = "Camino 3 con Júpiter prominente: creatividad expandida, optimismo natural"
+    rs.Update
+    
+    ' NÚMERO 4
+    rs.AddNew
+    rs!Numero = 4
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Urano"
+    rs!PlanetaSecundario = "Saturno"
+    rs!SignosAfines = "Tauro, Capricornio, Acuario"
+    rs!ElementoAfin = "Tierra/Aire"
+    rs!ArcanosMayoresRelacionados = "El Emperador (IV), El Mundo (XXI)"
+    rs!CaracteristicasNumerologicas = "Estructura, estabilidad, fundamento, trabajo, orden, practicidad"
+    rs!CaracteristicasAstrologicas = "Urano/Saturno: estructura que permite libertad o restricción rígida"
+    rs!IntegracionInterpretativa = "Camino 4: si Urano fuerte→innovación estructurada; si Saturno→disciplina rígida"
+    rs.Update
+    
+    ' NÚMERO 5
+    rs.AddNew
+    rs!Numero = 5
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Mercurio"
+    rs!SignosAfines = "Géminis, Virgo"
+    rs!ElementoAfin = "Aire"
+    rs!ArcanosMayoresRelacionados = "El Hierofante (V), La Templanza (XIV)"
+    rs!CaracteristicasNumerologicas = "Libertad, cambio, versatilidad, comunicación, aventura, adaptación"
+    rs!CaracteristicasAstrologicas = "Mercurio: comunicación, movimiento, versatilidad mental"
+    rs!IntegracionInterpretativa = "Camino 5 con Mercurio prominente: comunicador nato, necesidad de variedad"
+    rs.Update
+    
+    ' NÚMERO 6
+    rs.AddNew
+    rs!Numero = 6
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Venus"
+    rs!SignosAfines = "Tauro, Libra"
+    rs!ElementoAfin = "Tierra/Aire"
+    rs!ArcanosMayoresRelacionados = "Los Enamorados (VI), La Emperatriz (III)"
+    rs!CaracteristicasNumerologicas = "Amor, armonía, responsabilidad, familia, belleza, servicio"
+    rs!CaracteristicasAstrologicas = "Venus: amor, belleza, valores, armonía, atracción"
+    rs!IntegracionInterpretativa = "Camino 6 con Venus fuerte: búsqueda natural de armonía y belleza"
+    rs.Update
+    
+    ' NÚMERO 7
+    rs.AddNew
+    rs!Numero = 7
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Neptuno"
+    rs!PlanetaSecundario = "Luna"
+    rs!SignosAfines = "Piscis, Virgo"
+    rs!ElementoAfin = "Agua"
+    rs!ArcanosMayoresRelacionados = "El Carro (VII), El Ermitaño (IX)"
+    rs!CaracteristicasNumerologicas = "Espiritualidad, introspección, análisis, búsqueda interior, misterio"
+    rs!CaracteristicasAstrologicas = "Neptuno: espiritualidad, misticismo, disolución de límites"
+    rs!IntegracionInterpretativa = "Camino 7 con Neptuno: profunda inclinación mística y espiritual"
+    rs.Update
+    
+    ' NÚMERO 8
+    rs.AddNew
+    rs!Numero = 8
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Saturno"
+    rs!SignosAfines = "Capricornio, Escorpio"
+    rs!ElementoAfin = "Tierra"
+    rs!ArcanosMayoresRelacionados = "La Fuerza (VIII), La Justicia (XI)"
+    rs!CaracteristicasNumerologicas = "Poder, logro material, karma, justicia, autoridad, ambición"
+    rs!CaracteristicasAstrologicas = "Saturno: estructura, karma, responsabilidad, tiempo, límites"
+    rs!IntegracionInterpretativa = "Camino 8 con Saturno prominente: lecciones kármicas de poder y responsabilidad"
+    rs.Update
+    
+    ' NÚMERO 9
+    rs.AddNew
+    rs!Numero = 9
+    rs!EsNumeroMaestro = False
+    rs!PlanetaPrimario = "Marte"
+    rs!SignosAfines = "Aries, Sagitario"
+    rs!ElementoAfin = "Fuego"
+    rs!ArcanosMayoresRelacionados = "El Ermitaño (IX), La Luna (XVIII)"
+    rs!CaracteristicasNumerologicas = "Finalización, servicio universal, compasión, desprendimiento, sabiduría"
+    rs!CaracteristicasAstrologicas = "Marte: energía de conclusión activa, coraje para soltar"
+    rs!IntegracionInterpretativa = "Camino 9 con Marte: energía activa al servicio de humanidad"
+    rs.Update
+    
+    ' NÚMERO MAESTRO 11
+    rs.AddNew
+    rs!Numero = 11
+    rs!EsNumeroMaestro = True
+    rs!PlanetaPrimario = "Urano"
+    rs!SignosAfines = "Acuario"
+    rs!ElementoAfin = "Aire"
+    rs!ArcanosMayoresRelacionados = "La Justicia (XI), El Loco (XXII), La Fuerza (VIII)"
+    rs!CaracteristicasNumerologicas = "Iluminación, intuición superior, inspiración, maestro espiritual, visión"
+    rs!CaracteristicasAstrologicas = "Urano: despertar súbito, genio, innovación espiritual, revolución"
+    rs!IntegracionInterpretativa = "Camino 11 con Urano: capacidad de canalizar inspiración uraniana superior"
+    rs.Update
+    
+    ' NÚMERO MAESTRO 22
+    rs.AddNew
+    rs!Numero = 22
+    rs!EsNumeroMaestro = True
+    rs!PlanetaPrimario = "Plutón"
+    rs!PlanetaSecundario = "Saturno"
+    rs!SignosAfines = "Capricornio, Escorpio"
+    rs!ElementoAfin = "Tierra/Agua"
+    rs!ArcanosMayoresRelacionados = "El Loco (XXII), El Mundo (XXI)"
+    rs!CaracteristicasNumerologicas = "Maestro constructor, manifestación masiva, visión material, poder arquitectónico"
+    rs!CaracteristicasAstrologicas = "Plutón+Saturno: poder transformador aplicado a construcción material"
+    rs!IntegracionInterpretativa = "Camino 22: capacidad de manifestar visiones en realidad material masiva"
+    rs.Update
+    
+    ' NÚMERO MAESTRO 33
+    rs.AddNew
+    rs!Numero = 33
+    rs!EsNumeroMaestro = True
+    rs!PlanetaPrimario = "Neptuno"
+    rs!PlanetaSecundario = "Júpiter"
+    rs!SignosAfines = "Piscis, Sagitario"
+    rs!ElementoAfin = "Agua/Fuego"
+    rs!ArcanosMayoresRelacionados = "El Colgado (XII), La Emperatriz (III)"
+    rs!CaracteristicasNumerologicas = "Maestro sanador, compasión universal, servicio elevado, sacrificio consciente"
+    rs!CaracteristicasAstrologicas = "Neptuno+Júpiter: compasión expandida sin límites, sanación universal"
+    rs!IntegracionInterpretativa = "Camino 33: llamado a sanar mediante compasión neptuniana expandida"
+    rs.Update
+    
+    ' NÚMERO MAESTRO 44
+    rs.AddNew
+    rs!Numero = 44
+    rs!EsNumeroMaestro = True
+    rs!PlanetaPrimario = "Saturno"
+    rs!PlanetaSecundario = "Urano"
+    rs!SignosAfines = "Capricornio, Acuario"
+    rs!ElementoAfin = "Tierra/Aire"
+    rs!ArcanosMayoresRelacionados = "El Mundo (XXI), La Torre (XVI)"
+    rs!CaracteristicasNumerologicas = "Maestro visionario, construcción evolutiva, materialización de futuro"
+    rs!CaracteristicasAstrologicas = "Saturno+Urano: disciplina innovadora, estructura del futuro"
+    rs!IntegracionInterpretativa = "Camino 44: manifestar visión futurista con disciplina saturnina"
+    rs.Update
+    
+    rs.Close
+    Set rs = Nothing
+    Set db = Nothing
+    
+    Debug.Print "✓ 13 Números con Astrología poblados"
+    Exit Sub
+    
+ErrorHandler:
+    Debug.Print "ERROR poblando Números: " & Err.Description
+    If Not rs Is Nothing Then rs.Close
+End Sub
+
+' =============================================================================
+' POBLAR DECANATOS - MUESTRA DE BASTOS (9 registros)
+' Los 36 decanatos completos serían muy extensos, aquí una muestra funcional
+' =============================================================================
+
+Public Sub PoblarDecanatos()
+    On Error GoTo ErrorHandler
+    
+    Dim db As DAO.Database
+    Dim rs As DAO.Recordset
+    
+    Set db = CurrentDb
+    db.Execute "DELETE * FROM tblDecanatos", dbFailOnError
+    Set rs = db.OpenRecordset("tblDecanatos", dbOpenDynaset)
+    
+    Debug.Print "Poblando Decanatos (MUESTRA - Bastos completo)..."
+    
+    ' =========================================================================
+    ' BASTOS (Fuego) - ARIES decanatos
+    ' =========================================================================
+    
+    ' 2 DE BASTOS - Aries I (0-10° Aries)
+    rs.AddNew
+    rs!Signo_ID = 1  ' Aries
+    rs!NumeroDecanato = 1
+    rs!GradoInicial = 0
+    rs!GradoFinal = 10
+    rs!PlanetaSubregente = "Marte"
+    rs!CartaTarotNumero = 2
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "2 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Marte en Aries: dominio puro, fuerza iniciadora en máxima expresión, liderazgo natural"
+    rs!PalabrasClave = "Dominio, Fuerza Pura, Iniciativa Cardinal"
+    rs.Update
+    
+    ' 3 DE BASTOS - Aries II (10-20° Aries)
+    rs.AddNew
+    rs!Signo_ID = 1
+    rs!NumeroDecanato = 2
+    rs!GradoInicial = 10
+    rs!GradoFinal = 20
+    rs!PlanetaSubregente = "Sol"
+    rs!CartaTarotNumero = 3
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "3 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Sol en Aries: virtud establecida, visión clara, liderazgo con conciencia solar"
+    rs!PalabrasClave = "Virtud Establecida, Visión, Expansión"
+    rs.Update
+    
+    ' 4 DE BASTOS - Aries III (20-30° Aries)
+    rs.AddNew
+    rs!Signo_ID = 1
+    rs!NumeroDecanato = 3
+    rs!GradoInicial = 20
+    rs!GradoFinal = 30
+    rs!PlanetaSubregente = "Venus"
+    rs!CartaTarotNumero = 4
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "4 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Venus en Aries: completación armoniosa, celebración, fuego temperado por belleza"
+    rs!PalabrasClave = "Completación, Celebración, Armonía Ignea"
+    rs.Update
+    
+    ' =========================================================================
+    ' BASTOS - LEO decanatos
+    ' =========================================================================
+    
+    ' 5 DE BASTOS - Leo I (0-10° Leo)
+    rs.AddNew
+    rs!Signo_ID = 5  ' Leo
+    rs!NumeroDecanato = 1
+    rs!GradoInicial = 0
+    rs!GradoFinal = 10
+    rs!PlanetaSubregente = "Saturno"
+    rs!CartaTarotNumero = 5
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "5 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Saturno en Leo: lucha, conflicto, competencia, restricción saturnina sobre expresión leonina"
+    rs!PalabrasClave = "Lucha, Competencia, Conflicto"
+    rs.Update
+    
+    ' 6 DE BASTOS - Leo II (10-20° Leo)
+    rs.AddNew
+    rs!Signo_ID = 5
+    rs!NumeroDecanato = 2
+    rs!GradoInicial = 10
+    rs!GradoFinal = 20
+    rs!PlanetaSubregente = "Júpiter"
+    rs!CartaTarotNumero = 6
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "6 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Júpiter en Leo: victoria, éxito público, expansión jupiteriana de gloria leonina"
+    rs!PalabrasClave = "Victoria, Éxito, Reconocimiento"
+    rs.Update
+    
+    ' 7 DE BASTOS - Leo III (20-30° Leo)
+    rs.AddNew
+    rs!Signo_ID = 5
+    rs!NumeroDecanato = 3
+    rs!GradoInicial = 20
+    rs!GradoFinal = 30
+    rs!PlanetaSubregente = "Marte"
+    rs!CartaTarotNumero = 7
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "7 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Marte en Leo: valor, defensa de posición, coraje leonino con energía marciana"
+    rs!PalabrasClave = "Valor, Defensa, Coraje"
+    rs.Update
+    
+    ' =========================================================================
+    ' BASTOS - SAGITARIO decanatos
+    ' =========================================================================
+    
+    ' 8 DE BASTOS - Sagitario I (0-10° Sagitario)
+    rs.AddNew
+    rs!Signo_ID = 9  ' Sagitario
+    rs!NumeroDecanato = 1
+    rs!GradoInicial = 0
+    rs!GradoFinal = 10
+    rs!PlanetaSubregente = "Mercurio"
+    rs!CartaTarotNumero = 8
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "8 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Mercurio en Sagitario: rapidez, movimiento veloz, comunicación expansiva sagitariana"
+    rs!PalabrasClave = "Rapidez, Movimiento, Comunicación Veloz"
+    rs.Update
+    
+    ' 9 DE BASTOS - Sagitario II (10-20° Sagitario)
+    rs.AddNew
+    rs!Signo_ID = 9
+    rs!NumeroDecanato = 2
+    rs!GradoInicial = 10
+    rs!GradoFinal = 20
+    rs!PlanetaSubregente = "Luna"
+    rs!CartaTarotNumero = 9
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "9 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Luna en Sagitario: fuerza defensiva, resistencia emocional, protección del ideal"
+    rs!PalabrasClave = "Fuerza, Resistencia, Defensa"
+    rs.Update
+    
+    ' 10 DE BASTOS - Sagitario III (20-30° Sagitario)
+    rs.AddNew
+    rs!Signo_ID = 9
+    rs!NumeroDecanato = 3
+    rs!GradoInicial = 20
+    rs!GradoFinal = 30
+    rs!PlanetaSubregente = "Saturno"
+    rs!CartaTarotNumero = 10
+    rs!CartaTarotPalo = "Bastos"
+    rs!CartaTarotCompleta = "10 de Bastos"
+    rs!ElementoTriplicidad = "Fuego"
+    rs!InterpretacionClave = "Saturno en Sagitario: opresión, carga pesada, restricción saturnina sobre libertad sagitariana"
+    rs!PalabrasClave = "Opresión, Carga, Responsabilidad Pesada"
+    rs.Update
+    
+    rs.Close
+    Set rs = Nothing
+    Set db = Nothing
+    
+    Debug.Print "✓ 9 Decanatos de Bastos poblados (MUESTRA)"
+    Debug.Print "  NOTA: Faltan 27 decanatos (Copas, Espadas, Oros)"
+    Debug.Print "  Puedes añadirlos siguiendo el mismo patrón"
+    Exit Sub
+    
+ErrorHandler:
+    Debug.Print "ERROR poblando Decanatos: " & Err.Description
+    If Not rs Is Nothing Then rs.Close
+End Sub
+
+' =============================================================================
+' POBLAR ARCANOS MENORES NUMERADOS - MUESTRA (solo algunos ejemplos)
+' Los 36 completos serían muy extensos
+' =============================================================================
+
+Public Sub PoblarArcanosMenoresNumerados()
+    On Error GoTo ErrorHandler
+    
+    Dim db As DAO.Database
+    Dim rs As DAO.Recordset
+    
+    Set db = CurrentDb
+    db.Execute "DELETE * FROM tblArcanosMenoresNumeradosAstrologia", dbFailOnError
+    Set rs = db.OpenRecordset("tblArcanosMenoresNumeradosAstrologia", dbOpenDynaset)
+    
+    Debug.Print "Poblando Arcanos Menores (MUESTRA - solo algunos)..."
+    
+    ' 2 DE BASTOS
+    rs.AddNew
+    rs!NumeroCarta = 2
+    rs!Palo = "Bastos"
+    rs!NombreCompleto = "2 de Bastos"
+    rs!Decanato_ID = 1
+    rs!SignoZodiacal = "Aries"
+    rs!GradosZodiacales = "0-10°"
+    rs!PlanetaEnSigno = "Marte en Aries"
+    rs!ElementoPalo = "Fuego"
+    rs!ElementoSigno = "Fuego"
+    rs!Cualidad = "Cardinal"
+    rs!TituloGoldenDawn = "Señor del Dominio"
+    rs!InterpretacionAstrologica = "Marte en su domicilio en Aries: poder puro, iniciativa extrema, dominio natural"
+    rs!PalabrasClave = "Dominio, Poder, Iniciativa"
+    rs.Update
+    
+    ' 2 DE COPAS
+    rs.AddNew
+    rs!NumeroCarta = 2
+    rs!Palo = "Copas"
+    rs!NombreCompleto = "2 de Copas"
+    rs!SignoZodiacal = "Cáncer"
+    rs!GradosZodiacales = "0-10°"
+    rs!PlanetaEnSigno = "Venus en Cáncer"
+    rs!ElementoPalo = "Agua"
+    rs!ElementoSigno = "Agua"
+    rs!Cualidad = "Cardinal"
+    rs!TituloGoldenDawn = "Señor del Amor"
+    rs!InterpretacionAstrologica = "Venus en Cáncer: amor nutrici, unión emocional profunda, armonía del hogar"
+    rs!PalabrasClave = "Amor, Unión, Armonía"
+    rs.Update
+    
+    ' 10 DE OROS
+    rs.AddNew
+    rs!NumeroCarta = 10
+    rs!Palo = "Oros"
+    rs!NombreCompleto = "10 de Oros"
+    rs!SignoZodiacal = "Virgo"
+    rs!GradosZodiacales = "20-30°"
+    rs!PlanetaEnSigno = "Mercurio en Virgo"
+    rs!ElementoPalo = "Tierra"
+    rs!ElementoSigno = "Tierra"
+    rs!Cualidad = "Mutable"
+    rs!TituloGoldenDawn = "Señor de la Riqueza"
+    rs!InterpretacionAstrologica = "Mercurio exaltado en Virgo: riqueza material gestionada inteligentemente, legado familiar"
+    rs!PalabrasClave = "Riqueza, Legado, Patrimonio"
+    rs.Update
+    
+    rs.Close
+    Set rs = Nothing
+    Set db = Nothing
+    
+    Debug.Print "✓ 3 Arcanos Menores poblados (MUESTRA)"
+    Debug.Print "  NOTA: Faltan 33 cartas numeradas"
+    Debug.Print "  Seguir patrón con todos los decanatos"
+    Exit Sub
+    
+ErrorHandler:
+    Debug.Print "ERROR poblando Arcanos Menores: " & Err.Description
+    If Not rs Is Nothing Then rs.Close
+End Sub
+
+' =============================================================================
+' POBLAR FIGURAS DE CORTE - MUESTRA (4 figuras de Bastos)
+' =============================================================================
+
+Public Sub PoblarFigurasCorte()
+    On Error GoTo ErrorHandler
+    
+    Dim db As DAO.Database
+    Dim rs As DAO.Recordset
+    
+    Set db = CurrentDb
+    db.Execute "DELETE * FROM tblFigurasCorteAstrologia", dbFailOnError
+    Set rs = db.OpenRecordset("tblFigurasCorteAstrologia", dbOpenDynaset)
+    
+    Debug.Print "Poblando Figuras de Corte (MUESTRA - Bastos completo)..."
+    
+    ' SOTA DE BASTOS
+    rs.AddNew
+    rs!TipoFigura = "Sota"
+    rs!Palo = "Bastos"
+    rs!NombreCompleto = "Sota de Bastos"
+    rs!ElementoPalo = "Fuego"
+    rs!ElementoFigura = "Tierra"
+    rs!CombinacionElemental = "Tierra de Fuego"
+    rs!CuadranteZodiacal = "20° Escorpio - 20° Sagitario"
+    rs!SignosPrincipales = "Escorpio (final), Sagitario (inicio)"
+    rs!GradosIniciales = "20° ♏"
+    rs!GradosFinales = "20° ♐"
+    rs!CaracteristicasAstrologicas = "Energía joven de fuego, mensajera de pasión, estudiante entusiasta de acción"
+    rs!PersonalidadTipo = "Joven entusiasta, aventurero, mensajero de noticias emocionantes"
+    rs!PalabrasClave = "Entusiasmo Joven, Mensajero, Aventura Iniciada"
+    rs.Update
+    
+    ' CABALLERO DE BASTOS
+    rs.AddNew
+    rs!TipoFigura = "Caballero"
+    rs!Palo = "Bastos"
+    rs!NombreCompleto = "Caballero de Bastos"
+    rs!ElementoPalo = "Fuego"
+    rs!ElementoFigura = "Aire"
+    rs!CombinacionElemental = "Aire de Fuego"
+    rs!CuadranteZodiacal = "20° Sagitario - 20° Capricornio"
+    rs!SignosPrincipales = "Sagitario (final), Capricornio (inicio)"
+    rs!GradosIniciales = "20° ♐"
+    rs!GradosFinales = "20° ♑"
+    rs!CaracteristicasAstrologicas = "Fuego en movimiento rápido, acción impulsiva, búsqueda aventurera"
+    rs!PersonalidadTipo = "Aventurero impulsivo, veloz, apasionado, buscador de experiencias"
+    rs!PalabrasClave = "Acción Rápida, Aventura, Impulso"
+    rs.Update
+    
+    ' REINA DE BASTOS
+    rs.AddNew
+    rs!TipoFigura = "Reina"
+    rs!Palo = "Bastos"
+    rs!NombreCompleto = "Reina de Bastos"
+    rs!ElementoPalo = "Fuego"
+    rs!ElementoFigura = "Agua"
+    rs!CombinacionElemental = "Agua de Fuego"
+    rs!CuadranteZodiacal = "20° Piscis - 20° Aries"
+    rs!SignosPrincipales = "Piscis (final), Aries (inicio)"
+    rs!GradosIniciales = "20° ♓"
+    rs!GradosFinales = "20° ♈"
+    rs!CaracteristicasAstrologicas = "Pasión nutricia, creatividad emocional, liderazgo carismático femenino"
+    rs!PersonalidadTipo = "Líder carismática, apasionada, creativa, magnética"
+    rs!PalabrasClave = "Pasión Nutricia, Carisma, Creatividad"
+    rs.Update
+    
+    ' REY DE BASTOS
+    rs.AddNew
+    rs!TipoFigura = "Rey"
+    rs!Palo = "Bastos"
+    rs!NombreCompleto = "Rey de Bastos"
+    rs!ElementoPalo = "Fuego"
+    rs!ElementoFigura = "Fuego"
+    rs!CombinacionElemental = "Fuego de Fuego"
+    rs!CuadranteZodiacal = "20° Cáncer - 20° Leo"
+    rs!SignosPrincipales = "Cáncer (final), Leo (inicio/centro)"
+    rs!GradosIniciales = "20° ♋"
+    rs!GradosFinales = "20° ♌"
+    rs!CaracteristicasAstrologicas = "Fuego puro, liderazgo natural máximo, autoridad creativa, visión inspiradora"
+    rs!PersonalidadTipo = "Líder visionario, creativo, inspirador, autoridad natural"
+    rs!PalabrasClave = "Liderazgo Puro, Visión, Autoridad Creativa"
+    rs.Update
+    
+    rs.Close
+    Set rs = Nothing
+    Set db = Nothing
+    
+    Debug.Print "✓ 4 Figuras de Bastos pobladas (MUESTRA)"
+    Debug.Print "  NOTA: Faltan 12 figuras (Copas, Espadas, Oros)"
+    Exit Sub
+    
+ErrorHandler:
+    Debug.Print "ERROR poblando Figuras: " & Err.Description
+    If Not rs Is Nothing Then rs.Close
+End Sub

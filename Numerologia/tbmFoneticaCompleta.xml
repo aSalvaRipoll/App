@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="tbmFoneticaCompleta.xsd" generated="2026-01-21T20:07:15">
+<tbmFoneticaCompleta>
+<idFonema>1</idFonema>
+<Fonema>/a/</Fonema>
+<ASCII>A</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal abierta central</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>2</idFonema>
+<Fonema>/ã/</Fonema>
+<ASCII>A~</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal nasal francesa (AN/AM/EN/EM)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>3</idFonema>
+<Fonema>/ɛ̃/</Fonema>
+<ASCII>N</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal nasal anterior francesa (IN/IM/UN/UM)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>4</idFonema>
+<Fonema>/õ/</Fonema>
+<ASCII>O~</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal nasal posterior francesa (ON/OM)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>5</idFonema>
+<Fonema>/e/</Fonema>
+<ASCII>E</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal cerrada anterior</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>6</idFonema>
+<Fonema>/ɛ/</Fonema>
+<ASCII>E~</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal abierta anterior</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>7</idFonema>
+<Fonema>/o/</Fonema>
+<ASCII>O</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal cerrada posterior</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>8</idFonema>
+<Fonema>/ɔ/</Fonema>
+<ASCII>O~2</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal abierta posterior</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>9</idFonema>
+<Fonema>/i/</Fonema>
+<ASCII>I</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal cerrada anterior alta</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>10</idFonema>
+<Fonema>/u/</Fonema>
+<ASCII>U</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal cerrada posterior alta</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>11</idFonema>
+<Fonema>/ə/</Fonema>
+<ASCII>Ə</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>schwa balear (vocal neutra)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>12</idFonema>
+<Fonema>/ai/</Fonema>
+<ASCII>AI</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo inglés (IGH)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>13</idFonema>
+<Fonema>/ei/</Fonema>
+<ASCII>EI</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo francés/inglés (EIGH)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>14</idFonema>
+<Fonema>/wa/</Fonema>
+<ASCII>WA</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo francés (OI)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>15</idFonema>
+<Fonema>/ou/</Fonema>
+<ASCII>OU</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo inglés (OU)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>16</idFonema>
+<Fonema>/o/</Fonema>
+<ASCII>AU</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo francés (AU → /o/)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>17</idFonema>
+<Fonema>/ø/</Fonema>
+<ASCII>EU</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal francesa media anterior redondeada</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>18</idFonema>
+<Fonema>/œ/</Fonema>
+<ASCII>OE</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vocal francesa media anterior (œ)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>19</idFonema>
+<Fonema>/ui/</Fonema>
+<ASCII>UI</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo portugués</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>20</idFonema>
+<Fonema>/ia/</Fonema>
+<ASCII>IA</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo creciente</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>21</idFonema>
+<Fonema>/ie/</Fonema>
+<ASCII>IE</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo creciente</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>22</idFonema>
+<Fonema>/io/</Fonema>
+<ASCII>IO</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo creciente</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>23</idFonema>
+<Fonema>/ua/</Fonema>
+<ASCII>UA</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo creciente</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>24</idFonema>
+<Fonema>/ue/</Fonema>
+<ASCII>UE</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo creciente</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>25</idFonema>
+<Fonema>/uo/</Fonema>
+<ASCII>UO</ASCII>
+<EsVocal>1</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>diptongo creciente</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>26</idFonema>
+<Fonema>/p/</Fonema>
+<ASCII>P</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>oclusiva bilabial sorda</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>27</idFonema>
+<Fonema>/b/</Fonema>
+<ASCII>B</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>oclusiva bilabial sonora</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>28</idFonema>
+<Fonema>/t/</Fonema>
+<ASCII>T</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>oclusiva dental/alveolar sorda</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>29</idFonema>
+<Fonema>/d/</Fonema>
+<ASCII>D</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>oclusiva dental/alveolar sonora</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>30</idFonema>
+<Fonema>/k/</Fonema>
+<ASCII>K</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>oclusiva velar sorda</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>31</idFonema>
+<Fonema>/g/</Fonema>
+<ASCII>G</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>oclusiva velar sonora</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>32</idFonema>
+<Fonema>/f/</Fonema>
+<ASCII>F</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa labiodental sorda</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>33</idFonema>
+<Fonema>/v/</Fonema>
+<ASCII>V</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa labiodental sonora (inglés, francés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>34</idFonema>
+<Fonema>/s/</Fonema>
+<ASCII>S</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa alveolar sorda</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>35</idFonema>
+<Fonema>/z/</Fonema>
+<ASCII>Z</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa alveolar sonora (inglés, francés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>36</idFonema>
+<Fonema>/ʃ/</Fonema>
+<ASCII>SH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa palatal/postalveolar sorda (francés, gallego, inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>37</idFonema>
+<Fonema>/ʒ/</Fonema>
+<ASCII>J</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa palatal/postalveolar sonora (francés, portugués)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>38</idFonema>
+<Fonema>/h/</Fonema>
+<ASCII>H</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa glotal sorda (inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>39</idFonema>
+<Fonema>/m/</Fonema>
+<ASCII>M</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>nasal bilabial</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>40</idFonema>
+<Fonema>/n/</Fonema>
+<ASCII>N</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>nasal alveolar</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>41</idFonema>
+<Fonema>/ɲ/</Fonema>
+<ASCII>NY</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>nasal palatal (catalán, gallego, francés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>42</idFonema>
+<Fonema>/ŋ/</Fonema>
+<ASCII>NG</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>nasal velar (inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>43</idFonema>
+<Fonema>/l/</Fonema>
+<ASCII>L</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>lateral alveolar</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>44</idFonema>
+<Fonema>/ʎ/</Fonema>
+<ASCII>LY</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>lateral palatal (catalán, gallego, portugués)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>45</idFonema>
+<Fonema>/r/</Fonema>
+<ASCII>R</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vibrante simple</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>46</idFonema>
+<Fonema>/rr/</Fonema>
+<ASCII>RR</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>vibrante múltiple (castellano)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>47</idFonema>
+<Fonema>/ʁ/</Fonema>
+<ASCII>RH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>uvular francesa (opcional)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>48</idFonema>
+<Fonema>/j/</Fonema>
+<ASCII>Y</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>semivocal palatal (inglés, francés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>49</idFonema>
+<Fonema>/w/</Fonema>
+<ASCII>W</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>semivocal labiovelar (inglés, francés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>50</idFonema>
+<Fonema>/tʃ/</Fonema>
+<ASCII>CH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>africada postalveolar sorda (castellano, inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>51</idFonema>
+<Fonema>/dʒ/</Fonema>
+<ASCII>DJ</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>africada postalveolar sonora (inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>52</idFonema>
+<Fonema>/ts/</Fonema>
+<ASCII>TS</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>africada alveolar sorda (euskera)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>53</idFonema>
+<Fonema>/dz/</Fonema>
+<ASCII>DZ</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>africada alveolar sonora (italiano, opcional)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>54</idFonema>
+<Fonema>/θ/</Fonema>
+<ASCII>TH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa interdental sorda (inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>55</idFonema>
+<Fonema>/ð/</Fonema>
+<ASCII>DH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa interdental sonora (inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>56</idFonema>
+<Fonema>/kw/</Fonema>
+<ASCII>KW</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>grupo consonántico labiovelar (inglés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>57</idFonema>
+<Fonema>/gw/</Fonema>
+<ASCII>GW</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>grupo consonántico labiovelar (portugués, francés)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>58</idFonema>
+<Fonema>/x/</Fonema>
+<ASCII>KH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa velar sorda (catalán oriental, alemán)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>59</idFonema>
+<Fonema>/ɣ/</Fonema>
+<ASCII>GH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>fricativa velar sonora (gallego, portugués)</DatosFonéticos>
+</tbmFoneticaCompleta>
+<tbmFoneticaCompleta>
+<idFonema>60</idFonema>
+<Fonema>/tɕ/</Fonema>
+<ASCII>TCH</ASCII>
+<EsVocal>0</EsVocal>
+<Valor></Valor>
+<DatosFonéticos>africada palatal sorda (mallorquín)</DatosFonéticos>
+</tbmFoneticaCompleta>
+</dataroot>

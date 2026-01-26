@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-01-23T14:18:53">
+<tbmIdiomas>
+<IDIdioma>0</IDIdioma>
+<Abreviado>Otros</Abreviado>
+<NomIdioma>Otros</NomIdioma>
+<Notas>Otros no contemplados</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>1</IDIdioma>
+<Abreviado>es</Abreviado>
+<NomIdioma>Español</NomIdioma>
+<Notas>Castellano</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>2</IDIdioma>
+<Abreviado>ca</Abreviado>
+<NomIdioma>Català</NomIdioma>
+<Notas>Catalán</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>3</IDIdioma>
+<Abreviado>ca-ib</Abreviado>
+<NomIdioma>Mallorquí</NomIdioma>
+<Notas>Idioma balear</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>4</IDIdioma>
+<Abreviado>ca-va</Abreviado>
+<NomIdioma>Valencià</NomIdioma>
+<Notas>Norma valenciana</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>5</IDIdioma>
+<Abreviado>eu</Abreviado>
+<NomIdioma>Euskara</NomIdioma>
+<Notas>Vasco</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>6</IDIdioma>
+<Abreviado>gl</Abreviado>
+<NomIdioma>Galego</NomIdioma>
+<Notas>Gallego</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>7</IDIdioma>
+<Abreviado>pt</Abreviado>
+<NomIdioma>Português (Genérico)</NomIdioma>
+<Notas>Compatibilidad; usa PT-EU</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>8</IDIdioma>
+<Abreviado>pt-eu</Abreviado>
+<NomIdioma>Português (Portugal)</NomIdioma>
+<Notas>Variante europea</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>9</IDIdioma>
+<Abreviado>pt-br</Abreviado>
+<NomIdioma>Português (Brasil)</NomIdioma>
+<Notas>Variante brasileira</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>10</IDIdioma>
+<Abreviado>fr</Abreviado>
+<NomIdioma>Francés (Genérico)</NomIdioma>
+<Notas>Français</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>11</IDIdioma>
+<Abreviado>en-gb</Abreviado>
+<NomIdioma>Inglés (GB)</NomIdioma>
+<Notas>English Británico</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>12</IDIdioma>
+<Abreviado>en-us</Abreviado>
+<NomIdioma>Inglés (USA)</NomIdioma>
+<Notas>Inglés USA</Notas>
+</tbmIdiomas>
+<tbmIdiomas>
+<IDIdioma>13</IDIdioma>
+<Abreviado>en-us-af</Abreviado>
+<NomIdioma>Inglés (USA- AFA)</NomIdioma>
+<Notas>Inglés AfroAmericano</Notas>
+</tbmIdiomas>
+</dataroot>

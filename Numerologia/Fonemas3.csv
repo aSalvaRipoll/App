@@ -1,0 +1,62 @@
+idFonema;LetraEscrita;Longitud;Tipo;FonemaASCII;FonemaUnicode;UnicodeCodepoint;Lengua;ReglaContexto;Notas;Valor
+1;A;1;V;A;a;U+0061;es;;;
+2;E;1;V;E;e;U+0065;es;;;
+3;I;1;V;I;i;U+0069;es;;;
+4;O;1;V;O;o;U+006F;es;;;
+5;U;1;V;U;u;U+0075;es;;;
+
+6;B;1;C;B;b;U+0062;es;;;
+7;C_K;1;C;C;k;U+006B;es;antes de A/O/U o consonante;;
+8;C_S;1;C;C;s;U+0073;es;antes de E/I;;
+9;D;1;C;D;d;U+0064;es;;;
+10;F;1;C;F;f;U+0066;es;;;
+11;G_G;1;C;G;g;U+0067;es;antes de A/O/U;;
+12;G_X;1;C;G;x;U+0078;es;antes de E/I;;
+13;L;1;C;L;l;U+006C;es;;;
+14;M;1;C;M;m;U+006D;es;;;
+15;N;1;C;N;n;U+006E;es;;;
+16;P;1;C;P;p;U+0070;es;;;
+17;R;1;C;R;r;U+0072;es;;;
+18;S;1;C;S;s;U+0073;es;;;
+19;T;1;C;T;t;U+0074;es;;;
+20;Z_TH;1;C;Z;θ;U+03B8;es;;castellano
+21;Z_S;1;C;Z;s;U+0073;es;;seseo
+
+22;LL_LYE;2;C;LY;ʎ;U+028E;es;;lleísmo
+23;LL_J;2;C;LY;j;U+006A;es;;yeísmo
+
+24;SH;2;C;SH;ʃ;U+0283;es;;;
+25;NY;2;C;NY;ɲ;U+0272;es;;;
+25;NH;2;C;NY;ɲ;U+0272;es;;variante
+26;LY;2;C;LY;ʎ;U+028E;es;;;
+27;CH;2;C;CH;t͡ʃ;U+0074 U+0361 U+0283;es;;;
+27;TX;2;C;CH;t͡ʃ;U+0074 U+0361 U+0283;es/eu;;euskera
+28;TS;2;C;TS;t͡s;U+0074 U+0361 U+0073;es/eu;;;
+28;TZ;2;C;TS;t͡s;U+0074 U+0361 U+0073;es/eu;;;
+
+29;X_SH;1;C;X;ʃ;U+0283;ca;inicio o entre vocales;;
+30;X_KS;1;C;X;ks;U+006B U+0073;ca;final de palabra;;
+31;X_GZ;1;C;X;gz;U+0067 U+007A;ca;entre vocal tónica y átona;;
+32;G_ZH;1;C;G;ʒ;U+0292;ca;antes de E/I;;
+33;J_ZH;1;C;J;ʒ;U+0292;ca;;;
+27;TX;2;C;CH;t͡ʃ;U+0074 U+0361 U+0283;ca;;;
+28;TZ;2;C;TS;t͡s;U+0074 U+0361 U+0073;ca;;;
+
+34;X_GL;1;C;X;ʃ;U+0283;gl;;;
+25;NH;2;C;NY;ɲ;U+0272;gl;;;
+26;LH;2;C;LY;ʎ;U+028E;gl;;;
+35;G_J_GL;1;C;G;ʝ;U+029D;gl;antes de E/I (no gheada);;
+36;G_X_GL;1;C;G;x;U+0078;gl;;gheada
+37;J_X_GL;1;C;J;x;U+0078;gl;;;
+27;CH;2;C;CH;t͡ʃ;U+0074 U+0361 U+0283;gl;;;
+
+27;TX;2;C;CH;t͡ʃ;U+0074 U+0361 U+0283;eu;;;
+28;TZ;2;C;TS;t͡s;U+0074 U+0361 U+0073;eu;;;
+28;TS;2;C;TS;t͡s;U+0074 U+0361 U+0073;eu;;;
+29;X_SH;1;C;X;ʃ;U+0283;eu;;;
+21;Z_S;1;C;Z;s;U+0073;eu;;;
+38;S_AP;1;C;S;s̺;U+0073 U+033A;eu;;apicoalveolar
+39;RR;2;C;RR;r̄;U+0072 U+0304;eu;;vibrante fuerte
+13;LL;2;C;L;l;U+006C;eu;;no existe /ʎ/
+
+40;L·L;3;C;LL_GEM;lː;U+006C U+02D0;ca;;balear, ela geminada

@@ -1,0 +1,319 @@
+Option Compare Database
+Option Explicit
+
+' =============================================================================
+' Módulo: modSistemaAstrologiaCompleto
+' Descripción: MÓDULO INTEGRADOR - Ejecuta todo el sistema de Astrología
+' Autor: Alba - Sistema de Numerología, Tarot y Astrología
+' =============================================================================
+
+Public Sub InstalarSistemaAstrologiaCompleto()
+    ' =========================================================================
+    ' PROCEDIMIENTO PRINCIPAL
+    ' Ejecuta TODO el proceso: Crear tablas + Poblar datos
+    ' =========================================================================
+    
+    On Error GoTo ErrorHandler
+    
+    Debug.Print ""
+    Debug.Print "╔════════════════════════════════════════════════════════════╗"
+    Debug.Print "║  INSTALACIÓN COMPLETA DEL SISTEMA DE ASTROLOGÍA          ║"
+    Debug.Print "╚════════════════════════════════════════════════════════════╝"
+    Debug.Print ""
+    
+    Dim tiempoInicio As Double
+    tiempoInicio = Timer
+    
+    ' PASO 1: CREAR TABLAS
+    Debug.Print "PASO 1: Creando estructura de tablas..."
+    Debug.Print "─────────────────────────────────────────"
+    Call CrearTodasTablasAstrologia
+    Debug.Print ""
+    
+    ' PASO 2: POBLAR DATOS BÁSICOS
+    Debug.Print "PASO 2: Poblando datos básicos..."
+    Debug.Print "─────────────────────────────────────────"
+    Call PoblarElementos                    ' 4 registros
+    Call PoblarCualidadesZodiacales         ' 3 registros
+    Call PoblarPlanetas                     ' 10 registros
+    Debug.Print ""
+    
+    ' PASO 3: POBLAR SIGNOS Y ARCANOS MAYORES
+    Debug.Print "PASO 3: Poblando Signos y Arcanos Mayores..."
+    Debug.Print "─────────────────────────────────────────"
+    Call PoblarSignosZodiacales             ' 12 registros
+    Call PoblarArcanosMayoresAstrologia     ' 22 registros
+    Debug.Print ""
+    
+    ' PASO 4: POBLAR NÚMEROS CON ASTROLOGÍA
+    Debug.Print "PASO 4: Poblando Números con Astrología..."
+    Debug.Print "─────────────────────────────────────────"
+    Call PoblarNumerosAstrologia            ' 13 registros
+    Debug.Print ""
+    
+    ' PASO 5: POBLAR DECANATOS Y CARTAS
+    Debug.Print "PASO 5: Poblando Decanatos y Cartas (MUESTRA)..."
+    Debug.Print "─────────────────────────────────────────"
+    Call PoblarDecanatos                    ' 9 registros (muestra)
+    Call PoblarArcanosMenoresNumerados      ' 3 registros (muestra)
+    Call PoblarFigurasCorte                 ' 4 registros (muestra)
+    Debug.Print ""
+    
+    ' RESUMEN FINAL
+    Dim tiempoTotal As Double
+    tiempoTotal = Timer - tiempoInicio
+    
+    Debug.Print ""
+    Debug.Print "╔════════════════════════════════════════════════════════════╗"
+    Debug.Print "║  ✓ INSTALACIÓN COMPLETADA EXITOSAMENTE                   ║"
+    Debug.Print "╚════════════════════════════════════════════════════════════╝"
+    Debug.Print ""
+    Debug.Print "RESUMEN DE DATOS POBLADOS:"
+    Debug.Print "══════════════════════════"
+    Debug.Print "  • 4 Elementos"
+    Debug.Print "  • 3 Cualidades Zodiacales"
+    Debug.Print "  • 10 Planetas"
+    Debug.Print "  • 12 Signos Zodiacales"
+    Debug.Print "  • 22 Arcanos Mayores con Astrología"
+    Debug.Print "  • 13 Números (1-9, 11, 22, 33, 44)"
+    Debug.Print "  • 9 Decanatos de Bastos (MUESTRA)"
+    Debug.Print "  • 3 Cartas numeradas (MUESTRA)"
+    Debug.Print "  • 4 Figuras de Corte Bastos (MUESTRA)"
+    Debug.Print ""
+    Debug.Print "TOTAL: 80 registros iniciales"
+    Debug.Print ""
+    Debug.Print "NOTAS IMPORTANTES:"
+    Debug.Print "  ⚠ Decanatos: Solo Bastos completo (9/36)"
+    Debug.Print "  ⚠ Arcanos Menores: Solo 3 ejemplos (3/36)"
+    Debug.Print "  ⚠ Figuras Corte: Solo Bastos completo (4/16)"
+    Debug.Print ""
+    Debug.Print "Para completar los datos restantes, usa:"
+    Debug.Print "  → CompletarDecanatosRestantes()"
+    Debug.Print "  → CompletarArcanosMenoresRestantes()"
+    Debug.Print "  → CompletarFigurasCorteRestantes()"
+    Debug.Print ""
+    Debug.Print "Tiempo de instalación: " & Format(tiempoTotal, "0.00") & " segundos"
+    Debug.Print ""
+    
+    MsgBox "Sistema de Astrología instalado exitosamente!" & vbCrLf & vbCrLf & _
+           "✓ 80 registros iniciales creados" & vbCrLf & _
+           "✓ Estructura completa de 9 tablas" & vbCrLf & vbCrLf & _
+           "Tiempo: " & Format(tiempoTotal, "0.00") & "s" & vbCrLf & vbCrLf & _
+           "NOTA: Algunos datos son muestra." & vbCrLf & _
+           "Ver Ventana Inmediato para detalles.", _
+           vbInformation, "Instalación Completada"
+    
+    Exit Sub
+    
+ErrorHandler:
+    Debug.Print ""
+    Debug.Print "╔════════════════════════════════════════════════════════════╗"
+    Debug.Print "║  ✗ ERROR EN LA INSTALACIÓN                               ║"
+    Debug.Print "╚════════════════════════════════════════════════════════════╝"
+    Debug.Print ""
+    Debug.Print "Error: " & Err.Description
+    Debug.Print "Número: " & Err.Number
+    Debug.Print ""
+    
+    MsgBox "Error en la instalación:" & vbCrLf & vbCrLf & _
+           Err.Description & vbCrLf & vbCrLf & _
+           "Consulte la Ventana Inmediato para más detalles.", _
+           vbCritical, "Error de Instalación"
+End Sub
+
+' =============================================================================
+' FUNCIÓN DE VERIFICACIÓN
+' =============================================================================
+
+Public Sub VerificarInstalacionAstrologia()
+    ' Verifica que todas las tablas estén creadas y muestra estadísticas
+    
+    On Error GoTo ErrorHandler
+    
+    Dim db As DAO.Database
+    Dim tbl As DAO.TableDef
+    Dim rs As DAO.Recordset
+    Dim tablasEncontradas As Integer
+    Dim totalRegistros As Long
+    
+    Set db = CurrentDb
+    tablasEncontradas = 0
+    totalRegistros = 0
+    
+    Debug.Print ""
+    Debug.Print "╔════════════════════════════════════════════════════════════╗"
+    Debug.Print "║  VERIFICACIÓN DEL SISTEMA DE ASTROLOGÍA                  ║"
+    Debug.Print "╚════════════════════════════════════════════════════════════╝"
+    Debug.Print ""
+    
+    Dim tablas() As Variant
+    tablas = Array("tblElementos", "tblCualidadesZodiacales", "tblPlanetas", _
+                   "tblSignosZodiacales", "tblDecanatos", "tblArcanosMayoresAstrologia", _
+                   "tblArcanosMenoresNumeradosAstrologia", "tblFigurasCorteAstrologia", _
+                   "tblNumerosAstrologia")
+    
+    Dim i As Integer
+    For i = LBound(tablas) To UBound(tablas)
+        Dim nombreTabla As String
+        nombreTabla = CStr(tablas(i))
+        
+        ' Verificar si tabla existe
+        Dim tablaExiste As Boolean
+        tablaExiste = False
+        
+        For Each tbl In db.TableDefs
+            If tbl.Name = nombreTabla Then
+                tablaExiste = True
+                Exit For
+            End If
+        Next tbl
+        
+        If tablaExiste Then
+            Set rs = db.OpenRecordset("SELECT COUNT(*) AS Total FROM [" & nombreTabla & "]")
+            Dim cuenta As Long
+            cuenta = rs!Total
+            rs.Close
+            
+            Debug.Print "  ✓ " & nombreTabla & ": " & cuenta & " registros"
+            tablasEncontradas = tablasEncontradas + 1
+            totalRegistros = totalRegistros + cuenta
+        Else
+            Debug.Print "  ✗ " & nombreTabla & ": NO ENCONTRADA"
+        End If
+    Next i
+    
+    Debug.Print ""
+    Debug.Print "RESUMEN:"
+    Debug.Print "════════"
+    Debug.Print "  Tablas encontradas: " & tablasEncontradas & " de 9"
+    Debug.Print "  Total de registros: " & totalRegistros
+    Debug.Print ""
+    
+    If tablasEncontradas = 9 Then
+        Debug.Print "✓ Sistema completamente instalado"
+    Else
+        Debug.Print "⚠ Sistema incompleto - ejecute InstalarSistemaAstrologiaCompleto()"
+    End If
+    
+    Set rs = Nothing
+    Set db = Nothing
+    Exit Sub
+    
+ErrorHandler:
+    Debug.Print "Error en verificación: " & Err.Description
+End Sub
+
+' =============================================================================
+' FUNCIÓN DE CONSULTA RÁPIDA
+' =============================================================================
+
+Public Sub ConsultarCorrespondencia(tipo As String, valor As Variant)
+    ' Consulta rápida de correspondencias
+    ' Ejemplos de uso:
+    '   ConsultarCorrespondencia "Numero", 5
+    '   ConsultarCorrespondencia "Signo", "Aries"
+    '   ConsultarCorrespondencia "Arcano", 10
+    
+    On Error GoTo ErrorHandler
+    
+    Dim db As DAO.Database
+    Dim rs As DAO.Recordset
+    Dim sql As String
+    
+    Set db = CurrentDb
+    
+    Debug.Print ""
+    Debug.Print "CONSULTA: " & tipo & " = " & valor
+    Debug.Print String(50, "═")
+    
+    Select Case UCase(tipo)
+        Case "NUMERO"
+            sql = "SELECT * FROM tblNumerosAstrologia WHERE Numero = " & valor
+            Set rs = db.OpenRecordset(sql)
+            If Not rs.EOF Then
+                Debug.Print "Número: " & rs!Numero
+                Debug.Print "Maestro: " & IIf(rs!EsNumeroMaestro, "Sí", "No")
+                Debug.Print "Planeta: " & rs!PlanetaPrimario
+                Debug.Print "Signos: " & rs!SignosAfines
+                Debug.Print "Elemento: " & rs!ElementoAfin
+                Debug.Print "Arcanos: " & rs!ArcanosMayoresRelacionados
+            End If
+            
+        Case "SIGNO"
+            sql = "SELECT * FROM tblSignosZodiacales WHERE NombreSigno = '" & valor & "'"
+            Set rs = db.OpenRecordset(sql)
+            If Not rs.EOF Then
+                Debug.Print "Signo: " & rs!NombreSigno & " " & rs!SimboloUnicode
+                Debug.Print "Elemento: " & rs!Elemento
+                Debug.Print "Cualidad: " & rs!Cualidad
+                Debug.Print "Regente: " & rs!PlanetaRegente
+                Debug.Print "Fechas: " & rs!FechaInicioAprox & " - " & rs!FechaFinAprox
+                Debug.Print "Arcanos: " & rs!ArcanosAsociados
+            End If
+            
+        Case "ARCANO"
+            sql = "SELECT * FROM tblArcanosMayoresAstrologia WHERE NumeroArcano = " & valor
+            Set rs = db.OpenRecordset(sql)
+            If Not rs.EOF Then
+                Debug.Print "Arcano: " & rs!NombreArcano & " (" & rs!NumeroArcano & ")"
+                Debug.Print "Letra Hebrea: " & rs!LetraHebrea
+                Debug.Print "Correspondencia: " & rs!CorrespondenciaAstrologica
+                Debug.Print "Tipo: " & rs!TipoCorrespondencia
+                Debug.Print "Elemento: " & rs!ElementoAsociado
+                Debug.Print "Sendero: " & rs!SenderoArbolVida
+            End If
+    End Select
+    
+    If rs.EOF Then
+        Debug.Print "No se encontraron resultados"
+    End If
+    
+    rs.Close
+    Set rs = Nothing
+    Set db = Nothing
+    Debug.Print ""
+    Exit Sub
+    
+ErrorHandler:
+    Debug.Print "Error: " & Err.Description
+End Sub
+
+' =============================================================================
+' INSTRUCCIONES DE USO
+' =============================================================================
+
+Public Sub MostrarInstrucciones()
+    Debug.Print ""
+    Debug.Print "╔════════════════════════════════════════════════════════════╗"
+    Debug.Print "║  INSTRUCCIONES DEL SISTEMA DE ASTROLOGÍA                 ║"
+    Debug.Print "╚════════════════════════════════════════════════════════════╝"
+    Debug.Print ""
+    Debug.Print "INSTALACIÓN INICIAL:"
+    Debug.Print "══════════════════════"
+    Debug.Print "  InstalarSistemaAstrologiaCompleto()"
+    Debug.Print "    → Crea tablas y puebla datos iniciales"
+    Debug.Print ""
+    Debug.Print "VERIFICACIÓN:"
+    Debug.Print "═════════════"
+    Debug.Print "  VerificarInstalacionAstrologia()"
+    Debug.Print "    → Muestra estado del sistema"
+    Debug.Print ""
+    Debug.Print "CONSULTAS RÁPIDAS:"
+    Debug.Print "══════════════════"
+    Debug.Print "  ConsultarCorrespondencia ""Numero"", 5"
+    Debug.Print "  ConsultarCorrespondencia ""Signo"", ""Aries"""
+    Debug.Print "  ConsultarCorrespondencia ""Arcano"", 10"
+    Debug.Print ""
+    Debug.Print "FUNCIONES INDIVIDUALES:"
+    Debug.Print "═══════════════════════"
+    Debug.Print "  • CrearTodasTablasAstrologia()"
+    Debug.Print "  • PoblarElementos()"
+    Debug.Print "  • PoblarPlanetas()"
+    Debug.Print "  • PoblarSignosZodiacales()"
+    Debug.Print "  • PoblarArcanosMayoresAstrologia()"
+    Debug.Print "  • PoblarNumerosAstrologia()"
+    Debug.Print "  • PoblarDecanatos()"
+    Debug.Print "  • PoblarArcanosMenoresNumerados()"
+    Debug.Print "  • PoblarFigurasCorte()"
+    Debug.Print ""
+End Sub

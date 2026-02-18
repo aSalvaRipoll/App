@@ -31,7 +31,6 @@ Rui;pt-eu;M
 Salvador;pt-eu;M
 Sérgio;pt-eu;M
 Vasco;pt-eu;M
-
 Maria;pt-eu;F
 Ana;pt-eu;F
 Joana;pt-eu;F

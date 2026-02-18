@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-02-14T12:29:05">
+<tbmModificadores>
+<ID>80</ID>
+<ASCII>´</ASCII>
+<IPA>ˈ</IPA>
+<Descripcion>acento primario (tónica)</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>5</Valor>
+</tbmModificadores>
+<tbmModificadores>
+<ID>81</ID>
+<ASCII>`</ASCII>
+<IPA>ˌ</IPA>
+<Descripcion>acento secundario</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>3</Valor>
+</tbmModificadores>
+<tbmModificadores>
+<ID>82</ID>
+<ASCII>0</ASCII>
+<IPA>0</IPA>
+<Descripcion>marca de sílaba átona</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>0</Valor>
+</tbmModificadores>
+<tbmModificadores>
+<ID>83</ID>
+<ASCII>:</ASCII>
+<IPA>ː</IPA>
+<Descripcion>alargamiento vocálico</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>2</Valor>
+</tbmModificadores>
+<tbmModificadores>
+<ID>84</ID>
+<ASCII>_</ASCII>
+<IPA>‿</IPA>
+<Descripcion>enlace/ligadura</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>2</Valor>
+</tbmModificadores>
+<tbmModificadores>
+<ID>85</ID>
+<ASCII>^</ASCII>
+<IPA>̃͡</IPA>
+<Descripcion>nasalización prosódica</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>1</Nasal>
+<Valor>4</Valor>
+</tbmModificadores>
+<tbmModificadores>
+<ID>86</ID>
+<ASCII>::</ASCII>
+<IPA>ːː</IPA>
+<Descripcion>geminación consonántica</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>5</Valor>
+</tbmModificadores>
+</dataroot>

@@ -1,0 +1,23 @@
+a, e, i, o, u
+er, ir, ur (/ɜː/)
+b
+c, k, qu
+ch (/tʃ/)
+dg, dj (/dʒ/)
+f, ph
+g
+h
+j (/dʒ/)
+l
+m
+n, ng
+p
+r (/ɹ/)
+s
+sh (/ʃ/)
+t
+th (/θ/, /ð/)
+v
+w
+y
+z

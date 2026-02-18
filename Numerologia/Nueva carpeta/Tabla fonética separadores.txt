@@ -1,0 +1,7 @@
+ID;IPA;Descripcion;Tipo
+90;-;separador silábico;estructural
+91; ;separador de palabras;estructural
+92;|;pausa breve;estructural
+93;‖;pausa larga;estructural
+94;^;inicio de nombre;estructural
+95;$;fin de nombre;estructural

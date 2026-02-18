@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-02-09T02:02:20">
+<Tabla_x0020_fonética_x0020_separadores>
+<ID>90</ID>
+<IPA>-</IPA>
+<Descripcion>separador silábico</Descripcion>
+<Tipo>estructural</Tipo>
+</Tabla_x0020_fonética_x0020_separadores>
+<Tabla_x0020_fonética_x0020_separadores>
+<ID>91</ID>
+<IPA> </IPA>
+<Descripcion>separador de palabras</Descripcion>
+<Tipo>estructural</Tipo>
+</Tabla_x0020_fonética_x0020_separadores>
+<Tabla_x0020_fonética_x0020_separadores>
+<ID>92</ID>
+<IPA>|</IPA>
+<Descripcion>pausa breve</Descripcion>
+<Tipo>estructural</Tipo>
+</Tabla_x0020_fonética_x0020_separadores>
+<Tabla_x0020_fonética_x0020_separadores>
+<ID>93</ID>
+<IPA>‖</IPA>
+<Descripcion>pausa larga</Descripcion>
+<Tipo>estructural</Tipo>
+</Tabla_x0020_fonética_x0020_separadores>
+<Tabla_x0020_fonética_x0020_separadores>
+<ID>94</ID>
+<IPA>^</IPA>
+<Descripcion>inicio de nombre</Descripcion>
+<Tipo>estructural</Tipo>
+</Tabla_x0020_fonética_x0020_separadores>
+<Tabla_x0020_fonética_x0020_separadores>
+<ID>95</ID>
+<IPA>$</IPA>
+<Descripcion>fin de nombre</Descripcion>
+<Tipo>estructural</Tipo>
+</Tabla_x0020_fonética_x0020_separadores>
+</dataroot>

@@ -1,0 +1,102 @@
+ID;IPA;Descripcion;Modo;Punto;Sonoridad;Nasal
+
+# VOCALes Y SEMIVOCALes (1–24)
+1;/a/;vocal abierta central;3;2;0;0
+2;/e/;vocal media-cerrada anterior;2;1;0;0
+3;/ɛ/;vocal media-abierta anterior;2;1;0;0
+4;/i/;vocal cerrada anterior alta;1;1;0;0
+5;/o/;vocal media-cerrada posterior;2;3;1;0
+6;/ɔ/;vocal media-abierta posterior;2;3;1;0
+7;/u/;vocal cerrada posterior alta;1;3;1;0
+8;/ə/;vocal neutra schwa;2;2;0;0
+9;/ɐ/;vocal central abierta;3;2;0;0
+10;/ɨ/;vocal cerrada central;1;2;0;0
+11;/y/;vocal cerrada anterior redondeada;1;1;1;0
+12;/ø/;vocal media-cerrada anterior redondeada;2;1;1;0
+13;/œ/;vocal media-abierta anterior redondeada;2;1;1;0
+14;/ã/;vocal nasal a;3;2;0;1
+15;/ẽ/;vocal nasal e;2;1;0;1
+16;/ĩ/;vocal nasal i;1;1;0;1
+17;/õ/;vocal nasal o;2;3;1;1
+18;/ũ/;vocal nasal u;1;3;1;1
+19;/ɜ/;vocal media central;2;2;0;0
+20;/ɒ/;vocal abierta posterior;3;3;1;0
+21;/j/;semivocal palatal;1;1;0;0
+22;/w/;semivocal labiovelar;1;3;1;0
+23;/j̃/;semivocal palatal nasal;1;1;0;1
+24;/w̃/;semivocal labiovelar nasal;1;3;1;1
+
+# CONSONANTES (30–72)
+
+# Oclusivas (30–35)
+30;/p/;oclusiva bilabial sorda;1;1;0;0
+31;/b/;oclusiva bilabial sonora;1;1;1;0
+32;/t/;oclusiva dental/alveolar sorda;1;3;0;0
+33;/d/;oclusiva dental/alveolar sonora;1;3;1;0
+34;/k/;oclusiva velar sorda;1;5;0;0
+35;/g/;oclusiva velar sonora;1;5;1;0
+
+# Nasales (36–39)
+36;/m/;nasal bilabial;1;1;1;1
+37;/n/;nasal alveolar;1;3;1;1
+38;/ɲ/;nasal palatal;1;4;1;1
+39;/ŋ/;nasal velar;1;5;1;1
+
+# Fricativas (40–55)
+40;/f/;fricativa labiodental sorda;2;2;0;0
+41;/v/;fricativa labiodental sonora;2;2;1;0
+42;/s/;fricativa alveolar sorda;2;3;0;0
+43;/z/;fricativa alveolar sonora;2;3;1;0
+44;/ʃ/;fricativa palatal sorda;2;4;0;0
+45;/ʒ/;fricativa palatal sonora;2;4;1;0
+46;/θ/;fricativa dental sorda;2;3;0;0
+47;/ð/;fricativa dental sonora;2;3;1;0
+48;/x/;fricativa velar sorda;2;5;0;0
+49;/h/;fricativa glotal sorda;2;7;0;0
+50;/ɣ/;fricativa velar sonora;2;5;1;0
+51;/ʁ/;fricativa uvular sonora;2;6;1;0
+52;/χ/;fricativa uvular sorda;2;6;0;0
+53;/β/;fricativa bilabial sonora;2;1;1;0
+54;/ɸ/;fricativa bilabial sorda;2;1;0;0
+55;/ʂ/;fricativa retrofleja sorda;2;3;0;0
+56;/ʐ/;fricativa retrofleja sonora;2;3;1;0
+
+# Africadas (57–58)
+57;/t͡ʃ/;africada postalveolar sorda;3;4;0;0
+58;/d͡ʒ/;africada postalveolar sonora;3;4;1;0
+
+# Vibrantes (59–61)
+59;/ɾ/;vibrante simple;4;3;1;0
+60;/r/;vibrante múltiple;4;3;1;0
+61;/ɾ̃/;vibrante simple nasalizada;4;3;1;1
+
+# Laterales (62–64)
+62;/l/;lateral alveolar;6;3;1;0
+63;/ʎ/;lateral palatal;6;4;1;0
+64;/ɫ/;lateral velarizada;6;5;1;0
+
+# Aproximantes (65–72)
+65;/ɹ/;aproximante alveolar inglesa;5;3;1;0
+66;/β̞/;aproximante bilabial;5;1;1;0
+67;/ð̞/;aproximante dental;5;3;1;0
+68;/ɣ̞/;aproximante velar;5;5;1;0
+69;/ʋ/;aproximante labiodental;5;2;1;0
+70;/ɻ/;aproximante retrofleja;5;3;1;0
+71;/ɰ/;aproximante velar;5;5;1;0
+
+# MODIFICADORES PROSÓDICOS (80–89)
+80;ˈ;acento primario (tónica);9;0;0;0
+81;ˌ;acento secundario;9;0;0;0
+82;0;marca de sílaba átona;9;0;0;0
+83;ː;alargamiento vocálico;9;0;0;0
+84;͡;enlace/ligadura;9;0;0;0
+85;̃;nasalización prosódica;9;0;0;1
+86;ːː;geminación consonántica;9;0;0;0
+
+# SEPARADORES (90–99)
+90;-;separador silábico;10;0;0;0
+91; ;separador de palabras;10;0;0;0
+92;|;pausa breve;10;0;0;0
+93;‖;pausa larga;10;0;0;0
+94;^;inicio de nombre;10;0;0;0
+95;$;fin de nombre;10;0;0;0

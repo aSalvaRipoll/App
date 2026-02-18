@@ -1,0 +1,9 @@
+ID;IPA;Descripcion;Tipo;Nasal;Valor
+80;ˈ;acento primario (tónica);prosodico;0;5
+81;ˌ;acento secundario;prosodico;0;3
+82;0;marca de sílaba átona;prosodico;0;0
+83;ː;alargamiento vocálico;prosodico;0;2
+84;͡;enlace/ligadura;prosodico;0;2
+85;̃;nasalización prosódica;prosodico;1;4
+86;ːː;geminación consonántica;prosodico;0;5
+

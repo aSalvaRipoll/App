@@ -1,0 +1,779 @@
+
+'======================================================================================
+' Conversor Fonético
+'======================================================================================
+
+' ============================================================
+'   PROCEDIMIENTO: ConvertirSilabasAFonemas
+'   Ensambla todas las sílabas en una secuencia de fonemas
+'   Entrada: array de sílabas (strings)
+'   Salida: string con IDs separados por comas
+' ============================================================
+Public Sub ConvertirSilabasAFonemas()
+
+    Dim listaSilabas() As String
+    Dim listaTonicas() As String
+    Dim idx As Byte
+    Dim salida As String
+    Dim bloque As String
+    Dim esTonica As Boolean
+    
+    Dim idxTonica As Byte
+
+    salida = ""
+    idxTonica = 0
+    
+    ' 1. Separar sílabas de toda la frase
+    listaSilabas = Split(objDTO.SilabasFinal, " | ")
+
+    ' 2. Separar índices de sílabas tónicas (globales)
+    listaTonicas = Split(objDTO.SilabaTonica, ",")
+
+    ' 3. Procesar cada sílaba
+    For idx = 0 To UBound(listaSilabas)
+
+        ' ¿Es esta sílaba tónica?
+        esTonica = False 'EsIndiceTonica(idx + 1, listaTonicas)
+        If idxTonica <= UBound(listaTonicas) Then
+            If (idx + 1) = CByte(listaTonicas(idxTonica)) Then
+                esTonica = True
+                idxTonica = idxTonica + 1
+            End If
+        End If
+        
+        ' ¿Es un espacio?
+        If Trim(listaSilabas(idx)) = "" Then
+            bloque = "0"
+        Else
+            Debug.Print Chr(34); listaSilabas(idx); Chr(34)
+            ' Convertir sílaba a fonemas
+            bloque = Conv_Silaba(listaSilabas(idx))
+            
+            Debug.Print bloque
+            ' Insertar acento si corresponde
+            If esTonica Then
+                bloque = "61," & bloque
+            End If
+        End If
+
+        ' Añadir al resultado final
+        If salida = "" Then
+            salida = bloque
+        Else
+            salida = salida & " | " & bloque
+        End If
+
+    Next idx
+
+    objDTO.TextoFinal = salida
+
+End Sub
+
+
+'======================================================================================
+' Conversor
+'======================================================================================
+' ============================================================
+'   MÓDULO PRINCIPAL: Conv_Silaba
+'   Orquesta la conversión grafema ? fonema
+'   Devuelve:
+'       - Collection de fonemas
+'       - String de fonemas
+' ============================================================
+
+Private Function Conv_Silaba(silaba As String) As String
+
+    'Dim col As New Collection
+    Dim i As Long
+    Dim g As String, g2 As String
+    Dim anterior As String, siguiente As String
+    Dim resultado As String
+    Dim f As Variant
+
+    Dim asTemp As String
+    
+    asTemp = ""
+    silaba = NormalizaVocales(LCase$(silaba))
+
+    For i = 1 To Len(silaba)
+
+        g = Mid$(silaba, i, 1)
+
+        anterior = ""
+        If i > 1 Then anterior = Mid$(silaba, i - 1, 1)
+
+        siguiente = ""
+        If i < Len(silaba) Then siguiente = Mid$(silaba, i + 1, 1)
+
+        ' ============================================
+        '   1. DÍGRAFOS (2 grafemas ? 1 fonema)
+        ' ============================================
+        If i < Len(silaba) Then
+            g2 = Mid$(silaba, i, 2)
+            resultado = Conv_Digrafos(g2, siguiente)
+
+            If resultado <> "" Then
+                asTemp = asTemp & "  |  " & resultado
+                'col.Add CLng(resultado)
+                i = i + 1   ' Consumimos 2 grafemas
+                GoTo SiguienteGrafema
+            End If
+        End If
+
+        ' ============================================
+        '   2. VOCALES / DIPTONGOS / HIATOS
+        ' ============================================
+        resultado = Conv_Vocales(g, siguiente)
+
+        If resultado <> "" Then
+            asTemp = asTemp & ", " & resultado
+            'If InStr(resultado, ",") > 0 Then
+                'For Each f In Split(resultado, ",")
+                '    col.Add CLng(f)
+                'Next f
+            'Else
+            '    col.Add CLng(resultado)
+            'End If
+            GoTo SiguienteGrafema
+        End If
+
+        ' ============================================
+        '   3. REGLAS CONTEXTUALES
+        ' ============================================
+        resultado = Conv_Contexto(g, anterior, siguiente)
+
+        If resultado <> "" Then
+            asTemp = asTemp & ", " & resultado
+            'col.Add CLng(resultado)
+            GoTo SiguienteGrafema
+        End If
+
+        ' ============================================
+        '   4. MONÓGRAFOS
+        ' ============================================
+        resultado = Conv_Monografos(g)
+
+        If resultado <> "" Then
+            asTemp = asTemp & ", " & resultado
+            'col.Add CLng(resultado)
+            GoTo SiguienteGrafema
+        End If
+
+        ' ============================================
+        '   5. Si nada aplica ? placeholder
+        ' ============================================
+        'col.Add 99
+        asTemp = asTemp & ", " & resultado
+SiguienteGrafema:
+    Next i
+
+    Conv_Silaba = Trim(Mid(asTemp, 2))
+    'Set Conv_Silaba = col
+
+End Function
+
+' ============================================================
+'   PROCEDIMIENTO: Conv_Digrafos
+'   Convierte dígrafos (2 grafemas ? 1 fonema)
+'   Devuelve:
+'       - ID fonema (Long)
+'       - Null si no aplica
+' ============================================================
+Private Function Conv_Digrafos(g2 As String, siguiente As String) As String
+
+    g2 = LCase$(g2)
+    siguiente = LCase$(siguiente)
+
+    Select Case g2
+
+        ' ===== Dígrafos reales =====
+
+        Case "ch"
+            Conv_Digrafos = "41"      ' /t?/
+
+        Case "ll"
+            Conv_Digrafos = "42"      ' /?/ o /?/
+
+        Case "rr"
+            Conv_Digrafos = "43"      ' vibrante múltiple
+
+
+        ' ===== Dígrafos ortográficos =====
+
+        Case "gu"
+            If siguiente = "e" Or siguiente = "i" Then
+                Conv_Digrafos = "24"  ' /g/
+            Else
+                Conv_Digrafos = ""
+            End If
+
+        Case "qu"
+            If siguiente = "e" Or siguiente = "i" Then
+                Conv_Digrafos = "31"  ' /k/
+            Else
+                Conv_Digrafos = ""
+            End If
+
+
+        ' ===== No reconocido =====
+        Case Else
+            Conv_Digrafos = ""
+
+    End Select
+
+End Function
+
+' ============================================================
+'   PROCEDIMIENTO: Conv_Vocales
+'   Vocales, diptongos, hiatos, semivocales
+'   Devuelve:
+'       - String con IDs separados por comas
+'       - "" si no aplica
+' ============================================================
+Public Function Conv_Vocales(g As String, siguiente As String) As String
+
+    ' --- Diptongos crecientes con U ---
+    If g = "u" Then
+        If siguiente = "a" Or siguiente = "e" Or siguiente = "i" Or siguiente = "o" Then
+            Conv_Vocales = "14"   ' fonema del diptongo "ua/ue/ui/uo"
+            Exit Function
+        End If
+    End If
+
+    ' --- Diptongos decrecientes ---
+    If g = "a" And siguiente = "i" Then
+        Conv_Vocales = "12"
+        Exit Function
+    End If
+
+    If g = "a" And siguiente = "u" Then
+        Conv_Vocales = "16"
+        Exit Function
+    End If
+
+
+
+    If g = "e" And (siguiente = "i" Or siguiente = "u") Then
+        Conv_Vocales = 13 ' "14"
+        Exit Function
+    End If
+
+    If g = "o" And (siguiente = "i" Or siguiente = "u") Then
+        Conv_Vocales = "14"
+        Exit Function
+    End If
+
+    ' --- Vocal simple ---
+    Select Case g
+        Case "a": Conv_Vocales = "12"
+        Case "e": Conv_Vocales = "13"
+        Case "i": Conv_Vocales = "14"
+        Case "o": Conv_Vocales = "15"
+        Case "u": Conv_Vocales = "16"
+    End Select
+
+End Function
+
+' ============================================================
+'   Función auxiliar: VocalID
+' ============================================================
+Private Function VocalID(v As String) As Byte
+    Select Case v
+        Case "a": VocalID = 12
+        Case "e": VocalID = 13
+        Case "i": VocalID = 14
+        Case "o": VocalID = 15
+        Case "u": VocalID = 16
+    End Select
+End Function
+
+' ============================================================
+'   PROCEDIMIENTO: Conv_Contexto
+'   Reglas contextuales (c, g, y, x...)
+'   Devuelve:
+'       - String con ID fonema
+'       - "" si no aplica
+' ============================================================
+Private Function Conv_Contexto(g As String, anterior As String, siguiente As String) As String
+
+    g = LCase$(g)
+    anterior = LCase$(anterior)
+    siguiente = LCase$(siguiente)
+
+    ' ============================
+    '   1. C ? /k/ o /?/ (/s/)
+    ' ============================
+    If g = "c" Then
+        If siguiente = "e" Or siguiente = "i" Then
+            Conv_Contexto = "33"   ' /?/ o /s/
+        Else
+            Conv_Contexto = "31"   ' /k/
+        End If
+        Exit Function
+    End If
+
+    ' ============================
+    '   2. G ? /g/, /x/ o /gw/
+    ' ============================
+    If g = "j" Then
+        Conv_Contexto = "34"    ' /x/
+        Exit Function
+    End If
+
+    If g = "g" Then
+
+        ' --- g + ü ? /gw/ ---
+        If siguiente = "ü" Then
+            Conv_Contexto = "57"   ' /gw/
+            Exit Function
+        End If
+
+        ' --- g + e/i ? /x/ ---
+        If siguiente = "e" Or siguiente = "i" Then
+            Conv_Contexto = "34"   ' /x/
+            Exit Function
+        End If
+
+        ' --- g + a/o/u ? /g/ ---
+        Conv_Contexto = "24"
+        Exit Function
+    End If
+
+    ' ============================
+    '   3. Y ? /i/ o /?/
+    ' ============================
+    If g = "y" Then
+        If siguiente = "" Then
+            Conv_Contexto = "14"   ' /i/ final
+        Else
+            Conv_Contexto = "35"   ' /?/
+        End If
+        Exit Function
+    End If
+
+    ' ============================
+    '   4. X ? /ks/ o /x/
+    ' ============================
+    If g = "x" Then
+        If siguiente Like "[aeiou]" Then
+            Conv_Contexto = "36"   ' /ks/
+        Else
+            Conv_Contexto = "32"   ' /x/
+        End If
+        Exit Function
+    End If
+
+    ' ============================
+    '   5. S ? /s/
+    ' ============================
+    If g = "s" Then
+        Conv_Contexto = "29"
+        Exit Function
+    End If
+
+    ' ============================
+    '   6. No aplica
+    ' ============================
+    Conv_Contexto = ""
+
+End Function
+
+' ============================================================
+'   PROCEDIMIENTO: Conv_Monografos
+'   Convierte monógrafos (1 grafema ? 1 fonema)
+'   Devuelve:
+'       - String con ID fonema
+'       - "" si no aplica
+' ============================================================
+Private Function Conv_Monografos(g As String) As String
+
+    g = LCase$(g)
+
+    Select Case g
+
+        ' ===== Vocales =====
+        Case "a": Conv_Monografos = "12"
+        Case "e": Conv_Monografos = "13"
+        Case "i": Conv_Monografos = "14"
+        Case "o": Conv_Monografos = "15"
+        Case "u": Conv_Monografos = "16"
+
+        ' ===== Consonantes =====
+        Case "m": Conv_Monografos = "21"
+        Case "n": Conv_Monografos = "22"
+        Case "p": Conv_Monografos = "23"
+        Case "b": Conv_Monografos = "24"
+        Case "d": Conv_Monografos = "25"
+        Case "f": Conv_Monografos = "26"
+        Case "l": Conv_Monografos = "27"
+        Case "r": Conv_Monografos = "28"
+        Case "s": Conv_Monografos = "29"
+        Case "t": Conv_Monografos = "30"
+        Case "k": Conv_Monografos = "31"
+        Case "x": Conv_Monografos = "32"
+        Case "z": Conv_Monografos = "33"
+
+        ' ===== No reconocido =====
+        Case Else
+            Conv_Monografos = ""
+
+    End Select
+
+End Function
+
+' ============================================================
+'   PROCEDIMIENTO: NormalizaVocales
+'   Convierte las vocales de una sílaba eliminando acentos
+'   Devuelve:
+'       - String con las vocales de la sílaba normalizadas
+' ============================================================
+Private Function NormalizaVocales(ByVal texto As String) As String
+
+    Dim t As String
+    Dim n As Integer
+    Dim salida As String
+    
+    salida = ""
+    
+    For n = 1 To Len(texto)
+    
+        t = Mid(texto, n, 1)
+
+        Select Case t
+            Case "á", "à", "ä", "â"
+                t = "a"
+    
+            Case "é", "è", "ë", "ê"
+                t = "e"
+    
+            Case "í", "ì", "ï", "î"
+                t = "i"
+    
+            Case "ó", "ò", "ö", "ô"
+                t = "o"
+    
+            Case "ú", "ù", "û"   ' ü se mantiene
+                t = "u"
+        
+            Case Else
+            
+        End Select
+        
+        salida = salida & t
+    Next
+    
+    NormalizaVocales = salida
+
+End Function
+
+
+'=================================================================================================
+
+'-----------------
+' Auxiliares
+'-----------------
+
+Private Function ContarSilabasDePalabra(ByVal palabra As String, ByRef sils() As String, ByVal offset As Long) As Long
+    Dim total As Long
+    Dim i As Long
+    Dim lenAcum As Long
+    
+    total = 0
+    lenAcum = 0
+    
+    For i = offset To UBound(sils)
+        lenAcum = lenAcum + Len(sils(i))
+        
+        If lenAcum <= Len(palabra) Then
+            total = total + 1
+        Else
+            Exit For
+        End If
+    Next i
+    
+    ContarSilabasDePalabra = total
+End Function
+
+Private Function DetectarTonicaDeUnaPalabra(ByVal palabra As String, ByVal numSilabas As Long) As Long
+    
+    ' 1. Si hay tilde explícita ? esa sílaba es la tónica
+    Dim i As Long
+    Dim sils() As String
+    sils = Split(objDTO.SilabasAuto, " | ")
+    
+    For i = 0 To numSilabas - 1
+        If TieneTilde(sils(i)) Then
+            DetectarTonicaDeUnaPalabra = i + 1
+            Exit Function
+        End If
+    Next i
+    
+    ' 2. Si no hay tilde ? aplicar reglas generales
+    ' Palabras terminadas en vocal, n, s ? llana
+    Dim ultima As String
+    ultima = Right$(palabra, 1)
+    
+If ultima Like "[aeiousn]" Then
+    If numSilabas > 1 Then
+        DetectarTonicaDeUnaPalabra = numSilabas - 1
+    Else
+        DetectarTonicaDeUnaPalabra = 1
+    End If
+Else
+    DetectarTonicaDeUnaPalabra = numSilabas
+End If
+
+End Function
+
+
+Private Function TerminaEnVocalNoSNoN(ByVal silaba As String) As Boolean
+    Dim c As String
+    c = Right$(silaba, 1)
+    TerminaEnVocalNoSNoN = (c Like "[aeiouáéíóú]")
+End Function
+
+
+'Public Function EsSilabaMarcada(ByVal s As String) As Boolean
+'    Dim t As String
+'    t = Trim$(s)
+'    EsSilabaMarcada = (Left$(t, 1) = "*" And Right$(t, 1) = "*")
+'End Function
+
+'Public Function LimpiarSilabaMarcada(ByVal s As String) As String
+'    Dim t As String
+'    t = Trim$(s)
+'    t = Mid$(t, 2, Len(t) - 2)   ' quitar los dos *
+'    LimpiarSilabaMarcada = Trim$(t)
+'End Function
+
+
+Public Function EsSilabaMarcada(ByVal s As String) As Boolean
+    Dim t As String
+    Dim i As Long
+    Dim leadStars As Long
+    Dim trailStars As Long
+    Dim iFirstNonStar As Long
+    Dim iLastNonStar As Long
+    Dim contenido As String
+    
+    t = Trim$(s)
+    If t = "" Then Exit Function
+    
+    ' Contar asteriscos iniciales
+    For i = 1 To Len(t)
+        If Mid$(t, i, 1) = "(" Then
+            leadStars = leadStars + 1
+        Else
+            Exit For
+        End If
+    Next i
+    
+    ' Contar asteriscos finales
+    For i = Len(t) To 1 Step -1
+        If Mid$(t, i, 1) = ")" Then
+            trailStars = trailStars + 1
+        Else
+            Exit For
+        End If
+    Next i
+    
+    ' Debe haber al menos uno al principio y al final, y ser iguales
+    If leadStars = 0 Or trailStars = 0 Then Exit Function
+    If leadStars <> trailStars Then Exit Function
+    
+    ' Posiciones de contenido
+    iFirstNonStar = leadStars + 1
+    iLastNonStar = Len(t) - trailStars
+    
+    If iFirstNonStar > iLastNonStar Then Exit Function
+    
+    contenido = Mid$(t, iFirstNonStar, iLastNonStar - iFirstNonStar + 1)
+    contenido = Trim$(contenido)
+    
+    ' Contenido no vacío y sin asteriscos internos
+    If contenido = "" Then Exit Function
+    If InStr(contenido, "(") > 0 Or InStr(contenido, ")") > 0 Then Exit Function
+    
+    EsSilabaMarcada = True
+End Function
+
+
+Public Function LimpiarSilabaMarcada(ByVal s As String) As String
+    Dim t As String
+    Dim i As Long
+    Dim leadStars As Long
+    Dim trailStars As Long
+    Dim iFirstNonStar As Long
+    Dim iLastNonStar As Long
+    Dim contenido As String
+    
+    t = Trim$(s)
+    If t = "" Then Exit Function
+    
+    ' Contar asteriscos iniciales
+    For i = 1 To Len(t)
+        If Mid$(t, i, 1) = "(" Then
+            leadStars = leadStars + 1
+        Else
+            Exit For
+        End If
+    Next i
+    
+    ' Contar asteriscos finales
+    For i = Len(t) To 1 Step -1
+        If Mid$(t, i, 1) = ")" Then
+            trailStars = trailStars + 1
+        Else
+            Exit For
+        End If
+    Next i
+    
+    ' Posiciones de contenido (aunque la marca sea inválida, limpiamos igual)
+    iFirstNonStar = leadStars + 1
+    iLastNonStar = Len(t) - trailStars
+    
+    If iFirstNonStar > iLastNonStar Then
+        LimpiarSilabaMarcada = ""
+    Else
+        contenido = Mid$(t, iFirstNonStar, iLastNonStar - iFirstNonStar + 1)
+        LimpiarSilabaMarcada = Trim$(contenido)
+    End If
+End Function
+
+' ============================================================
+'   AUXILIARES FONÉTICAS (ES)
+' ============================================================
+
+Private Function EsVocal_ES(c As String) As Boolean
+    EsVocal_ES = (InStr("aeiouáéíóú", c) > 0)
+End Function
+
+Private Function EsConsonante_ES(c As String) As Boolean
+    EsConsonante_ES = (c <> " " And Not EsVocal_ES(c))
+End Function
+
+Private Function EsVocalFuerte(c As String) As Boolean
+    EsVocalFuerte = (InStr("aeoáéó", c) > 0)
+End Function
+
+Private Function EsVocalDebil(c As String) As Boolean
+    EsVocalDebil = (InStr("iuíú", c) > 0)
+End Function
+
+Private Function EsDiptongo(c1 As String, c2 As String) As Boolean
+
+    If EsVocalDebil(c1) And EsVocalDebil(c2) Then
+        If c1 <> "í" And c1 <> "ú" And c2 <> "í" And c2 <> "ú" Then
+            EsDiptongo = True
+            Exit Function
+        End If
+    End If
+
+    If EsVocalDebil(c1) And EsVocalFuerte(c2) Then
+        If c1 <> "í" And c1 <> "ú" Then
+            EsDiptongo = True
+            Exit Function
+        End If
+    End If
+
+    If EsVocalFuerte(c1) And EsVocalDebil(c2) Then
+        If c2 <> "í" And c2 <> "ú" Then
+            EsDiptongo = True
+            Exit Function
+        End If
+    End If
+
+End Function
+
+Private Function EsTriptongo(c1 As String, c2 As String, c3 As String) As Boolean
+    If EsVocalDebil(c1) And EsVocalFuerte(c2) And EsVocalDebil(c3) Then
+        If c1 <> "í" And c1 <> "ú" And c3 <> "í" And c3 <> "ú" Then
+            EsTriptongo = True
+        End If
+    End If
+End Function
+
+Private Function EsHiatoFuerteFuerte(c1 As String, c2 As String) As Boolean
+    If EsVocalFuerte(c1) And EsVocalFuerte(c2) Then
+        EsHiatoFuerteFuerte = True
+    End If
+End Function
+
+Private Function EsGrupoInseparable_ES(par As String) As Boolean
+
+    Dim g As Variant
+    Dim lista As Variant
+
+    'lista = Array("br", "bl", "cr", "cl", "dr", "fr", "gr", "gl", "pr", "pl", "tr")
+    lista = Array("br", "bl", "cr", "cl", "dr", "fr", "fl", "gr", "gl", "pr", "pl", "tr")
+
+    For Each g In lista
+        If par = g Then
+            EsGrupoInseparable_ES = True
+            Exit Function
+        End If
+    Next g
+
+End Function
+
+' ============================================================
+'   Rutina auxiliar de diagnóstico del motor
+'   Imprime el estado completo del DTO
+' ============================================================
+Public Sub MF_DebugDTO(Proc As String)
+
+    If objDTO Is Nothing Then
+        Debug.Print "DTO no inicializado."
+        Exit Sub
+    End If
+
+    Debug.Print
+    Debug.Print "==============================="
+    Debug.Print "   ESTADO DEL MOTOR"
+    Debug.Print "==============================="
+    
+    Debug.Print
+    Debug.Print "-------------------------------"
+    Debug.Print " Proc.: "; Proc
+    Debug.Print "-------------------------------"
+    Debug.Print
+    
+    Debug.Print "Texto original:        "; objDTO.TextoOriginal
+    Debug.Print "Texto normalizado:     "; objDTO.TextoNormalizado
+    Debug.Print "SilabasAuto:           "; objDTO.SilabasAuto
+    Debug.Print "SilabasFinal:          "; objDTO.SilabasFinal
+    Debug.Print "SilabaTonica:          "; objDTO.SilabaTonica
+    Debug.Print "SilabaSecundaria:      "; objDTO.SilabaSecundaria
+    Debug.Print "TextoFinal (fonemas):  "; objDTO.TextoFinal
+
+    Debug.Print "-------------------------------"
+    Debug.Print "   Detalles internos"
+    Debug.Print "-------------------------------"
+
+    Debug.Print "Num sílabas auto:      "; CountItems(objDTO.SilabasAuto, " | ") + 1
+    Debug.Print "Num sílabas final:     "; CountItems(objDTO.SilabasFinal, " | ") + 1
+
+    Debug.Print "==============================="
+    Debug.Print 'vbCrLf
+
+    'Stop
+    
+End Sub
+
+' ============================================================
+' Contador auxiliar para separar elementos
+' ============================================================
+Private Function CountItems(ByVal s As String, ByVal sep As String) As Long
+    If Len(Trim$(s)) = 0 Then
+        CountItems = 0
+    Else
+        CountItems = UBound(Split(s, sep))
+    End If
+End Function
+
+
+' ============================================================
+' ============================================================
+' ============================================================
+
+

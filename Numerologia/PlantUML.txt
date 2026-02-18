@@ -1,0 +1,157 @@
+@startuml
+title KOSMOS 2.1 — Arquitectura General del Motor Fonético Multilingüe
+
+'==========================================================
+' CLASE PRINCIPAL: clsFonema
+'==========================================================
+class clsFonema {
+    - GrafemaOri : String
+    - idFonema   : Byte
+    - NumOrden   : Long
+    - esVocal    : Boolean
+    - valor      : String
+}
+
+'==========================================================
+' DISPATCHER PRINCIPAL
+'==========================================================
+class modMotorFonetico_V2_1_Idiomas {
+    + MF21_ConvertirNombreAParGrafemaIDFonema(NombreOriginal, Abreviado) : Collection
+    + MF_MarcarTonicaPorIdioma(Texto, Abreviado, esTonica())
+    + MF_NormalizarVocalesPorIdioma(Texto, idioma) : String
+    + ConvertirGrafemaAIdFonema(graf, idioma, ant, sig) : Byte
+    + ObtenerFonemas(Texto, idioma) : Collection
+    --
+    - RegistrarFonema(col, graf, idFonema, NumOrden)
+    - SiguienteGrafema(Texto, pos) : String
+    - NG(g) : String
+}
+
+modMotorFonetico_V2_1_Idiomas --> clsFonema : crea
+
+'==========================================================
+' MOTORES POR IDIOMA
+'==========================================================
+package "Motores por idioma" {
+
+    class modMotor_Idioma_ES {
+        + MF_MarcarTonica_ES()
+        + Silabear_ES()
+        + Silabear_ES_ConRevision()
+        + ReglasCastellano()
+        + MF_NormalizarVocales_ES()
+    }
+
+    class modMotor_Idioma_CA {
+        + MF_MarcarTonica_CA()
+        + Silabear_CA()
+        + Silabear_CA_ConRevision()
+        + ReglasCatala()
+        + MF_NormalizarVocales_CA()
+    }
+
+    class modMotor_Idioma_CA_VA {
+        + MF_MarcarTonica_CA_VA()
+        + Silabear_CA_VA()
+        + Silabear_CA_VA_ConRevision()
+        + ReglasValenciano()
+        + MF_NormalizarVocales_CA_VA()
+    }
+
+    class modMotor_Idioma_CA_IB {
+        + MF_MarcarTonica_CA_IB()
+        + Silabear_CA_IB()
+        + Silabear_CA_IB_ConRevision()
+        + ReglasMallorquin()
+        + MF_NormalizarVocales_CA_IB()
+    }
+
+    class modMotor_Idioma_EU {
+        + MF_MarcarTonica_EU()
+        + Silabear_EU()
+        + Silabear_EU_ConRevision()
+        + ReglasEuskera()
+        + MF_NormalizarVocales_EU()
+    }
+
+    class modMotor_Idioma_GL {
+        + MF_MarcarTonica_GL()
+        + Silabear_GL()
+        + Silabear_GL_ConRevision()
+        + ReglasGalego()
+        + MF_NormalizarVocales_GL()
+    }
+
+    class modMotor_Idioma_PT_EU {
+        + MF_MarcarTonica_PT_EU()
+        + Silabear_PT_EU()
+        + Silabear_PT_EU_ConRevision()
+        + ReglasPortugues_PT_EU()
+        + MF_NormalizarVocales_PT_EU()
+    }
+
+    class modMotor_Idioma_PT_BR {
+        + MF_MarcarTonica_PT_BR()
+        + Silabear_PT_BR()
+        + Silabear_PT_BR_ConRevision()
+        + ReglasPortugues_PT_BR()
+        + MF_NormalizarVocales_PT_BR()
+    }
+
+    class modMotor_Idioma_FR {
+        + MF_MarcarTonica_FR()
+        + Silabear_FR()
+        + Silabear_FR_ConRevision()
+        + ReglasFrances()
+        + MF_NormalizarVocales_FR()
+    }
+
+    class modMotor_Idioma_EN_GB {
+        + MF_MarcarTonica_EN_GB()
+        + Silabear_EN()
+        + Silabear_EN_ConRevision()
+        + ReglasIngles()
+        + MF_NormalizarVocales_EN_GB()
+    }
+}
+
+' Dispatcher usa todos los motores
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_ES
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_CA
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_CA_VA
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_CA_IB
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_EU
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_GL
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_PT_EU
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_PT_BR
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_FR
+modMotorFonetico_V2_1_Idiomas --> modMotor_Idioma_EN_GB
+
+'==========================================================
+' AUXILIARES POR IDIOMA
+'==========================================================
+package "Auxiliares" {
+
+    class modMotor_Idioma_AUX_CA {
+        + EsVocal_CA()
+        + EsConsonant_CA()
+        + EsGrupInseparable_CA()
+        + EsDiptong_CA()
+        + EsHiat_CA()
+    }
+
+    class modMotor_Idioma_AUX_PT {
+        + EsVocal_PT()
+        + EsConsonant_PT()
+        + EsGrupInseparable_PT()
+    }
+}
+
+modMotor_Idioma_CA --> modMotor_Idioma_AUX_CA
+modMotor_Idioma_CA_VA --> modMotor_Idioma_AUX_CA
+modMotor_Idioma_CA_IB --> modMotor_Idioma_AUX_CA
+
+modMotor_Idioma_PT_EU --> modMotor_Idioma_AUX_PT
+modMotor_Idioma_PT_BR --> modMotor_Idioma_AUX_PT
+
+@enduml

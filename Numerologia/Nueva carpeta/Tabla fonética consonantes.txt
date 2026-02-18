@@ -1,0 +1,49 @@
+ID;IPA;Descripcion;Modo;Punto;Sonoridad;Nasal;Valor
+30;/p/;oclusiva bilabial sorda;1;1;0;0;21
+31;/b/;oclusiva bilabial sonora;1;1;1;0;22
+32;/t/;oclusiva dental/alveolar sorda;1;3;0;0;17
+33;/d/;oclusiva dental/alveolar sonora;1;3;1;0;18
+34;/k/;oclusiva velar sorda;1;5;0;0;15
+35;/g/;oclusiva velar sonora;1;5;1;0;16
+
+36;/m/;nasal bilabial;1;1;1;1;22
+37;/n/;nasal alveolar;1;3;1;1;20
+38;/ɲ/;nasal palatal;1;4;1;1;18
+39;/ŋ/;nasal velar;1;5;1;1;17
+
+40;/f/;fricativa labiodental sorda;2;2;0;0;17
+41;/v/;fricativa labiodental sonora;2;2;1;0;18
+42;/s/;fricativa alveolar sorda;2;3;0;0;15
+43;/z/;fricativa alveolar sonora;2;3;1;0;16
+44;/ʃ/;fricativa palatal sorda;2;4;0;0;13
+45;/ʒ/;fricativa palatal sonora;2;4;1;0;14
+46;/θ/;fricativa dental sorda;2;3;0;0;15
+47;/ð/;fricativa dental sonora;2;3;1;0;16
+48;/x/;fricativa velar sorda;2;5;0;0;12
+49;/h/;fricativa glotal sorda;2;7;0;0;10
+50;/ɣ/;fricativa velar sonora;2;5;1;0;13
+51;/ʁ/;fricativa uvular sonora;2;6;1;0;12
+52;/χ/;fricativa uvular sorda;2;6;0;0;11
+53;/β/;fricativa bilabial sonora;2;1;1;0;19
+54;/ɸ/;fricativa bilabial sorda;2;1;0;0;18
+55;/ʂ/;fricativa retrofleja sorda;2;3;0;0;15
+56;/ʐ/;fricativa retrofleja sonora;2;3;1;0;16
+
+57;/t͡ʃ/;africada postalveolar sorda;3;4;0;0;15
+58;/d͡ʒ/;africada postalveolar sonora;3;4;1;0;16
+
+59;/ɾ/;vibrante simple;4;3;1;0;14
+60;/r/;vibrante múltiple;4;3;1;0;14
+61;/ɾ̃/;vibrante simple nasalizada;4;3;1;1;15
+
+62;/l/;lateral alveolar;6;3;1;0;12
+63;/ʎ/;lateral palatal;6;4;1;0;11
+64;/ɫ/;lateral velarizada;6;5;1;0;10
+
+65;/ɹ/;aproximante alveolar inglesa;5;3;1;0;11
+66;/β̞/;aproximante bilabial;5;1;1;0;13
+67;/ð̞/;aproximante dental;5;3;1;0;11
+68;/ɣ̞/;aproximante velar;5;5;1;0;10
+69;/ʋ/;aproximante labiodental;5;2;1;0;12
+70;/ɻ/;aproximante retrofleja;5;3;1;0;11
+71;/ɰ/;aproximante velar;5;5;1;0;10

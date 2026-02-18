@@ -1,0 +1,134 @@
+﻿ID;Grafema;IPA;Descripcion;Valor
+1;a;/a/;vocal abierta central;36
+1;á;/a/;vocal abierta central acentuada;36
+1;à;/a/;vocal abierta central grave;36
+1;â;/a/;vocal abierta central circunfleja;36
+2;e;/e/;vocal media-cerrada anterior;34
+2;é;/e/;vocal media-cerrada anterior acentuada;34
+2;ê;/e/;vocal media-cerrada anterior circunfleja;34
+3;è;/ɛ/;vocal media-abierta anterior;34
+3;é;/ɛ/;vocal media-abierta anterior (fr);34
+3;ê;/ɛ/;vocal media-abierta anterior (fr/pt);34
+4;i;/i/;vocal cerrada anterior alta;31
+4;í;/i/;vocal cerrada anterior alta acentuada;31
+4;ï;/i/;vocal cerrada anterior con diéresis;31
+5;o;/o/;vocal media-cerrada posterior;23
+5;ó;/o/;vocal media-cerrada posterior acentuada;23
+5;ô;/o/;vocal media-cerrada posterior circunfleja;23
+5;eau;/o/;vocal media-cerrada posterior (fr);23
+6;ò;/ɔ/;vocal media-abierta posterior;23
+6;ó;/ɔ/;vocal media-abierta posterior (fr);23
+7;u;/u/;vocal cerrada posterior alta;21
+7;ú;/u/;vocal cerrada posterior alta acentuada;21
+7;ü;/u/;vocal cerrada posterior con diéresis;21
+8;a;/ə/;vocal neutra schwa (cat);30
+8;e;/ə/;vocal neutra schwa (cat);30
+9;a;/ɐ/;vocal central abierta (pt/br);36
+10;i;/ɨ/;vocal cerrada central (pt);30
+11;u;/y/;vocal cerrada anterior redondeada (fr);30
+12;eu;/ø/;vocal media-cerrada anterior redondeada (fr);32
+12;œu;/ø/;vocal media-cerrada anterior redondeada (fr);32
+13;œ;/œ/;vocal media-abierta anterior redondeada (fr);32
+13;oe;/œ/;vocal media-abierta anterior redondeada (fr);32
+14;ã;/ã/;vocal nasal /a/ (port/br);37
+14;an;/ã/;vocal nasal /a/ (fr);37
+14;am;/ã/;vocal nasal /a/ (port/br);37
+15;en;/ẽ/;vocal nasal /e/ (fr);35
+15;em;/ẽ/;vocal nasal /e/ (pt/br);35
+16;in;/ĩ/;vocal nasal /i/ (fr);32
+16;im;/ĩ/;vocal nasal /i/ (pt/br);32
+17;õ;/õ/;vocal nasal /o/ (pt/br);24
+17;on;/õ/;vocal nasal /o/ (fr);24
+17;om;/õ/;vocal nasal /o/ (pt/br);24
+18;un;/ũ/;vocal nasal /u/ (fr);22
+18;um;/ũ/;vocal nasal /u/ (pt/br);22
+19;er;/ɜː/;vocal media central (inglés);30
+19;ir;/ɜː/;vocal media central (inglés);30
+19;ur;/ɜː/;vocal media central (inglés);30
+20;o;/ɒ/;vocal abierta posterior (inglés);24
+21;i;/j/;semivocal palatal;28
+21;y;/j/;semivocal palatal;28
+22;u;/w/;semivocal labiovelar;19
+22;w;/w/;semivocal labiovelar;19
+23;in;/j̃/;semivocal palatal nasal;29
+24;um;/w̃/;semivocal labiovelar nasal;20
+30;p;/p/;oclusiva bilabial sorda;21
+30;pp;/p/;oclusiva bilabial sorda;21
+31;b;/b/;oclusiva bilabial sonora;22
+31;bb;/b/;oclusiva bilabial sonora;22
+32;t;/t/;oclusiva dental/alveolar sorda;17
+32;tt;/t/;oclusiva dental/alveolar sorda;17
+33;d;/d/;oclusiva dental/alveolar sonora;18
+33;dd;/d/;oclusiva dental/alveolar sonora;18
+34;c;/k/;oclusiva velar sorda;15
+34;k;/k/;oclusiva velar sorda;15
+34;qu;/k/;oclusiva velar sorda;15
+34;kk;/k/;oclusiva velar sorda;15
+35;g;/g/;oclusiva velar sonora;16
+35;gu;/g/;oclusiva velar sonora;16
+35;gg;/g/;oclusiva velar sonora;16
+36;m;/m/;nasal bilabial;22
+36;mm;/m/;nasal bilabial;22
+37;n;/n/;nasal alveolar;20
+37;nn;/n/;nasal alveolar;20
+38;ñ;/ɲ/;nasal palatal;18
+38;ny;/ɲ/;nasal palatal (cat);18
+38;nh;/ɲ/;nasal palatal (pt);18
+39;ng;/ŋ/;nasal velar;17
+39;nk;/ŋ/;nasal velar;17
+40;f;/f/;fricativa labiodental sorda;17
+40;ff;/f/;fricativa labiodental sorda;17
+40;ph;/f/;fricativa labiodental sorda (ing/fr);17
+41;v;/v/;fricativa labiodental sonora;18
+41;vv;/v/;fricativa labiodental sonora;18
+42;s;/s/;fricativa alveolar sorda;15
+42;ss;/s/;fricativa alveolar sorda;15
+42;c;/s/;fricativa alveolar sorda (antes de e/i);15
+42;ç;/s/;fricativa alveolar sorda (cat/pt/fr);15
+42;x;/s/;fricativa alveolar sorda (cat);15
+43;z;/z/;fricativa alveolar sonora;16
+43;s;/z/;fricativa alveolar sonora (fr entre vocales);16
+43;x;/z/;fricativa alveolar sonora (pt: ex-);16
+44;x;/ʃ/;fricativa palatal sorda (cat);13
+44;sh;/ʃ/;fricativa palatal sorda (ing);13
+44;ch;/ʃ/;fricativa palatal sorda (fr);13
+45;j;/ʒ/;fricativa palatal sonora (fr);14
+45;ge;/ʒ/;fricativa palatal sonora (fr);14
+45;gi;/ʒ/;fricativa palatal sonora (fr);14
+46;c;/θ/;fricativa dental sorda;15
+46;z;/θ/;fricativa dental sorda;15
+47;d͡z;/ð/;fricativa dental sonora;16
+47;dh;/ð/;fricativa dental sonora (inglés);16
+48;j;/x/;fricativa velar sorda (es);12
+48;g;/x/;fricativa velar sorda (antes de e/i);12
+49;h;/h/;fricativa glotal sorda;10
+50;gh;/ɣ/;fricativa velar sonora;13
+51;r;/ʁ/;fricativa uvular sonora (fr);12
+52;rh;/χ/;fricativa uvular sorda (fr);11
+53;β;/β/;fricativa bilabial sonora;19
+54;ɸ;/ɸ/;fricativa bilabial sorda;18
+55;ṣ;/ʂ/;fricativa retrofleja sorda;15
+56;ẓ;/ʐ/;fricativa retrofleja sonora;16
+57;ch;/t͡ʃ/;africada postalveolar sorda;15
+57;tx;/t͡ʃ/;africada postalveolar sorda (eus/cat);15
+57;tch;/t͡ʃ/;africada postalveolar sorda (fr/ing);15
+58;j;/d͡ʒ/;africada postalveolar sonora (ing);16
+58;dg;/d͡ʒ/;africada postalveolar sonora;16
+58;dj;/d͡ʒ/;africada postalveolar sonora;16
+59;r;/ɾ/;vibrante simple;14
+60;rr;/r/;vibrante múltiple;14
+60;r;/r/;vibrante múltiple (inicio de palabra);14
+61;r̃;/ɾ̃/;vibrante simple nasalizada;15
+62;l;/l/;lateral alveolar;12
+62;ll;/l/;lateral alveolar (cat);12
+63;ll;/ʎ/;lateral palatal;11
+63;lh;/ʎ/;lateral palatal (pt);11
+63;l·l;/ʎ/;lateral palatal (cat);11
+64;ł;/ɫ/;lateral velarizada (ing);10
+65;r;/ɹ/;aproximante alveolar inglesa;11
+66;w;/β̞/;aproximante bilabial;13
+67;ð;/ð̞/;aproximante dental;11
+68;ɰ;/ɰ/;aproximante velar;10
+69;ʋ;/ʋ/;aproximante labiodental;12
+70;ɻ;/ɻ/;aproximante retrofleja;11
+71;ɰ;/ɰ/;aproximante velar;10

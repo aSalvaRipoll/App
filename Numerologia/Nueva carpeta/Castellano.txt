@@ -1,0 +1,20 @@
+a, á, e, é, i, í, o, ó, u, ú
+b, v
+c, qu, k
+ch
+d
+f
+g, gu
+h
+j
+l, ll
+m
+n, ñ
+p
+q
+r, rr
+s
+t
+x (solo /ks/ → excluido del diccionario)
+y
+z

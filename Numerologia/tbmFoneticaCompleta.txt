@@ -1,0 +1,61 @@
+idFonema;Fonema;ASCII;EsVocal;ValorPitagórico;ValorFonético;DatosFonéticos
+1;/a/;A;1;6;;vocal abierta central
+2;/ã/;A~;1;7;;vocal nasal francesa (AN/AM/EN/EM)
+3;/?~/;N;1;8;;vocal nasal anterior francesa (IN/IM/UN/UM)
+4;/õ/;O~;1;9;;vocal nasal posterior francesa (ON/OM)
+5;/e/;E;1;4;;vocal cerrada anterior
+6;/?/;E~;1;5;;vocal abierta anterior
+7;/o/;O;1;4;;vocal cerrada posterior
+8;/?/;O~2;1;5;;vocal abierta posterior
+9;/i/;I;1;2;;vocal cerrada anterior alta
+10;/u/;U;1;3;;vocal cerrada posterior alta
+11;/?/;?;1;1;;schwa balear (vocal neutra)
+12;/ai/;AI;1;8;;diptongo inglés (IGH)
+13;/ei/;EI;1;6;;diptongo francés/inglés (EIGH)
+14;/wa/;WA;1;9;;diptongo francés (OI)
+15;/ou/;OU;1;7;;diptongo inglés (OU)
+16;/o/;AU;1;9;;diptongo francés (AU ? /o/)
+17;/ø/;EU;1;5;;vocal francesa media anterior redondeada
+18;/œ/;OE;1;6;;vocal francesa media anterior (œ)
+19;/ui/;UI;1;5;;diptongo portugués
+20;/ia/;IA;1;8;;diptongo creciente
+21;/ie/;IE;1;6;;diptongo creciente
+22;/io/;IO;1;6;;diptongo creciente
+23;/ua/;UA;1;9;;diptongo creciente
+24;/ue/;UE;1;7;;diptongo creciente
+25;/uo/;UO;1;7;;diptongo creciente
+26;/p/;P;0;2;;oclusiva bilabial sorda
+27;/b/;B;0;3;;oclusiva bilabial sonora
+28;/t/;T;0;2;;oclusiva dental/alveolar sorda
+29;/d/;D;0;3;;oclusiva dental/alveolar sonora
+30;/k/;K;0;2;;oclusiva velar sorda
+31;/g/;G;0;3;;oclusiva velar sonora
+32;/f/;F;0;4;;fricativa labiodental sorda
+33;/v/;V;0;5;;fricativa labiodental sonora (inglés, francés)
+34;/s/;S;0;4;;fricativa alveolar sorda
+35;/z/;Z;0;5;;fricativa alveolar sonora (inglés, francés)
+36;/?/;SH;0;6;;fricativa palatal/postalveolar sorda (francés, gallego, inglés)
+37;/?/;J;0;7;;fricativa palatal/postalveolar sonora (francés, portugués)
+38;/h/;H;0;1;;fricativa glotal sorda (inglés)
+39;/m/;M;0;6;;nasal bilabial
+40;/n/;N;0;6;;nasal alveolar
+41;/?/;NY;0;7;;nasal palatal (catalán, gallego, francés)
+42;/?/;NG;0;7;;nasal velar (inglés)
+43;/l/;L;0;5;;lateral alveolar
+44;/?/;LY;0;6;;lateral palatal (catalán, gallego, portugués)
+45;/r/;R;0;4;;vibrante simple
+46;/rr/;RR;0;5;;vibrante múltiple (castellano)
+47;/?/;RH;0;8;;uvular francesa (opcional)
+48;/j/;Y;0;3;;semivocal palatal (inglés, francés)
+49;/w/;W;0;3;;semivocal labiovelar (inglés, francés)
+50;/t?/;CH;0;7;;africada postalveolar sorda (castellano, inglés)
+51;/d?/;DJ;0;8;;africada postalveolar sonora (inglés)
+52;/ts/;TS;0;6;;africada alveolar sorda (euskera)
+53;/dz/;DZ;0;7;;africada alveolar sonora (italiano, opcional)
+54;/?/;TH;0;4;;fricativa interdental sorda (inglés)
+55;/ð/;DH;0;5;;fricativa interdental sonora (inglés)
+56;/kw/;KW;0;8;;grupo consonántico labiovelar (inglés)
+57;/gw/;GW;0;8;;grupo consonántico labiovelar (portugués, francés)
+58;/x/;KH;0;6;;fricativa velar sorda (catalán oriental, alemán)
+59;/?/;GH;0;7;;fricativa velar sonora (gallego, portugués)
+60;/t?/;TCH;0;7;;africada palatal sorda (mallorquín)

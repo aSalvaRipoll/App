@@ -1,0 +1,8 @@
+"ID";"ASCII";"IPA";"Descripcion";"Tipo";"Nasal";"Valor"
+80;"´";"'";"acento primario (tónica)";"prosodico";0;5
+81;"`";"?";"acento secundario";"prosodico";0;3
+82;"0";"0";"marca de sílaba átona";"prosodico";0;0
+83;":";"?";"alargamiento vocálico";"prosodico";0;2
+84;"_";"?";"enlace/ligadura";"prosodico";0;2
+85;"^";"?~";"nasalización prosódica";"prosodico";1;4
+86;"::";"??";"geminación consonántica";"prosodico";0;5

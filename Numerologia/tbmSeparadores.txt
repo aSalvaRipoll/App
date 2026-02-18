@@ -1,0 +1,5 @@
+"ID";"IPA";"Descripcion";"Tipo";"ASCII"
+90;"|";"pausa breve";"estructural";
+91;"?";"pausa larga";"estructural";
+92;"^";"inicio de nombre";"estructural";
+93;"$";"fin de nombre";"estructural";

@@ -1,0 +1,498 @@
+idFonema;IPA;ASCII;Tipo;Subtipo;EsVocal;EsDiptongo;EsHiato;EsConsonante;Lenguas;Descripcion
+1;/i/;I;VOCAL;cerrada-anterior;1;0;0;0;ES,CA,GL,EU,PT,EN,FR;vocal cerrada anterior
+2;/y/;Y;VOCAL;cerrada-anterior-redondeada;1;0;0;0;FR;vocal cerrada anterior redondeada
+3;/ɨ/;I_BAR;VOCAL;cerrada-central;1;0;0;0;UNIV;vocal cerrada central
+4;/ʉ/;U_BAR;VOCAL;cerrada-central-redondeada;1;0;0;0;UNIV;vocal cerrada central redondeada
+5;/ɯ/;M_BAR;VOCAL;cerrada-posterior-no-redondeada;1;0;0;0;UNIV;vocal cerrada posterior no redondeada
+6;/u/;U;VOCAL;cerrada-posterior;1;0;0;0;ES,CA,GL,EU,PT,EN,FR;vocal cerrada posterior
+
+7;/iː/;I_L;VOCAL;cerrada-anterior-larga;1;0;0;0;UNIV;vocal cerrada anterior larga
+8;/yː/;Y_L;VOCAL;cerrada-anterior-redondeada-larga;1;0;0;0;FR;vocal cerrada anterior redondeada larga
+9;/ɨː/;I_BAR_L;VOCAL;cerrada-central-larga;1;0;0;0;UNIV;vocal cerrada central larga
+10;/ʉː/;U_BAR_L;VOCAL;cerrada-central-redondeada-larga;1;0;0;0;UNIV;vocal cerrada central redondeada larga
+11;/ɯː/;M_BAR_L;VOCAL;cerrada-posterior-no-redondeada-larga;1;0;0;0;UNIV;vocal cerrada posterior no redondeada larga
+12;/uː/;U_L;VOCAL;cerrada-posterior-larga;1;0;0;0;EN,UNIV;vocal cerrada posterior larga
+
+13;/e/;E;VOCAL;media-anterior;1;0;0;0;ES,CA,GL,EU,PT,FR;vocal media anterior
+14;/ø/;OE;VOCAL;media-anterior-redondeada;1;0;0;0;FR;vocal media anterior redondeada
+15;/ɛ/;E_AB;VOCAL;media-anterior-abierta;1;0;0;0;FR,CA,GL;vocal media anterior abierta
+
+16;/eː/;E_L;VOCAL;media-anterior-larga;1;0;0;0;UNIV;vocal media anterior larga
+17;/øː/;OE_L;VOCAL;media-anterior-redondeada-larga;1;0;0;0;FR;vocal media anterior redondeada larga
+18;/ɛː/;E_AB_L;VOCAL;media-anterior-abierta-larga;1;0;0;0;UNIV;vocal media anterior abierta larga
+
+19;/ə/;SCHWA;VOCAL;central-media;1;0;0;0;EN,FR,BAL;schwa
+20;/ɘ/;E_BAR;VOCAL;central-media-cerrada;1;0;0;0;UNIV;vocal central media cerrada
+21;/ɜ/;E_INV;VOCAL;central-media-abierta;1;0;0;0;EN;vocal central media abierta
+
+22;/əː/;SCHWA_L;VOCAL;central-media-larga;1;0;0;0;UNIV;schwa larga
+23;/ɘː/;E_BAR_L;VOCAL;central-media-cerrada-larga;1;0;0;0;UNIV;vocal central media cerrada larga
+24;/ɜː/;E_INV_L;VOCAL;central-media-abierta-larga;1;0;0;0;EN;vocal central media abierta larga
+
+25;/o/;O;VOCAL;media-posterior;1;0;0;0;ES,CA,GL,EU,PT,FR;vocal media posterior
+26;/ɔ/;O_AB;VOCAL;media-posterior-abierta;1;0;0;0;CA,GL,FR;vocal media posterior abierta
+27;/ʌ/;V_INVERT;VOCAL;media-posterior-central;1;0;0;0;EN;vocal posterior media central
+28;/ɤ/;GAMMA;VOCAL;media-posterior-no-redondeada;1;0;0;0;UNIV;vocal media posterior no redondeada
+
+29;/oː/;O_L;VOCAL;media-posterior-larga;1;0;0;0;UNIV;vocal media posterior larga
+30;/ɔː/;O_AB_L;VOCAL;media-posterior-abierta-larga;1;0;0;0;UNIV;vocal media posterior abierta larga
+31;/ʌː/;V_INVERT_L;VOCAL;media-posterior-central-larga;1;0;0;0;UNIV;vocal posterior media central larga
+32;/ɤː/;GAMMA_L;VOCAL;media-posterior-no-redondeada-larga;1;0;0;0;UNIV;vocal media posterior no redondeada larga
+
+33;/a/;A;VOCAL;abierta-central;1;0;0;0;ES,CA,GL,EU,PT,FR;vocal abierta central
+34;/æ/;AE;VOCAL;abierta-anterior;1;0;0;0;EN;vocal abierta anterior
+35;/ɐ/;A_BAR;VOCAL;abierta-central-relajada;1;0;0;0;UNIV;vocal abierta central relajada
+
+36;/aː/;A_L;VOCAL;abierta-central-larga;1;0;0;0;UNIV;vocal abierta central larga
+37;/æː/;AE_L;VOCAL;abierta-anterior-larga;1;0;0;0;UNIV;vocal abierta anterior larga
+38;/ɐː/;A_BAR_L;VOCAL;abierta-central-relajada-larga;1;0;0;0;UNIV;vocal abierta central relajada larga
+
+39;/ɑ/;A_POST;VOCAL;abierta-posterior;1;0;0;0;EN,FR;vocal abierta posterior
+40;/ɒ/;O_INV;VOCAL;abierta-posterior-redondeada;1;0;0;0;EN;vocal abierta posterior redondeada
+
+41;/ɑː/;A_POST_L;VOCAL;abierta-posterior-larga;1;0;0;0;EN;vocal abierta posterior larga
+42;/ɒː/;O_INV_L;VOCAL;abierta-posterior-redondeada-larga;1;0;0;0;UNIV;vocal abierta posterior redondeada larga
+
+43;/ã/;A_N;VOCAL;nasal;1;0;0;0;FR,PT;vocal nasal A
+44;/ẽ/;E_N;VOCAL;nasal;1;0;0;0;FR,PT;vocal nasal E
+45;/ĩ/;I_N;VOCAL;nasal;1;0;0;0;PT;vocal nasal I
+46;/õ/;O_N;VOCAL;nasal;1;0;0;0;FR,PT;vocal nasal O
+47;/ũ/;U_N;VOCAL;nasal;1;0;0;0;PT;vocal nasal U
+48;/œ̃/;OE_N;VOCAL;nasal;1;0;0;0;FR;vocal nasal OE
+49;/ɑ̃/;A_POST_N;VOCAL;nasal;1;0;0;0;FR;vocal nasal A posterior
+
+
+
+60;/ja/;J_A;DIPTONGO;creciente-palatal;1;1;0;0;ES,CA,GL,PT,EN;diptongo creciente con semivocal palatal
+61;/jæ/;J_AE;DIPTONGO;creciente-palatal;1;1;0;0;EN;diptongo creciente palatal
+62;/jɑ/;J_A_POST;DIPTONGO;creciente-palatal;1;1;0;0;EN;diptongo creciente palatal
+63;/jɒ/;J_O_INV;DIPTONGO;creciente-palatal;1;1;0;0;EN;diptongo creciente palatal
+64;/je/;J_E;DIPTONGO;creciente-palatal;1;1;0;0;ES,CA,GL,PT,FR;diptongo creciente palatal
+65;/jø/;J_OE;DIPTONGO;creciente-palatal;1;1;0;0;FR;diptongo creciente palatal
+66;/jɛ/;J_E_AB;DIPTONGO;creciente-palatal;1;1;0;0;FR,CA;diptongo creciente palatal
+67;/jə/;J_SCHWA;DIPTONGO;creciente-palatal;1;1;0;0;EN;diptongo creciente palatal
+68;/jɜ/;J_E_INV;DIPTONGO;creciente-palatal;1;1;0;0;EN;diptongo creciente palatal
+69;/ji/;J_I;DIPTONGO;creciente-palatal;1;1;0;0;UNIV;diptongo creciente palatal
+70;/jy/;J_Y;DIPTONGO;creciente-palatal;1;1;0;0;FR;diptongo creciente palatal
+71;/jɨ/;J_I_BAR;DIPTONGO;creciente-palatal;1;1;0;0;UNIV;diptongo creciente palatal
+72;/jʉ/;J_U_BAR;DIPTONGO;creciente-palatal;1;1;0;0;UNIV;diptongo creciente palatal
+73;/ju/;J_U;DIPTONGO;creciente-palatal;1;1;0;0;EN,PT;diptongo creciente palatal
+
+74;/wa/;W_A;DIPTONGO;creciente-labiovelar;1;1;0;0;ES,CA,GL,PT,EN;diptongo creciente labiovelar
+75;/wæ/;W_AE;DIPTONGO;creciente-labiovelar;1;1;0;0;EN;diptongo creciente labiovelar
+76;/wɑ/;W_A_POST;DIPTONGO;creciente-labiovelar;1;1;0;0;EN;diptongo creciente labiovelar
+77;/wɒ/;W_O_INV;DIPTONGO;creciente-labiovelar;1;1;0;0;EN;diptongo creciente labiovelar
+78;/we/;W_E;DIPTONGO;creciente-labiovelar;1;1;0;0;ES,CA,GL,PT,EN;diptongo creciente labiovelar
+79;/wø/;W_OE;DIPTONGO;creciente-labiovelar;1;1;0;0;FR;diptongo creciente labiovelar
+80;/wɛ/;W_E_AB;DIPTONGO;creciente-labiovelar;1;1;0;0;FR;diptongo creciente labiovelar
+81;/wə/;W_SCHWA;DIPTONGO;creciente-labiovelar;1;1;0;0;EN;diptongo creciente labiovelar
+82;/wɜ/;W_E_INV;DIPTONGO;creciente-labiovelar;1;1;0;0;EN;diptongo creciente labiovelar
+83;/wi/;W_I;DIPTONGO;creciente-labiovelar;1;1;0;0;EN;diptongo creciente labiovelar
+84;/wy/;W_Y;DIPTONGO;creciente-labiovelar;1;1;0;0;FR;diptongo creciente labiovelar
+85;/wɨ/;W_I_BAR;DIPTONGO;creciente-labiovelar;1;1;0;0;UNIV;diptongo creciente labiovelar
+86;/wʉ/;W_U_BAR;DIPTONGO;creciente-labiovelar;1;1;0;0;UNIV;diptongo creciente labiovelar
+87;/wu/;W_U;DIPTONGO;creciente-labiovelar;1;1;0;0;UNIV;diptongo creciente labiovelar
+
+88;/ɥa/;H_A;DIPTONGO;creciente-labial-palatal;1;1;0;0;FR;diptongo creciente labial-palatal
+89;/ɥe/;H_E;DIPTONGO;creciente-labial-palatal;1;1;0;0;FR;diptongo creciente labial-palatal
+90;/ɥi/;H_I;DIPTONGO;creciente-labial-palatal;1;1;0;0;FR;diptongo creciente labial-palatal
+91;/ɥo/;H_O;DIPTONGO;creciente-labial-palatal;1;1;0;0;FR;diptongo creciente labial-palatal
+92;/ɥø/;H_OE;DIPTONGO;creciente-labial-palatal;1;1;0;0;FR;diptongo creciente labial-palatal
+93;/ɥœ/;H_OE_AB;DIPTONGO;creciente-labial-palatal;1;1;0;0;FR;diptongo creciente labial-palatal
+
+94;/jã/;J_A_N;DIPTONGO;nasal-palatal;1;1;0;0;PT,FR;diptongo nasal palatal
+95;/jẽ/;J_E_N;DIPTONGO;nasal-palatal;1;1;0;0;PT,FR;diptongo nasal palatal
+96;/jõ/;J_O_N;DIPTONGO;nasal-palatal;1;1;0;0;PT,FR;diptongo nasal palatal
+97;/jũ/;J_U_N;DIPTONGO;nasal-palatal;1;1;0;0;PT;diptongo nasal palatal
+
+98;/wã/;W_A_N;DIPTONGO;nasal-labiovelar;1;1;0;0;PT;diptongo nasal labiovelar
+99;/wẽ/;W_E_N;DIPTONGO;nasal-labiovelar;1;1;0;0;PT;diptongo nasal labiovelar
+100;/wõ/;W_O_N;DIPTONGO;nasal-labiovelar;1;1;0;0;PT;diptongo nasal labiovelar
+101;/wũ/;W_U_N;DIPTONGO;nasal-labiovelar;1;1;0;0;PT;diptongo nasal labiovelar
+
+102;/ɥã/;H_A_N;DIPTONGO;nasal-labial-palatal;1;1;0;0;FR;diptongo nasal labial-palatal
+103;/ɥẽ/;H_E_N;DIPTONGO;nasal-labial-palatal;1;1;0;0;FR;diptongo nasal labial-palatal
+104;/ɥœ̃/;H_OE_N;DIPTONGO;nasal-labial-palatal;1;1;0;0;FR;diptongo nasal labial-palatal
+
+105;/aj/;A_J;DIPTONGO;decreciente-palatal;1;1;0;0;ES,CA,GL,PT,EN;diptongo decreciente palatal
+106;/ej/;E_J;DIPTONGO;decreciente-palatal;1;1;0;0;ES,CA,GL,PT,EN;diptongo decreciente palatal
+107;/oj/;O_J;DIPTONGO;decreciente-palatal;1;1;0;0;ES,CA,GL,PT,EN;diptongo decreciente palatal
+108;/uj/;U_J;DIPTONGO;decreciente-palatal;1;1;0;0;EN;diptongo decreciente palatal
+
+109;/aw/;A_W;DIPTONGO;decreciente-labiovelar;1;1;0;0;ES,CA,GL,PT,EN;diptongo decreciente labiovelar
+110;/ew/;E_W;DIPTONGO;decreciente-labiovelar;1;1;0;0;EN;diptongo decreciente labiovelar
+111;/ow/;O_W;DIPTONGO;decreciente-labiovelar;1;1;0;0;EN;diptongo decreciente labiovelar
+112;/uw/;U_W;DIPTONGO;decreciente-labiovelar;1;1;0;0;UNIV;diptongo decreciente labiovelar
+
+113;/aɥ/;A_H;DIPTONGO;decreciente-labial-palatal;1;1;0;0;FR;diptongo decreciente labial-palatal
+114;/eɥ/;E_H;DIPTONGO;decreciente-labial-palatal;1;1;0;0;FR;diptongo decreciente labial-palatal
+115;/oɥ/;O_H;DIPTONGO;decreciente-labial-palatal;1;1;0;0;FR;diptongo decreciente labial-palatal
+
+116;/ãj/;A_N_J;DIPTONGO;nasal-decreciente-palatal;1;1;0;0;PT;diptongo nasal decreciente palatal
+117;/õj/;O_N_J;DIPTONGO;nasal-decreciente-palatal;1;1;0;0;PT;diptongo nasal decreciente palatal
+118;/ãw/;A_N_W;DIPTONGO;nasal-decreciente-labiovelar;1;1;0;0;PT;diptongo nasal decreciente labiovelar
+119;/õw/;O_N_W;DIPTONGO;nasal-decreciente-labiovelar;1;1;0;0;PT;diptongo nasal decreciente labiovelar
+
+130;/jai/;J_A_J;TRIPTONGO;palatal-palatal;1;0;0;0;ES;triptongo con semivocal palatal inicial y final
+131;/joi/;J_O_J;TRIPTONGO;palatal-palatal;1;0;0;0;UNIV;triptongo palatal-palatal
+132;/jui/;J_U_J;TRIPTONGO;palatal-palatal;1;0;0;0;UNIV;triptongo palatal-palatal
+133;/jaw/;J_A_W;TRIPTONGO;palatal-labiovelar;1;0;0;0;UNIV;triptongo palatal-labiovelar
+134;/jew/;J_E_W;TRIPTONGO;palatal-labiovelar;1;0;0;0;UNIV;triptongo palatal-labiovelar
+135;/jow/;J_O_W;TRIPTONGO;palatal-labiovelar;1;0;0;0;UNIV;triptongo palatal-labiovelar
+136;/wai/;W_A_J;TRIPTONGO;labiovelar-palatal;1;0;0;0;ES,PT;triptongo labiovelar-palatal
+137;/wei/;W_E_J;TRIPTONGO;labiovelar-palatal;1;0;0;0;UNIV;triptongo labiovelar-palatal
+138;/woi/;W_O_J;TRIPTONGO;labiovelar-palatal;1;0;0;0;UNIV;triptongo labiovelar-palatal
+139;/waw/;W_A_W;TRIPTONGO;labiovelar-labiovelar;1;0;0;0;UNIV;triptongo labiovelar-labiovelar
+140;/wew/;W_E_W;TRIPTONGO;labiovelar-labiovelar;1;0;0;0;UNIV;triptongo labiovelar-labiovelar
+141;/wow/;W_O_W;TRIPTONGO;labiovelar-labiovelar;1;0;0;0;UNIV;triptongo labiovelar-labiovelar
+142;/ɥai/;H_A_J;TRIPTONGO;labial-palatal-palatal;1;0;0;0;FR;triptongo labial-palatal-palatal
+143;/ɥei/;H_E_J;TRIPTONGO;labial-palatal-palatal;1;0;0;0;FR;triptongo labial-palatal-palatal
+144;/ɥoi/;H_O_J;TRIPTONGO;labial-palatal-palatal;1;0;0;0;FR;triptongo labial-palatal-palatal
+145;/ɥaw/;H_A_W;TRIPTONGO;labial-palatal-labiovelar;1;0;0;0;FR;triptongo labial-palatal-labiovelar
+146;/ɥew/;H_E_W;TRIPTONGO;labial-palatal-labiovelar;1;0;0;0;FR;triptongo labial-palatal-labiovelar
+147;/ɥow/;H_O_W;TRIPTONGO;labial-palatal-labiovelar;1;0;0;0;FR;triptongo labial-palatal-labiovelar
+148;/jãj/;J_A_N_J;TRIPTONGO;nasal-palatal-palatal;1;0;0;0;PT;triptongo nasal palatal-palatal
+149;/jẽj/;J_E_N_J;TRIPTONGO;nasal-palatal-palatal;1;0;0;0;PT;triptongo nasal palatal-palatal
+150;/jõj/;J_O_N_J;TRIPTONGO;nasal-palatal-palatal;1;0;0;0;PT;triptongo nasal palatal-palatal
+151;/wãj/;W_A_N_J;TRIPTONGO;nasal-labiovelar-palatal;1;0;0;0;PT;triptongo nasal labiovelar-palatal
+152;/wẽj/;W_E_N_J;TRIPTONGO;nasal-labiovelar-palatal;1;0;0;0;PT;triptongo nasal labiovelar-palatal
+153;/wõj/;W_O_N_J;TRIPTONGO;nasal-labiovelar-palatal;1;0;0;0;PT;triptongo nasal labiovelar-palatal
+154;/jãw/;J_A_N_W;TRIPTONGO;nasal-palatal-labiovelar;1;0;0;0;PT;triptongo nasal palatal-labiovelar
+155;/jẽw/;J_E_N_W;TRIPTONGO;nasal-palatal-labiovelar;1;0;0;0;PT;triptongo nasal palatal-labiovelar
+156;/jõw/;J_O_N_W;TRIPTONGO;nasal-palatal-labiovelar;1;0;0;0;PT;triptongo nasal palatal-labiovelar
+157;/ɥãj/;H_A_N_J;TRIPTONGO;nasal-labial-palatal-palatal;1;0;0;0;FR;triptongo nasal labial-palatal-palatal
+158;/ɥẽj/;H_E_N_J;TRIPTONGO;nasal-labial-palatal-palatal;1;0;0;0;FR;triptongo nasal labial-palatal-palatal
+159;/ɥõj/;H_O_N_J;TRIPTONGO;nasal-labial-palatal-palatal;1;0;0;0;FR;triptongo nasal labial-palatal-palatal
+160;/ɥãw/;H_A_N_W;TRIPTONGO;nasal-labial-palatal-labiovelar;1;0;0;0;FR;triptongo nasal labial-palatal-labiovelar
+161;/ɥẽw/;H_E_N_W;TRIPTONGO;nasal-labial-palatal-labiovelar;1;0;0;0;FR;triptongo nasal labial-palatal-labiovelar
+162;/ɥõw/;H_O_N_W;TRIPTONGO;nasal-labial-palatal-labiovelar;1;0;0;0;FR;triptongo nasal labial-palatal-labiovelar
+163;/jai̯/;J_AI;TRIPTONGO;universal-razonable;1;0;0;0;UNIV;triptongo universal razonable
+164;/joi̯/;J_OI;TRIPTONGO;universal-razonable;1;0;0;0;UNIV;triptongo universal razonable
+165;/wai̯/;W_AI;TRIPTONGO;universal-razonable;1;0;0;0;UNIV;triptongo universal razonable
+166;/woi̯/;W_OI;TRIPTONGO;universal-razonable;1;0;0;0;UNIV;triptongo universal razonable
+167;/ɥai̯/;H_AI;TRIPTONGO;universal-razonable;1;0;0;0;UNIV;triptongo universal razonable
+168;/ɥoi̯/;H_OI;TRIPTONGO;universal-razonable;1;0;0;0;UNIV;triptongo universal razonable
+169;/ɥui̯/;H_UI;TRIPTONGO;universal-razonable;1;0;0;0;UNIV;triptongo universal razonable
+
+180;/p/;P;CONSONANTE;oclusiva-bilabial-sorda;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;oclusiva bilabial sorda
+181;/b/;B;CONSONANTE;oclusiva-bilabial-sonora;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;oclusiva bilabial sonora
+182;/β/;B_FRIC;CONSONANTE;fricativa-bilabial-sonora;0;0;0;1;ES;fricativa bilabial sonora
+183;/m/;M;CONSONANTE;nasal-bilabial;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;nasal bilabial
+
+184;/t/;T;CONSONANTE;oclusiva-dental-sorda;0;0;0;1;ES,CA,GL,EU,PT,FR;oclusiva dental sorda
+185;/d/;D;CONSONANTE;oclusiva-dental-sonora;0;0;0;1;ES,CA,GL,EU,PT,FR;oclusiva dental sonora
+186;/θ/;TH;CONSONANTE;fricativa-dental-sorda;0;0;0;1;ES;fricativa dental sorda
+187;/ð/;DH;CONSONANTE;fricativa-dental-sonora;0;0;0;1;EN;fricativa dental sonora
+188;/n/;N;CONSONANTE;nasal-dental;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;nasal dental
+
+189;/c/;C;CONSONANTE;oclusiva-palatal-sorda;0;0;0;1;UNIV;oclusiva palatal sorda
+190;/ɟ/;J_OC;CONSONANTE;oclusiva-palatal-sonora;0;0;0;1;UNIV;oclusiva palatal sonora
+191;/ɲ/;NY;CONSONANTE;nasal-palatal;0;0;0;1;ES,CA,GL,PT,FR;nasal palatal
+192;/ʎ/;LL;CONSONANTE;lateral-palatal;0;0;0;1;CA,GL,IT;lateral palatal
+
+193;/k/;K;CONSONANTE;oclusiva-velar-sorda;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;oclusiva velar sorda
+194;/g/;G;CONSONANTE;oclusiva-velar-sonora;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;oclusiva velar sonora
+195;/ɣ/;G_FRIC;CONSONANTE;fricativa-velar-sonora;0;0;0;1;ES;fricativa velar sonora
+196;/ŋ/;NG;CONSONANTE;nasal-velar;0;0;0;1;EN,PT;nasal velar
+
+197;/q/;Q;CONSONANTE;oclusiva-uvular-sorda;0;0;0;1;UNIV;oclusiva uvular sorda
+198;/ɢ/;G_UV;CONSONANTE;oclusiva-uvular-sonora;0;0;0;1;UNIV;oclusiva uvular sonora
+199;/ʁ/;R_UV;CONSONANTE;fricativa-uvular-sonora;0;0;0;1;FR;fricativa uvular sonora
+
+200;/f/;F;CONSONANTE;fricativa-labiodental-sorda;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;fricativa labiodental sorda
+201;/v/;V;CONSONANTE;fricativa-labiodental-sonora;0;0;0;1;EN,FR,PT;fricativa labiodental sonora
+
+202;/s/;S;CONSONANTE;fricativa-alveolar-sorda;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;fricativa alveolar sorda
+203;/z/;Z;CONSONANTE;fricativa-alveolar-sonora;0;0;0;1;EN,FR,PT;fricativa alveolar sonora
+204;/ʃ/;SH;CONSONANTE;fricativa-postalveolar-sorda;0;0;0;1;EN,FR,PT;fricativa postalveolar sorda
+205;/ʒ/;ZH;CONSONANTE;fricativa-postalveolar-sonora;0;0;0;1;FR,PT;fricativa postalveolar sonora
+206;/ɕ/;C_SH;CONSONANTE;fricativa-alveolopalatal-sorda;0;0;0;1;UNIV;fricativa alveolopalatal sorda
+207;/ʑ/;Z_SH;CONSONANTE;fricativa-alveolopalatal-sonora;0;0;0;1;UNIV;fricativa alveolopalatal sonora
+
+208;/h/;H;CONSONANTE;fricativa-glotal-sorda;0;0;0;1;EN,PT;fricativa glotal sorda
+
+209;/t͡ʃ/;CH;CONSONANTE;africada-postalveolar-sorda;0;0;0;1;ES,CA,GL,PT,EN;africada postalveolar sorda
+210;/d͡ʒ/;DJ;CONSONANTE;africada-postalveolar-sonora;0;0;0;1;EN,PT;africada postalveolar sonora
+211;/t͡ɕ/;C_TSH;CONSONANTE;africada-alveolopalatal-sorda;0;0;0;1;UNIV;africada alveolopalatal sorda
+212;/d͡ʑ/;D_TSH;CONSONANTE;africada-alveolopalatal-sonora;0;0;0;1;UNIV;africada alveolopalatal sonora
+
+213;/l/;L;CONSONANTE;lateral-alveolar;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;lateral alveolar
+214;/ɾ/;R_SIMPLE;CONSONANTE;vibrante-simple;0;0;0;1;ES,CA,GL,PT;vibrante simple
+215;/r/;R;CONSONANTE;vibrante-multiple;0;0;0;1;ES,CA,GL,PT;vibrante múltiple
+
+216;/j/;J;CONSONANTE;aproximante-palatal;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;aproximante palatal
+217;/w/;W;CONSONANTE;aproximante-labiovelar;0;0;0;1;ES,CA,GL,EU,PT,EN,FR;aproximante labiovelar
+218;/ɥ/;H_SEMI;CONSONANTE;aproximante-labial-palatal;0;0;0;1;FR;aproximante labial-palatal
+
+219;/ʋ/;V_AP;CONSONANTE;aproximante-labiodental;0;0;0;1;UNIV;aproximante labiodental
+220;/ɹ/;R_AP;CONSONANTE;aproximante-alveolar;0;0;0;1;EN;aproximante alveolar
+221;/ɻ/;R_RETRO;CONSONANTE;aproximante-retroflexa;0;0;0;1;UNIV;aproximante retrofleja
+222;/j̊/;J_S;CONSONANTE;aproximante-palatal-sorda;0;0;0;1;UNIV;aproximante palatal sorda
+223;/ẘ/;W_S;CONSONANTE;aproximante-labiovelar-sorda;0;0;0;1;UNIV;aproximante labiovelar sorda
+
+224;/ɫ/;L_VEL;CONSONANTE;lateral-velarizada;0;0;0;1;EN,PT;lateral velarizada
+225;/ʟ/;L_UV;CONSONANTE;lateral-uvular;0;0;0;1;UNIV;lateral uvular
+
+226;/ɱ/;M_LABD;CONSONANTE;nasal-labiodental;0;0;0;1;UNIV;nasal labiodental
+227;/ɳ/;N_RETRO;CONSONANTE;nasal-retroflexa;0;0;0;1;UNIV;nasal retrofleja
+228;/ɲ̊/;NY_S;CONSONANTE;nasal-palatal-sorda;0;0;0;1;UNIV;nasal palatal sorda
+
+229;/ʔ/;GLOT_STOP;CONSONANTE;oclusiva-glotal;0;0;0;1;EN,AR;oclusiva glotal
+230;/ʕ/;PHAR_SON;CONSONANTE;fricativa-faringea-sonora;0;0;0;1;UNIV;fricativa faríngea sonora
+231;/ħ/;PHAR_S;CONSONANTE;fricativa-faringea-sorda;0;0;0;1;UNIV;fricativa faríngea sorda
+
+232;/ɬ/;L_FRIC;CONSONANTE;fricativa-lateral-sorda;0;0;0;1;UNIV;fricativa lateral sorda
+233;/ɮ/;L_FRIC_S;CONSONANTE;fricativa-lateral-sonora;0;0;0;1;UNIV;fricativa lateral sonora
+
+234;/ʘ/;BILAB_CLICK;CONSONANTE;clic-bilabial;0;0;0;1;UNIV;clic bilabial
+235;/ǀ/;DENT_CLICK;CONSONANTE;clic-dental;0;0;0;1;UNIV;clic dental
+236;/ǃ/;ALV_CLICK;CONSONANTE;clic-alveolar;0;0;0;1;UNIV;clic alveolar
+237;/ǂ/;PAL_CLICK;CONSONANTE;clic-palatal;0;0;0;1;UNIV;clic palatal
+238;/ǁ/;LAT_CLICK;CONSONANTE;clic-lateral;0;0;0;1;UNIV;clic lateral
+239;/‼/;CLICK_MARK;CONSONANTE;clic-variante;0;0;0;1;UNIV;clic variante
+
+250;ˈ;STRESS1;PROSODICO;acento-primario;0;0;0;0;UNIV;acento primario
+251;ˌ;STRESS2;PROSODICO;acento-secundario;0;0;0;0;UNIV;acento secundario
+252;ː;LONG;PROSODICO;alargamiento;0;0;0;0;UNIV;marca de alargamiento
+253;ˑ;HALFLONG;PROSODICO;semialargamiento;0;0;0;0;UNIV;marca de semialargamiento
+254;̆;BREVE;PROSODICO;brevedad;0;0;0;0;UNIV;marca de brevedad
+
+255;.|;PAUSE1;PROSODICO;pausa-menor;0;0;0;0;UNIV;pausa menor
+256;‖;PAUSE2;PROSODICO;pausa-mayor;0;0;0;0;UNIV;pausa mayor
+257;.;END;PROSODICO;fin-enunciado;0;0;0;0;UNIV;fin de enunciado
+258;,;CONT;PROSODICO;continuacion;0;0;0;0;UNIV;continuación prosódica
+
+259;̃;NASAL;SUPRASEG;nasalizacion;0;0;0;0;UNIV;marca de nasalización
+260;̥;DEVOIC;SUPRASEG;ensordecimiento;0;0;0;0;UNIV;marca de ensordecimiento
+261;̬;VOICE;SUPRASEG;sonorizacion;0;0;0;0;UNIV;marca de sonorización
+262;̹;LAB;SUPRASEG;labializacion;0;0;0;0;UNIV;marca de labialización
+263;̜;DELAB;SUPRASEG;deslabializacion;0;0;0;0;UNIV;marca de deslabialización
+264;̟;ADV;SUPRASEG;avance;0;0;0;0;UNIV;marca de avance articulatorio
+265;̠;RET;SUPRASEG;retroceso;0;0;0;0;UNIV;marca de retroceso articulatorio
+266;̝;RAISE;SUPRASEG;elevacion;0;0;0;0;UNIV;marca de elevación
+267;̞;LOWER;SUPRASEG;descenso;0;0;0;0;UNIV;marca de descenso
+268;̘;ADV_TONG;SUPRASEG;lengua-avanzada;0;0;0;0;UNIV;marca de lengua adelantada
+269;̙;RET_TONG;SUPRASEG;lengua-retraida;0;0;0;0;UNIV;marca de lengua retraída
+
+270;̤;BREATHY;SUPRASEG;voz-soplada;0;0;0;0;UNIV;marca de voz soplada
+271;̰;CREAKY;SUPRASEG;voz-creaky;0;0;0;0;UNIV;marca de voz creaky
+272;̪;DENT;SUPRASEG;dentalizacion;0;0;0;0;UNIV;marca de dentalización
+273;̺;APICAL;SUPRASEG;apical;0;0;0;0;UNIV;marca apical
+274;̻;LAMINAL;SUPRASEG;laminal;0;0;0;0;UNIV;marca laminal
+
+275;͡;TIE;SUPRASEG;coarticulacion;0;0;0;0;UNIV;marca de coarticulación
+276;‿;LIAISON;SUPRASEG;ligadura;0;0;0;0;UNIV;marca de ligadura
+277;+;JUNCT;SUPRASEG;juntura;0;0;0;0;UNIV;juntura prosódica
+
+278;̚;NO_RELEASE;SUPRASEG;oclusiva-sin-liberacion;0;0;0;0;UNIV;marca de oclusiva sin liberación
+279;̟̥;ADV_DEVOIC;SUPRASEG;avance-ensordecido;0;0;0;0;UNIV;avance con ensordecimiento
+280;̠̬;RET_VOIC;SUPRASEG;retroceso-sonorizado;0;0;0;0;UNIV;retroceso con sonorización
+
+281;̩;SYLL;SUPRASEG;silabicidad;0;0;0;0;UNIV;marca de consonante silábica
+282;̯;NON_SYLL;SUPRASEG;no-silabico;0;0;0;0;UNIV;marca de elemento no silábico
+
+283;̥̚;NO_REL_DEVOIC;SUPRASEG;sin-liberacion-ensordecido;0;0;0;0;UNIV;oclusiva sin liberación y ensordecida
+284;̬̚;NO_REL_VOIC;SUPRASEG;sin-liberacion-sonorizado;0;0;0;0;UNIV;oclusiva sin liberación y sonorizada
+
+285;̤̞;BREATHY_LOW;SUPRASEG;voz-soplada-baja;0;0;0;0;UNIV;voz soplada con descenso
+286;̰̝;CREAKY_HIGH;SUPRASEG;voz-creaky-alta;0;0;0;0;UNIV;voz creaky con elevación
+
+287;̟̩;ADV_SYLL;SUPRASEG;avance-silabico;0;0;0;0;UNIV;avance articulatorio silábico
+288;̠̩;RET_SYLL;SUPRASEG;retroceso-silabico;0;0;0;0;UNIV;retroceso articulatorio silábico
+289;̞̩;LOW_SYLL;SUPRASEG;descenso-silabico;0;0;0;0;UNIV;descenso articulatorio silábico
+
+300;/ʈ/;T_RETRO;CONSONANTE;oclusiva-retroflexa-sorda;0;0;0;1;UNIV;oclusiva retroflexa sorda
+301;/ɖ/;D_RETRO;CONSONANTE;oclusiva-retroflexa-sonora;0;0;0;1;UNIV;oclusiva retroflexa sonora
+302;/ɳ/;N_RETRO;CONSONANTE;nasal-retroflexa;0;0;0;1;UNIV;nasal retroflexa
+303;/ɽ/;R_RETRO_TAP;CONSONANTE;vibrante-retroflexa;0;0;0;1;UNIV;vibrante retroflexa
+304;/ɭ/;L_RETRO;CONSONANTE;lateral-retroflexa;0;0;0;1;UNIV;lateral retroflexa
+
+305;/ħ/;PHAR_S;CONSONANTE;fricativa-faringea-sorda;0;0;0;1;AR;fricativa faríngea sorda
+306;/ʕ/;PHAR_V;CONSONANTE;fricativa-faringea-sonora;0;0;0;1;AR;fricativa faríngea sonora
+307;/ʜ/;EPIGLOT_S;CONSONANTE;fricativa-epiglotal-sorda;0;0;0;1;UNIV;fricativa epiglotal sorda
+308;/ʢ/;EPIGLOT_V;CONSONANTE;fricativa-epiglotal-sonora;0;0;0;1;UNIV;fricativa epiglotal sonora
+309;/ʡ/;EPIGLOT_STOP;CONSONANTE;oclusiva-epiglotal;0;0;0;1;UNIV;oclusiva epiglotal
+
+310;/q/;Q;CONSONANTE;oclusiva-uvular-sorda;0;0;0;1;UNIV;oclusiva uvular sorda
+311;/ɢ/;G_UV;CONSONANTE;oclusiva-uvular-sonora;0;0;0;1;UNIV;oclusiva uvular sonora
+312;/χ/;CHI;CONSONANTE;fricativa-uvular-sorda;0;0;0;1;UNIV;fricativa uvular sorda
+313;/ʀ/;R_UV_TRILL;CONSONANTE;vibrante-uvular;0;0;0;1;UNIV;vibrante uvular
+
+314;/ɓ/;B_IMPL;CONSONANTE;implosiva-bilabial;0;0;0;1;UNIV;implosiva bilabial
+315;/ɗ/;D_IMPL;CONSONANTE;implosiva-dental;0;0;0;1;UNIV;implosiva dental
+316;/ʄ/;J_IMPL;CONSONANTE;implosiva-palatal;0;0;0;1;UNIV;implosiva palatal
+317;/ɠ/;G_IMPL;CONSONANTE;implosiva-velar;0;0;0;1;UNIV;implosiva velar
+318;/ʛ/;G_UV_IMPL;CONSONANTE;implosiva-uvular;0;0;0;1;UNIV;implosiva uvular
+
+319;/pʼ/;P_EJ;CONSONANTE;ejectiva-bilabial;0;0;0;1;UNIV;ejectiva bilabial
+320;/tʼ/;T_EJ;CONSONANTE;ejectiva-dental;0;0;0;1;UNIV;ejectiva dental
+321;/kʼ/;K_EJ;CONSONANTE;ejectiva-velar;0;0;0;1;UNIV;ejectiva velar
+322;/qʼ/;Q_EJ;CONSONANTE;ejectiva-uvular;0;0;0;1;UNIV;ejectiva uvular
+323;/tsʼ/;TS_EJ;CONSONANTE;africada-ejectiva;0;0;0;1;UNIV;africada ejectiva
+324;/tʃʼ/;TCH_EJ;CONSONANTE;africada-postalveolar-ejectiva;0;0;0;1;UNIV;africada postalveolar ejectiva
+
+325;/k͡p/;KP;CONSONANTE;oclusiva-coarticulada-labial-velar;0;0;0;1;UNIV;oclusiva labial-velar coarticulada
+326;/g͡b/;GB;CONSONANTE;oclusiva-coarticulada-labial-velar-sonora;0;0;0;1;UNIV;oclusiva labial-velar sonora
+327;/ŋ͡m/;NGM;CONSONANTE;nasal-coarticulada;0;0;0;1;UNIV;nasal coarticulada
+
+328;/tʲ/;T_PAL;CONSONANTE;palatalizada;0;0;0;1;UNIV;consonante palatalizada
+329;/dʲ/;D_PAL;CONSONANTE;palatalizada;0;0;0;1;UNIV;consonante palatalizada
+330;/kʲ/;K_PAL;CONSONANTE;palatalizada;0;0;0;1;UNIV;consonante palatalizada
+331;/gʲ/;G_PAL;CONSONANTE;palatalizada;0;0;0;1;UNIV;consonante palatalizada
+
+332;/tʷ/;T_LAB;CONSONANTE;labializada;0;0;0;1;UNIV;consonante labializada
+333;/kʷ/;K_LAB;CONSONANTE;labializada;0;0;0;1;UNIV;consonante labializada
+334;/gʷ/;G_LAB;CONSONANTE;labializada;0;0;0;1;UNIV;consonante labializada
+
+335;/ʘ/;CLICK_BILAB;CONSONANTE;clic-bilabial;0;0;0;1;UNIV;clic bilabial
+336;/ǀ/;CLICK_DENT;CONSONANTE;clic-dental;0;0;0;1;UNIV;clic dental
+337;/ǃ/;CLICK_ALV;CONSONANTE;clic-alveolar;0;0;0;1;UNIV;clic alveolar
+338;/ǂ/;CLICK_PAL;CONSONANTE;clic-palatal;0;0;0;1;UNIV;clic palatal
+339;/ǁ/;CLICK_LAT;CONSONANTE;clic-lateral;0;0;0;1;UNIV;clic lateral
+
+340;/ʞ/;K_INV;CONSONANTE;velar-invertida;0;0;0;1;UNIV;consonante velar invertida
+341;/ʢ̥/;EPIGLOT_S_S;CONSONANTE;epiglotal-sorda-intensa;0;0;0;1;UNIV;epiglotal sorda intensa
+342;/ʡ̬/;EPIGLOT_STOP_V;CONSONANTE;epiglotal-sonora;0;0;0;1;UNIV;oclusiva epiglotal sonora
+
+343;/ɧ/;SJ;CONSONANTE;fricativa-coarticulada;0;0;0;1;SV;fricativa sueca coarticulada
+344;/ʜ̥/;EPIGLOT_S_SUP;CONSONANTE;epiglotal-sorda-fuerte;0;0;0;1;UNIV;epiglotal sorda fuerte
+
+345;/ɺ/;R_LAT_TAP;CONSONANTE;tap-lateral;0;0;0;1;UNIV;tap lateral
+346;/ɧ̬/;SJ_V;CONSONANTE;fricativa-coarticulada-sonora;0;0;0;1;UNIV;fricativa coarticulada sonora
+
+347;/ʍ/;W_S;CONSONANTE;aproximante-labiovelar-sorda;0;0;0;1;EN;aproximante labiovelar sorda
+348;/ɥ̊/;H_S;CONSONANTE;aproximante-labial-palatal-sorda;0;0;0;1;UNIV;aproximante labial-palatal sorda
+
+349;/ɰ/;M_AP;CONSONANTE;aproximante-velar;0;0;0;1;UNIV;aproximante velar
+350;/ʢ̬/;EPIGLOT_V_SUP;CONSONANTE;epiglotal-sonora-fuerte;0;0;0;1;UNIV;epiglotal sonora fuerte
+
+351;/ʡʼ/;EPIGLOT_EJ;CONSONANTE;epiglotal-ejectiva;0;0;0;1;UNIV;epiglotal ejectiva
+352;/ɓ̥/;B_IMPL_S;CONSONANTE;implosiva-bilabial-sorda;0;0;0;1;UNIV;implosiva bilabial sorda
+353;/ɗ̥/;D_IMPL_S;CONSONANTE;implosiva-dental-sorda;0;0;0;1;UNIV;implosiva dental sorda
+
+354;/ɠ̥/;G_IMPL_S;CONSONANTE;implosiva-velar-sorda;0;0;0;1;UNIV;implosiva velar sorda
+355;/ʛ̥/;G_UV_IMPL_S;CONSONANTE;implosiva-uvular-sorda;0;0;0;1;UNIV;implosiva uvular sorda
+
+356;/ʘ̬/;CLICK_BILAB_V;CONSONANTE;clic-bilabial-sonoro;0;0;0;1;UNIV;clic bilabial sonoro
+357;/ǀ̬/;CLICK_DENT_V;CONSONANTE;clic-dental-sonoro;0;0;0;1;UNIV;clic dental sonoro
+358;/ǃ̬/;CLICK_ALV_V;CONSONANTE;clic-alveolar-sonoro;0;0;0;1;UNIV;clic alveolar sonoro
+359;/ǂ̬/;CLICK_PAL_V;CONSONANTE;clic-palatal-sonoro;0;0;0;1;UNIV;clic palatal sonoro
+360;/ǁ̬/;CLICK_LAT_V;CONSONANTE;clic-lateral-sonoro;0;0;0;1;UNIV;clic lateral sonoro
+
+361;/ʘʼ/;CLICK_BILAB_EJ;CONSONANTE;clic-bilabial-ejectivo;0;0;0;1;UNIV;clic bilabial ejectivo
+362;/ǀʼ/;CLICK_DENT_EJ;CONSONANTE;clic-dental-ejectivo;0;0;0;1;UNIV;clic dental ejectivo
+363;/ǃʼ/;CLICK_ALV_EJ;CONSONANTE;clic-alveolar-ejectivo;0;0;0;1;UNIV;clic alveolar ejectivo
+364;/ǂʼ/;CLICK_PAL_EJ;CONSONANTE;clic-palatal-ejectivo;0;0;0;1;UNIV;clic palatal ejectivo
+365;/ǁʼ/;CLICK_LAT_EJ;CONSONANTE;clic-lateral-ejectivo;0;0;0;1;UNIV;clic lateral ejectivo
+
+366;/ʡ͡ʢ/;EPIGLOT_COART;CONSONANTE;coarticulada-epiglotal;0;0;0;1;UNIV;coarticulada epiglotal
+367;/ʜ͡ħ/;PHAR_COART;CONSONANTE;coarticulada-faringea;0;0;0;1;UNIV;coarticulada faríngea
+368;/ɧ͡x/;SJ_X;CONSONANTE;coarticulada-velar;0;0;0;1;UNIV;coarticulada velar
+369;/ʢ͡ʡ/;EPIGLOT_REV;CONSONANTE;epiglotal-invertida;0;0;0;1;UNIV;epiglotal invertida
+
+380;/ː/;LENGTH;AUX;alargamiento;0;0;0;0;UNIV;marca de alargamiento
+381;/ˑ/;HALF_LENGTH;AUX;semialargamiento;0;0;0;0;UNIV;marca de semialargamiento
+382;/˞/;RHOTIC;AUX;rhotizacion;0;0;0;0;EN;marca de róticidad
+383;/ˤ/;PHAR;AUX;faringealizacion;0;0;0;0;UNIV;marca de faringealización
+384;/ˠ/;VEL;AUX;velarizacion;0;0;0;0;UNIV;marca de velarización
+385;/ʷ/;LAB;AUX;labializacion;0;0;0;0;UNIV;marca de labialización
+386;/ʲ/;PAL;AUX;palatalizacion;0;0;0;0;UNIV;marca de palatalización
+387;/ˠ̞/;VEL_LOW;AUX;velarizacion-baja;0;0;0;0;UNIV;velarización con descenso
+388;/ˠ̝/;VEL_HIGH;AUX;velarizacion-alta;0;0;0;0;UNIV;velarización con elevación
+
+389;/ˈ/;STRESS1;AUX;acento-primario;0;0;0;0;UNIV;acento primario
+390;/ˌ/;STRESS2;AUX;acento-secundario;0;0;0;0;UNIV;acento secundario
+
+391;/|/;BOUND1;AUX;frontera-menor;0;0;0;0;UNIV;frontera prosódica menor
+392;/‖/;BOUND2;AUX;frontera-mayor;0;0;0;0;UNIV;frontera prosódica mayor
+393;/‿/;LIAISON;AUX;ligadura;0;0;0;0;UNIV;ligadura fonética
+394;/͡/;TIE;AUX;coarticulacion;0;0;0;0;UNIV;marca de coarticulación
+395;/͜/;TIE_LOW;AUX;coarticulacion-baja;0;0;0;0;UNIV;coarticulación baja
+
+396;/ː̥/;LENGTH_DEVOIC;AUX;alargamiento-ensordecido;0;0;0;0;UNIV;alargamiento con ensordecimiento
+397;/ː̬/;LENGTH_VOIC;AUX;alargamiento-sonorizado;0;0;0;0;UNIV;alargamiento con sonorización
+
+398;/˞̥/;RHOTIC_S;AUX;rhotico-sordo;0;0;0;0;UNIV;rótico ensordecido
+399;/˞̬/;RHOTIC_V;AUX;rhotico-sonoro;0;0;0;0;UNIV;rótico sonorizado
+
+400;/ˠ̥/;VEL_S;AUX;velarizado-sordo;0;0;0;0;UNIV;velarización sorda
+401;/ˠ̬/;VEL_V;AUX;velarizado-sonoro;0;0;0;0;UNIV;velarización sonora
+
+402;/ˤ̥/;PHAR_S;AUX;faringealizado-sordo;0;0;0;0;UNIV;faringealización sorda
+403;/ˤ̬/;PHAR_V;AUX;faringealizado-sonoro;0;0;0;0;UNIV;faringealización sonora
+
+404;/ˠ̰/;VEL_CREAKY;AUX;velarizado-creaky;0;0;0;0;UNIV;velarización con voz creaky
+405;/ˠ̤/;VEL_BREATHY;AUX;velarizado-breathy;0;0;0;0;UNIV;velarización con voz soplada
+
+406;/˞̰/;RHOTIC_CREAKY;AUX;rhotico-creaky;0;0;0;0;UNIV;rótico con voz creaky
+407;/˞̤/;RHOTIC_BREATHY;AUX;rhotico-breathy;0;0;0;0;UNIV;rótico con voz soplada
+
+408;/ː̩/;LENGTH_SYLL;AUX;alargamiento-silabico;0;0;0;0;UNIV;alargamiento silábico
+409;/ː̯/;LENGTH_NON_SYLL;AUX;alargamiento-no-silabico;0;0;0;0;UNIV;alargamiento no silábico
+
+410;/ˠ̚/;VEL_NO_RELEASE;AUX;velarizado-sin-liberacion;0;0;0;0;UNIV;velarización sin liberación
+411;/ˤ̚/;PHAR_NO_RELEASE;AUX;faringealizado-sin-liberacion;0;0;0;0;UNIV;faringealización sin liberación
+
+412;/ˠ̟/;VEL_ADV;AUX;velarizado-avanzado;0;0;0;0;UNIV;velarización avanzada
+413;/ˠ̠/;VEL_RET;AUX;velarizado-retraido;0;0;0;0;UNIV;velarización retraída
+
+414;/ˤ̟/;PHAR_ADV;AUX;faringealizado-avanzado;0;0;0;0;UNIV;faringealización avanzada
+415;/ˤ̠/;PHAR_RET;AUX;faringealizado-retraido;0;0;0;0;UNIV;faringealización retraída
+
+416;/˞̟/;RHOTIC_ADV;AUX;rhotico-avanzado;0;0;0;0;UNIV;rótico avanzado
+417;/˞̠/;RHOTIC_RET;AUX;rhotico-retraido;0;0;0;0;UNIV;rótico retraído
+
+418;/ː͡/;LENGTH_TIE;AUX;alargamiento-coarticulado;0;0;0;0;UNIV;alargamiento coarticulado
+419;/˞͡/;RHOTIC_TIE;AUX;rhotico-coarticulado;0;0;0;0;UNIV;rótico coarticulado
+
+430;/#/;BOUND_START;CONTROL;inicio-segmento;0;0;0;0;UNIV;marca de inicio de segmento
+431;/$/;BOUND_END;CONTROL;fin-segmento;0;0;0;0;UNIV;marca de fin de segmento
+432;/^/;ANCHOR_L;CONTROL;anclaje-inicial;0;0;0;0;UNIV;anclaje inicial
+433;/$/;ANCHOR_R;CONTROL;anclaje-final;0;0;0;0;UNIV;anclaje final
+
+434;/=/;EQ;CONTROL;igualacion;0;0;0;0;UNIV;marca de igualación
+435;/~/;TILDE;CONTROL;aproximacion;0;0;0;0;UNIV;marca de aproximación
+436;/…/;ELLIPSIS;CONTROL;continuidad;0;0;0;0;UNIV;continuidad fonética
+437;/∅/;NULL;CONTROL;segmento-nulo;0;0;0;0;UNIV;segmento nulo
+438;/Ø/;NULL_ALT;CONTROL;segmento-nulo-alt;0;0;0;0;UNIV;segmento nulo alternativo
+
+439;/×/;MULT;CONTROL;multiplicacion;0;0;0;0;UNIV;marca de multiplicación
+440;/÷/;DIV;CONTROL;division;0;0;0;0;UNIV;marca de división
+441;/±/;PLUSMIN;CONTROL;variacion;0;0;0;0;UNIV;marca de variación
+442;/∓/;MINPLUS;CONTROL;variacion-inversa;0;0;0;0;UNIV;marca de variación inversa
+
+443;/→/;ARROW_R;CONTROL;flecha-derecha;0;0;0;0;UNIV;flecha derecha
+444;/←/;ARROW_L;CONTROL;flecha-izquierda;0;0;0;0;UNIV;flecha izquierda
+445;/↔/;ARROW_BI;CONTROL;flecha-bidireccional;0;0;0;0;UNIV;flecha bidireccional
+446;/⇒/;ARROW_IMP;CONTROL;implicacion;0;0;0;0;UNIV;marca de implicación
+447;/⇔/;ARROW_EQ;CONTROL;equivalencia;0;0;0;0;UNIV;marca de equivalencia
+
+448;/|/;PIPE;CONTROL;separador;0;0;0;0;UNIV;separador vertical
+449;/||/;PIPE2;CONTROL;separador-doble;0;0;0;0;UNIV;separador doble
+450;/‖/;PARALLEL;CONTROL;paralelo;0;0;0;0;UNIV;marca paralela
+
+451;/_/;UNDERSCORE;CONTROL;subrayado;0;0;0;0;UNIV;marca de subrayado
+452;/__/;UNDERSCORE2;CONTROL;subrayado-doble;0;0;0;0;UNIV;subrayado doble
+453;/—/;EMDASH;CONTROL;guion-largo;0;0;0;0;UNIV;guion largo
+454;/–/;ENDASH;CONTROL;guion-medio;0;0;0;0;UNIV;guion medio
+
+455;/·/;MIDDOT;CONTROL;punto-medio;0;0;0;0;UNIV;punto medio
+456;/•/;BULLET;CONTROL;viñeta;0;0;0;0;UNIV;viñeta
+457;/▪/;BULLET_S;CONTROL;viñeta-solida;0;0;0;0;UNIV;viñeta sólida
+458;/▫/;BULLET_H;CONTROL;viñeta-hueca;0;0;0;0;UNIV;viñeta hueca
+
+459;/※/;REF_MARK;CONTROL;marca-referencia;0;0;0;0;UNIV;marca de referencia
+460;/†/;DAGGER;CONTROL;daga;0;0;0;0;UNIV;marca de nota
+461;/‡/;DAGGER2;CONTROL;daga-doble;0;0;0;0;UNIV;marca de nota doble
+
+462;/§/;SECTION;CONTROL;seccion;0;0;0;0;UNIV;marca de sección
+463;/¶/;PARAGRAPH;CONTROL;parrafo;0;0;0;0;UNIV;marca de párrafo
+
+464;/⟨/;ANGLE_L;CONTROL;angulo-izquierdo;0;0;0;0;UNIV;delimitador izquierdo
+465;/⟩/;ANGLE_R;CONTROL;angulo-derecho;0;0;0;0;UNIV;delimitador derecho
+466;/«/;GUILLEM_L;CONTROL;comilla-lat-izq;0;0;0;0;UNIV;comilla latina izquierda
+467;/»/;GUILLEM_R;CONTROL;comilla-lat-der;0;0;0;0;UNIV;comilla latina derecha
+
+468;/⟦/;BRACKET_DBL_L;CONTROL;corchete-doble-izq;0;0;0;0;UNIV;corchete doble izquierdo
+469;/⟧/;BRACKET_DBL_R;CONTROL;corchete-doble-der;0;0;0;0;UNIV;corchete doble derecho
+

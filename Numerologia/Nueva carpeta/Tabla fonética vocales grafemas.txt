@@ -1,0 +1,78 @@
+ID;Grafema;IPA;Descripcion;Altura;Posterioridad;Redondez;Nasal;Valor
+
+1;a;/a/;vocal abierta central;abierta;central;no;no;36
+1;á;/a/;vocal abierta central acentuada;abierta;central;no;no;36
+1;à;/a/;vocal abierta central grave;abierta;central;no;no;36
+1;â;/a/;vocal abierta central circunfleja;abierta;central;no;no;36
+
+2;e;/e/;vocal media-cerrada anterior;media-cerrada;anterior;no;no;34
+2;é;/e/;vocal media-cerrada anterior acentuada;media-cerrada;anterior;no;no;34
+2;ê;/e/;vocal media-cerrada anterior circunfleja;media-cerrada;anterior;no;no;34
+
+3;è;/ɛ/;vocal media-abierta anterior;media-abierta;anterior;no;no;34
+3;é;/ɛ/;vocal media-abierta anterior (fr);media-abierta;anterior;no;no;34
+3;ê;/ɛ/;vocal media-abierta anterior (fr/pt);media-abierta;anterior;no;no;34
+
+4;i;/i/;vocal cerrada anterior alta;cerrada;anterior;no;no;31
+4;í;/i/;vocal cerrada anterior alta acentuada;cerrada;anterior;no;no;31
+4;ï;/i/;vocal cerrada anterior con diéresis;cerrada;anterior;no;no;31
+
+5;o;/o/;vocal media-cerrada posterior;media-cerrada;posterior;sí;no;23
+5;ó;/o/;vocal media-cerrada posterior acentuada;media-cerrada;posterior;sí;no;23
+5;ô;/o/;vocal media-cerrada posterior circunfleja;media-cerrada;posterior;sí;no;23
+5;eau;/o/;vocal media-cerrada posterior (fr);media-cerrada;posterior;sí;no;23
+
+6;ò;/ɔ/;vocal media-abierta posterior;media-abierta;posterior;sí;no;23
+6;ó;/ɔ/;vocal media-abierta posterior (fr);media-abierta;posterior;sí;no;23
+
+7;u;/u/;vocal cerrada posterior alta;cerrada;posterior;sí;no;21
+7;ú;/u/;vocal cerrada posterior alta acentuada;cerrada;posterior;sí;no;21
+7;ü;/u/;vocal cerrada posterior con diéresis;cerrada;posterior;sí;no;21
+
+8;a;/ə/;vocal neutra schwa (cat);media;central;no;no;30
+8;e;/ə/;vocal neutra schwa (cat);media;central;no;no;30
+
+9;a;/ɐ/;vocal central abierta (pt/br);abierta;central;no;no;36
+
+10;i;/ɨ/;vocal cerrada central (pt);cerrada;central;no;no;30
+
+11;u;/y/;vocal cerrada anterior redondeada (fr);cerrada;anterior;sí;no;30
+
+12;eu;/ø/;vocal media-cerrada anterior redondeada (fr);media-cerrada;anterior;sí;no;32
+12;œu;/ø/;vocal media-cerrada anterior redondeada (fr);media-cerrada;anterior;sí;no;32
+
+13;œ;/œ/;vocal media-abierta anterior redondeada (fr);media-abierta;anterior;sí;no;32
+13;oe;/œ/;vocal media-abierta anterior redondeada (fr);media-abierta;anterior;sí;no;32
+
+14;ã;/ã/;vocal nasal /a/ (port/br);abierta;central;no;sí;37
+14;an;/ã/;vocal nasal /a/ (fr);abierta;central;no;sí;37
+14;am;/ã/;vocal nasal /a/ (port/br);abierta;central;no;sí;37
+
+15;en;/ẽ/;vocal nasal /e/ (fr);media;anterior;no;sí;35
+15;em;/ẽ/;vocal nasal /e/ (pt/br);media;anterior;no;sí;35
+
+16;in;/ĩ/;vocal nasal /i/ (fr);cerrada;anterior;no;sí;32
+16;im;/ĩ/;vocal nasal /i/ (pt/br);cerrada;anterior;no;sí;32
+
+17;õ;/õ/;vocal nasal /o/ (pt/br);media;posterior;sí;sí;24
+17;on;/õ/;vocal nasal /o/ (fr);media;posterior;sí;sí;24
+17;om;/õ/;vocal nasal /o/ (pt/br);media;posterior;sí;sí;24
+
+18;un;/ũ/;vocal nasal /u/ (fr);cerrada;posterior;sí;sí;22
+18;um;/ũ/;vocal nasal /u/ (pt/br);cerrada;posterior;sí;sí;22
+
+19;er;/ɜː/;vocal media central (inglés);media;central;no;no;30
+19;ir;/ɜː/;vocal media central (inglés);media;central;no;no;30
+19;ur;/ɜː/;vocal media central (inglés);media;central;no;no;30
+
+20;o;/ɒ/;vocal abierta posterior (inglés);abierta;posterior;sí;no;24
+
+21;i;/j/;semivocal palatal;cerrada;anterior;no;no;28
+21;y;/j/;semivocal palatal;cerrada;anterior;no;no;28
+
+22;u;/w/;semivocal labiovelar;cerrada;posterior;sí;no;19
+22;w;/w/;semivocal labiovelar;cerrada;posterior;sí;no;19
+
+23;in;/j̃/;semivocal palatal nasal;cerrada;anterior;no;sí;29
+
+24;um;/w̃/;semivocal labiovelar nasal;cerrada;posterior;sí;sí;20

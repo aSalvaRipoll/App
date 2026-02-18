@@ -1,0 +1,159 @@
+
+🌌 KOSMOS 2.1 — UML (versión textual / ASCII)
+
+1. Diagrama de clases (vista estructural)
+
++-------------------------+
+|       clsFonema         |
++-------------------------+
+| - GrafemaOri : String   |
+| - idFonema   : Byte     |
+| - NumOrden   : Long     |
+| - esVocal    : Boolean  |
+| - valor      : String   |
++-------------------------+
++-----------------------------------------------------------+
+| modMotorFonetico_V2_1_Idiomas (Dispatcher principal)      |
++-----------------------------------------------------------+
+| + MF21_ConvertirNombreAParGrafemaIDFonema() : Collection  |
+| + MF_MarcarTonicaPorIdioma()                              |
+| + MF_NormalizarVocalesPorIdioma()                         |
+| + ConvertirGrafemaAIdFonema() : Byte                      |
+| + ObtenerFonemas() : Collection                           |
+| - RegistrarFonema()                                       |
+| - SiguienteGrafema() : String                             |
+| - NG() : String                                           |
++-----------------------------------------------------------+
++---------------------------------------+
+|   modMotor_Idioma_<IDIOMA>            |
++---------------------------------------+
+| + MF_MarcarTonica_<IDIOMA>()          |
+| + Silabear_<IDIOMA>()                 |
+| + Silabear_<IDIOMA>_ConRevision()     |
+| + Reglas<IDIOMA>() : Byte             |
+| + MF_NormalizarVocales_<IDIOMA>()     |
++---------------------------------------+
++---------------------------------------+
+|   modMotor_Idioma_AUX_CA              |
++---------------------------------------+
+| + EsVocal_CA()                        |
+| + EsConsonant_CA()                    |
+| + EsGrupInseparable_CA()              |
+| + EsDiptong_CA()                      |
+| + EsHiat_CA()                         |
++---------------------------------------+
++---------------------------------------+
+|   modMotor_Idioma_AUX_PT              |
++---------------------------------------+
+| + EsVocal_PT()                        |
+| + EsConsonant_PT()                    |
+| + EsGrupInseparable_PT()              |
++---------------------------------------+
+
+
+2. Relaciones UML (vista conceptual)
+
+modMotorFonetico_V2_1_Idiomas
+        |
+        | uses
+        v
+modMotor_Idioma_<IDIOMA>
+        |
+        | uses
+        v
+modMotor_Idioma_AUX_<IDIOMA> (si existe)
+
+modMotorFonetico_V2_1_Idiomas
+        |
+        | creates
+        v
+clsFonema
+
+modMotorFonetico_V2_1_Idiomas
+        |
+        | depends on
+        v
+colFonemas (repositorio de fonemas)
+
+
+3. Diagrama de secuencia (flujo completo de conversión)
+
+Usuario
+   |
+   |  NombreOriginal + Abreviado
+   v
+MF21_ConvertirNombreAParGrafemaIDFonema
+   |
+   |---> MF_MarcarTonicaPorIdioma
+   |         |
+   |         |---> MF_MarcarTonica_<IDIOMA>
+   |         |         |
+   |         |         |---> Silabear_<IDIOMA>_ConRevision
+   |         |                   |
+   |         |                   |---> Silabear_<IDIOMA>
+   |         |                   |
+   |         |                   |---> Formulario de revisión
+   |
+   |---> MF_NormalizarVocalesPorIdioma
+   |         |
+   |         |---> MF_NormalizarVocales_<IDIOMA>
+   |
+   |---> Bucle de tokenización
+   |         |
+   |         |---> SiguienteGrafema
+   |         |
+   |         |---> ConvertirGrafemaAIdFonema
+   |                   |
+   |                   |---> Reglas<IDIOMA>
+   |
+   |---> RegistrarFonema
+   |         |
+   |         |---> clsFonema
+   |
+   v
+Collection de clsFonema
+
+
+4. Diagrama de componentes (vista modular)
+
++-----------------------------------------------------------+
+|                    KOSMOS 2.1                             |
++-----------------------------------------------------------+
+|  Dispatcher (motor central)                               |
+|  ├── Tokenizador universal                                |
+|  ├── Normalizador Unicode (NG)                            |
+|  ├── Coordinador de tónica                                |
+|  ├── Coordinador de normalización vocálica                |
+|  ├── Coordinador de reglas fonéticas                      |
+|  └── Constructor de clsFonema                             |
+|                                                           |
+|  Motores por idioma                                       |
+|  ├── Castellano (ES)                                      |
+|  ├── Catalán (CA, CA-VA, CA-IB)                           |
+|  ├── Euskera (EU)                                         |
+|  ├── Gallego (GL)                                         |
+|  ├── Portugués (PT-EU, PT-BR)                             |
+|  ├── Francés (FR)                                         |
+|  └── Inglés (EN-GB)                                       |
+|                                                           |
+|  Auxiliares                                               |
+|  ├── AUX_CA                                               |
+|  └── AUX_PT                                               |
+|                                                           |
+|  Repositorio de fonemas (colFonemas)                      |
++-----------------------------------------------------------+
+
+5. Resumen editorial del UML
+Este diagrama UML muestra:
+
+una arquitectura limpia y jerárquica, donde cada idioma es autónomo
+
+un dispatcher central que coordina todo
+
+un tokenizador universal que entiende 10 idiomas
+
+un objeto fonético universal que unifica la salida
+
+auxiliares por idioma que encapsulan reglas fonológicas
+
+flujo claro y extensible

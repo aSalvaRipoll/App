@@ -1,0 +1,21 @@
+a, à, â
+e, é, è, ê
+i, ï
+o, ô
+u
+œ, oe
+eu, œu
+eau
+an, en, on, in, un
+b, v
+c, ç, qu, k
+ch (/ʃ/)
+j (/ʒ/)
+g (ge, gi)
+m
+n
+p
+r (/ʁ/)
+s, ss
+x (/ks/, /gz/, /s/, /z/)
+z

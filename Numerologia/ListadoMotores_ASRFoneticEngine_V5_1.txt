@@ -1,0 +1,282 @@
+
+========================================
+PROYECTO: ASRFoneticEngine_V5_1
+========================================
+
+----------------------------------------
+Lista módulos motores
+----------------------------------------
+
+Módulo: bas_Motor_IB_Main
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- Entrada_Motor_IB
+    (Private)	- SilabearFrase
+    (Private)	- SilabearPalabra
+    (Private)	- SilabearOrtog
+    (Private)	- SilabearMorfologico
+    (Private)	- DetectarPrefijo
+    (Private)	- CargarPrefijos
+    (Private)	- AtaqueSilabicoValido
+    (Private)	- LocalizarNucleosOrtog
+    (Private)	- CalcularSilabas
+    (Private)	- EsVocal
+    (Private)	- EsVocalFuerte
+    (Private)	- EsVocalDebilTonica
+    (Private)	- EsVocalDebil
+    (Private)	- EsSemivocal
+    (Private)	- EsTriptongo
+    (Private)	- EsDiptongo
+    (Private)	- PuedeCerrarSilaba
+    (Private)	- EsGrupoAtaque
+    (Private)	- TieneTilde
+    (Private)	- CalcularTonicas
+    (Private)	- CalcularSecundarias
+    (Private)	- MarcarTonicaYSecundariaEnCadena
+    (Private)	- DetectarTonica
+    (Private)	- DetectarSecundarias
+    (Private)	- ObtenerPalabrasDesdeSilabasAuto
+    (Private)	- JoinCollection
+
+Módulo: bas_Motor_CA_Fon
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- ConstruirCadenaFonemas_CA
+    (Private)	- ProcesarSilaba
+    (Private)	- DetectarDigrafo
+    (Private)	- AsignarFonemaBase
+    (Private)	- NormalizarVocales
+    (Private)	- DetectarLigaduraManual
+    (Private)	- HayLigaduraAutomatica
+    (Private)	- BuscarSilabaRealAnterior
+    (Private)	- BuscarSilabaRealPosterior
+    (Private)	- ObtenerIPA
+
+Módulo: bas_Motor_CA_Main
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- Entrada_Motor_CA
+    (Private)	- SilabearFrase
+    (Private)	- SilabearPalabra
+    (Private)	- SilabearOrtog
+    (Private)	- SilabearMorfologico
+    (Private)	- DetectarPrefijo
+    (Private)	- CargarPrefijos
+    (Private)	- AtaqueSilabicoValido
+    (Private)	- LocalizarNucleosOrtog
+    (Private)	- CalcularSilabas
+    (Private)	- EsVocal
+    (Private)	- EsVocalForta
+    (Private)	- EsVocalDebil
+    (Private)	- EsVocalDebilTonica
+    (Private)	- EsDiptongo
+    (Private)	- EsTriptongo
+    (Private)	- EsGrupoAtaque
+    (Private)	- PuedeCerrarSilaba
+    (Private)	- TieneTilde
+    (Private)	- CalcularTonicas
+    (Private)	- CalcularSecundarias
+    (Private)	- MarcarTonicaYSecundariaEnCadena
+    (Private)	- DetectarTonica
+    (Private)	- DetectarSecundarias
+    (Private)	- ObtenerPalabrasDesdeSilabasAuto
+    (Private)	- JoinCollection
+
+Módulo: bas_Motor_ES_Main
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- Entrada_Motor_ES
+    (Private)	- SilabearFrase
+    (Private)	- SilabearPalabra
+    (Private)	- SilabearOrtog
+    (Private)	- SilabearMorfologico
+    (Private)	- DetectarPrefijo
+    (Private)	- AtaqueSilabicoValido
+    (Private)	- CargarPrefijos
+    (Private)	- LocalizarNucleosOrtog
+    (Private)	- CalcularSilabas
+    (Private)	- EsVocal
+    (Private)	- EsVocalFuerte
+    (Private)	- EsVocalDebil
+    (Private)	- EsVocalDebilTonica
+    (Private)	- EsDiptongo
+    (Private)	- EsTriptongo
+    (Private)	- EsGrupoAtaque
+    (Private)	- SilabaTonica
+    (Private)	- TieneTilde
+    (Private)	- TerminaEnVocalNS
+    (Private)	- CalcularTonicas
+    (Private)	- CalcularSecundarias
+    (Private)	- MarcarTonicaYSecundariaEnCadena
+    (Private)	- DetectarTonica
+    (Private)	- DetectarSecundarias
+    (Private)	- ObtenerPalabrasDesdeSilabasAuto
+    (Private)	- JoinCollection
+
+Módulo: bas_Motor_ES_Fon
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- ConstruirCadenaFonemas_ES
+    (Private)	- ProcesarSilaba
+    (Private)	- NormalizarGrafema
+    (Private)	- BuscarSilabaRealAnterior
+    (Private)	- BuscarSilabaRealPosterior
+    (Private)	- DetectarDigrafo
+    (Private)	- AsignarFonemaBase
+    (Private)	- DetectarLigaduraManual
+    (Private)	- HayLigaduraAutomatica
+    (Private)	- NormalizarVocales
+    (Private)	- GenerarIPA
+    (Private)	- ObtenerIPA
+
+Módulo: bas_Motor_VA_Main
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- Entrada_Motor_VA
+    (Private)	- SilabearFrase
+    (Private)	- SilabearPalabra
+    (Private)	- SilabearOrtog
+    (Private)	- SilabearMorfologico
+    (Private)	- DetectarPrefijo
+    (Private)	- AtaqueSilabicoValido
+    (Private)	- CargarPrefijos
+    (Private)	- LocalizarNucleosOrtog
+    (Private)	- CalcularSilabas
+    (Private)	- EsConsonanteSimple
+    (Private)	- EsVocal
+    (Private)	- EsVocalFuerte
+    (Private)	- EsVocalDebil
+    (Private)	- EsVocalDebilTonica
+    (Private)	- EsDiptongo
+    (Private)	- EsTriptongo
+    (Private)	- EsGrupoAtaque
+    (Private)	- PuedeCerrarSilaba
+    (Private)	- TieneTilde
+    (Private)	- CalcularTonicas
+    (Private)	- CalcularSecundarias
+    (Private)	- MarcarTonicaYSecundariaEnCadena
+    (Private)	- DetectarTonica
+    (Private)	- DetectarSecundarias
+    (Private)	- ObtenerPalabrasDesdeSilabasAuto
+    (Private)	- JoinCollection
+
+Módulo: bas_Motor_VA_Fon
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- ConstruirCadenaFonemas_VA
+    (Private)	- ProcesarSilaba
+    (Private)	- DetectarDigrafo
+    (Private)	- AsignarFonemaBase
+    (Private)	- AplicarAssimilaciones
+    (Private)	- EsVocalID
+    (Private)	- ReconstruirSilabaDesdeArray
+    (Private)	- NormalizarVocales
+    (Private)	- DetectarLigaduraManual
+    (Private)	- HayLigaduraAutomatica
+    (Private)	- BuscarSilabaRealAnterior
+    (Private)	- BuscarSilabaRealPosterior
+    (Private)	- ObtenerIPA
+
+Módulo: bas_Motor_EU_Main
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- Entrada_Motor_EU
+    (Private)	- SilabearFrase
+    (Private)	- SilabearPalabra
+    (Private)	- SilabearOrtog
+    (Private)	- SilabearMorfologico
+    (Private)	- DetectarPrefijo
+    (Private)	- CargarPrefijos
+    (Private)	- LocalizarNucleosOrtog
+    (Private)	- CalcularSilabas
+    (Private)	- EsVocal
+    (Private)	- EsDiptongo
+    (Private)	- EsTriptongo
+    (Private)	- EsGrupoAtaque
+    (Private)	- CalcularTonicas
+    (Private)	- DetectarTonica
+    (Private)	- DetectarSecundarias
+    (Private)	- MarcarTonicaYSecundariaEnCadena
+    (Private)	- ObtenerPalabrasDesdeSilabasAuto
+    (Private)	- JoinCollection
+
+Módulo: bas_Motor_EU_Fon
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- ConstruirCadenaFonemas_EU
+    (Private)	- ProcesarSilaba
+    (Private)	- DetectarDigrafo
+    (Private)	- AsignarFonemaBase
+    (Private)	- NormalizarVocales
+    (Private)	- BuscarSilabaRealAnterior
+    (Private)	- BuscarSilabaRealPosterior
+    (Private)	- HayLigaduraAutomatica
+    (Private)	- DetectarLigaduraManual
+    (Private)	- ObtenerIPA
+
+Módulo: bas_Motor_GL_Main
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- Entrada_Motor_GL
+    (Private)	- SilabearFrase
+    (Private)	- SilabearPalabra
+    (Private)	- SilabearOrtog
+    (Private)	- SilabearMorfologico
+    (Private)	- DetectarPrefijo
+    (Private)	- AtaqueSilabicoValido
+    (Private)	- CargarPrefijos
+    (Private)	- LocalizarNucleosOrtog
+    (Private)	- CalcularSilabas
+    (Private)	- EsVocal
+    (Private)	- EsVocalFuerte
+    (Private)	- EsVocalDebil
+    (Private)	- EsVocalDebilTonica
+    (Private)	- EsDiptongo
+    (Private)	- EsTriptongo
+    (Private)	- EsGrupoAtaque
+    (Private)	- SilabaTonica
+    (Private)	- TieneTilde
+    (Private)	- TerminaEnVocalNS
+    (Private)	- CalcularTonicas
+    (Private)	- CalcularSecundarias
+    (Private)	- MarcarTonicaYSecundariaEnCadena
+    (Private)	- DetectarTonica
+    (Private)	- DetectarSecundarias
+    (Private)	- ObtenerPalabrasDesdeSilabasAuto
+    (Private)	- JoinCollection
+
+Módulo: bas_Motor_GL_Fon
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- ConstruirCadenaFonemas_GL
+    (Private)	- ProcesarSilaba
+    (Private)	- NormalizarGrafema
+    (Private)	- BuscarSilabaRealAnterior
+    (Private)	- BuscarSilabaRealPosterior
+    (Private)	- DetectarDigrafo
+    (Private)	- AsignarFonemaBase
+    (Private)	- DetectarLigaduraManual
+    (Private)	- HayLigaduraAutomatica
+    (Private)	- NormalizarVocales
+    (Private)	- GenerarIPA
+    (Private)	- ObtenerIPA
+
+Módulo: bas_Motor_IB_Fon_5
+Tipo:   Módulo estándar
+Procedimientos:
+    (Public)	- ConstruirCadenaFonemas_IB
+    (Private)	- ProcesarSilaba
+    (Private)	- EsProclitic
+    (Private)	- DetectarDigrafo
+    (Private)	- AsignarFonemaBase
+    (Private)	- AplicarNeutralizaciones
+    (Private)	- AplicarAssimilaciones
+    (Private)	- AplicarSchwa
+    (Private)	- AplicarReducciones
+    (Private)	- DetectarLigaduraManual
+    (Private)	- HayLigaduraAutomatica
+    (Private)	- NormalizarVocales
+    (Private)	- BuscarSilabaRealAnterior
+    (Private)	- BuscarSilabaRealPosterior
+    (Private)	- ObtenerIPA
+

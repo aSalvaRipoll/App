@@ -1,0 +1,30 @@
+Procedimientos huérfanos (no llamados por ningún otro elemento)
+----------------------------------------------------------------------
+SilabearFrase   (Módulo: bas_Motor_IB_Main)
+CargarPrefijos   (Módulo: bas_Motor_IB_Main)
+EsSemivocal   (Módulo: bas_Motor_IB_Main)
+CalcularTonicas   (Módulo: bas_Motor_IB_Main)
+CalcularSecundarias   (Módulo: bas_Motor_IB_Main)
+MarcarTonicaYSecundariaEnCadena   (Módulo: bas_Motor_IB_Main)
+ExportarInfoModulos   (Módulo: ___basInfoModulos)
+ExportarInfoMotores   (Módulo: ___basInfoModulos)
+SilabaTonica   (Módulo: bas_Motor_ES_Main)
+NormalizarGrafema   (Módulo: bas_Motor_ES_Fon)
+GenerarIPA   (Módulo: bas_Motor_ES_Fon)
+MedirTiempoPreciso   (Módulo: __Motor_Test)
+PrintLog   (Módulo: _basDebugMotores)
+InitLog   (Módulo: _basDebugMotores)
+probar   (Módulo: _basDebugMotores)
+NormalizaEntrada   (Módulo: clsDTO_Motor)
+
+AplicarNeutralizaciones   (Módulo: bas_Motor_IB_Fon_2)
+AplicarSchwa   (Módulo: bas_Motor_IB_Fon_2)
+AplicarReducciones   (Módulo: bas_Motor_IB_Fon_2)
+
+
+
+GenerarArbolFlujo   (Módulo: __basAnalizadorFlujo2)
+DetectarProcedimientosHuerfanosPro   (Módulo: __basDetectarHuerfanos_3)
+RegistrarLlamadasEnCodigo   (Módulo: __basDetectarHuerfanos_3)
+RegistrarLlamadasEnMacros   (Módulo: __basDetectarHuerfanos_3)
+RegistrarLlamadasEnFormularios   (Módulo: __basDetectarHuerfanos_3)

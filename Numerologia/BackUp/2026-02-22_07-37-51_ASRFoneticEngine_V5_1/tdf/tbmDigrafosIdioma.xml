@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-02-22T07:37:52">
+<tbmDigrafosIdioma>
+<ID>1</ID>
+<Castellano>ch</Castellano>
+<Catalán>ny → /ɲ/</Catalán>
+<Euskera>tx → /t͡ʃ/</Euskera>
+<Gallego>nh → /ɲ/ (solo en préstamos portugueses)</Gallego>
+<Portugués>nh → /ɲ/</Portugués>
+<Francés>ch → /ʃ/</Francés>
+<Inglés>sh → /ʃ/</Inglés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>2</ID>
+<Castellano>ll</Castellano>
+<Catalán>l·l → /ʎ/</Catalán>
+<Euskera>tz → /ts/</Euskera>
+<Gallego>ll → /ʎ/</Gallego>
+<Portugués>lh → /ʎ/</Portugués>
+<Francés>gn → /ɲ/</Francés>
+<Inglés>ch → /t͡ʃ/</Inglés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>3</ID>
+<Castellano>rr</Castellano>
+<Catalán>tx → /t͡ʃ/</Catalán>
+<Euskera>ts → /ts/</Euskera>
+<Gallego>ch → /t͡ʃ/</Gallego>
+<Portugués>ch → /ʃ/</Portugués>
+<Francés>ill → /j/ o /ʎ/ según contexto</Francés>
+<Inglés>th → /θ/ o /ð/</Inglés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>4</ID>
+<Castellano>qu</Castellano>
+<Catalán>tg → /d͡ʒ/</Catalán>
+<Euskera>dd → /d/ (en préstamos)</Euskera>
+<Portugués>rr → /ʁ/ (según dialecto)</Portugués>
+<Francés>eau → /o/</Francés>
+<Inglés>ph → /f/</Inglés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>5</ID>
+<Castellano>gu</Castellano>
+<Catalán>tj → /d͡ʒ/</Catalán>
+<Francés>œu → /ø/</Francés>
+<Inglés>gh → /g/ o /f/ o ∅ según contexto</Inglés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>6</ID>
+<Castellano>gue</Castellano>
+<Euskera></Euskera>
+<Gallego></Gallego>
+<Inglés>wh → /w/</Inglés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>7</ID>
+<Castellano>gui</Castellano>
+<Francés></Francés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>8</ID>
+<Castellano>güe</Castellano>
+<Portugués></Portugués>
+<Inglés></Inglés>
+</tbmDigrafosIdioma>
+<tbmDigrafosIdioma>
+<ID>9</ID>
+<Castellano>güi</Castellano>
+</tbmDigrafosIdioma>
+</dataroot>

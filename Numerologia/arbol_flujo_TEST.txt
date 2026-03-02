@@ -1,0 +1,60 @@
+Árbol de flujo desde: MedirTiempoPreciso
+------------------------------------------------------------
++-- MedirTiempoPreciso   [Módulo: __Motor_Test]
+    +-- Entrada_Motor_IB   [Módulo: bas_Motor_IB_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- limpia   [Módulo: bas_Comunes_Motores]
+    ¦   ¦   +-- SilabearPalabra   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   +-- SilabearMorfologico   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   +-- SilabearOrtog   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   +-- LocalizarNucleosOrtog   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- addLog   [Módulo: _basDebugMotores]
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocal   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- EsTriptongo   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocalDebilTonica   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocalDebil   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocalFuerte   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocalDebilTonica   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocalDebil   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- EsDiptongo   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   ¦   ¦   ¦   ¦   +-- CalcularSilabas   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- EsGrupoAtaque   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- PuedeCerrarSilaba   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   ¦   ¦   ¦   +-- DetectarPrefijo   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   +-- EsVocal   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   ¦   ¦   ¦   +-- EsDiptongo   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   ¦   ¦   ¦   +-- AtaqueSilabicoValido   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   +-- SilabearOrtog   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   ¦   +-- SilabearOrtog   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- ObtenerPalabrasDesdeSilabasAuto   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- DetectarTonica   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   +-- TieneTilde   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- JoinCollection   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CalcularSecundarias   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- ObtenerPalabrasDesdeSilabasAuto   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   +-- DetectarTonica   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   +-- DetectarSecundarias   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- JoinCollection   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_IB   [Módulo: Módulo1]
+    ¦       +-- NormalizarVocales   [Módulo: bas_Motor_CA_Fon]
+    ¦       +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon]
+    ¦       +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon]
+    ¦       +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon]
+    ¦       +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon]
+    ¦       ¦   +-- DetectarDigrafo   [Módulo: bas_Motor_CA_Fon]
+    ¦       ¦   +-- AsignarFonemaBase   [Módulo: bas_Motor_CA_Fon]
+    ¦       +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon]
+    +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    +-- MF_DebugDTO   [Módulo: _basDebugMotores]
+        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+        +-- CountItems   [Módulo: _basDebugMotores]

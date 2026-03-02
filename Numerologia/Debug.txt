@@ -1,3 +1,57 @@
 
-Tiempo transcurrido: 0,048131 segundos
+===============================
+     CONTENIDO DEL DTO
+    (VARIABLES INTERNAS)
+===============================
+
+-------------------------------
+ Proc.: Motor PT revisado
+-------------------------------
+
+Texto original (ObjDTO.TextoOriginal):        
+		'León Caramiñal'
+
+Texto Corregido (ObjDTO.TextoCorregido):       
+		'León Caramiñal'
+
+Texto normalizado (ObjDTO.TextoNormalizado):     
+		'león caramiñal'
+
+-------------------------------
+
+SilabasAuto (ObjDTO.SilabasAuto):           
+		le | ón |   | ca | ra | mi | ñal
+
+SilabasAcentuadas (ObjDTO.SilabasAcentuadas):     
+		le | ( ón ) |   | [ ca ] | ra | mi | ( ñal )
+
+SilabasFinal (ObjDTO.SilabasFinal):          
+		le | ( ón ) |   | [ ca ] | ra | mi | ( ñal )
+
+-------------------------------
+
+Silaba(s) Tonica(s) (ObjDTO.SilabasTonicas):          
+		2,7
+SilabaSecundaria (ObjDTO.SilabasSecundarias):      
+		4
+
+Texto Final (idFonemas) (ObjDTO.IdsFonemas): 
+		82,62,10|80,5,37,#81,34,1|82,59,9|82,36,4|80,255,1,64
+
+
+ (NOTA: Esta salida es ANSI, los caracterees '?'
+corresponden a fonemas que no se pueden representar).
+
+Texto Final (Fonemas) (ObjDTO.FonemasFinal):  
+		/l?'on/ /?ka??mi'a?/
+
+-------------------------------
+   Detalles internos
+-------------------------------
+Num sílabas auto:      7
+Num sílabas final:     7
+
+Tiempo de proceso:     0,0060324 segundos
+===============================
+
 

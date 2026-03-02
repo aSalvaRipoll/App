@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-02-21T03:04:04">
+<Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<ID>80</ID>
+<IPA>ˈ</IPA>
+<Descripcion>acento primario (tónica)</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>5</Valor>
+<ASCII>´</ASCII>
+</Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<ID>81</ID>
+<IPA>ˌ</IPA>
+<Descripcion>acento secundario</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>3</Valor>
+<ASCII>`</ASCII>
+</Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<ID>82</ID>
+<IPA>0</IPA>
+<Descripcion>marca de sílaba átona</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>0</Valor>
+<ASCII>0</ASCII>
+</Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<ID>83</ID>
+<IPA>ː</IPA>
+<Descripcion>alargamiento vocálico</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>2</Valor>
+<ASCII>:</ASCII>
+</Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<ID>84</ID>
+<IPA>‿</IPA>
+<Descripcion>enlace/ligadura</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>2</Valor>
+<ASCII>_</ASCII>
+</Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<ID>85</ID>
+<IPA>̃͡</IPA>
+<Descripcion>nasalización prosódica</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>1</Nasal>
+<Valor>4</Valor>
+<ASCII>^</ASCII>
+</Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+<ID>86</ID>
+<IPA>ːː</IPA>
+<Descripcion>geminación consonántica</Descripcion>
+<Tipo>prosodico</Tipo>
+<Nasal>0</Nasal>
+<Valor>5</Valor>
+<ASCII>::</ASCII>
+</Tabla_x0020_fonética_x0020_modificadores_x0020_valor>
+</dataroot>

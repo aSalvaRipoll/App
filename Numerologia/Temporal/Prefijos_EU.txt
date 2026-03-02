@@ -1,0 +1,13 @@
+Prefijo;Tipo;Origen;eu
+aurre;auténtico;Vasco;1
+gain;auténtico;Vasco;1
+azpi;auténtico;Vasco;1
+arte;auténtico;Vasco;1
+aurka;auténtico;Vasco;1
+berri;auténtico;Vasco;1
+erdi;auténtico;Vasco;1
+goi;auténtico;Vasco;1
+behe;auténtico;Vasco;1
+barne;auténtico;Vasco;1
+kanpo;auténtico;Vasco;1
+ez;auténtico;Vasco;1

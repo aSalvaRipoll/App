@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates>
+  <CodeTemplate>
+    <Description>Read from file</Description>
+    <Text>   Dim fileHandle As Integer
+   Dim textLine As String
+   
+   fileHandle = FreeFile
+   
+   Open "$U[File Name]" For Input As #fileHandle
+   Do While Not EOF(fileHandle)
+      Line Input #fileHandle, textLine
+      Debug.Print textLine
+   Loop
+   Close #fileHandle</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword />
+    <CommandName />
+    <Category>VB/VBA\File input &amp; output</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>Write to file</Description>
+    <Text>   Dim fileHandle As Integer
+   
+   fileHandle = FreeFile
+   
+   Open "$U[File Name]" For Output As #fileHandle
+   Print #fileHandle, "$U[Line Text]"
+   $P[I]
+   Close #fileHandle</Text>
+    <Author />
+    <Comment>Do not forget to add error handling</Comment>
+    <ExpansionKeyword />
+    <CommandName />
+    <Category>VB/VBA\File input &amp; output</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>If Then Else End If</Description>
+    <Text>   If $U[Condition] Then
+      $P[I]
+   Else
+
+   End If</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>iee</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\If statements</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>If Then ElseIf Then End If</Description>
+    <Text>   If $U[Condition1] Then
+      $P[I]
+   ElseIf $U[Condition2] Then
+   
+   End If</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>ieie</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\If statements</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>If Then End If</Description>
+    <Text>   If $U[Condition] Then
+      $P[I]
+   End If</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>ie</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\If statements</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>Do Loop Until</Description>
+    <Text>   Do
+      $P[I]
+   Loop Until $U[Condition]</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>dlu</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\Loops</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>Do Loop While</Description>
+    <Text>   Do
+      $P[I]
+   Loop While $U[Condition]</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>dlw</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\Loops</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>Do Until Loop</Description>
+    <Text>   Do Until $U[Condition]
+      $P[I]
+   Loop</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>dul</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\Loops</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>Do While Loop</Description>
+    <Text>   Do While $U[Condition]
+      $P[I]
+   Loop</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>dwl</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\Loops</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>For Each</Description>
+    <Text>   For Each $U[Element] In $U[Collection]
+      $P[I]
+   Next</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>fen</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\Loops</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>For Next</Description>
+    <Text>   For $U[Counter Variable] = $U[Lower Limit] To $U[Upper Limit]
+      $P[I]
+   Next</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>fn</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\Loops</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>While Wend</Description>
+    <Text>   While $U[Condition]
+      $P[I]
+   Wend</Text>
+    <Author />
+    <Comment />
+    <ExpansionKeyword>ww</ExpansionKeyword>
+    <CommandName />
+    <Category>VB/VBA\Loops</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+  <CodeTemplate>
+    <Description>Comentario</Description>
+    <Text>'--------------------------------------
+' $P[AUTHOR]
+' Fecha: $P[DATE] $P[TIME]
+' $P[I]
+'--------------------------------------</Text>
+    <Author>Alba Salvá</Author>
+    <Comment>Inserta un comentario</Comment>
+    <ExpansionKeyword />
+    <CommandName />
+    <Category>VB/VBA</Category>
+    <Language>8</Language>
+  </CodeTemplate>
+</CodeTemplates>

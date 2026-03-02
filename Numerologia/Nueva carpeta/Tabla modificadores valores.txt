@@ -1,0 +1,8 @@
+ID,ASCII,IPA,Descripcion,Tipo,Nasal,V_Nasal,Valor,Explicacion
+80,´,ˈ,acento primario (tónica),prosodico,0,0,5,"Máxima prominencia prosódica: valor alto dentro del sistema pitagórico"
+81,`,ˌ,acento secundario,prosodico,0,0,3,"Prominencia media: menor que el acento primario pero mayor que otros modificadores"
+82,0,0,marca de sílaba átona,prosodico,0,0,0,"No añade prominencia: valor neutro"
+83,:,ː,alargamiento vocálico,prosodico,0,0,2,"Modificación ligera de duración: incremento pequeño y estable"
+84,_,‿,enlace/ligadura,prosodico,0,0,2,"Modificación suave de transición: valor bajo pero no nulo"
+85,^,̃͡,nasalización prosódica,prosodico,1,1,4,"Añade nasalidad prosódica: valor alto por su efecto articulatorio"
+86,::,ːː,geminación consonántica,prosodico,0,0,5,"Refuerzo máximo de duración/consonante: valor equivalente al acento primario"

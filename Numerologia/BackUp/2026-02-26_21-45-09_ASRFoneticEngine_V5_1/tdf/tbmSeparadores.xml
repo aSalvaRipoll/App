@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2026-02-26T21:45:10">
+<tbmSeparadores>
+<ID>91</ID>
+<IPA>|</IPA>
+<Descripcion>pausa breve</Descripcion>
+<Tipo>estructural</Tipo>
+</tbmSeparadores>
+<tbmSeparadores>
+<ID>92</ID>
+<IPA>‖</IPA>
+<Descripcion>pausa larga</Descripcion>
+<Tipo>estructural</Tipo>
+<ASCII>.</ASCII>
+</tbmSeparadores>
+<tbmSeparadores>
+<ID>93</ID>
+<IPA>^</IPA>
+<Descripcion>inicio de nombre</Descripcion>
+<Tipo>estructural</Tipo>
+</tbmSeparadores>
+<tbmSeparadores>
+<ID>94</ID>
+<IPA>$</IPA>
+<Descripcion>fin de nombre</Descripcion>
+<Tipo>estructural</Tipo>
+</tbmSeparadores>
+</dataroot>

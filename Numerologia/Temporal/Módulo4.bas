@@ -45,7 +45,7 @@ End Sub
 ' ============================================================
 '   SILABEO DE PALABRA — IB
 ' ============================================================
-Public Function SilabearPalabra_IB(ByVal texto As String) As String
+Private Function SilabearPalabra_IB(ByVal texto As String) As String
     Dim t As String
 
     t = LCase$(Trim$(texto))
@@ -62,7 +62,7 @@ End Function
 '   SILABEO ORTOGRÁFICO — IB
 '   (estructura idéntica a CA, reglas IB dentro)
 ' ============================================================
-Public Function SilabearOrtog_IB(ByVal t As String) As String
+Private Function SilabearOrtog_IB(ByVal t As String) As String
     Dim nucIni() As Byte, nucFin() As Byte
     Dim silIni() As Byte, silFin() As Byte
     Dim nNuc As Byte, i As Byte
@@ -92,58 +92,7 @@ Public Function SilabearOrtog_IB(ByVal t As String) As String
 
 End Function
 
-' ============================================================
-'   PREFIJOS IB (estructura CA, filtro IB)
-' ============================================================
-Private Function DetectarPrefijo_IB(ByVal t As String) As String
-    Dim p As Variant
-
-    If Not prefijosCargados_IB Then CargarPrefijos_IB
-
-    For Each p In prefijosEstrictos_IB
-        If Len(t) = Len(p) Then Exit For
-        If Left$(t, Len(p)) = p Then
-            DetectarPrefijo_IB = p
-            Exit Function
-        End If
-    Next p
-
-    DetectarPrefijo_IB = ""
-End Function
-
-Private Sub CargarPrefijos_IB()
-    Dim rs As DAO.Recordset
-    Dim sql As String
-    Dim i As Long
-
-    If prefijosCargados_IB Then Exit Sub
-
-    sql = "SELECT Prefijo FROM qryPrefijos " & _
-          "WHERE Activo = 1 " & _
-            "AND Tipo Like 'auténtico' " & _
-            "AND [ca-ib] = true " & _
-          "ORDER BY Len(Prefijo) DESC, Prefijo ASC"
-
-    Set rs = CurrentDb.OpenRecordset(sql)
-
-    If Not rs.EOF Then
-        rs.MoveLast
-        ReDim prefijosEstrictos_IB(1 To rs.RecordCount)
-        rs.MoveFirst
-
-        i = 1
-        Do Until rs.EOF
-            prefijosEstrictos_IB(i) = LCase$(rs!Prefijo)
-            i = i + 1
-            rs.MoveNext
-        Loop
-    End If
-
-    rs.Close
-    prefijosCargados_IB = True
-End Sub
-
-Public Function SilabearMorfologico_IB(ByVal t As String) As String
+Private Function SilabearMorfologico_IB(ByVal t As String) As String
     Dim pref As String
     Dim resto As String
 
@@ -163,88 +112,6 @@ Public Function SilabearMorfologico_IB(ByVal t As String) As String
 
     SilabearMorfologico_IB = pref & " | " & SilabearOrtog_IB(resto)
 End Function
-
-' ============================================================
-'   LOCALIZAR NÚCLEOS ORTOGRÁFICOS — IB
-' ============================================================
-Private Sub LocalizarNucleosOrtog_IB(ByVal t As String, _
-                                  ByRef nucIni() As Byte, _
-                                  ByRef nucFin() As Byte, _
-                                  ByRef nNuc As Byte)
-
-    Dim i As Byte, L As Byte
-    Dim c1 As String, c2 As String, c3 As String
-
-    L = Len(t)
-    ReDim nucIni(1 To L)
-    ReDim nucFin(1 To L)
-    nNuc = 0
-
-    If DebugMotor Then
-        addLog
-        addLog "---------------------------------------"
-        addLog " Procedimiento LocalizarNucleosOrtog_IB"
-    End If
-
-    i = 1
-    Do While i <= L
-        c1 = Mid$(t, i, 1)
-
-        If EsVocal_IB(c1) Then
-
-            ' Triptongo IB
-            If i + 2 <= L Then
-                c2 = Mid$(t, i + 1, 1)
-                c3 = Mid$(t, i + 2, 1)
-                If EsTriptong_IB(c1, c2, c3) Then
-                    nNuc = nNuc + 1
-                    nucIni(nNuc) = i
-                    nucFin(nNuc) = i + 2
-                    If DebugMotor Then
-                        addLog "Triptongo IB: " & c1 & c2 & c3
-                    End If
-                    i = i + 3
-                    GoTo Siguiente
-                End If
-            End If
-
-            ' Diptongo IB
-            If i + 1 <= L Then
-                c2 = Mid$(t, i + 1, 1)
-                If EsDiptong_IB(c1, c2) Then
-                    nNuc = nNuc + 1
-                    nucIni(nNuc) = i
-                    nucFin(nNuc) = i + 1
-                    If DebugMotor Then
-                        addLog "Diptongo IB: " & c1 & c2
-                    End If
-                    i = i + 2
-                    GoTo Siguiente
-                End If
-            End If
-
-            ' Vocal sola
-            nNuc = nNuc + 1
-            nucIni(nNuc) = i
-            nucFin(nNuc) = i
-            If DebugMotor Then
-                addLog "Vocal sola IB: " & c1
-            End If
-            i = i + 1
-
-        Else
-            i = i + 1
-        End If
-
-Siguiente:
-    Loop
-
-    If DebugMotor Then
-        addLog "Total núcleos IB: " & nNuc
-        addLog " Fin LocalizarNucleosOrtog_IB"
-        addLog "---------------------------------------"
-    End If
-End Sub
 
 ' ============================================================
 '   CÁLCULO DE SÍLABAS — IB
@@ -333,16 +200,139 @@ Siguiente:
 
 End Sub
 
-Private Function PuedeCerrarSilaba_IB(ByVal c As String) As Boolean
-    PuedeCerrarSilaba_IB = Not (c = "r" Or c = "l" Or c = "h")
+' ============================================================
+'   PREFIJOS IB (estructura CA, filtro IB)
+' ============================================================
+Private Function DetectarPrefijo_IB(ByVal t As String) As String
+    Dim p As Variant
+
+    If Not prefijosCargados_IB Then CargarPrefijos_IB
+
+    For Each p In prefijosEstrictos_IB
+        If Len(t) = Len(p) Then Exit For
+        If Left$(t, Len(p)) = p Then
+            DetectarPrefijo_IB = p
+            Exit Function
+        End If
+    Next p
+
+    DetectarPrefijo_IB = ""
 End Function
 
-Private Function EsGrupoAtaque_IB(ByVal g As String) As Boolean
-    Dim AC As Variant
-    AC = Array("pr", "br", "tr", "dr", "cr", "gr", "fr", _
-               "pl", "bl", "cl", "gl", "fl")
-    EsGrupoAtaque_IB = (UBound(Filter(AC, g)) >= 0)
-End Function
+Private Sub CargarPrefijos_IB()
+    Dim rs As DAO.Recordset
+    Dim sql As String
+    Dim i As Long
+
+    If prefijosCargados_IB Then Exit Sub
+
+    sql = "SELECT Prefijo FROM qryPrefijos " & _
+          "WHERE Activo = 1 " & _
+            "AND Tipo Like 'auténtico' " & _
+            "AND [ca-ib] = true " & _
+          "ORDER BY Len(Prefijo) DESC, Prefijo ASC"
+
+    Set rs = CurrentDb.OpenRecordset(sql)
+
+    If Not rs.EOF Then
+        rs.MoveLast
+        ReDim prefijosEstrictos_IB(1 To rs.RecordCount)
+        rs.MoveFirst
+
+        i = 1
+        Do Until rs.EOF
+            prefijosEstrictos_IB(i) = LCase$(rs!Prefijo)
+            i = i + 1
+            rs.MoveNext
+        Loop
+    End If
+
+    rs.Close
+    prefijosCargados_IB = True
+End Sub
+
+
+' ============================================================
+'   LOCALIZAR NÚCLEOS ORTOGRÁFICOS — IB
+' ============================================================
+Private Sub LocalizarNucleosOrtog_IB(ByVal t As String, _
+                                  ByRef nucIni() As Byte, _
+                                  ByRef nucFin() As Byte, _
+                                  ByRef nNuc As Byte)
+
+    Dim i As Byte, L As Byte
+    Dim c1 As String, c2 As String, c3 As String
+
+    L = Len(t)
+    ReDim nucIni(1 To L)
+    ReDim nucFin(1 To L)
+    nNuc = 0
+
+    If DebugMotor Then
+        addLog
+        addLog "---------------------------------------"
+        addLog " Procedimiento LocalizarNucleosOrtog_IB"
+    End If
+
+    i = 1
+    Do While i <= L
+        c1 = Mid$(t, i, 1)
+
+        If EsVocal_IB(c1) Then
+
+            ' Triptongo IB
+            If i + 2 <= L Then
+                c2 = Mid$(t, i + 1, 1)
+                c3 = Mid$(t, i + 2, 1)
+                If EsTriptong_IB(c1, c2, c3) Then
+                    nNuc = nNuc + 1
+                    nucIni(nNuc) = i
+                    nucFin(nNuc) = i + 2
+                    If DebugMotor Then
+                        addLog "Triptongo IB: " & c1 & c2 & c3
+                    End If
+                    i = i + 3
+                    GoTo Siguiente
+                End If
+            End If
+
+            ' Diptongo IB
+            If i + 1 <= L Then
+                c2 = Mid$(t, i + 1, 1)
+                If EsDiptong_IB(c1, c2) Then
+                    nNuc = nNuc + 1
+                    nucIni(nNuc) = i
+                    nucFin(nNuc) = i + 1
+                    If DebugMotor Then
+                        addLog "Diptongo IB: " & c1 & c2
+                    End If
+                    i = i + 2
+                    GoTo Siguiente
+                End If
+            End If
+
+            ' Vocal sola
+            nNuc = nNuc + 1
+            nucIni(nNuc) = i
+            nucFin(nNuc) = i
+            If DebugMotor Then
+                addLog "Vocal sola IB: " & c1
+            End If
+            i = i + 1
+
+        Else
+            i = i + 1
+        End If
+
+Siguiente:
+    Loop
+
+    If DebugMotor Then
+        addLog "Total núcleos IB: " & nNuc
+        addLog " Fin LocalizarNucleosOrtog_IB"
+        addLog "---------------------------------------"
+    End If
+End Sub
 
 ' ============================================================
 '   FUNCIONES DE VOCAL — IB
@@ -351,17 +341,6 @@ Private Function EsVocal_IB(ByVal c As String) As Boolean
     EsVocal_IB = InStr("aeiouàèéíïòóúü", LCase$(c)) > 0
 End Function
 
-Private Function EsVocalForta_IB(ByVal c As String) As Boolean
-    EsVocalForta_IB = InStr("aàeèéoò", LCase$(c)) > 0
-End Function
-
-Private Function EsVocalFeble_IB(ByVal c As String) As Boolean
-    EsVocalFeble_IB = InStr("iíïuúü", LCase$(c)) > 0
-End Function
-
-Private Function EsVocalFebleTonica_IB(ByVal c As String) As Boolean
-    EsVocalFebleTonica_IB = InStr("íú", LCase$(c)) > 0
-End Function
 
 Private Function EsDiptong_IB(ByVal v1 As String, ByVal v2 As String) As Boolean
 
@@ -393,12 +372,35 @@ Private Function EsDiptong_IB(ByVal v1 As String, ByVal v2 As String) As Boolean
 
 End Function
 
+Private Function EsGrupoAtaque_IB(ByVal g As String) As Boolean
+    Dim AC As Variant
+    AC = Array("pr", "br", "tr", "dr", "cr", "gr", "fr", _
+               "pl", "bl", "cl", "gl", "fl")
+    EsGrupoAtaque_IB = (UBound(Filter(AC, g)) >= 0)
+End Function
+
 Private Function EsTriptong_IB(ByVal v1 As String, ByVal v2 As String, ByVal v3 As String) As Boolean
     If EsVocalFeble_IB(v1) And Not EsVocalFebleTonica_IB(v1) _
        And EsVocalForta_IB(v2) _
        And EsVocalFeble_IB(v3) And Not EsVocalFebleTonica_IB(v3) Then
         EsTriptong_IB = True
     End If
+End Function
+
+Private Function EsVocalFebleTonica_IB(ByVal c As String) As Boolean
+    EsVocalFebleTonica_IB = InStr("íú", LCase$(c)) > 0
+End Function
+
+Private Function EsVocalFeble_IB(ByVal c As String) As Boolean
+    EsVocalFeble_IB = InStr("iíïuúü", LCase$(c)) > 0
+End Function
+
+Private Function EsVocalForta_IB(ByVal c As String) As Boolean
+    EsVocalForta_IB = InStr("aàeèéoò", LCase$(c)) > 0
+End Function
+
+Private Function PuedeCerrarSilaba_IB(ByVal c As String) As Boolean
+    PuedeCerrarSilaba_IB = Not (c = "r" Or c = "l" Or c = "h")
 End Function
 
 Private Function TieneTilde_IB(ByVal silaba As String) As Boolean
@@ -461,51 +463,6 @@ Private Sub CalcularTonicas_IB()
 End Sub
 
 ' ============================================================
-'   DETECTAR TÒNICA LOCAL — IB
-' ============================================================
-Private Function DetectarTonica_IB(w As Collection) As Byte
-
-    Dim i As Byte
-    Dim palabra As String
-    Dim ultima As String
-    Dim terminaLlana As Boolean
-
-    ' 1) Si alguna síl·laba té accent gràfic ? tònica directa
-    For i = 1 To w.count
-        If TieneTilde_IB(w(i)) Then
-            DetectarTonica_IB = i
-            Exit Function
-        End If
-    Next i
-
-    ' 2) Reconstruir la paraula
-    palabra = ""
-    For i = 1 To w.count
-        palabra = palabra & w(i)
-    Next i
-
-    ultima = Right$(palabra, 1)
-    terminaLlana = False
-
-    ' Regles mallorquines (igual que CA, però amb vocals IB)
-    If InStr("aeiouàèéíïòóúü", ultima) > 0 Then terminaLlana = True
-    If LCase$(Right$(palabra, 2)) Like "*as" Then terminaLlana = True
-    If LCase$(Right$(palabra, 2)) Like "*es" Then terminaLlana = True
-    If LCase$(Right$(palabra, 2)) Like "*is" Then terminaLlana = True
-    If LCase$(Right$(palabra, 2)) Like "*os" Then terminaLlana = True
-    If LCase$(Right$(palabra, 2)) Like "*us" Then terminaLlana = True
-    If LCase$(Right$(palabra, 2)) Like "*en" Then terminaLlana = True
-    If LCase$(Right$(palabra, 2)) Like "*in" Then terminaLlana = True
-
-    If terminaLlana And w.count >= 2 Then
-        DetectarTonica_IB = w.count - 1
-    Else
-        DetectarTonica_IB = w.count
-    End If
-
-End Function
-
-' ============================================================
 '   DETECTAR SÍLABES SECUNDÀRIES — IB
 ' ============================================================
 Private Sub CalcularSecundarias_IB()
@@ -553,6 +510,51 @@ Private Sub CalcularSecundarias_IB()
 
 End Sub
 
+' ============================================================
+'   DETECTAR TÒNICA LOCAL — IB
+' ============================================================
+Private Function DetectarTonica_IB(w As Collection) As Byte
+
+    Dim i As Byte
+    Dim palabra As String
+    Dim ultima As String
+    Dim terminaLlana As Boolean
+
+    ' 1) Si alguna síl·laba té accent gràfic ? tònica directa
+    For i = 1 To w.count
+        If TieneTilde_IB(w(i)) Then
+            DetectarTonica_IB = i
+            Exit Function
+        End If
+    Next i
+
+    ' 2) Reconstruir la paraula
+    palabra = ""
+    For i = 1 To w.count
+        palabra = palabra & w(i)
+    Next i
+
+    ultima = Right$(palabra, 1)
+    terminaLlana = False
+
+    ' Regles mallorquines (igual que CA, però amb vocals IB)
+    If InStr("aeiouàèéíïòóúü", ultima) > 0 Then terminaLlana = True
+    If LCase$(Right$(palabra, 2)) Like "*as" Then terminaLlana = True
+    If LCase$(Right$(palabra, 2)) Like "*es" Then terminaLlana = True
+    If LCase$(Right$(palabra, 2)) Like "*is" Then terminaLlana = True
+    If LCase$(Right$(palabra, 2)) Like "*os" Then terminaLlana = True
+    If LCase$(Right$(palabra, 2)) Like "*us" Then terminaLlana = True
+    If LCase$(Right$(palabra, 2)) Like "*en" Then terminaLlana = True
+    If LCase$(Right$(palabra, 2)) Like "*in" Then terminaLlana = True
+
+    If terminaLlana And w.count >= 2 Then
+        DetectarTonica_IB = w.count - 1
+    Else
+        DetectarTonica_IB = w.count
+    End If
+
+End Function
+
 Private Function DetectarSecundarias_IB(w As Collection, tPos As Byte) As Collection
 
     Dim secs As New Collection
@@ -576,6 +578,7 @@ Private Function DetectarSecundarias_IB(w As Collection, tPos As Byte) As Collec
     Set DetectarSecundarias_IB = secs
 
 End Function
+
 
 ' ============================================================
 '   MARCAR TÒNICA I SECUNDÀRIES — IB
@@ -658,5 +661,4 @@ Private Function ObtenerPalabrasDesdeSilabasAuto_IB() As Collection
     Set ObtenerPalabrasDesdeSilabasAuto_IB = resultado
 
 End Function
-
 

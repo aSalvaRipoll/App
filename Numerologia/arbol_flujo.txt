@@ -1,17 +1,29 @@
-Árbol de flujo desde: MedirTiempoPreciso
+Árbol de flujo desde: CargaMotor
 ------------------------------------------------------------
-+-- MedirTiempoPreciso   [Módulo: __Motor_Test]
-    +-- Entrada_Motor_IB   [Módulo: bas_Motor_IB_Main]
++-- CargaMotor   [Módulo: _bas_Entrada_Selector_Motores]
+    +-- Entrada_Motor_PIT   [Módulo: bas_motor_PIT_Clasico]
+    ¦   +-- ConstruirPitagorico   [Módulo: bas_motor_PIT_Clasico]
+    ¦       +-- NormalizarPitagorico   [Módulo: bas_motor_PIT_Clasico]
+    ¦       +-- EsVocal   [Módulo: bas_Motor_IB_Main]
+    ¦       +-- ValorPitagorico   [Módulo: bas_motor_PIT_Clasico]
+    +-- Entrada_Motor_PITX   [Módulo: bas_Motor_PIT_Extended]
+    ¦   +-- ConstruirPythagoreanExtended   [Módulo: bas_Motor_PIT_Extended]
+    ¦       +-- NormalizarPythagoreanExtended   [Módulo: bas_Motor_PIT_Extended]
+    ¦       +-- EsYVocal   [Módulo: bas_Motor_PIT_Extended]
+    ¦       +-- EsVocalExtended   [Módulo: bas_Motor_PIT_Extended]
+    ¦       +-- ValorPythagoreanExtended   [Módulo: bas_Motor_PIT_Extended]
+    +-- CargaCacheIPA   [Módulo: _bas_Entrada_Selector_Motores]
+    +-- Entrada_Motor_ES   [Módulo: bas_Motor_ES_Main]
     ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main]
-    ¦   ¦   +-- limpia   [Módulo: bas_Comunes_Motores]
-    ¦   ¦   +-- limpia   [Módulo: bas_Comunes_Motores] (ya visitado)
+    ¦   ¦   +-- limpia   [Módulo: _bas_Generales_Motores]
+    ¦   ¦   +-- limpia   [Módulo: _bas_Generales_Motores] (ya visitado)
     ¦   ¦   +-- SilabearPalabra   [Módulo: bas_Motor_IB_Main]
     ¦   ¦   ¦   +-- SilabearMorfologico   [Módulo: bas_Motor_IB_Main]
     ¦   ¦   ¦   ¦   +-- SilabearOrtog   [Módulo: bas_Motor_IB_Main]
     ¦   ¦   ¦   ¦   ¦   +-- LocalizarNucleosOrtog   [Módulo: bas_Motor_IB_Main]
     ¦   ¦   ¦   ¦   ¦   ¦   +-- addLog   [Módulo: _basDebugMotores]
     ¦   ¦   ¦   ¦   ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-    ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocal   [Módulo: bas_Motor_IB_Main]
+    ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocal   [Módulo: bas_Motor_IB_Main] (ya visitado)
     ¦   ¦   ¦   ¦   ¦   ¦   +-- EsTriptongo   [Módulo: bas_Motor_IB_Main]
     ¦   ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocalDebilTonica   [Módulo: bas_Motor_IB_Main]
     ¦   ¦   ¦   ¦   ¦   ¦   ¦   +-- EsVocalDebil   [Módulo: bas_Motor_IB_Main]
@@ -54,44 +66,227 @@
     ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
     ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main]
     ¦   ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-    ¦   +-- ConstruirCadenaFonemas_IB   [Módulo: Módulo1]
-    ¦       +-- NormalizarVocales   [Módulo: bas_Motor_CA_Fon]
-    ¦       +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon]
-    ¦       +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon]
-    ¦       +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon]
-    ¦       +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon]
-    ¦       ¦   +-- DetectarDigrafo   [Módulo: bas_Motor_CA_Fon]
-    ¦       ¦   +-- AsignarFonemaBase   [Módulo: bas_Motor_CA_Fon]
-    ¦       +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon]
-    +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_ES   [Módulo: bas_Motor_ES_Fon]
+    ¦   ¦   +-- NormalizarVocales   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   ¦   +-- LimpiaSilaba   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   ¦   +-- LimpiaSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- DetectarLigaduraManual   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   ¦   +-- DetectarDigrafo   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   ¦   +-- AsignarFonemaBase   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon]
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores]
+    ¦       +-- FormatoCrono   [Módulo: _bas_Generales_Motores]
+    ¦       +-- FormatoCrono   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- Entrada_Motor_CA   [Módulo: bas_Motor_CA_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularSecundarias   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_CA   [Módulo: bas_Motor_CA_Fon]
+    ¦   ¦   +-- NormalizarVocales   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- DetectarLigaduraManual   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- Entrada_Motor_IB   [Módulo: bas_Motor_IB_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularSecundarias   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_IB   [Módulo: bas_Motor_IB_Fon]
+    ¦   ¦   +-- NormalizarVocales   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- DetectarLigaduraManual   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- Entrada_Motor_VA   [Módulo: bas_Motor_VA_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularSecundarias   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_VA   [Módulo: bas_Motor_VA_Fon]
+    ¦   ¦   +-- NormalizarVocales   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- DetectarLigaduraManual   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- Entrada_Motor_GL   [Módulo: bas_Motor_GL_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularSecundarias   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_GL   [Módulo: bas_Motor_GL_Fon]
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- DetectarLigaduraManual   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- Entrada_Motor_EU   [Módulo: bas_Motor_EU_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_EU   [Módulo: bas_Motor_EU_Fon]
+    ¦   ¦   +-- NormalizarVocales   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- DetectarLigaduraManual   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- Entrada_Motor_PT   [Módulo: bas_Motor_PT_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularSecundarias   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_PT   [Módulo: bas_Motor_PT_Fon]
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- DetectarLigaduraManual   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- Entrada_Motor_BR   [Módulo: bas_Motor_BR_Main]
+    ¦   +-- SilabearFrase   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularTonicas   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- CalcularSecundarias   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- MarcarTonicaYSecundariaEnCadena   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- ConstruirCadenaFonemas_BR   [Módulo: bas_Motor_BR_Fon]
+    ¦   ¦   +-- BuscarSilabaRealAnterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- BuscarSilabaRealPosterior   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- HayLigaduraAutomatica   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ProcesarSilaba   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   ¦   +-- ObtenerIPA   [Módulo: bas_Motor_CA_Fon] (ya visitado)
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
     +-- MF_DebugDTO   [Módulo: _basDebugMotores]
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- CountItems   [Módulo: _basDebugMotores]
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
-        +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores]
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- CountItems   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- FormatoCrono   [Módulo: _bas_Generales_Motores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- FormatoCrono   [Módulo: _bas_Generales_Motores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- FormatoCrono   [Módulo: _bas_Generales_Motores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- FormatoCrono   [Módulo: _bas_Generales_Motores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- FormatoCrono   [Módulo: _bas_Generales_Motores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- addLog   [Módulo: _basDebugMotores] (ya visitado)
+    ¦   +-- PrintLog   [Módulo: _basDebugMotores]
+    ¦       +-- EscribirUnicode   [Módulo: _basDebugMotores]
+    ¦       +-- EscribirUnicode   [Módulo: _basDebugMotores] (ya visitado)
+    +-- PostProcesoValores   [Módulo: _bas_PostProcesos]
+    ¦   +-- CargaArraysDeTabla   [Módulo: _bas_PostProcesos]
+    +-- PostProceso_Caldeo   [Módulo: _bas_PostProceso_Caldeo]
+    ¦   +-- InicializarDiccionariosCaldeos   [Módulo: _bas_PostProceso_Caldeo]
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo]
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- EsVocal   [Módulo: bas_Motor_IB_Main] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- ValorVocalCaldea   [Módulo: _bas_PostProceso_Caldeo]
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- EsConsonante   [Módulo: _bas_PostProceso_Caldeo]
+    ¦   +-- Formato1o2   [Módulo: _bas_PostProceso_Caldeo] (ya visitado)
+    ¦   +-- ValorConsonante   [Módulo: _bas_PostProceso_Caldeo]
+    +-- PostProceso_Isopsefia   [Módulo: _bas_PostProceso_GR_ISO]
+    ¦   +-- Procesar_Isopsefia_Griega   [Módulo: _bas_PostProceso_GR_ISO]
+    ¦   ¦   +-- CargarDiccionariosGriegos   [Módulo: _bas_PostProceso_GR_ISO]
+    ¦   ¦   +-- LimpiarFonemas   [Módulo: _bas_PostProceso_GR_ISO]
+    ¦   ¦   +-- Translit_Fonetica_GR   [Módulo: _bas_PostProceso_GR_ISO]
+    ¦   ¦   +-- ConstruirIsopsefia_DesdeIdGriego   [Módulo: _bas_PostProceso_GR_ISO]
+    ¦   +-- AbreSalida   [Módulo: _bas_Generales_Motores] (ya visitado)
+    +-- MF_DebugDTO   [Módulo: _basDebugMotores] (ya visitado)

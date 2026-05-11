@@ -1,0 +1,47 @@
+Public Function Entrada_Motor_XX(Texto As String) As String
+
+    Dim TiempoProceso As Double
+    
+    ' 1) Inicializamos DTO y cronómetro, 
+	'    Normalizamos texto
+    Set ObjDTO = New clsDTO_Motor
+    
+    ObjDTO.TextoOriginal = Texto
+    ObjDTO.NormalizaEntrada
+    IniCrono
+    
+    ' 2) Silabeo automático
+    Call SilabearFrase
+
+    ' 3) Detectar tónicas
+    Call CalcularTonicas
+
+    ' 4) Detectar secundarias
+    Call CalcularSecundarias
+
+    ' 5) Marcar Tónicas y Secundarias
+    Call MarcarTonicaYSecundariaEnCadena
+
+    TiempoProceso = FinCrono
+    ObjDTO.Tiempo = CStr(TiempoProceso)
+    
+    ' 6) Mostrar formulario de silabeo
+    RevisarSilabas_EnFormulario
+    
+    ' 7) Generar Fonética 
+    IniCrono
+    Call ConstruirCadenaFonemas_XX
+    
+    TiempoProceso = TiempoProceso + FinCrono
+    ObjDTO.Tiempo = CStr(TiempoProceso)
+
+    ' 8) Mostrar formulario de fonética
+    Call AbreSalida
+
+'    ' Debug opcional
+    'Call MF_DebugDTO("")
+
+	' 9) Retorno 
+    Entrada_Motor_XX = ObjDTO.IdsFonemas
+
+End Function
